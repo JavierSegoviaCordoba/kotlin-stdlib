@@ -1,4 +1,4 @@
-// TODO: Uncomment"{{ rootProject.name = providers.gradleProperty("allProjects.name").forUseAtConfigurationTime().get() }}"
+rootProject.name = providers.gradleProperty("allProjects.name").forUseAtConfigurationTime().get()
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 enableFeaturePreview("VERSION_CATALOGS")
@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 
-include(":library")
+include(":kotlin-stdlib")

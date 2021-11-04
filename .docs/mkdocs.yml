@@ -1,10 +1,10 @@
-site_name: '"{{ name }}"'
-site_description: '"{{ description }}"'
+site_name: 'JavierSC Kotlin stdlib'
+site_description: 'Adds missing features in the official Kotlin stdlib'
 site_author: 'Javier Segovia Córdoba'
 remote_branch: gh-pages
 
-repo_name: '"{{ repo }}"'
-repo_url: 'https://github.com/JavierSegoviaCordoba/"{{ repo }}"'
+repo_name: 'kotlin-stdlib'
+repo_url: 'https://github.com/JavierSegoviaCordoba/kotlin-stdlib'
 
 copyright: 'Copyright &copy; 2021 Javier Segovia Córdoba'
 
