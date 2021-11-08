@@ -14,6 +14,7 @@
 ### Fixed
 
 ### Updated
+- `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.8.0`
 
 
 ## [0.0.0] - 2021-11-04
