@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 ### Added
+- `AnsiColor` and `String.ansiColor()`
 - `String.remove`
 
 ### Changed

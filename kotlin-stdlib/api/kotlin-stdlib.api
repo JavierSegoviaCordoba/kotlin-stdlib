@@ -1,3 +1,146 @@
+public abstract class com/javiersc/kotlin/stdlib/AnsiColor {
+	public fun <init> ()V
+	public abstract fun getValue ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Black : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Black;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Blue : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Blue;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Cyan : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Cyan;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Gray : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Gray;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Green : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Green;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Purple : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Purple;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Red : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Red;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Yellow : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Yellow;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Black : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Black;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Blue : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Blue;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlack : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlack;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlue : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlue;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightCyan : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightCyan;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightGreen : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightGreen;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightPurple : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightPurple;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightRed : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightRed;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightWhite : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightWhite;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightYellow : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightYellow;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Cyan : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Cyan;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Green : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Green;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Purple : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Purple;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Red : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Red;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$White : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$White;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Yellow : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Yellow;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Reset : com/javiersc/kotlin/stdlib/AnsiColor {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Reset;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/AnsiColorsKt {
+	public static final fun ansiColor (Ljava/lang/String;Lcom/javiersc/kotlin/stdlib/AnsiColor;)Ljava/lang/String;
+}
+
 public final class com/javiersc/kotlin/stdlib/StringsKt {
 	public static final fun remove (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 	public static synthetic fun remove$default (Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
