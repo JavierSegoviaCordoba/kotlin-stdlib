@@ -34,6 +34,15 @@ kotlin {
     watchosArm64()
     watchosSimulatorArm64()
     watchosX64()
+
+    sourceSets {
+        commonTest {
+            dependencies {
+                implementation(libs.jetbrains.kotlin.kotlinTest)
+//                implementation(libs.kotest.kotestAssertionsCore)
+            }
+        }
+    }
 }
 
 tasks.withType<DokkaTask> {

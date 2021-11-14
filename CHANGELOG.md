@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 ### Added
+- `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
 
 ### Changed
 

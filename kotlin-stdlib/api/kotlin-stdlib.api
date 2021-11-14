@@ -141,6 +141,16 @@ public final class com/javiersc/kotlin/stdlib/AnsiColorsKt {
 	public static final fun ansiColor (Ljava/lang/String;Lcom/javiersc/kotlin/stdlib/AnsiColor;)Ljava/lang/String;
 }
 
+public final class com/javiersc/kotlin/stdlib/CollectionsKt {
+	public static final fun fifth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun forth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun getIndex (Ljava/lang/Iterable;I)Ljava/lang/Object;
+	public static final fun penultimate (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun second (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun third (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun throwNoSuchElementException (I)V
+}
+
 public final class com/javiersc/kotlin/stdlib/StringsKt {
 	public static final fun remove (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 	public static synthetic fun remove$default (Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
