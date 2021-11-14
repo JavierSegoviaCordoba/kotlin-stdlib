@@ -26,7 +26,7 @@ class CollectionsTest {
 
     @Test
     fun collection_fifth() {
-        assertTrue { numbers.forth() == 5 }
+        assertTrue { numbers.fifth() == 5 }
     }
 
     @Test

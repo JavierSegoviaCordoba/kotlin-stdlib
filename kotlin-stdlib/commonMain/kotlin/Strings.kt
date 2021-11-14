@@ -22,3 +22,17 @@ public inline fun CharSequence?.isNotNullNorEmpty(): Boolean {
 
     return this != null && isNotEmpty()
 }
+
+@OptIn(ExperimentalContracts::class)
+public inline fun String?.isNotNullNorBlank(): Boolean {
+    contract { returns(false) implies (this@isNotNullNorBlank == null) }
+
+    return this != null && isNotBlank()
+}
+
+@OptIn(ExperimentalContracts::class)
+public inline fun String?.isNotNullNorEmpty(): Boolean {
+    contract { returns(false) implies (this@isNotNullNorEmpty == null) }
+
+    return this != null && isNotEmpty()
+}
