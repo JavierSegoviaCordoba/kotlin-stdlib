@@ -9,12 +9,16 @@ package com.javiersc.kotlin.stdlib
  */
 public inline fun <T> Iterable<T>.second(): T = getIndex(2)
 
+public inline fun <T> Iterable<T>.secondOrNull(): T? = runCatching { second() }.getOrNull()
+
 /**
  * Returns third element.
  *
  * Throws: `NoSuchElementException` - if the list size is 2.
  */
 public inline fun <T> Iterable<T>.third(): T = getIndex(3)
+
+public inline fun <T> Iterable<T>.thirdOrNull(): T? = runCatching { third() }.getOrNull()
 
 /**
  * Returns forth element.
@@ -23,12 +27,16 @@ public inline fun <T> Iterable<T>.third(): T = getIndex(3)
  */
 public inline fun <T> Iterable<T>.forth(): T = getIndex(4)
 
+public inline fun <T> Iterable<T>.forthOrNull(): T? = runCatching { forth() }.getOrNull()
+
 /**
  * Returns fifth element.
  *
  * Throws: `NoSuchElementException` - if the list size is 4.
  */
 public inline fun <T> Iterable<T>.fifth(): T = getIndex(5)
+
+public inline fun <T> Iterable<T>.fifthOrNull(): T? = runCatching { fifth() }.getOrNull()
 
 /**
  * Returns penultimate element.
@@ -54,6 +62,9 @@ public inline fun <T> Iterable<T>.penultimate(): T {
         }
     }
 }
+
+public inline fun <T> Iterable<T>.penultimateOrNull(): T? =
+    runCatching { penultimate() }.getOrNull()
 
 @PublishedApi
 internal inline fun <T> Iterable<T>.getIndex(index: Int): T {

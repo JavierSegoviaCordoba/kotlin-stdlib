@@ -5,6 +5,7 @@
 ### Added
 - `isNotNullNorBlank()` and `isNotNullNorEmpty()`
 - `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
+- `OrNull` variants for `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
 
 ### Changed
 
