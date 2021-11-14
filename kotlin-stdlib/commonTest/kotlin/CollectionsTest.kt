@@ -1,6 +1,7 @@
 @file:Suppress("MagicNumber")
 
-import com.javiersc.kotlin.stdlib.second
+package com.javiersc.kotlin.stdlib
+
 import kotlin.test.Test
 import kotlin.test.assertTrue
 
@@ -11,5 +12,25 @@ class CollectionsTest {
     @Test
     fun collection_second() {
         assertTrue { numbers.second() == 2 }
+    }
+
+    @Test
+    fun collection_third() {
+        assertTrue { numbers.third() == 3 }
+    }
+
+    @Test
+    fun collection_forth() {
+        assertTrue { numbers.forth() == 4 }
+    }
+
+    @Test
+    fun collection_fifth() {
+        assertTrue { numbers.forth() == 5 }
+    }
+
+    @Test
+    fun collection_penultimate() {
+        assertTrue { numbers.penultimate() == 9 }
     }
 }

@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 ### Added
+- `isNotNullNorBlank()` and `isNotNullNorEmpty()`
 - `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
 
 ### Changed

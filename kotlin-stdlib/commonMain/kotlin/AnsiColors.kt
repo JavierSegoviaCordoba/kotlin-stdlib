@@ -1,6 +1,6 @@
 package com.javiersc.kotlin.stdlib
 
-public fun String.ansiColor(color: AnsiColor): String = "${color}$this${AnsiColor.Reset}"
+public inline fun String.ansiColor(color: AnsiColor): String = "${color}$this${AnsiColor.Reset}"
 
 public abstract class AnsiColor {
 
