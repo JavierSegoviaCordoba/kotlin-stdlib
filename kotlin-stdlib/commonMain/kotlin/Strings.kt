@@ -36,3 +36,5 @@ public inline fun String?.isNotNullNorEmpty(): Boolean {
 
     return this != null && isNotEmpty()
 }
+
+public inline fun emptyString(): String = ""

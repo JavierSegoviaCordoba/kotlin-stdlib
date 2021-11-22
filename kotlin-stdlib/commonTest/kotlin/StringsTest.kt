@@ -27,4 +27,9 @@ class StringsTest {
         assertTrue { notBlank.isNotNullNorBlank() }
         assertTrue { notBlank.isNotNullNorEmpty() }
     }
+
+    @Test
+    fun empty_string() {
+        assertTrue { emptyString() == "" }
+    }
 }

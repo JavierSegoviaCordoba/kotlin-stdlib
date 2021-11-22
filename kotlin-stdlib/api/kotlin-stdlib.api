@@ -157,6 +157,7 @@ public final class com/javiersc/kotlin/stdlib/CollectionsKt {
 }
 
 public final class com/javiersc/kotlin/stdlib/StringsKt {
+	public static final fun emptyString ()Ljava/lang/String;
 	public static final fun isNotNullNorBlank (Ljava/lang/CharSequence;)Z
 	public static final fun isNotNullNorBlank (Ljava/lang/String;)Z
 	public static final fun isNotNullNorEmpty (Ljava/lang/CharSequence;)Z
