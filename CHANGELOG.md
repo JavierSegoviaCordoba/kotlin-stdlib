@@ -6,11 +6,15 @@
 
 ### Changed
 
+- Java support to Java 8
+
 ### Deprecated
 
 ### Removed
 
 ### Fixed
+
+- `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.17`
 
 ### Updated
 
