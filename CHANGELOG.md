@@ -4,11 +4,6 @@
 
 ### Added
 
-- `emptyString()`
-- `isNotNullNorBlank()` and `isNotNullNorEmpty()`
-- `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
-- `OrNull` variants for `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
-
 ### Changed
 
 ### Deprecated
@@ -16,6 +11,17 @@
 ### Removed
 
 ### Fixed
+
+### Updated
+
+## [0.1.0-alpha.2] - 2021-11-29
+
+### Added
+
+- `emptyString()`
+- `isNotNullNorBlank()` and `isNotNullNorEmpty()`
+- `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
+- `OrNull` variants for `second()`, `third()`, `forth()`, `fifth()` and `penultimate()`
 
 ### Updated
 
