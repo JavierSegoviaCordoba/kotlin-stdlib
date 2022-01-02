@@ -1,0 +1,152 @@
+{
+  "modules": [
+    {
+      "name": "kotlin-stdlib-javiersc",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.buildSrc",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.iosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.iosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.iosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.iosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.iosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.iosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.jsMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.jsTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.jvmMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.jvmTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.linuxX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.linuxX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.macosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.macosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.macosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.macosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.mingwX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.mingwX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.tvosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.tvosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.tvosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.tvosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.tvosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.tvosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.watchosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.watchosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.watchosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.watchosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.watchosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.watchosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.commonMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.kotlin-stdlib.commonTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.buildSrc.test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-javiersc.buildSrc.main",
+      "languageLevel": 11
+    }
+  ]
+}

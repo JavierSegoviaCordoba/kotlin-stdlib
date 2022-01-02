@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>detekt report</title>
+    <style>
+h2 {
+  background-color: #666666;
+  padding: 0.2em;
+  color: #ffffff;
+}
+h3 {
+  background-color:#f8dfdf;
+  padding:0.5em;
+}
+.rule {
+  background-color: #dddddd;
+  padding: 0.3em;
+  font-weight: bold;
+}
+.description {
+  color:#000000;
+  padding:0.3em;
+}
+.location {
+  color: #690505;
+  font-family: monospace;
+  display: block;
+}
+.message {
+  font-size: 0.8em;
+  color: #444444;
+  display: block;
+  margin-top: 1pt;
+}
+.rule-container {
+  border: 0.1em dashed #dddddd;
+  padding: 0.1em;
+  line-height: 1.5em;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+pre {
+  border: 1px solid #e0e0e0;
+  overflow: scroll;
+}
+.lineno {
+  color: #999999;
+  background-color: #f0f0f0;
+}
+.error {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AwCFR4T/3uLMgAAADxJREFUCNdNyLERQEAABMCjL4lQwIzcjErpguAL+C9AvgKJDbeD/PRpLdm35Hm+MU+cB+tCKaJW4L4YBy+CAiLJrFs9mgAAAABJRU5ErkJggg==) bottom repeat-x;
+}
+.exception {
+  color: #b60808;
+  display: inline-block;
+  background-color: #ecdada;
+  border-color: #b60808;
+  border-radius: 10px;
+  border: solid 2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 16px;
+}
+</style>
+</head>
+<body>
+
+<h1>detekt report</h1>
+
+<h2>Metrics</h2>
+
+<div>
+  <ul>
+    <li>37 number of properties</li>
+    <li>28 number of functions</li>
+    <li>3 number of classes</li>
+    <li>2 number of packages</li>
+    <li>10 number of kt files</li>
+  </ul>
+</div>
+
+
+<h2>Complexity Report</h2>
+
+<div>
+  <ul>
+    <li>421 lines of code (loc)</li>
+    <li>314 source lines of code (sloc)</li>
+    <li>232 logical lines of code (lloc)</li>
+    <li>30 comment lines of code (cloc)</li>
+    <li>43 cyclomatic complexity (mcc)</li>
+    <li>22 cognitive complexity</li>
+    <li>4 number of total code smells</li>
+    <li>9% comment source ratio</li>
+    <li>185 mcc per 1,000 lloc</li>
+    <li>17 code smells per 1,000 lloc</li>
+  </ul>
+</div>
+
+
+<h2>Findings</h2>
+<div>Total: 4
+  <h3>complexity: 1</h3>
+  <details id="TooManyFunctions" open="open">
+    <summary class="rule-container"><span class="rule">TooManyFunctions: 1 </span><span class="description">Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage too many things at once. Extract functionality which clearly belongs together.</span></summary>
+    <ul>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:3:1</span><span class="message">File '/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt' with '12' functions detected. Defined threshold inside files is set to '11'</span>
+        <pre><code><span class="lineno">   1 </span>@file:Suppress(&quot;MagicNumber&quot;)
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span><span class="error">package com.javiersc.kotlin.stdlib</span>
+<span class="lineno">   4 </span>
+<span class="lineno">   5 </span>/**
+<span class="lineno">   6 </span> * Returns second element.
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <h3>style: 3</h3>
+  <details id="ForbiddenComment" open="open">
+    <summary class="rule-container"><span class="rule">ForbiddenComment: 1 </span><span class="description">Flags a forbidden comment.</span></summary>
+    <ul>
+      <li><span class="location">buildSrc/build.gradle.kts:12:5</span><span class="message">This comment contains 'TODO:' that has been defined as forbidden in detekt.</span>
+        <pre><code><span class="lineno">   9 </span>}
+<span class="lineno">  10 </span>
+<span class="lineno">  11 </span>dependencies {
+<span class="lineno">  12 </span>    <span class="error">// TODO: remove when the next issue is fixed:</span>
+<span class="lineno">  13 </span>    //  https://github.com/gradle/gradle/issues/15383#issuecomment-779893192
+<span class="lineno">  14 </span>    implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
+<span class="lineno">  15 </span>    implementation(files(pluginLibs.javaClass.superclass.protectionDomain.codeSource.location))
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="FunctionOnlyReturningConstant" open="open">
+    <summary class="rule-container"><span class="rule">FunctionOnlyReturningConstant: 1 </span><span class="description">A function that only returns a constant is misleading. Consider declaring a constant instead</span></summary>
+    <ul>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt:40:19</span><span class="message">emptyString is returning a constant. Prefer declaring a constant instead.</span>
+        <pre><code><span class="lineno">  37 </span>    return (this != null) &amp;&amp; isNotEmpty()
+<span class="lineno">  38 </span>}
+<span class="lineno">  39 </span>
+<span class="lineno">  40 </span>public inline fun <span class="error">emptyString</span>(): String = &quot;&quot;
+<span class="lineno">  41 </span>
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="UnusedPrivateMember" open="open">
+    <summary class="rule-container"><span class="rule">UnusedPrivateMember: 1 </span><span class="description">Private member is unused.</span></summary>
+    <ul>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:78:18</span><span class="message">Private property i is unused.</span>
+        <pre><code><span class="lineno">  75 </span>            if (!iterator.hasNext()) throwNoSuchElementException(index)
+<span class="lineno">  76 </span>            var value: T = iterator.next()
+<span class="lineno">  77 </span>
+<span class="lineno">  78 </span>            for (<span class="error">i</span> in 0 until index - 1) {
+<span class="lineno">  79 </span>                if (!iterator.hasNext()) throwNoSuchElementException(index)
+<span class="lineno">  80 </span>                else value = iterator.next()
+<span class="lineno">  81 </span>            }
+</code></pre>
+      </li>
+    </ul>
+  </details>
+</div>
+
+
+generated with <a href="https://detekt.github.io/">detekt version 1.19.0</a> on 2022-01-02 21:31:36 UTC.
+
+</body>
+</html>
