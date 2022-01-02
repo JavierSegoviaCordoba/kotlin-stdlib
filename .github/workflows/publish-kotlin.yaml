@@ -8,14 +8,7 @@ on:
 jobs:
   publish:
     uses: JavierSegoviaCordoba/reusable-workflows/.github/workflows/publish-kotlin.yaml@main
-    with:
-      publish-maven-central: true
-      publish-gradle-plugin-portal: false
-      publish-jetbrains-marketplace: false
-      publish-docs: true
-      publish-github-release: true
     secrets:
-      GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       OSS_USER: '${{ secrets.OSS_USER }}'
       OSS_TOKEN: '${{ secrets.OSS_TOKEN }}'
       OSS_STAGING_PROFILE_ID: '${{ secrets.OSS_STAGING_PROFILE_ID }}'
@@ -29,3 +22,4 @@ jobs:
       JETBRAINS_MARKETPLACE_KEY: '${{ secrets.JETBRAINS_MARKETPLACE_KEY }}'
       JETBRAINS_MARKETPLACE_KEY_PASSPHRASE: '${{ secrets.JETBRAINS_MARKETPLACE_KEY_PASSPHRASE }}'
       JETBRAINS_MARKETPLACE_TOKEN: '${{ secrets.JETBRAINS_MARKETPLACE_TOKEN }}'
+      SONAR_TOKEN: '${{ secrets.SONAR_TOKEN }}'

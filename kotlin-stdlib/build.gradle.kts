@@ -2,7 +2,7 @@ import org.jetbrains.dokka.gradle.DokkaTask
 
 plugins {
     `kotlin-multiplatform`
-    `javiersc-kotlin-library`
+    `javiersc-kotlin-config`
     `javiersc-publish`
 }
 
@@ -39,7 +39,7 @@ kotlin {
         commonTest {
             dependencies {
                 implementation(libs.jetbrains.kotlin.kotlinTest)
-//                implementation(libs.kotest.kotestAssertionsCore)
+                implementation(libs.kotest.kotestAssertionsCore)
             }
         }
     }

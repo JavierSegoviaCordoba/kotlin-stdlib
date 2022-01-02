@@ -13,28 +13,28 @@ public inline fun String.remove(value: String, ignoreCase: Boolean = false): Str
 public inline fun CharSequence?.isNotNullNorBlank(): Boolean {
     contract { returns(false) implies (this@isNotNullNorBlank == null) }
 
-    return this != null && isNotBlank()
+    return (this != null) && isNotBlank()
 }
 
 @OptIn(ExperimentalContracts::class)
 public inline fun CharSequence?.isNotNullNorEmpty(): Boolean {
     contract { returns(false) implies (this@isNotNullNorEmpty == null) }
 
-    return this != null && isNotEmpty()
+    return (this != null) && isNotEmpty()
 }
 
 @OptIn(ExperimentalContracts::class)
 public inline fun String?.isNotNullNorBlank(): Boolean {
     contract { returns(false) implies (this@isNotNullNorBlank == null) }
 
-    return this != null && isNotBlank()
+    return (this != null) && isNotBlank()
 }
 
 @OptIn(ExperimentalContracts::class)
 public inline fun String?.isNotNullNorEmpty(): Boolean {
     contract { returns(false) implies (this@isNotNullNorEmpty == null) }
 
-    return this != null && isNotEmpty()
+    return (this != null) && isNotEmpty()
 }
 
 public inline fun emptyString(): String = ""
