@@ -72,8 +72,8 @@ pre {
 
 <div>
   <ul>
-    <li>37 number of properties</li>
-    <li>28 number of functions</li>
+    <li>46 number of properties</li>
+    <li>27 number of functions</li>
     <li>3 number of classes</li>
     <li>2 number of packages</li>
     <li>10 number of kt files</li>
@@ -85,38 +85,23 @@ pre {
 
 <div>
   <ul>
-    <li>421 lines of code (loc)</li>
-    <li>314 source lines of code (sloc)</li>
-    <li>232 logical lines of code (lloc)</li>
+    <li>514 lines of code (loc)</li>
+    <li>393 source lines of code (sloc)</li>
+    <li>301 logical lines of code (lloc)</li>
     <li>30 comment lines of code (cloc)</li>
-    <li>43 cyclomatic complexity (mcc)</li>
-    <li>22 cognitive complexity</li>
-    <li>4 number of total code smells</li>
-    <li>9% comment source ratio</li>
-    <li>185 mcc per 1,000 lloc</li>
-    <li>17 code smells per 1,000 lloc</li>
+    <li>57 cyclomatic complexity (mcc)</li>
+    <li>44 cognitive complexity</li>
+    <li>7 number of total code smells</li>
+    <li>7% comment source ratio</li>
+    <li>189 mcc per 1,000 lloc</li>
+    <li>23 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 4
-  <h3>complexity: 1</h3>
-  <details id="TooManyFunctions" open="open">
-    <summary class="rule-container"><span class="rule">TooManyFunctions: 1 </span><span class="description">Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage too many things at once. Extract functionality which clearly belongs together.</span></summary>
-    <ul>
-      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:3:1</span><span class="message">File '/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt' with '12' functions detected. Defined threshold inside files is set to '11'</span>
-        <pre><code><span class="lineno">   1 </span>@file:Suppress(&quot;MagicNumber&quot;)
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span><span class="error">package com.javiersc.kotlin.stdlib</span>
-<span class="lineno">   4 </span>
-<span class="lineno">   5 </span>/**
-<span class="lineno">   6 </span> * Returns second element.
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <h3>style: 3</h3>
+<div>Total: 7
+  <h3>style: 7</h3>
   <details id="ForbiddenComment" open="open">
     <summary class="rule-container"><span class="rule">ForbiddenComment: 1 </span><span class="description">Flags a forbidden comment.</span></summary>
     <ul>
@@ -132,30 +117,77 @@ pre {
       </li>
     </ul>
   </details>
-  <details id="FunctionOnlyReturningConstant" open="open">
-    <summary class="rule-container"><span class="rule">FunctionOnlyReturningConstant: 1 </span><span class="description">A function that only returns a constant is misleading. Consider declaring a constant instead</span></summary>
+  <details id="ReturnCount" open="open">
+    <summary class="rule-container"><span class="rule">ReturnCount: 2 </span><span class="description">Restrict the number of return statements in methods.</span></summary>
     <ul>
-      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt:40:19</span><span class="message">emptyString is returning a constant. Prefer declaring a constant instead.</span>
-        <pre><code><span class="lineno">  37 </span>    return (this != null) &amp;&amp; isNotEmpty()
-<span class="lineno">  38 </span>}
-<span class="lineno">  39 </span>
-<span class="lineno">  40 </span>public inline fun <span class="error">emptyString</span>(): String = &quot;&quot;
-<span class="lineno">  41 </span>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:71:35</span><span class="message">Function penultimateOrNull has 4 return statements which exceeds the limit of 2.</span>
+        <pre><code><span class="lineno">  68 </span>    }
+<span class="lineno">  69 </span>}
+<span class="lineno">  70 </span>
+<span class="lineno">  71 </span>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">penultimateOrNull</span>(): T? {
+<span class="lineno">  72 </span>    return when (this) {
+<span class="lineno">  73 </span>        is List -&gt; getOrNull(size - 2)
+<span class="lineno">  74 </span>        else -&gt; {
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:114:37</span><span class="message">Function getIndexOrNull has 3 return statements which exceeds the limit of 2.</span>
+        <pre><code><span class="lineno"> 111 </span>}
+<span class="lineno"> 112 </span>
+<span class="lineno"> 113 </span>@PublishedApi
+<span class="lineno"> 114 </span>internal inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">getIndexOrNull</span>(index: Int): T? {
+<span class="lineno"> 115 </span>    return when (this) {
+<span class="lineno"> 116 </span>        is List -&gt; getOrNull(index - 1)
+<span class="lineno"> 117 </span>        else -&gt; {
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="ThrowsCount" open="open">
+    <summary class="rule-container"><span class="rule">ThrowsCount: 2 </span><span class="description">Restrict the number of throw statements in methods.</span></summary>
+    <ul>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:46:35</span><span class="message">Too many throw statements in the function penultimate. The maximum number of allowed throw statements is 2.</span>
+        <pre><code><span class="lineno">  43 </span> *
+<span class="lineno">  44 </span> * Throws: `NoSuchElementException` - if the list size is 1.
+<span class="lineno">  45 </span> */
+<span class="lineno">  46 </span>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">penultimate</span>(): T {
+<span class="lineno">  47 </span>    return when (this) {
+<span class="lineno">  48 </span>        is List -&gt;
+<span class="lineno">  49 </span>            when (size) {
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:92:37</span><span class="message">Too many throw statements in the function getIndex. The maximum number of allowed throw statements is 2.</span>
+        <pre><code><span class="lineno">  89 </span>}
+<span class="lineno">  90 </span>
+<span class="lineno">  91 </span>@PublishedApi
+<span class="lineno">  92 </span>internal inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">getIndex</span>(index: Int): T {
+<span class="lineno">  93 </span>    return when (this) {
+<span class="lineno">  94 </span>        is List -&gt;
+<span class="lineno">  95 </span>            if (size &gt;= index - 1) this[index - 1]
 </code></pre>
       </li>
     </ul>
   </details>
   <details id="UnusedPrivateMember" open="open">
-    <summary class="rule-container"><span class="rule">UnusedPrivateMember: 1 </span><span class="description">Private member is unused.</span></summary>
+    <summary class="rule-container"><span class="rule">UnusedPrivateMember: 2 </span><span class="description">Private member is unused.</span></summary>
     <ul>
-      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:78:18</span><span class="message">Private property i is unused.</span>
-        <pre><code><span class="lineno">  75 </span>            if (!iterator.hasNext()) throwNoSuchElementException(index)
-<span class="lineno">  76 </span>            var value: T = iterator.next()
-<span class="lineno">  77 </span>
-<span class="lineno">  78 </span>            for (<span class="error">i</span> in 0 until index - 1) {
-<span class="lineno">  79 </span>                if (!iterator.hasNext()) throwNoSuchElementException(index)
-<span class="lineno">  80 </span>                else value = iterator.next()
-<span class="lineno">  81 </span>            }
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:103:18</span><span class="message">Private property i is unused.</span>
+        <pre><code><span class="lineno"> 100 </span>                throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)
+<span class="lineno"> 101 </span>            var value: T = iterator.next()
+<span class="lineno"> 102 </span>
+<span class="lineno"> 103 </span>            for (<span class="error">i</span> in 0 until index - 1) {
+<span class="lineno"> 104 </span>                if (!iterator.hasNext())
+<span class="lineno"> 105 </span>                    throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)
+<span class="lineno"> 106 </span>                else value = iterator.next()
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:122:18</span><span class="message">Private property i is unused.</span>
+        <pre><code><span class="lineno"> 119 </span>            if (!iterator.hasNext()) return null
+<span class="lineno"> 120 </span>            var value: T = iterator.next()
+<span class="lineno"> 121 </span>
+<span class="lineno"> 122 </span>            for (<span class="error">i</span> in 0 until index - 1) {
+<span class="lineno"> 123 </span>                if (!iterator.hasNext()) return null else value = iterator.next()
+<span class="lineno"> 124 </span>            }
+<span class="lineno"> 125 </span>            value
 </code></pre>
       </li>
     </ul>
@@ -163,7 +195,7 @@ pre {
 </div>
 
 
-generated with <a href="https://detekt.github.io/">detekt version 1.19.0</a> on 2022-01-02 21:31:36 UTC.
+generated with <a href="https://detekt.github.io/">detekt version 1.19.0</a> on 2022-01-03 00:15:47 UTC.
 
 </body>
 </html>

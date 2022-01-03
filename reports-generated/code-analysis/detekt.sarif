@@ -19,16 +19,79 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startColumn": 1,
-                  "startLine": 3
+                  "startColumn": 35,
+                  "startLine": 71
                 }
               }
             }
           ],
           "message": {
-            "text": "File '/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt' with '12' functions detected. Defined threshold inside files is set to '11'"
+            "text": "Function penultimateOrNull has 4 return statements which exceeds the limit of 2."
           },
-          "ruleId": "detekt.complexity.TooManyFunctions"
+          "ruleId": "detekt.style.ReturnCount"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startColumn": 37,
+                  "startLine": 114
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Function getIndexOrNull has 3 return statements which exceeds the limit of 2."
+          },
+          "ruleId": "detekt.style.ReturnCount"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startColumn": 35,
+                  "startLine": 46
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Too many throw statements in the function penultimate. The maximum number of allowed throw statements is 2."
+          },
+          "ruleId": "detekt.style.ThrowsCount"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startColumn": 37,
+                  "startLine": 92
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Too many throw statements in the function getIndex. The maximum number of allowed throw statements is 2."
+          },
+          "ruleId": "detekt.style.ThrowsCount"
         },
         {
           "level": "warning",
@@ -41,7 +104,7 @@
                 },
                 "region": {
                   "startColumn": 18,
-                  "startLine": 78
+                  "startLine": 103
                 }
               }
             }
@@ -57,20 +120,20 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt",
+                  "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startColumn": 19,
-                  "startLine": 40
+                  "startColumn": 18,
+                  "startLine": 122
                 }
               }
             }
           ],
           "message": {
-            "text": "emptyString is returning a constant. Prefer declaring a constant instead."
+            "text": "Private property i is unused."
           },
-          "ruleId": "detekt.style.FunctionOnlyReturningConstant"
+          "ruleId": "detekt.style.UnusedPrivateMember"
         },
         {
           "level": "warning",

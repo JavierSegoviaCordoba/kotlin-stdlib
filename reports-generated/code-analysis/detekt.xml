@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="4.3">
 <file name="kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt">
-	<error line="3" column="1" severity="warning" message="File &apos;/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt&apos; with &apos;12&apos; functions detected. Defined threshold inside files is set to &apos;11&apos;" source="detekt.TooManyFunctions" />
-	<error line="78" column="18" severity="warning" message="Private property i is unused." source="detekt.UnusedPrivateMember" />
-</file>
-<file name="kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt">
-	<error line="40" column="19" severity="warning" message="emptyString is returning a constant. Prefer declaring a constant instead." source="detekt.FunctionOnlyReturningConstant" />
+	<error line="71" column="35" severity="warning" message="Function penultimateOrNull has 4 return statements which exceeds the limit of 2." source="detekt.ReturnCount" />
+	<error line="114" column="37" severity="warning" message="Function getIndexOrNull has 3 return statements which exceeds the limit of 2." source="detekt.ReturnCount" />
+	<error line="46" column="35" severity="warning" message="Too many throw statements in the function penultimate. The maximum number of allowed throw statements is 2." source="detekt.ThrowsCount" />
+	<error line="92" column="37" severity="warning" message="Too many throw statements in the function getIndex. The maximum number of allowed throw statements is 2." source="detekt.ThrowsCount" />
+	<error line="103" column="18" severity="warning" message="Private property i is unused." source="detekt.UnusedPrivateMember" />
+	<error line="122" column="18" severity="warning" message="Private property i is unused." source="detekt.UnusedPrivateMember" />
 </file>
 <file name="buildSrc/build.gradle.kts">
 	<error line="12" column="5" severity="warning" message="This comment contains &apos;TODO:&apos; that has been defined as forbidden in detekt." source="detekt.ForbiddenComment" />
