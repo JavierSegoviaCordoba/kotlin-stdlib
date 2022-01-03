@@ -147,17 +147,17 @@ public final class com/javiersc/kotlin/stdlib/CollectionsKt {
 	public static final fun forth (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun forthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun getIndex (Ljava/lang/Iterable;I)Ljava/lang/Object;
+	public static final fun getIndexOrNull (Ljava/lang/Iterable;I)Ljava/lang/Object;
 	public static final fun penultimate (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun penultimateOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun second (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun secondOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun third (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun thirdOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun throwNoSuchElementException (I)V
 }
 
 public final class com/javiersc/kotlin/stdlib/StringsKt {
-	public static final fun emptyString ()Ljava/lang/String;
+	public static final fun getEmpty (Lkotlin/jvm/internal/StringCompanionObject;)Ljava/lang/String;
 	public static final fun isNotNullNorBlank (Ljava/lang/CharSequence;)Z
 	public static final fun isNotNullNorBlank (Ljava/lang/String;)Z
 	public static final fun isNotNullNorEmpty (Ljava/lang/CharSequence;)Z

@@ -3,6 +3,7 @@ package com.javiersc.kotlin.stdlib
 import io.kotest.matchers.booleans.shouldBeFalse
 import io.kotest.matchers.booleans.shouldBeTrue
 import io.kotest.matchers.shouldBe
+import io.kotest.matchers.string.shouldBeEmpty
 import kotlin.test.Test
 
 class StringsTest {
@@ -10,6 +11,7 @@ class StringsTest {
     @Test
     fun string_remove() {
         "Hello, World".remove("Hello, ").shouldBe("World")
+        "Hello, World".remove("bla").shouldBe("Hello, World")
     }
 
     @Test
@@ -31,6 +33,6 @@ class StringsTest {
 
     @Test
     fun empty_string() {
-        emptyString().shouldBe("")
+        String.Empty.shouldBeEmpty()
     }
 }

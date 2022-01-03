@@ -1,4 +1,4 @@
-@file:Suppress("MagicNumber")
+@file:Suppress("MagicNumber", "TooManyFunctions")
 
 package com.javiersc.kotlin.stdlib
 
@@ -9,7 +9,7 @@ package com.javiersc.kotlin.stdlib
  */
 public inline fun <T> Iterable<T>.second(): T = getIndex(2)
 
-public inline fun <T> Iterable<T>.secondOrNull(): T? = runCatching { second() }.getOrNull()
+public inline fun <T> Iterable<T>.secondOrNull(): T? = getIndexOrNull(2)
 
 /**
  * Returns third element.
@@ -18,7 +18,7 @@ public inline fun <T> Iterable<T>.secondOrNull(): T? = runCatching { second() }.
  */
 public inline fun <T> Iterable<T>.third(): T = getIndex(3)
 
-public inline fun <T> Iterable<T>.thirdOrNull(): T? = runCatching { third() }.getOrNull()
+public inline fun <T> Iterable<T>.thirdOrNull(): T? = getIndexOrNull(3)
 
 /**
  * Returns forth element.
@@ -27,7 +27,7 @@ public inline fun <T> Iterable<T>.thirdOrNull(): T? = runCatching { third() }.ge
  */
 public inline fun <T> Iterable<T>.forth(): T = getIndex(4)
 
-public inline fun <T> Iterable<T>.forthOrNull(): T? = runCatching { forth() }.getOrNull()
+public inline fun <T> Iterable<T>.forthOrNull(): T? = getIndexOrNull(4)
 
 /**
  * Returns fifth element.
@@ -36,7 +36,7 @@ public inline fun <T> Iterable<T>.forthOrNull(): T? = runCatching { forth() }.ge
  */
 public inline fun <T> Iterable<T>.fifth(): T = getIndex(5)
 
-public inline fun <T> Iterable<T>.fifthOrNull(): T? = runCatching { fifth() }.getOrNull()
+public inline fun <T> Iterable<T>.fifthOrNull(): T? = getIndexOrNull(5)
 
 /**
  * Returns penultimate element.
@@ -45,7 +45,12 @@ public inline fun <T> Iterable<T>.fifthOrNull(): T? = runCatching { fifth() }.ge
  */
 public inline fun <T> Iterable<T>.penultimate(): T {
     return when (this) {
-        is List -> this[size - 2]
+        is List ->
+            when (size) {
+                0 -> throw NoSuchElementException("Collection is empty.")
+                1 -> throw NoSuchElementException("Collection size is lower than 2.")
+                else -> this[size - 2]
+            }
         else -> {
             val iterator = iterator()
             if (!iterator.hasNext()) throw NoSuchElementException("Collection is empty.")
@@ -63,20 +68,41 @@ public inline fun <T> Iterable<T>.penultimate(): T {
     }
 }
 
-public inline fun <T> Iterable<T>.penultimateOrNull(): T? =
-    runCatching { penultimate() }.getOrNull()
+public inline fun <T> Iterable<T>.penultimateOrNull(): T? {
+    return when (this) {
+        is List -> getOrNull(size - 2)
+        else -> {
+            val iterator = iterator()
+
+            if (!iterator.hasNext()) return null
+            iterator.next()
+            if (!iterator.hasNext()) return null
+
+            var penultimate: T = iterator.next()
+            while (iterator.hasNext()) {
+                val next: T = iterator.next()
+                if (iterator.hasNext()) penultimate = next
+            }
+            return penultimate
+        }
+    }
+}
 
 @PublishedApi
 internal inline fun <T> Iterable<T>.getIndex(index: Int): T {
     return when (this) {
-        is List -> this[index - 1]
+        is List ->
+            if (size >= index - 1) this[index - 1]
+            else throw NoSuchElementException("Collection size is lower than $index.")
         else -> {
             val iterator = iterator()
-            if (!iterator.hasNext()) throwNoSuchElementException(index)
+            if (!iterator.hasNext())
+                throw NoSuchElementException("Collection size is lower than $index.")
             var value: T = iterator.next()
 
             for (i in 0 until index - 1) {
-                if (!iterator.hasNext()) throwNoSuchElementException(index)
+                if (!iterator.hasNext())
+                    throw NoSuchElementException("Collection size is lower than $index.")
                 else value = iterator.next()
             }
             value
@@ -85,5 +111,18 @@ internal inline fun <T> Iterable<T>.getIndex(index: Int): T {
 }
 
 @PublishedApi
-internal inline fun throwNoSuchElementException(size: Int): Unit =
-    throw NoSuchElementException("Collection size is lower than $size.")
+internal inline fun <T> Iterable<T>.getIndexOrNull(index: Int): T? {
+    return when (this) {
+        is List -> getOrNull(index - 1)
+        else -> {
+            val iterator = iterator()
+            if (!iterator.hasNext()) return null
+            var value: T = iterator.next()
+
+            for (i in 0 until index - 1) {
+                if (!iterator.hasNext()) return null else value = iterator.next()
+            }
+            value
+        }
+    }
+}

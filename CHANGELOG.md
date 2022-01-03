@@ -6,6 +6,8 @@
 
 ### Changed
 
+- `emptyString()` to `String.Empty`
+
 ### Deprecated
 
 ### Removed
