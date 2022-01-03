@@ -1,5 +1,3 @@
-import org.jetbrains.dokka.gradle.DokkaTask
-
 plugins {
     `kotlin-multiplatform`
     `javiersc-kotlin-config`
@@ -41,22 +39,6 @@ kotlin {
                 implementation(libs.jetbrains.kotlin.kotlinTest)
                 implementation(libs.kotest.kotestAssertionsCore)
             }
-        }
-    }
-}
-
-tasks.withType<DokkaTask> {
-    dokkaSourceSets {
-        configureEach {
-            val paths: List<String> =
-                file("${rootProject.projectDir}/samples/commonMain/kotlin")
-                    .walkTopDown()
-                    .filter(File::isFile)
-                    .map(File::getPath)
-                    .toList()
-            println("HELLO")
-            println(paths)
-            samples.from(paths)
         }
     }
 }
