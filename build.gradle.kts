@@ -3,7 +3,7 @@ plugins {
     `javiersc-all-projects`
     `javiersc-changelog`
     `javiersc-code-analysis`
-    `javiersc-code-coverage`
+    id("org.jetbrains.kotlinx.kover") // 0.5.0-RC
     `javiersc-code-formatter`
     `javiersc-docs`
     `javiersc-nexus`
