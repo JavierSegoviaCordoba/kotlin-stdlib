@@ -35,4 +35,22 @@ class StringsTest {
     fun empty_string() {
         String.Empty.shouldBeEmpty()
     }
+
+    @Test
+    fun remove_duplicate_empty_lines() {
+        "a\nb\n\n\nc\n".removeDuplicateEmptyLines().shouldBe("a\nb\n\nc\n")
+        "a\n\nb\n\n\nc\n".removeDuplicateEmptyLines().shouldBe("a\n\nb\n\nc\n")
+        "a\n\nb\n\n\nc\n\n".removeDuplicateEmptyLines().shouldBe("a\n\nb\n\nc\n")
+        "a\n\n\n\n\nb\n\n".removeDuplicateEmptyLines().shouldBe("a\n\nb\n")
+    }
+
+    @Test
+    fun end_with_new_line() {
+        "a".endWithNewLine().shouldBe("a\n")
+        "a\n".endWithNewLine().shouldBe("a\n")
+        "".endWithNewLine().shouldBe("")
+        "a\nb".endWithNewLine().shouldBe("a\nb\n")
+        "".endWithNewLine().shouldBe("")
+        "\n".endWithNewLine().shouldBe("\n")
+    }
 }

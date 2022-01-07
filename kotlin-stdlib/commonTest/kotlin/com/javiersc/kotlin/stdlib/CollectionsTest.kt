@@ -85,4 +85,14 @@ class CollectionsTest {
         shouldThrow<NoSuchElementException> { listOf(1).penultimate() }
         shouldThrow<NoSuchElementException> { listOf(1).asIterable().penultimate() }
     }
+
+    @Test
+    fun remove_duplicate_empty_lines() {
+        listOf("a", "b", "", "", "c", "").removeDuplicateEmptyLines().shouldBe("a\nb\n\nc\n")
+        listOf("a", "b", "", "", "", "c", "").removeDuplicateEmptyLines().shouldBe("a\nb\n\nc\n")
+        listOf("a", "b", "", "", "c", "", "").removeDuplicateEmptyLines().shouldBe("a\nb\n\nc\n")
+        listOf("a", "", "", "", "b", "", "").removeDuplicateEmptyLines().shouldBe("a\n\nb\n")
+        emptyList<String>().removeDuplicateEmptyLines().shouldBe("")
+        listOf("").removeDuplicateEmptyLines().shouldBe("")
+    }
 }

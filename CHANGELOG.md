@@ -4,6 +4,10 @@
 
 ### Added
 
+- `List<String>.removeDuplicateEmptyLines`
+- `String.removeDuplicateEmptyLines`
+- `String.endWithNewLine`
+
 ### Changed
 
 - `emptyString()` to `String.Empty`
