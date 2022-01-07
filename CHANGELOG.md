@@ -4,6 +4,20 @@
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Updated
+
+## [0.1.0-alpha.4] - 2022-01-07
+
+### Added
+
 - `List<String>.removeDuplicateEmptyLines`
 - `String.removeDuplicateEmptyLines`
 - `String.endWithNewLine`
@@ -11,12 +25,6 @@
 ### Changed
 
 - `emptyString()` to `String.Empty`
-
-### Deprecated
-
-### Removed
-
-### Fixed
 
 ### Updated
 
