@@ -54,26 +54,26 @@ Current scope:     <a href="../../index.html">all classes</a>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    66.7%
+    77.8%
   </span>
   <span class="absValue">
-    (4/6)
+    (7/9)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    30.8%
+    43.3%
   </span>
   <span class="absValue">
-    (8/26)
+    (13/30)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    63.6%
+    69.2%
   </span>
   <span class="absValue">
-    (7/11)
+    (9/13)
   </span>
 </td>
 </tr>
@@ -93,7 +93,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">6</i>&nbsp;/**
 <i class="no-highlight">7</i>&nbsp; * Returns a new string obtained by removing all occurrences of the [value] substring in this string
 <i class="no-highlight">8</i>&nbsp; */
-<b class="pc"><i class="no-highlight">9</i>&nbsp;public inline fun String.remove(value: String, ignoreCase: Boolean = false): String =</b>
+<b class="fc"><i class="no-highlight">9</i>&nbsp;public inline fun String.remove(value: String, ignoreCase: Boolean = false): String =</b>
 <b class="fc"><i class="no-highlight">10</i>&nbsp;    replace(oldValue = value, newValue = &quot;&quot;, ignoreCase = ignoreCase)</b>
 <i class="no-highlight">11</i>&nbsp;
 <i class="no-highlight">12</i>&nbsp;@OptIn(ExperimentalContracts::class)
@@ -126,6 +126,13 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">39</i>&nbsp;
 <i class="no-highlight">40</i>&nbsp;public inline val String.Companion.Empty: String
 <b class="fc"><i class="no-highlight">41</i>&nbsp;    get() = &quot;&quot;</b>
+<i class="no-highlight">42</i>&nbsp;
+<i class="no-highlight">43</i>&nbsp;/** Remove all consecutive line breaks in a `String` */
+<b class="fc"><i class="no-highlight">44</i>&nbsp;public fun String.removeDuplicateEmptyLines(): String = lines().removeDuplicateEmptyLines()</b>
+<i class="no-highlight">45</i>&nbsp;
+<i class="no-highlight">46</i>&nbsp;/** Add an empty line as last item if it is not empty */
+<i class="no-highlight">47</i>&nbsp;public fun String.endWithNewLine(): String =
+<b class="pc"><i class="no-highlight">48</i>&nbsp;    if (lines().lastOrNull().isNullOrBlank()) this else &quot;$this\n&quot;</b>
 </div>
 </pre>
 </div>
@@ -152,7 +159,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-01-03 21:07</div>
+    <div style="float:right;">generated on 2022-01-07 21:58</div>
 </div>
 </body>
 </html>

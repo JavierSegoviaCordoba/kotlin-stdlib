@@ -57,23 +57,23 @@ Current scope:     <a href="../../index.html">all classes</a>
     100%
   </span>
   <span class="absValue">
-    (12/12)
+    (13/13)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    20%
+    31.2%
   </span>
   <span class="absValue">
-    (8/40)
+    (15/48)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    39.3%
+    41.4%
   </span>
   <span class="absValue">
-    (22/56)
+    (24/58)
   </span>
 </td>
 </tr>
@@ -213,6 +213,11 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">126</i>&nbsp;        }
 <i class="no-highlight">127</i>&nbsp;    }
 <i class="no-highlight">128</i>&nbsp;}
+<i class="no-highlight">129</i>&nbsp;
+<i class="no-highlight">130</i>&nbsp;/** Remove all consecutive line breaks in a list of `String` */
+<b class="fc"><i class="no-highlight">131</i>&nbsp;public fun List&lt;String&gt;.removeDuplicateEmptyLines(): String = reduce { acc: String, b: String -&gt;</b>
+<b class="pc"><i class="no-highlight">132</i>&nbsp;    if (acc.lines().lastOrNull().isNullOrBlank() &amp;&amp; b.isBlank()) acc else &quot;$acc\n$b&quot;</b>
+<i class="no-highlight">133</i>&nbsp;}
 </div>
 </pre>
 </div>
@@ -239,7 +244,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-01-03 21:07</div>
+    <div style="float:right;">generated on 2022-01-07 21:58</div>
 </div>
 </body>
 </html>
