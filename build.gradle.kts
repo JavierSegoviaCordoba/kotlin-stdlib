@@ -4,7 +4,7 @@ plugins {
     `javiersc-changelog`
     `javiersc-code-analysis`
     `javiersc-code-coverage`
-    `javiersc-code-formatter`
+//    `javiersc-code-formatter`
     `javiersc-docs`
     `javiersc-nexus`
     `javiersc-readme-badges-generator`

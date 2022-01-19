@@ -2,6 +2,11 @@ plugins {
     `kotlin-multiplatform`
     `javiersc-kotlin-config`
     `javiersc-publish`
+    id("com.diffplug.spotless")
+}
+
+tasks.named("spotlessCheck") {
+    notCompatibleWithConfigurationCache("https://github.com/diffplug/spotless/issues/987")
 }
 
 kotlin {
