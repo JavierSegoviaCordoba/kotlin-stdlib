@@ -512,10 +512,10 @@
       "version": "4.11"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
+      "ideaName": "Kotlin/Native 1.6.10 - linux | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - linux | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - builtin | linux_x64"
+      "artifactId": "Kotlin/Native 1.6.10 - linux | linux_x64"
     },
     {
       "ideaName": "Kotlin/Native 1.6.10 - zlib | linux_x64",
@@ -536,10 +536,10 @@
       "artifactId": "Kotlin/Native 1.6.10 - iconv | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - linux | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - linux | linux_x64",
+      "ideaName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - linux | linux_x64"
+      "artifactId": "Kotlin/Native 1.6.10 - builtin | linux_x64"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.1.0",
@@ -724,12 +724,6 @@
       "artifactId": "Kotlin/Native 1.6.10 - opengl32 | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - builtin | mingw_x64"
-    },
-    {
       "ideaName": "Kotlin/Native 1.6.10 - zlib | mingw_x64",
       "gradleName": "Kotlin/Native 1.6.10 - zlib | mingw_x64",
       "unresolved": false,
@@ -758,6 +752,12 @@
       "gradleName": "Kotlin/Native 1.6.10 - iconv | mingw_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.10 - iconv | mingw_x64"
+    },
+    {
+      "ideaName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.10 - builtin | mingw_x64"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-mingwx64:klib:5.1.0",

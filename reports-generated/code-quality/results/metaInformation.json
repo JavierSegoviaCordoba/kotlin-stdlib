@@ -1,13 +1,13 @@
 {
-  "total": 3,
+  "total": 2,
   "tools inspection": {
-    "Code Inspection": 3
+    "Code Inspection": 2
   },
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib",
-        "revisionId": "f3e02bfd192b42d23e4c411e61830626ccba2d6b",
+        "revisionId": "a6167045f0925715217815d7aba4e43d59ae927a",
         "branch": "main"
       }
     },
