@@ -15,6 +15,27 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
+                  "uri": "buildSrc/build.gradle.kts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startColumn": 5,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "This comment contains 'TODO:' that has been defined as forbidden in detekt."
+          },
+          "ruleId": "detekt.style.ForbiddenComment"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
                   "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt",
                   "uriBaseId": "%SRCROOT%"
                 },
@@ -134,27 +155,6 @@
             "text": "Private property i is unused."
           },
           "ruleId": "detekt.style.UnusedPrivateMember"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "buildSrc/build.gradle.kts",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startColumn": 5,
-                  "startLine": 12
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This comment contains 'TODO:' that has been defined as forbidden in detekt."
-          },
-          "ruleId": "detekt.style.ForbiddenComment"
         }
       ],
       "tool": {
