@@ -496,16 +496,16 @@
       "version": "4.11"
     },
     {
+      "ideaName": "Kotlin/Native 1.6.21 - posix | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - posix | linux_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - posix | linux_x64"
+    },
+    {
       "ideaName": "Kotlin/Native 1.6.21 - builtin | linux_x64",
       "gradleName": "Kotlin/Native 1.6.21 - builtin | linux_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.21 - builtin | linux_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.21 - linux | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - linux | linux_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - linux | linux_x64"
     },
     {
       "ideaName": "Kotlin/Native 1.6.21 - iconv | linux_x64",
@@ -514,16 +514,16 @@
       "artifactId": "Kotlin/Native 1.6.21 - iconv | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.21 - posix | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - posix | linux_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - posix | linux_x64"
-    },
-    {
       "ideaName": "Kotlin/Native 1.6.21 - zlib | linux_x64",
       "gradleName": "Kotlin/Native 1.6.21 - zlib | linux_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.21 - zlib | linux_x64"
+    },
+    {
+      "ideaName": "Kotlin/Native 1.6.21 - linux | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - linux | linux_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - linux | linux_x64"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.3.0",
@@ -702,28 +702,16 @@
       "version": "0.17.0"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - builtin | mingw_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.21 - windows | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - windows | mingw_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - windows | mingw_x64"
-    },
-    {
       "ideaName": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64",
       "gradleName": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+      "ideaName": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - iconv | mingw_x64"
+      "artifactId": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64"
     },
     {
       "ideaName": "Kotlin/Native 1.6.21 - posix | mingw_x64",
@@ -732,16 +720,28 @@
       "artifactId": "Kotlin/Native 1.6.21 - posix | mingw_x64"
     },
     {
+      "ideaName": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - builtin | mingw_x64"
+    },
+    {
+      "ideaName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - iconv | mingw_x64"
+    },
+    {
       "ideaName": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
       "gradleName": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.21 - zlib | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
+      "ideaName": "Kotlin/Native 1.6.21 - windows | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - windows | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64"
+      "artifactId": "Kotlin/Native 1.6.21 - windows | mingw_x64"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-mingwx64:klib:5.3.0",
@@ -1192,14 +1192,6 @@
       "version": "0.1.0-rc.43"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.9.0",
-      "gradleName": "org.jetbrains.kotlinx:binary-compatibility-validator:0.9.0",
-      "unresolved": false,
-      "groupId": "org.jetbrains.kotlinx",
-      "artifactId": "binary-compatibility-validator",
-      "version": "0.9.0"
-    },
-    {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
       "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
       "unresolved": false,
@@ -1222,6 +1214,14 @@
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-gradle-plugin",
       "version": "1.6.21"
+    },
+    {
+      "ideaName": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
+      "gradleName": "org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
+      "unresolved": false,
+      "groupId": "org.jetbrains.kotlinx",
+      "artifactId": "binary-compatibility-validator",
+      "version": "0.10.0"
     },
     {
       "ideaName": "Gradle: com.javiersc.gradle-plugins:kotlin-config:0.1.0-rc.43",
@@ -1496,38 +1496,6 @@
       "version": "1.6.21"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
-      "gradleName": "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
-      "unresolved": false,
-      "groupId": "org.jetbrains.kotlinx",
-      "artifactId": "kotlinx-metadata-jvm",
-      "version": "0.4.2"
-    },
-    {
-      "ideaName": "Gradle: org.ow2.asm:asm-tree:9.2",
-      "gradleName": "org.ow2.asm:asm-tree:9.2",
-      "unresolved": false,
-      "groupId": "org.ow2.asm",
-      "artifactId": "asm-tree",
-      "version": "9.2"
-    },
-    {
-      "ideaName": "Gradle: org.ow2.asm:asm:9.2",
-      "gradleName": "org.ow2.asm:asm:9.2",
-      "unresolved": false,
-      "groupId": "org.ow2.asm",
-      "artifactId": "asm",
-      "version": "9.2"
-    },
-    {
-      "ideaName": "Gradle: com.googlecode.java-diff-utils:diffutils:1.3.0",
-      "gradleName": "com.googlecode.java-diff-utils:diffutils:1.3.0",
-      "unresolved": false,
-      "groupId": "com.googlecode.java-diff-utils",
-      "artifactId": "diffutils",
-      "version": "1.3.0"
-    },
-    {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-compiler-runner:1.6.21",
       "gradleName": "org.jetbrains.kotlin:kotlin-compiler-runner:1.6.21",
       "unresolved": false,
@@ -1630,6 +1598,38 @@
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-scripting-compiler-impl-embeddable",
       "version": "1.6.21"
+    },
+    {
+      "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
+      "gradleName": "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
+      "unresolved": false,
+      "groupId": "org.jetbrains.kotlinx",
+      "artifactId": "kotlinx-metadata-jvm",
+      "version": "0.4.2"
+    },
+    {
+      "ideaName": "Gradle: org.ow2.asm:asm-tree:9.2",
+      "gradleName": "org.ow2.asm:asm-tree:9.2",
+      "unresolved": false,
+      "groupId": "org.ow2.asm",
+      "artifactId": "asm-tree",
+      "version": "9.2"
+    },
+    {
+      "ideaName": "Gradle: org.ow2.asm:asm:9.2",
+      "gradleName": "org.ow2.asm:asm:9.2",
+      "unresolved": false,
+      "groupId": "org.ow2.asm",
+      "artifactId": "asm",
+      "version": "9.2"
+    },
+    {
+      "ideaName": "Gradle: com.googlecode.java-diff-utils:diffutils:1.3.0",
+      "gradleName": "com.googlecode.java-diff-utils:diffutils:1.3.0",
+      "unresolved": false,
+      "groupId": "com.googlecode.java-diff-utils",
+      "artifactId": "diffutils",
+      "version": "1.3.0"
     },
     {
       "ideaName": "Gradle: com.adarshr:gradle-test-logger-plugin:3.2.0",
