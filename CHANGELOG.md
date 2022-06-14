@@ -12,6 +12,12 @@
 
 ### Fixed
 
+### Updated
+
+## [0.1.0-alpha.5] - 2022-06-14
+
+### Fixed
+
 - `String.ansiColor` function just color the first line in multiline strings
 
 ### Updated
