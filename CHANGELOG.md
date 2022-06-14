@@ -12,6 +12,8 @@
 
 ### Fixed
 
+- `String.ansiColor` function just color the first line in multiline strings
+
 ### Updated
 
 - `org.jetbrains.kotlinx:kotlinx-coroutines-core -> 1.6.2`
