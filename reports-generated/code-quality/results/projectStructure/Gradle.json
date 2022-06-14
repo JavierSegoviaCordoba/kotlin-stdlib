@@ -496,6 +496,24 @@
       "version": "4.11"
     },
     {
+      "ideaName": "Kotlin/Native 1.6.21 - zlib | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - zlib | linux_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - zlib | linux_x64"
+    },
+    {
+      "ideaName": "Kotlin/Native 1.6.21 - iconv | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - iconv | linux_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - iconv | linux_x64"
+    },
+    {
+      "ideaName": "Kotlin/Native 1.6.21 - linux | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - linux | linux_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - linux | linux_x64"
+    },
+    {
       "ideaName": "Kotlin/Native 1.6.21 - posix | linux_x64",
       "gradleName": "Kotlin/Native 1.6.21 - posix | linux_x64",
       "unresolved": false,
@@ -506,24 +524,6 @@
       "gradleName": "Kotlin/Native 1.6.21 - builtin | linux_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.21 - builtin | linux_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.21 - iconv | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - iconv | linux_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - iconv | linux_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.21 - zlib | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - zlib | linux_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - zlib | linux_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.21 - linux | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - linux | linux_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - linux | linux_x64"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.3.0",
@@ -708,6 +708,18 @@
       "artifactId": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64"
     },
     {
+      "ideaName": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - zlib | mingw_x64"
+    },
+    {
+      "ideaName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.21 - iconv | mingw_x64"
+    },
+    {
       "ideaName": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
       "gradleName": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
       "unresolved": false,
@@ -724,18 +736,6 @@
       "gradleName": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.21 - builtin | mingw_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - iconv | mingw_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.21 - zlib | mingw_x64"
     },
     {
       "ideaName": "Kotlin/Native 1.6.21 - windows | mingw_x64",

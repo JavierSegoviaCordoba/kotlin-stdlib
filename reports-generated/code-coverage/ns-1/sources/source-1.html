@@ -864,96 +864,97 @@ Current scope:     <a href="../../index.html">all classes</a>
 <pre>
 <div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.javiersc.kotlin.stdlib
 <i class="no-highlight">2</i>&nbsp;
-<i class="no-highlight">3</i>&nbsp;public inline fun String.ansiColor(color: AnsiColor): String = &quot;${color}$this${AnsiColor.Reset}&quot;
-<i class="no-highlight">4</i>&nbsp;
-<b class="nc"><i class="no-highlight">5</i>&nbsp;public abstract class AnsiColor {</b>
-<i class="no-highlight">6</i>&nbsp;
-<i class="no-highlight">7</i>&nbsp;    public abstract val value: String
-<i class="no-highlight">8</i>&nbsp;
-<b class="nc"><i class="no-highlight">9</i>&nbsp;    override fun toString(): String = value</b>
-<i class="no-highlight">10</i>&nbsp;
-<i class="no-highlight">11</i>&nbsp;    public object Reset : AnsiColor() {
-<b class="nc"><i class="no-highlight">12</i>&nbsp;        override val value: String = &quot;\u001B[0m&quot;</b>
-<i class="no-highlight">13</i>&nbsp;    }
-<i class="no-highlight">14</i>&nbsp;
-<b class="nc"><i class="no-highlight">15</i>&nbsp;    public object Foreground {</b>
-<i class="no-highlight">16</i>&nbsp;        public object Black : AnsiColor() {
-<b class="nc"><i class="no-highlight">17</i>&nbsp;            override val value: String = &quot;\u001B[30m&quot;</b>
-<i class="no-highlight">18</i>&nbsp;        }
-<i class="no-highlight">19</i>&nbsp;        public object Red : AnsiColor() {
-<b class="nc"><i class="no-highlight">20</i>&nbsp;            override val value: String = &quot;\u001B[31m&quot;</b>
-<i class="no-highlight">21</i>&nbsp;        }
-<i class="no-highlight">22</i>&nbsp;        public object Green : AnsiColor() {
-<b class="nc"><i class="no-highlight">23</i>&nbsp;            override val value: String = &quot;\u001B[32m&quot;</b>
-<i class="no-highlight">24</i>&nbsp;        }
-<i class="no-highlight">25</i>&nbsp;        public object Yellow : AnsiColor() {
-<b class="nc"><i class="no-highlight">26</i>&nbsp;            override val value: String = &quot;\u001B[33m&quot;</b>
-<i class="no-highlight">27</i>&nbsp;        }
-<i class="no-highlight">28</i>&nbsp;        public object Blue : AnsiColor() {
-<b class="nc"><i class="no-highlight">29</i>&nbsp;            override val value: String = &quot;\u001B[34m&quot;</b>
-<i class="no-highlight">30</i>&nbsp;        }
-<i class="no-highlight">31</i>&nbsp;        public object Purple : AnsiColor() {
-<b class="nc"><i class="no-highlight">32</i>&nbsp;            override val value: String = &quot;\u001B[35m&quot;</b>
-<i class="no-highlight">33</i>&nbsp;        }
-<i class="no-highlight">34</i>&nbsp;        public object Cyan : AnsiColor() {
-<b class="nc"><i class="no-highlight">35</i>&nbsp;            override val value: String = &quot;\u001B[36m&quot;</b>
-<i class="no-highlight">36</i>&nbsp;        }
-<i class="no-highlight">37</i>&nbsp;        public object White : AnsiColor() {
-<b class="nc"><i class="no-highlight">38</i>&nbsp;            override val value: String = &quot;\u001B[37m&quot;</b>
-<i class="no-highlight">39</i>&nbsp;        }
-<i class="no-highlight">40</i>&nbsp;        public object BrightBlack : AnsiColor() {
-<b class="nc"><i class="no-highlight">41</i>&nbsp;            override val value: String = &quot;\u001B[90m&quot;</b>
-<i class="no-highlight">42</i>&nbsp;        }
-<i class="no-highlight">43</i>&nbsp;        public object BrightRed : AnsiColor() {
-<b class="nc"><i class="no-highlight">44</i>&nbsp;            override val value: String = &quot;\u001B[91m&quot;</b>
-<i class="no-highlight">45</i>&nbsp;        }
-<i class="no-highlight">46</i>&nbsp;        public object BrightGreen : AnsiColor() {
-<b class="nc"><i class="no-highlight">47</i>&nbsp;            override val value: String = &quot;\u001B[92m&quot;</b>
-<i class="no-highlight">48</i>&nbsp;        }
-<i class="no-highlight">49</i>&nbsp;        public object BrightYellow : AnsiColor() {
-<b class="nc"><i class="no-highlight">50</i>&nbsp;            override val value: String = &quot;\u001B[93m&quot;</b>
-<i class="no-highlight">51</i>&nbsp;        }
-<i class="no-highlight">52</i>&nbsp;        public object BrightBlue : AnsiColor() {
-<b class="nc"><i class="no-highlight">53</i>&nbsp;            override val value: String = &quot;\u001B[94m&quot;</b>
-<i class="no-highlight">54</i>&nbsp;        }
-<i class="no-highlight">55</i>&nbsp;        public object BrightPurple : AnsiColor() {
-<b class="nc"><i class="no-highlight">56</i>&nbsp;            override val value: String = &quot;\u001B[95m&quot;</b>
-<i class="no-highlight">57</i>&nbsp;        }
-<i class="no-highlight">58</i>&nbsp;        public object BrightCyan : AnsiColor() {
-<b class="nc"><i class="no-highlight">59</i>&nbsp;            override val value: String = &quot;\u001B[96m&quot;</b>
-<i class="no-highlight">60</i>&nbsp;        }
-<i class="no-highlight">61</i>&nbsp;        public object BrightWhite : AnsiColor() {
-<b class="nc"><i class="no-highlight">62</i>&nbsp;            override val value: String = &quot;\u001B[97m&quot;</b>
-<i class="no-highlight">63</i>&nbsp;        }
-<i class="no-highlight">64</i>&nbsp;    }
-<i class="no-highlight">65</i>&nbsp;
-<b class="nc"><i class="no-highlight">66</i>&nbsp;    public object Background {</b>
-<i class="no-highlight">67</i>&nbsp;        public object Black : AnsiColor() {
-<b class="nc"><i class="no-highlight">68</i>&nbsp;            override val value: String = &quot;\u001B[40m&quot;</b>
-<i class="no-highlight">69</i>&nbsp;        }
-<i class="no-highlight">70</i>&nbsp;        public object Red : AnsiColor() {
-<b class="nc"><i class="no-highlight">71</i>&nbsp;            override val value: String = &quot;\u001B[41m&quot;</b>
-<i class="no-highlight">72</i>&nbsp;        }
-<i class="no-highlight">73</i>&nbsp;        public object Green : AnsiColor() {
-<b class="nc"><i class="no-highlight">74</i>&nbsp;            override val value: String = &quot;\u001B[42m&quot;</b>
-<i class="no-highlight">75</i>&nbsp;        }
-<i class="no-highlight">76</i>&nbsp;        public object Yellow : AnsiColor() {
-<b class="nc"><i class="no-highlight">77</i>&nbsp;            override val value: String = &quot;\u001b[43m&quot;</b>
-<i class="no-highlight">78</i>&nbsp;        }
-<i class="no-highlight">79</i>&nbsp;        public object Blue : AnsiColor() {
-<b class="nc"><i class="no-highlight">80</i>&nbsp;            override val value: String = &quot;\u001B[44m&quot;</b>
-<i class="no-highlight">81</i>&nbsp;        }
-<i class="no-highlight">82</i>&nbsp;        public object Purple : AnsiColor() {
-<b class="nc"><i class="no-highlight">83</i>&nbsp;            override val value: String = &quot;\u001B[45m&quot;</b>
-<i class="no-highlight">84</i>&nbsp;        }
-<i class="no-highlight">85</i>&nbsp;        public object Cyan : AnsiColor() {
-<b class="nc"><i class="no-highlight">86</i>&nbsp;            override val value: String = &quot;\u001B[46m&quot;</b>
-<i class="no-highlight">87</i>&nbsp;        }
-<i class="no-highlight">88</i>&nbsp;        public object Gray : AnsiColor() {
-<b class="nc"><i class="no-highlight">89</i>&nbsp;            override val value: String = &quot;\u001B[47m&quot;</b>
-<i class="no-highlight">90</i>&nbsp;        }
-<i class="no-highlight">91</i>&nbsp;    }
-<i class="no-highlight">92</i>&nbsp;}
+<i class="no-highlight">3</i>&nbsp;public inline fun String.ansiColor(color: AnsiColor): String =
+<i class="no-highlight">4</i>&nbsp;    lines().joinToString(&quot;\n&quot;) { line -&gt; &quot;${color}$line${AnsiColor.Reset}&quot; }
+<i class="no-highlight">5</i>&nbsp;
+<b class="nc"><i class="no-highlight">6</i>&nbsp;public abstract class AnsiColor {</b>
+<i class="no-highlight">7</i>&nbsp;
+<i class="no-highlight">8</i>&nbsp;    public abstract val value: String
+<i class="no-highlight">9</i>&nbsp;
+<b class="nc"><i class="no-highlight">10</i>&nbsp;    override fun toString(): String = value</b>
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;    public object Reset : AnsiColor() {
+<b class="nc"><i class="no-highlight">13</i>&nbsp;        override val value: String = &quot;\u001B[0m&quot;</b>
+<i class="no-highlight">14</i>&nbsp;    }
+<i class="no-highlight">15</i>&nbsp;
+<b class="nc"><i class="no-highlight">16</i>&nbsp;    public object Foreground {</b>
+<i class="no-highlight">17</i>&nbsp;        public object Black : AnsiColor() {
+<b class="nc"><i class="no-highlight">18</i>&nbsp;            override val value: String = &quot;\u001B[30m&quot;</b>
+<i class="no-highlight">19</i>&nbsp;        }
+<i class="no-highlight">20</i>&nbsp;        public object Red : AnsiColor() {
+<b class="nc"><i class="no-highlight">21</i>&nbsp;            override val value: String = &quot;\u001B[31m&quot;</b>
+<i class="no-highlight">22</i>&nbsp;        }
+<i class="no-highlight">23</i>&nbsp;        public object Green : AnsiColor() {
+<b class="nc"><i class="no-highlight">24</i>&nbsp;            override val value: String = &quot;\u001B[32m&quot;</b>
+<i class="no-highlight">25</i>&nbsp;        }
+<i class="no-highlight">26</i>&nbsp;        public object Yellow : AnsiColor() {
+<b class="nc"><i class="no-highlight">27</i>&nbsp;            override val value: String = &quot;\u001B[33m&quot;</b>
+<i class="no-highlight">28</i>&nbsp;        }
+<i class="no-highlight">29</i>&nbsp;        public object Blue : AnsiColor() {
+<b class="nc"><i class="no-highlight">30</i>&nbsp;            override val value: String = &quot;\u001B[34m&quot;</b>
+<i class="no-highlight">31</i>&nbsp;        }
+<i class="no-highlight">32</i>&nbsp;        public object Purple : AnsiColor() {
+<b class="nc"><i class="no-highlight">33</i>&nbsp;            override val value: String = &quot;\u001B[35m&quot;</b>
+<i class="no-highlight">34</i>&nbsp;        }
+<i class="no-highlight">35</i>&nbsp;        public object Cyan : AnsiColor() {
+<b class="nc"><i class="no-highlight">36</i>&nbsp;            override val value: String = &quot;\u001B[36m&quot;</b>
+<i class="no-highlight">37</i>&nbsp;        }
+<i class="no-highlight">38</i>&nbsp;        public object White : AnsiColor() {
+<b class="nc"><i class="no-highlight">39</i>&nbsp;            override val value: String = &quot;\u001B[37m&quot;</b>
+<i class="no-highlight">40</i>&nbsp;        }
+<i class="no-highlight">41</i>&nbsp;        public object BrightBlack : AnsiColor() {
+<b class="nc"><i class="no-highlight">42</i>&nbsp;            override val value: String = &quot;\u001B[90m&quot;</b>
+<i class="no-highlight">43</i>&nbsp;        }
+<i class="no-highlight">44</i>&nbsp;        public object BrightRed : AnsiColor() {
+<b class="nc"><i class="no-highlight">45</i>&nbsp;            override val value: String = &quot;\u001B[91m&quot;</b>
+<i class="no-highlight">46</i>&nbsp;        }
+<i class="no-highlight">47</i>&nbsp;        public object BrightGreen : AnsiColor() {
+<b class="nc"><i class="no-highlight">48</i>&nbsp;            override val value: String = &quot;\u001B[92m&quot;</b>
+<i class="no-highlight">49</i>&nbsp;        }
+<i class="no-highlight">50</i>&nbsp;        public object BrightYellow : AnsiColor() {
+<b class="nc"><i class="no-highlight">51</i>&nbsp;            override val value: String = &quot;\u001B[93m&quot;</b>
+<i class="no-highlight">52</i>&nbsp;        }
+<i class="no-highlight">53</i>&nbsp;        public object BrightBlue : AnsiColor() {
+<b class="nc"><i class="no-highlight">54</i>&nbsp;            override val value: String = &quot;\u001B[94m&quot;</b>
+<i class="no-highlight">55</i>&nbsp;        }
+<i class="no-highlight">56</i>&nbsp;        public object BrightPurple : AnsiColor() {
+<b class="nc"><i class="no-highlight">57</i>&nbsp;            override val value: String = &quot;\u001B[95m&quot;</b>
+<i class="no-highlight">58</i>&nbsp;        }
+<i class="no-highlight">59</i>&nbsp;        public object BrightCyan : AnsiColor() {
+<b class="nc"><i class="no-highlight">60</i>&nbsp;            override val value: String = &quot;\u001B[96m&quot;</b>
+<i class="no-highlight">61</i>&nbsp;        }
+<i class="no-highlight">62</i>&nbsp;        public object BrightWhite : AnsiColor() {
+<b class="nc"><i class="no-highlight">63</i>&nbsp;            override val value: String = &quot;\u001B[97m&quot;</b>
+<i class="no-highlight">64</i>&nbsp;        }
+<i class="no-highlight">65</i>&nbsp;    }
+<i class="no-highlight">66</i>&nbsp;
+<b class="nc"><i class="no-highlight">67</i>&nbsp;    public object Background {</b>
+<i class="no-highlight">68</i>&nbsp;        public object Black : AnsiColor() {
+<b class="nc"><i class="no-highlight">69</i>&nbsp;            override val value: String = &quot;\u001B[40m&quot;</b>
+<i class="no-highlight">70</i>&nbsp;        }
+<i class="no-highlight">71</i>&nbsp;        public object Red : AnsiColor() {
+<b class="nc"><i class="no-highlight">72</i>&nbsp;            override val value: String = &quot;\u001B[41m&quot;</b>
+<i class="no-highlight">73</i>&nbsp;        }
+<i class="no-highlight">74</i>&nbsp;        public object Green : AnsiColor() {
+<b class="nc"><i class="no-highlight">75</i>&nbsp;            override val value: String = &quot;\u001B[42m&quot;</b>
+<i class="no-highlight">76</i>&nbsp;        }
+<i class="no-highlight">77</i>&nbsp;        public object Yellow : AnsiColor() {
+<b class="nc"><i class="no-highlight">78</i>&nbsp;            override val value: String = &quot;\u001b[43m&quot;</b>
+<i class="no-highlight">79</i>&nbsp;        }
+<i class="no-highlight">80</i>&nbsp;        public object Blue : AnsiColor() {
+<b class="nc"><i class="no-highlight">81</i>&nbsp;            override val value: String = &quot;\u001B[44m&quot;</b>
+<i class="no-highlight">82</i>&nbsp;        }
+<i class="no-highlight">83</i>&nbsp;        public object Purple : AnsiColor() {
+<b class="nc"><i class="no-highlight">84</i>&nbsp;            override val value: String = &quot;\u001B[45m&quot;</b>
+<i class="no-highlight">85</i>&nbsp;        }
+<i class="no-highlight">86</i>&nbsp;        public object Cyan : AnsiColor() {
+<b class="nc"><i class="no-highlight">87</i>&nbsp;            override val value: String = &quot;\u001B[46m&quot;</b>
+<i class="no-highlight">88</i>&nbsp;        }
+<i class="no-highlight">89</i>&nbsp;        public object Gray : AnsiColor() {
+<b class="nc"><i class="no-highlight">90</i>&nbsp;            override val value: String = &quot;\u001B[47m&quot;</b>
+<i class="no-highlight">91</i>&nbsp;        }
+<i class="no-highlight">92</i>&nbsp;    }
+<i class="no-highlight">93</i>&nbsp;}
 </div>
 </pre>
 </div>
@@ -980,7 +981,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-05-18 12:50</div>
+    <div style="float:right;">generated on 2022-06-14 10:37</div>
 </div>
 </body>
 </html>
