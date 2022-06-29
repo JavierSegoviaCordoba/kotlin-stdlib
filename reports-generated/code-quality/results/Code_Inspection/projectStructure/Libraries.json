@@ -30,9 +30,9 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
+      "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.1",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/binary-compatibility-validator/0.10.0/ccda5bf2aa3141f66b7f78b91afbf2e3678638fa/binary-compatibility-validator-0.10.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/binary-compatibility-validator/0.10.1/15e3b53bd0f19685e27b38a97793b94c739032b3/binary-compatibility-validator-0.10.1.jar!/"
       ]
     },
     {

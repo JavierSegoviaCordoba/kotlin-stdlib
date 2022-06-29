@@ -2471,7 +2471,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
+          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.1",
           "type": "Library"
         },
         {
@@ -3142,7 +3142,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
+          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.1",
           "type": "Library"
         },
         {
