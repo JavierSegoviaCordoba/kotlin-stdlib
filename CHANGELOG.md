@@ -4,8 +4,6 @@
 
 ### Added
 
-- `CharSequence.notContain: Boolean` functions
-
 ### Changed
 
 ### Deprecated
@@ -13,6 +11,14 @@
 ### Removed
 
 ### Fixed
+
+### Updated
+
+## [0.1.0-alpha.6] - 2022-06-29
+
+### Added
+
+- `CharSequence.notContain: Boolean` functions
 
 ### Updated
 
