@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalContracts::class)
+
 package com.javiersc.kotlin.stdlib
 
 import kotlin.contracts.ExperimentalContracts
@@ -9,32 +11,35 @@ import kotlin.contracts.contract
 public inline fun String.remove(value: String, ignoreCase: Boolean = false): String =
     replace(oldValue = value, newValue = "", ignoreCase = ignoreCase)
 
-@OptIn(ExperimentalContracts::class)
 public inline fun CharSequence?.isNotNullNorBlank(): Boolean {
-    contract { returns(false) implies (this@isNotNullNorBlank == null) }
+    contract { returns(true) implies (this@isNotNullNorBlank != null) }
 
-    return (this != null) && isNotBlank()
+    return !isNullOrBlank()
 }
 
-@OptIn(ExperimentalContracts::class)
 public inline fun CharSequence?.isNotNullNorEmpty(): Boolean {
-    contract { returns(false) implies (this@isNotNullNorEmpty == null) }
+    contract { returns(true) implies (this@isNotNullNorEmpty != null) }
 
-    return (this != null) && isNotEmpty()
+    return !isNullOrEmpty()
 }
 
-@OptIn(ExperimentalContracts::class)
+public inline fun CharSequence.notContain(
+    other: CharSequence,
+    ignoreCase: Boolean = false,
+): Boolean = !contains(other, ignoreCase)
+
+public inline fun CharSequence.notContain(regex: Regex): Boolean = !contains(regex)
+
 public inline fun String?.isNotNullNorBlank(): Boolean {
-    contract { returns(false) implies (this@isNotNullNorBlank == null) }
+    contract { returns(true) implies (this@isNotNullNorBlank != null) }
 
-    return (this != null) && isNotBlank()
+    return !isNullOrBlank()
 }
 
-@OptIn(ExperimentalContracts::class)
 public inline fun String?.isNotNullNorEmpty(): Boolean {
-    contract { returns(false) implies (this@isNotNullNorEmpty == null) }
+    contract { returns(true) implies (this@isNotNullNorEmpty != null) }
 
-    return (this != null) && isNotEmpty()
+    return !isNullOrEmpty()
 }
 
 public inline val String.Companion.Empty: String

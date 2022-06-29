@@ -4,6 +4,8 @@
 
 ### Added
 
+- `CharSequence.notContain: Boolean` functions
+
 ### Changed
 
 ### Deprecated

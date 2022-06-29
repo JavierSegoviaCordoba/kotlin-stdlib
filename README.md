@@ -8,3 +8,11 @@
 [![Tech debt](https://img.shields.io/sonar/tech_debt/com.javiersc.kotlin:kotlin-stdlib-javiersc?label=Tech%20debt&logo=SonarCloud&logoColor=white&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=com.javiersc.kotlin:kotlin-stdlib-javiersc)
 
 # JavierSC Kotlin stdlib
+
+## Download from MavenCentral
+
+```kotlin
+dependencies {
+    implementation("com.javiersc.kotlin:kotlin-stdlib:$version")
+}
+```
