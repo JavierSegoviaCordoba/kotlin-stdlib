@@ -14,6 +14,10 @@
 
 ### Updated
 
+## [unspecified] - 2022-07-04
+
+- No changes
+
 ## [0.1.0-alpha.6] - 2022-06-29
 
 ### Added
