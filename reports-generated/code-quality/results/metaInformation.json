@@ -4,13 +4,6 @@
     "Code Inspection": 0
   },
   "attributes": {
-    "vcs": {
-      "sarifIdea": {
-        "repositoryUri": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib",
-        "revisionId": "396d6a97b5474707fbb65f581fb2a875eb56378d",
-        "branch": "main"
-      }
-    },
     "deviceId": "200820300000000-cdbb-c86e-58e4-d75fb529ac10"
   }
 }
