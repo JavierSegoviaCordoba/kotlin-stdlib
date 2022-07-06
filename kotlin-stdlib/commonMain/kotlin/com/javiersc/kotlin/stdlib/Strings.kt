@@ -1,15 +1,28 @@
-@file:OptIn(ExperimentalContracts::class)
-
 package com.javiersc.kotlin.stdlib
 
-import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract
+
+public fun String.replace(vararg oldToNewValues: Pair<String, String>): String {
+    var result = this
+    for ((oldValue, newValue) in oldToNewValues) {
+        result = result.replace(oldValue, newValue)
+    }
+    return result
+}
 
 /**
  * Returns a new string obtained by removing all occurrences of the [value] substring in this string
  */
 public inline fun String.remove(value: String, ignoreCase: Boolean = false): String =
     replace(oldValue = value, newValue = "", ignoreCase = ignoreCase)
+
+public fun String.remove(vararg values: String): String {
+    var result = this
+    for (value in values) {
+        result = result.replace(value, "")
+    }
+    return result
+}
 
 public inline fun CharSequence?.isNotNullNorBlank(): Boolean {
     contract { returns(true) implies (this@isNotNullNorBlank != null) }

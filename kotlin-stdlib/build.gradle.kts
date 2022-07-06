@@ -6,6 +6,13 @@ hubdle {
     config {
         explicitApi()
         publishing()
+        languageSettings {
+            rawConfig {
+                languageSettings {
+                    optIn("kotlin.contracts.ExperimentalContracts")
+                }
+            }
+        }
     }
     kotlin {
         multiplatform {

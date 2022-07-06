@@ -168,7 +168,9 @@ public final class com/javiersc/kotlin/stdlib/StringsKt {
 	public static final fun notContain (Ljava/lang/CharSequence;Lkotlin/text/Regex;)Z
 	public static synthetic fun notContain$default (Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 	public static final fun remove (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+	public static final fun remove (Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
 	public static synthetic fun remove$default (Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
 	public static final fun removeDuplicateEmptyLines (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun replace (Ljava/lang/String;[Lkotlin/Pair;)Ljava/lang/String;
 }
 

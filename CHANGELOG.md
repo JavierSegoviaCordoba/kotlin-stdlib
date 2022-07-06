@@ -4,6 +4,9 @@
 
 ### Added
 
+- `String.replace(vararg oldToNewValues: Pair<String, String>): String`
+- `String.remove(vararg values: String): String`
+
 ### Changed
 
 ### Deprecated

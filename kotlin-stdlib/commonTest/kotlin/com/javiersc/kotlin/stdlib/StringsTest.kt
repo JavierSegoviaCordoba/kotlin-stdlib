@@ -12,6 +12,12 @@ class StringsTest {
     fun string_remove() {
         "Hello, World".remove("Hello, ").shouldBe("World")
         "Hello, World".remove("bla").shouldBe("Hello, World")
+        "Hello, World".remove("llo", "rld").shouldBe("He, Wo")
+    }
+
+    @Test
+    fun string_replace() {
+        "Hello, World".replace("ello" to "ELLO", "orld" to "ORLD").shouldBe("HELLO, WORLD")
     }
 
     @Test
