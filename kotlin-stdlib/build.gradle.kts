@@ -9,6 +9,10 @@ hubdle {
     }
     kotlin {
         multiplatform {
+            features {
+                extendedStdlib(enabled = false)
+            }
+
             common()
 
             iosArm64()
