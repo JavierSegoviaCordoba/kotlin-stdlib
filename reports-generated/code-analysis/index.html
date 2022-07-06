@@ -157,8 +157,8 @@
 
 <div>
   <ul>
-    <li>46 number of properties</li>
-    <li>35 number of functions</li>
+    <li>48 number of properties</li>
+    <li>38 number of functions</li>
     <li>3 number of classes</li>
     <li>2 number of packages</li>
     <li>8 number of kt files</li>
@@ -170,22 +170,35 @@
 
 <div>
   <ul>
-    <li>527 lines of code (loc)</li>
-    <li>410 source lines of code (sloc)</li>
-    <li>315 logical lines of code (lloc)</li>
+    <li>553 lines of code (loc)</li>
+    <li>434 source lines of code (sloc)</li>
+    <li>332 logical lines of code (lloc)</li>
     <li>31 comment lines of code (cloc)</li>
-    <li>65 cyclomatic complexity (mcc)</li>
-    <li>46 cognitive complexity</li>
-    <li>6 number of total code smells</li>
+    <li>70 cyclomatic complexity (mcc)</li>
+    <li>48 cognitive complexity</li>
+    <li>7 number of total code smells</li>
     <li>7% comment source ratio</li>
-    <li>206 mcc per 1,000 lloc</li>
-    <li>19 code smells per 1,000 lloc</li>
+    <li>210 mcc per 1,000 lloc</li>
+    <li>21 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 6
+<div>Total: 7
+  <h3>complexity: 1</h3>
+  <details id="TooManyFunctions" open="open">
+    <summary class="rule-container"><span class="rule">TooManyFunctions: 1 </span><span class="description">Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage too many things at once. Extract functionality which clearly belongs together.</span></summary>
+    <ul>
+      <li><span class="location">kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt:1:1</span><span class="message">File '/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt' with '11' functions detected. Defined threshold inside files is set to '11'</span>
+        <pre><code><span class="lineno">   1 </span><span class="error">package com.javiersc.kotlin.stdlib</span>
+<span class="lineno">   2 </span>
+<span class="lineno">   3 </span>import kotlin.contracts.contract
+<span class="lineno">   4 </span>
+</code></pre>
+      </li>
+    </ul>
+  </details>
   <h3>style: 6</h3>
   <details id="ReturnCount" open="open">
     <summary class="rule-container"><span class="rule">ReturnCount: 2 </span><span class="description">Restrict the number of return statements in methods.</span></summary>
@@ -265,7 +278,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.20.0</a> on 2022-07-06 21:58:45 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.20.0</a> on 2022-07-06 23:30:51 UTC.
 
 </body>
 </html>

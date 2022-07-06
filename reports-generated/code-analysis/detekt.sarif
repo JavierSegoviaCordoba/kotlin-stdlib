@@ -15,6 +15,27 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
+                  "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startColumn": 1,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "File '/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Strings.kt' with '11' functions detected. Defined threshold inside files is set to '11'"
+          },
+          "ruleId": "detekt.complexity.TooManyFunctions"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
                   "uri": "kotlin-stdlib/commonMain/kotlin/com/javiersc/kotlin/stdlib/Collections.kt",
                   "uriBaseId": "%SRCROOT%"
                 },
