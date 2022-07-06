@@ -56,7 +56,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -83,7 +83,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -194,7 +194,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -221,7 +221,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -332,7 +332,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -359,7 +359,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -482,7 +482,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
           "type": "Library"
         }
       ]
@@ -537,7 +537,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
           "type": "Library"
         },
         {
@@ -608,15 +608,15 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
           "type": "Library"
         },
         {
@@ -663,11 +663,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
           "type": "Library"
         },
         {
@@ -679,7 +679,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
           "type": "Library"
         },
         {
@@ -758,7 +758,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -766,23 +766,23 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - linux | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | linux_x64",
           "type": "Library"
         }
       ]
@@ -805,7 +805,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -821,23 +821,23 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - linux | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | linux_x64",
           "type": "Library"
         },
         {
@@ -940,7 +940,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -967,7 +967,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1078,7 +1078,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1105,7 +1105,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1216,7 +1216,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1224,31 +1224,31 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
           "type": "Library"
         }
       ]
@@ -1271,7 +1271,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1287,31 +1287,31 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
           "type": "Library"
         },
         {
@@ -1414,7 +1414,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1441,7 +1441,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1552,7 +1552,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1579,7 +1579,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1690,7 +1690,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1717,7 +1717,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1828,7 +1828,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1855,7 +1855,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1966,7 +1966,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1993,7 +1993,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2104,7 +2104,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2131,7 +2131,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2248,7 +2248,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
           "type": "Library"
         }
       ]
@@ -2281,7 +2281,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
           "type": "Library"
         },
         {
