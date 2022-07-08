@@ -2,10 +2,10 @@
   "gradleJvm": "#JAVA_HOME",
   "libraries": [
     {
-      "ideaName": "Kotlin/Native 1.7.0 - stdlib",
-      "gradleName": "Kotlin/Native 1.7.0 - stdlib",
+      "ideaName": "Kotlin/Native 1.7.10 - stdlib",
+      "gradleName": "Kotlin/Native 1.7.10 - stdlib",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - stdlib"
+      "artifactId": "Kotlin/Native 1.7.10 - stdlib"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-iosarm64:klib:5.3.2",
@@ -272,12 +272,12 @@
       "version": "0.17.0"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-js:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-js",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
@@ -360,28 +360,28 @@
       "version": "5.3.2"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-jdk8",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-jdk7",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test:1.6.21",
@@ -504,34 +504,34 @@
       "version": "4.11"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - zlib | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - zlib | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - zlib | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - zlib | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - zlib | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - zlib | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - iconv | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - iconv | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - iconv | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - iconv | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - iconv | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - iconv | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - builtin | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - builtin | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - builtin | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - builtin | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - builtin | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - builtin | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - posix | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - posix | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - posix | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - posix | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - posix | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - posix | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - linux | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - linux | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - linux | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - linux | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - linux | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - linux | linux_x64"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.3.2",
@@ -710,46 +710,46 @@
       "version": "0.17.0"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - zlib | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - zlib | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - zlib | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - zlib | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - windows | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - windows | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - windows | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - windows | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - windows | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - windows | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - iconv | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - iconv | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - iconv | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - iconv | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - builtin | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - builtin | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - builtin | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - builtin | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - posix | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - posix | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - posix | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - posix | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - posix | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - posix | mingw_x64"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core-mingwx64:klib:5.3.2",
@@ -1144,12 +1144,12 @@
       "version": "0.17.0"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-common",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-core:commonMain:5.3.2",
