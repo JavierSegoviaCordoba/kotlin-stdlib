@@ -28,7 +28,7 @@ hubdle {
             jvm()
             js {
                 browser()
-                nodeJs()
+                nodejs()
             }
             linuxX64()
             macosArm64()
