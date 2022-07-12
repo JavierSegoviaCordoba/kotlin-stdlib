@@ -7,11 +7,7 @@ hubdle {
         explicitApi()
         publishing()
         languageSettings {
-            rawConfig {
-                languageSettings {
-                    optIn("kotlin.contracts.ExperimentalContracts")
-                }
-            }
+            experimentalContracts()
         }
     }
     kotlin {
@@ -20,26 +16,64 @@ hubdle {
                 extendedStdlib(enabled = false)
             }
 
-            common()
+            common {
+                main {
+                    dependencies {
+                        implementation(jetbrainsKotlinTest())
+                        implementation(jetbrainsKotlinTestJunit())
+                    }
+                }
+            }
 
+            android()
+
+            darwin()
+
+            ios()
+            iosArm32()
             iosArm64()
             iosSimulatorArm64()
             iosX64()
+
             jvm()
+            jvmAndAndroid()
+
             js {
                 browser()
                 nodejs()
             }
+
+            linux()
+            linuxArm32Hfp()
+            linuxArm64()
+            linuxMips32()
+            linuxMipsel32()
             linuxX64()
+
+            macos()
             macosArm64()
             macosX64()
+
+            mingw()
+            mingwX86()
             mingwX64()
+
+            native()
+
+            tvos()
             tvosArm64()
             tvosSimulatorArm64()
             tvosX64()
+
+            watchos()
+            watchosArm32()
             watchosArm64()
             watchosSimulatorArm64()
             watchosX64()
+            watchosX86()
+
+            wasm()
+            wasm32()
         }
     }
 }

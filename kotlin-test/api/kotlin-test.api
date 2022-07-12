@@ -1,0 +1,95 @@
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreANDROID : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIOS : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIOSARM32 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIOSARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIOSX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreJS : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLINUX : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLINUXARM32HFP : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLINUXARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLINUXMIPS32 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLINUXX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMACOS : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMACOSARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMACOSX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMINGW : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMINGWX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMINGWX86 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreNATIVE : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTVOS : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTVOSARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTVOSX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWASM : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWASM32 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHOS : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHOSARM32 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHOSARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHOSSIMULATORARM64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHOSX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHOSX86 : java/lang/annotation/Annotation {
+}

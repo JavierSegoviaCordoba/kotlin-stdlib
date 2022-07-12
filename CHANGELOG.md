@@ -4,6 +4,8 @@
 
 ### Added
 
+- `kotlin-test` artifact
+
 ### Changed
 
 ### Deprecated
@@ -13,6 +15,8 @@
 ### Fixed
 
 ### Updated
+
+- `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.2.0-alpha.23`
 
 ## [0.1.0-alpha.8] - 2022-07-10
 
