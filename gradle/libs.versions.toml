@@ -1,8 +1,10 @@
 [versions]
-hubdle = "0.2.0-alpha.20"
+android = "7.2.1"
+hubdle = "0.2.0-alpha.23"
 kotlin = "1.7.10"
 
 [libraries]
+android-toolsBuild-gradle = { module = "com.android.tools.build:gradle", version.ref = "android" }
 jetbrains-kotlin-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
