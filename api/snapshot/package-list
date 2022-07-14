@@ -3,5 +3,7 @@ $dokka.linkExtension:html
 
 module:kotlin-stdlib
 com.javiersc.kotlin.stdlib
-module:kotlin-test
+module:kotlin-test-junit
+com.javiersc.kotlin.test
+module:kotlin-test-junit5
 com.javiersc.kotlin.test
