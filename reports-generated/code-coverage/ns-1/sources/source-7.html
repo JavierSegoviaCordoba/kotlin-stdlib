@@ -1,0 +1,184 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > StringsTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.javiersc.kotlin.stdlib</a>
+</div>
+
+<h1>Coverage Summary for Class: StringsTest (com.javiersc.kotlin.stdlib)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">StringsTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (28/28)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (144/144)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.javiersc.kotlin.stdlib
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import io.kotest.matchers.booleans.shouldBeFalse
+<i class="no-highlight">4</i>&nbsp;import io.kotest.matchers.booleans.shouldBeTrue
+<i class="no-highlight">5</i>&nbsp;import io.kotest.matchers.shouldBe
+<i class="no-highlight">6</i>&nbsp;import io.kotest.matchers.string.shouldBeEmpty
+<i class="no-highlight">7</i>&nbsp;import kotlin.test.Test
+<i class="no-highlight">8</i>&nbsp;
+<b class="fc"><i class="no-highlight">9</i>&nbsp;class StringsTest {</b>
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;    @Test
+<i class="no-highlight">12</i>&nbsp;    fun string_remove() {
+<b class="fc"><i class="no-highlight">13</i>&nbsp;        &quot;Hello, World&quot;.remove(&quot;Hello, &quot;).shouldBe(&quot;World&quot;)</b>
+<b class="fc"><i class="no-highlight">14</i>&nbsp;        &quot;Hello, World&quot;.remove(&quot;bla&quot;).shouldBe(&quot;Hello, World&quot;)</b>
+<b class="fc"><i class="no-highlight">15</i>&nbsp;        &quot;Hello, World&quot;.remove(&quot;llo&quot;, &quot;rld&quot;).shouldBe(&quot;He, Wo&quot;)</b>
+<i class="no-highlight">16</i>&nbsp;    }
+<i class="no-highlight">17</i>&nbsp;
+<i class="no-highlight">18</i>&nbsp;    @Test
+<i class="no-highlight">19</i>&nbsp;    fun string_replace() {
+<b class="fc"><i class="no-highlight">20</i>&nbsp;        &quot;Hello, World&quot;.replace(&quot;ello&quot; to &quot;ELLO&quot;, &quot;orld&quot; to &quot;ORLD&quot;).shouldBe(&quot;HELLO, WORLD&quot;)</b>
+<i class="no-highlight">21</i>&nbsp;    }
+<i class="no-highlight">22</i>&nbsp;
+<i class="no-highlight">23</i>&nbsp;    @Test
+<i class="no-highlight">24</i>&nbsp;    fun string_isNotNullNorEmpty_and_string_isNotNullNorBlank() {
+<b class="fc"><i class="no-highlight">25</i>&nbsp;        val nullable: String? = null</b>
+<b class="fc"><i class="no-highlight">26</i>&nbsp;        val blank = &quot; &quot;</b>
+<b class="fc"><i class="no-highlight">27</i>&nbsp;        val empty = &quot;&quot;</b>
+<b class="fc"><i class="no-highlight">28</i>&nbsp;        val notBlank = &quot;Hello, World&quot;</b>
+<i class="no-highlight">29</i>&nbsp;
+<b class="fc"><i class="no-highlight">30</i>&nbsp;        nullable.isNotNullNorBlank().shouldBeFalse()</b>
+<b class="fc"><i class="no-highlight">31</i>&nbsp;        nullable.isNotNullNorEmpty().shouldBeFalse()</b>
+<b class="fc"><i class="no-highlight">32</i>&nbsp;        blank.isNotNullNorBlank().shouldBeFalse()</b>
+<b class="fc"><i class="no-highlight">33</i>&nbsp;        blank.isNotNullNorEmpty().shouldBeTrue()</b>
+<b class="fc"><i class="no-highlight">34</i>&nbsp;        empty.isNotNullNorBlank().shouldBeFalse()</b>
+<b class="fc"><i class="no-highlight">35</i>&nbsp;        empty.isNotNullNorEmpty().shouldBeFalse()</b>
+<b class="fc"><i class="no-highlight">36</i>&nbsp;        notBlank.isNotNullNorBlank().shouldBeTrue()</b>
+<b class="fc"><i class="no-highlight">37</i>&nbsp;        notBlank.isNotNullNorEmpty().shouldBeTrue()</b>
+<i class="no-highlight">38</i>&nbsp;    }
+<i class="no-highlight">39</i>&nbsp;
+<i class="no-highlight">40</i>&nbsp;    @Test
+<i class="no-highlight">41</i>&nbsp;    fun empty_string() {
+<b class="fc"><i class="no-highlight">42</i>&nbsp;        String.Empty.shouldBeEmpty()</b>
+<i class="no-highlight">43</i>&nbsp;    }
+<i class="no-highlight">44</i>&nbsp;
+<i class="no-highlight">45</i>&nbsp;    @Test
+<i class="no-highlight">46</i>&nbsp;    fun remove_duplicate_empty_lines() {
+<b class="fc"><i class="no-highlight">47</i>&nbsp;        &quot;a\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines().shouldBe(&quot;a\nb\n\nc\n&quot;)</b>
+<b class="fc"><i class="no-highlight">48</i>&nbsp;        &quot;a\n\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines().shouldBe(&quot;a\n\nb\n\nc\n&quot;)</b>
+<b class="fc"><i class="no-highlight">49</i>&nbsp;        &quot;a\n\nb\n\n\nc\n\n&quot;.removeDuplicateEmptyLines().shouldBe(&quot;a\n\nb\n\nc\n&quot;)</b>
+<b class="fc"><i class="no-highlight">50</i>&nbsp;        &quot;a\n\n\n\n\nb\n\n&quot;.removeDuplicateEmptyLines().shouldBe(&quot;a\n\nb\n&quot;)</b>
+<i class="no-highlight">51</i>&nbsp;    }
+<i class="no-highlight">52</i>&nbsp;
+<i class="no-highlight">53</i>&nbsp;    @Test
+<i class="no-highlight">54</i>&nbsp;    fun end_with_new_line() {
+<b class="fc"><i class="no-highlight">55</i>&nbsp;        &quot;a&quot;.endWithNewLine().shouldBe(&quot;a\n&quot;)</b>
+<b class="fc"><i class="no-highlight">56</i>&nbsp;        &quot;a\n&quot;.endWithNewLine().shouldBe(&quot;a\n&quot;)</b>
+<b class="fc"><i class="no-highlight">57</i>&nbsp;        &quot;&quot;.endWithNewLine().shouldBe(&quot;&quot;)</b>
+<b class="fc"><i class="no-highlight">58</i>&nbsp;        &quot;a\nb&quot;.endWithNewLine().shouldBe(&quot;a\nb\n&quot;)</b>
+<b class="fc"><i class="no-highlight">59</i>&nbsp;        &quot;&quot;.endWithNewLine().shouldBe(&quot;&quot;)</b>
+<b class="fc"><i class="no-highlight">60</i>&nbsp;        &quot;\n&quot;.endWithNewLine().shouldBe(&quot;\n&quot;)</b>
+<i class="no-highlight">61</i>&nbsp;    }
+<i class="no-highlight">62</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-07-14 00:27</div>
+</div>
+</body>
+</html>

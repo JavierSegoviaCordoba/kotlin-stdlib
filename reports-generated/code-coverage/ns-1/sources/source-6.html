@@ -1,0 +1,195 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > StringsKt</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.javiersc.kotlin.stdlib</a>
+</div>
+
+<h1>Coverage Summary for Class: StringsKt (com.javiersc.kotlin.stdlib)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">StringsKt</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (8/12)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    42.5%
+  </span>
+  <span class="absValue">
+    (17/40)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    68%
+  </span>
+  <span class="absValue">
+    (17/25)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    64.5%
+  </span>
+  <span class="absValue">
+    (136/211)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.javiersc.kotlin.stdlib
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import kotlin.contracts.contract
+<i class="no-highlight">4</i>&nbsp;
+<i class="no-highlight">5</i>&nbsp;public fun String.replace(vararg oldToNewValues: Pair&lt;String, String&gt;): String {
+<b class="fc"><i class="no-highlight">6</i>&nbsp;    var result = this</b>
+<b class="fc"><i class="no-highlight">7</i>&nbsp;    for ((oldValue, newValue) in oldToNewValues) {</b>
+<b class="fc"><i class="no-highlight">8</i>&nbsp;        result = result.replace(oldValue, newValue)</b>
+<i class="no-highlight">9</i>&nbsp;    }
+<b class="fc"><i class="no-highlight">10</i>&nbsp;    return result</b>
+<i class="no-highlight">11</i>&nbsp;}
+<i class="no-highlight">12</i>&nbsp;
+<i class="no-highlight">13</i>&nbsp;/**
+<i class="no-highlight">14</i>&nbsp; * Returns a new string obtained by removing all occurrences of the [value] substring in this string
+<i class="no-highlight">15</i>&nbsp; */
+<b class="fc"><i class="no-highlight">16</i>&nbsp;public inline fun String.remove(value: String, ignoreCase: Boolean = false): String =</b>
+<b class="fc"><i class="no-highlight">17</i>&nbsp;    replace(oldValue = value, newValue = &quot;&quot;, ignoreCase = ignoreCase)</b>
+<i class="no-highlight">18</i>&nbsp;
+<i class="no-highlight">19</i>&nbsp;public fun String.remove(vararg values: String): String {
+<b class="fc"><i class="no-highlight">20</i>&nbsp;    var result = this</b>
+<b class="fc"><i class="no-highlight">21</i>&nbsp;    for (value in values) {</b>
+<b class="fc"><i class="no-highlight">22</i>&nbsp;        result = result.replace(value, &quot;&quot;)</b>
+<i class="no-highlight">23</i>&nbsp;    }
+<b class="fc"><i class="no-highlight">24</i>&nbsp;    return result</b>
+<i class="no-highlight">25</i>&nbsp;}
+<i class="no-highlight">26</i>&nbsp;
+<i class="no-highlight">27</i>&nbsp;public inline fun CharSequence?.isNotNullNorBlank(): Boolean {
+<b class="nc"><i class="no-highlight">28</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorBlank != null) }</b>
+<i class="no-highlight">29</i>&nbsp;
+<b class="nc"><i class="no-highlight">30</i>&nbsp;    return !isNullOrBlank()</b>
+<i class="no-highlight">31</i>&nbsp;}
+<i class="no-highlight">32</i>&nbsp;
+<i class="no-highlight">33</i>&nbsp;public inline fun CharSequence?.isNotNullNorEmpty(): Boolean {
+<b class="nc"><i class="no-highlight">34</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorEmpty != null) }</b>
+<i class="no-highlight">35</i>&nbsp;
+<b class="nc"><i class="no-highlight">36</i>&nbsp;    return !isNullOrEmpty()</b>
+<i class="no-highlight">37</i>&nbsp;}
+<i class="no-highlight">38</i>&nbsp;
+<b class="nc"><i class="no-highlight">39</i>&nbsp;public inline fun CharSequence.notContain(</b>
+<i class="no-highlight">40</i>&nbsp;    other: CharSequence,
+<b class="nc"><i class="no-highlight">41</i>&nbsp;    ignoreCase: Boolean = false,</b>
+<b class="nc"><i class="no-highlight">42</i>&nbsp;): Boolean = !contains(other, ignoreCase)</b>
+<i class="no-highlight">43</i>&nbsp;
+<b class="nc"><i class="no-highlight">44</i>&nbsp;public inline fun CharSequence.notContain(regex: Regex): Boolean = !contains(regex)</b>
+<i class="no-highlight">45</i>&nbsp;
+<i class="no-highlight">46</i>&nbsp;public inline fun String?.isNotNullNorBlank(): Boolean {
+<b class="fc"><i class="no-highlight">47</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorBlank != null) }</b>
+<i class="no-highlight">48</i>&nbsp;
+<b class="pc"><i class="no-highlight">49</i>&nbsp;    return !isNullOrBlank()</b>
+<i class="no-highlight">50</i>&nbsp;}
+<i class="no-highlight">51</i>&nbsp;
+<i class="no-highlight">52</i>&nbsp;public inline fun String?.isNotNullNorEmpty(): Boolean {
+<b class="fc"><i class="no-highlight">53</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorEmpty != null) }</b>
+<i class="no-highlight">54</i>&nbsp;
+<b class="pc"><i class="no-highlight">55</i>&nbsp;    return !isNullOrEmpty()</b>
+<i class="no-highlight">56</i>&nbsp;}
+<i class="no-highlight">57</i>&nbsp;
+<i class="no-highlight">58</i>&nbsp;public inline val String.Companion.Empty: String
+<b class="fc"><i class="no-highlight">59</i>&nbsp;    get() = &quot;&quot;</b>
+<i class="no-highlight">60</i>&nbsp;
+<i class="no-highlight">61</i>&nbsp;/** Remove all consecutive line breaks in a `String` */
+<b class="fc"><i class="no-highlight">62</i>&nbsp;public fun String.removeDuplicateEmptyLines(): String = lines().removeDuplicateEmptyLines()</b>
+<i class="no-highlight">63</i>&nbsp;
+<i class="no-highlight">64</i>&nbsp;/** Add an empty line as last item if it is not empty */
+<i class="no-highlight">65</i>&nbsp;public fun String.endWithNewLine(): String =
+<b class="pc"><i class="no-highlight">66</i>&nbsp;    if (lines().lastOrNull().isNullOrBlank()) this else &quot;$this\n&quot;</b>
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-07-14 00:27</div>
+</div>
+</body>
+</html>

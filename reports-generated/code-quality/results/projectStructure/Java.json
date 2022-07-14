@@ -135,6 +135,458 @@
     {
       "name": "kotlin-stdlib-project.kotlin-stdlib.commonTest",
       "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.iosArm32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.iosArm32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm32HfpMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm32HfpTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMips32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMips32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMipsel32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMipsel32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.mingwX86Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.mingwX86Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.wasm32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.wasm32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosArm32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosArm32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosX86Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosX86Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.androidAndroidTestRelease",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.androidTestFixtures",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.androidTestFixturesDebug",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.androidTestFixturesRelease",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.darwinMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.darwinTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.iosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.iosTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.macosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.macosTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.mingwMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.mingwTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.nativeTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.tvosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.tvosTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.wasmMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.wasmTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosArm32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosArm32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.jsMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.jsTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.jvmMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.jvmTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxArm32HfpMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxArm32HfpTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxMips32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxMips32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxMipsel32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxMipsel32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.macosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.macosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.macosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.macosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.mingwX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.mingwX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.mingwX86Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.mingwX86Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.wasm32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.wasm32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosArm32Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosArm32Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosX64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosX64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosX86Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosX86Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.androidAndroidTestRelease",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.androidTestFixtures",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.androidTestFixturesDebug",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.androidTestFixturesRelease",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.commonMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.commonTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.darwinMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.darwinTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.iosTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.linuxTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.macosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.macosTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.mingwMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.mingwTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.nativeMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.nativeTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.tvosTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.wasmMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.wasmTest",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosMain",
+      "languageLevel": 11
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test.watchosTest",
+      "languageLevel": 11
     }
   ]
 }

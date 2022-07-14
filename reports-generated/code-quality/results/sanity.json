@@ -6,91 +6,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Cannot access class 'org.gradle.accessors.dm.LibrariesForLibs'. Check your module classpath for missing or conflicting dependencies",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "build.gradle.kts",
-      "language": "kotlin",
-      "line": 3,
-      "offset": 19,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 51,
-        "surroundingCode": "buildscript {\n    dependencies {\n        classpath(libs.jetbrains.kotlin.kotlinGradlePlugin)\n    }\n}"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "4b191ecaf7feabe023035a87debcc60963f4575afe3d2de0ea1751fae79fee25"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "Unresolved reference: jetbrains",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "build.gradle.kts",
-      "language": "kotlin",
-      "line": 3,
-      "offset": 24,
-      "length": 9,
-      "code": {
-        "startLine": 1,
-        "length": 9,
-        "offset": 56,
-        "surroundingCode": "buildscript {\n    dependencies {\n        classpath(libs.jetbrains.kotlin.kotlinGradlePlugin)\n    }\n}"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "e70cea605d717480621c3f26c5d73cc941c4d7ef5fe896151f60042574d2ff2f"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
   "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "build.gradle.kts",
+      "path": "kotlin-test/build.gradle.kts",
       "language": "kotlin",
-      "line": 8,
+      "line": 2,
       "offset": 11,
       "length": 4,
       "code": {
-        "startLine": 6,
+        "startLine": 1,
         "length": 4,
-        "offset": 21,
-        "surroundingCode": "\nplugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project",
+    "module": "kotlin-stdlib-project.kotlin-test",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "5bbe820252c87d880ef0ef1972e7d64a09074d0cc87f67555b1e73ef3ec84df8"
+  "hash": "245735656ced65b158a0336756038025f0b1fbbc66ed2dc80936a2a950a64da5"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -104,24 +42,86 @@
   "sources": [
     {
       "type": "file",
-      "path": "build.gradle.kts",
+      "path": "kotlin-test/build.gradle.kts",
       "language": "kotlin",
-      "line": 8,
+      "line": 2,
       "offset": 11,
       "length": 4,
       "code": {
-        "startLine": 6,
+        "startLine": 1,
         "length": 4,
-        "offset": 21,
-        "surroundingCode": "\nplugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project",
+    "module": "kotlin-stdlib-project.kotlin-test",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "54b0c7c734c2966e0034f566ee7b5704f0aaa8c62f24b51161cd9a18067be7de"
+  "hash": "eef9dc03fe93fc9f6f77004fbac61b8793904f2c25e1492f3fb239004590a672"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Function invocation 'plugins(...)' expected",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 16,
+      "length": 7,
+      "code": {
+        "startLine": 1,
+        "length": 7,
+        "offset": 25,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "f201ebc853a3bc0a7f6621fdae0fd731398a8d2acc898f09e3698d27dc9bd3a5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: public fun Project.plugins(block: PluginDependenciesSpec.() -> Unit): Nothing defined in org.gradle.kotlin.dsl",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 16,
+      "length": 7,
+      "code": {
+        "startLine": 1,
+        "length": 7,
+        "offset": 25,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "632caf3a658996c44ac0c51d39428ed6177b4c526b45b2e6044089c5477876f8"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -246,4 +246,128 @@
     "inspectionName": "KotlinAnnotator"
   },
   "hash": "6d85a6e1bb1d201606e7369ea513f5f1b210120324c42893cd73f62408e1e2f1"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access class 'org.gradle.accessors.dm.LibrariesForLibs'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 19,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 51,
+        "surroundingCode": "buildscript {\n    dependencies {\n        classpath(libs.android.toolsBuild.gradle)\n        classpath(libs.jetbrains.kotlin.kotlinGradlePlugin)\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "b248c6e954cd62af183f92737fc4a2d4752f067bba8002099503d5bb25716cc1"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: android",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 24,
+      "length": 7,
+      "code": {
+        "startLine": 1,
+        "length": 7,
+        "offset": 56,
+        "surroundingCode": "buildscript {\n    dependencies {\n        classpath(libs.android.toolsBuild.gradle)\n        classpath(libs.jetbrains.kotlin.kotlinGradlePlugin)\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "ba971d4ab2dcccf8d84b383f64f9821f1b78a54110c5b29f1ead85a93880a11e"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access class 'org.gradle.accessors.dm.LibrariesForLibs'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 19,
+      "length": 4,
+      "code": {
+        "startLine": 2,
+        "length": 4,
+        "offset": 87,
+        "surroundingCode": "    dependencies {\n        classpath(libs.android.toolsBuild.gradle)\n        classpath(libs.jetbrains.kotlin.kotlinGradlePlugin)\n    }\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "24761e7bd6a2955472dcaef0b8fd22f09fd06ac12eb0e66073e574cdb86faa6d"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: jetbrains",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 24,
+      "length": 9,
+      "code": {
+        "startLine": 2,
+        "length": 9,
+        "offset": 92,
+        "surroundingCode": "    dependencies {\n        classpath(libs.android.toolsBuild.gradle)\n        classpath(libs.jetbrains.kotlin.kotlinGradlePlugin)\n    }\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "3072ab63f8f27ecddf29c55b2b1f8b9b0160e68f804d9e1e33a2b229771ed384"
 }]}
