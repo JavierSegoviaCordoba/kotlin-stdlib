@@ -4,8 +4,6 @@
 
 ### Added
 
-- `kotlin-test` artifact
-
 ### Changed
 
 ### Deprecated
@@ -13,6 +11,14 @@
 ### Removed
 
 ### Fixed
+
+### Updated
+
+## [0.1.0-alpha.9] - 2022-07-14
+
+### Added
+
+- `kotlin-test` artifact
 
 ### Updated
 
