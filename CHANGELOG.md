@@ -4,20 +4,26 @@
 
 ### Added
 
-- `kotlin-test-junit` artifact
-- `kotlin-test-juni5` artifact
-
 ### Changed
 
 ### Deprecated
 
 ### Removed
 
-- `kotlin-test` artifact
-
 ### Fixed
 
 ### Updated
+
+## [0.1.0-alpha.10] - 2022-07-14
+
+### Added
+
+- `kotlin-test-junit` artifact
+- `kotlin-test-juni5` artifact
+
+### Removed
+
+- `kotlin-test` artifact
 
 ## [0.1.0-alpha.9] - 2022-07-14
 
