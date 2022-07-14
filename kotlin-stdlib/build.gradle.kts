@@ -14,16 +14,10 @@ hubdle {
         multiplatform {
             features {
                 extendedStdlib(enabled = false)
+                extendedTesting(enabled = false)
             }
 
-            common {
-                main {
-                    dependencies {
-                        implementation(jetbrainsKotlinTest())
-                        implementation(jetbrainsKotlinTestJunit())
-                    }
-                }
-            }
+            common()
 
             android()
 

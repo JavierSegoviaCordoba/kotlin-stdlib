@@ -2,9 +2,9 @@
 
 package com.javiersc.kotlin.stdlib
 
-import io.kotest.assertions.throwables.shouldThrow
-import io.kotest.matchers.shouldBe
 import kotlin.test.Test
+import kotlin.test.assertFailsWith
+import kotlin.test.assertTrue
 
 class CollectionsTest {
 
@@ -15,84 +15,97 @@ class CollectionsTest {
 
     @Test
     fun collection_second() {
-        numbers.second().shouldBe(2)
-        numbers.secondOrNull().shouldBe(2)
+        assertTrue { numbers.second() == 2 }
+        assertTrue { numbers.secondOrNull() == 2 }
 
-        chars.second().shouldBe('B')
-        chars.secondOrNull().shouldBe('B')
+        assertTrue { chars.second() == 'B' }
+        assertTrue { chars.secondOrNull() == 'B' }
 
-        shouldThrow<NoSuchElementException> { empty.second() }
-        shouldThrow<NoSuchElementException> { emptyIterable.second() }
-        empty.secondOrNull().shouldBe(null)
-        emptyIterable.secondOrNull().shouldBe(null)
+        assertFailsWith<NoSuchElementException> { empty.second() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.second() }
+
+        assertTrue { empty.secondOrNull() == null }
+        assertTrue { emptyIterable.secondOrNull() == null }
     }
 
     @Test
     fun collection_third() {
-        numbers.third().shouldBe(3)
-        numbers.thirdOrNull().shouldBe(3)
+        assertTrue { numbers.third() == 3 }
+        assertTrue { numbers.thirdOrNull() == 3 }
 
-        chars.third().shouldBe('C')
-        chars.thirdOrNull().shouldBe('C')
+        assertTrue { chars.third() == 'C' }
+        assertTrue { chars.thirdOrNull() == 'C' }
 
-        shouldThrow<NoSuchElementException> { empty.third() }
-        shouldThrow<NoSuchElementException> { emptyIterable.third() }
-        empty.thirdOrNull().shouldBe(null)
-        emptyIterable.thirdOrNull().shouldBe(null)
+        assertFailsWith<NoSuchElementException> { empty.third() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.third() }
+
+        assertTrue { empty.thirdOrNull() == null }
+        assertTrue { emptyIterable.thirdOrNull() == null }
     }
 
     @Test
     fun collection_forth() {
-        numbers.forth().shouldBe(4)
-        numbers.forthOrNull().shouldBe(4)
+        assertTrue { numbers.forth() == 4 }
+        assertTrue { numbers.forthOrNull() == 4 }
 
-        chars.forth().shouldBe('D')
-        chars.forthOrNull().shouldBe('D')
+        assertTrue { chars.forth() == 'D' }
+        assertTrue { chars.forthOrNull() == 'D' }
 
-        shouldThrow<NoSuchElementException> { empty.forth() }
-        shouldThrow<NoSuchElementException> { emptyIterable.forth() }
-        empty.forthOrNull().shouldBe(null)
-        emptyIterable.forthOrNull().shouldBe(null)
+        assertFailsWith<NoSuchElementException> { empty.forth() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.forth() }
+
+        assertTrue { empty.forthOrNull() == null }
+        assertTrue { emptyIterable.forthOrNull() == null }
     }
 
     @Test
     fun collection_fifth() {
-        numbers.fifth().shouldBe(5)
-        numbers.fifthOrNull().shouldBe(5)
+        assertTrue { numbers.fifth() == 5 }
+        assertTrue { numbers.fifthOrNull() == 5 }
 
-        chars.fifth().shouldBe('E')
-        chars.fifthOrNull().shouldBe('E')
+        assertTrue { chars.fifth() == 'E' }
+        assertTrue { chars.fifthOrNull() == 'E' }
 
-        shouldThrow<NoSuchElementException> { empty.fifth() }
-        shouldThrow<NoSuchElementException> { emptyIterable.fifth() }
-        empty.fifthOrNull().shouldBe(null)
-        emptyIterable.fifthOrNull().shouldBe(null)
+        assertFailsWith<NoSuchElementException> { empty.fifth() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.fifth() }
+
+        assertTrue { empty.fifthOrNull() == null }
+        assertTrue { emptyIterable.fifthOrNull() == null }
     }
 
     @Test
     fun collection_penultimate() {
-        numbers.penultimate().shouldBe(9)
-        numbers.penultimateOrNull().shouldBe(9)
+        assertTrue { numbers.penultimate() == 9 }
+        assertTrue { numbers.penultimateOrNull() == 9 }
 
-        chars.penultimate().shouldBe('E')
-        chars.penultimateOrNull().shouldBe('E')
+        assertTrue { chars.penultimate() == 'E' }
+        assertTrue { chars.penultimateOrNull() == 'E' }
 
-        shouldThrow<NoSuchElementException> { empty.penultimate() }
-        shouldThrow<NoSuchElementException> { emptyIterable.penultimate() }
-        empty.penultimateOrNull().shouldBe(null)
-        emptyIterable.penultimateOrNull().shouldBe(null)
+        assertFailsWith<NoSuchElementException> { empty.penultimate() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.penultimate() }
 
-        shouldThrow<NoSuchElementException> { listOf(1).penultimate() }
-        shouldThrow<NoSuchElementException> { listOf(1).asIterable().penultimate() }
+        assertTrue { empty.penultimateOrNull() == null }
+        assertTrue { emptyIterable.penultimateOrNull() == null }
+
+        assertFailsWith<NoSuchElementException> { listOf(1).penultimate() }
+        assertFailsWith<NoSuchElementException> { listOf(1).asIterable().penultimate() }
     }
 
     @Test
     fun remove_duplicate_empty_lines() {
-        listOf("a", "b", "", "", "c", "").removeDuplicateEmptyLines().shouldBe("a\nb\n\nc\n")
-        listOf("a", "b", "", "", "", "c", "").removeDuplicateEmptyLines().shouldBe("a\nb\n\nc\n")
-        listOf("a", "b", "", "", "c", "", "").removeDuplicateEmptyLines().shouldBe("a\nb\n\nc\n")
-        listOf("a", "", "", "", "b", "", "").removeDuplicateEmptyLines().shouldBe("a\n\nb\n")
-        emptyList<String>().removeDuplicateEmptyLines().shouldBe("")
-        listOf("").removeDuplicateEmptyLines().shouldBe("")
+        assertTrue {
+            listOf("a", "b", "", "", "c", "").removeDuplicateEmptyLines() == "a\nb\n\nc\n"
+        }
+        assertTrue {
+            listOf("a", "b", "", "", "", "c", "").removeDuplicateEmptyLines() == "a\nb\n\nc\n"
+        }
+        assertTrue {
+            listOf("a", "b", "", "", "c", "", "").removeDuplicateEmptyLines() == "a\nb\n\nc\n"
+        }
+        assertTrue {
+            listOf("a", "", "", "", "b", "", "").removeDuplicateEmptyLines() == "a\n\nb\n"
+        }
+        assertTrue { emptyList<String>().removeDuplicateEmptyLines() == "" }
+        assertTrue { listOf("").removeDuplicateEmptyLines() == "" }
     }
 }

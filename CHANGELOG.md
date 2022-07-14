@@ -4,11 +4,16 @@
 
 ### Added
 
+- `kotlin-test-junit` artifact
+- `kotlin-test-juni5` artifact
+
 ### Changed
 
 ### Deprecated
 
 ### Removed
+
+- `kotlin-test` artifact
 
 ### Fixed
 
