@@ -130,29 +130,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "comment": "Unresolved reference: test",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-stdlib/build.gradle.kts",
+      "path": "kotlin-test/watchosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSSIMULATORARM64.kt",
       "language": "kotlin",
-      "line": 2,
-      "offset": 11,
+      "line": 3,
+      "offset": 15,
       "length": 4,
       "code": {
         "startLine": 1,
         "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSSIMULATORARM64 = Ignore"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "module": "kotlin-stdlib-project.kotlin-test.watchosSimulatorArm64Main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "0aa29458b7fbfc76b449434d7a1e530e52d6ac8ba3ff7ae1976af8b4fbe4b667"
+  "hash": "2ebfcbe67904a6da79f2bc083bc4bf0a47999cefcc2fec35dee60cbe52672297"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -161,29 +161,60 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Cannot access class 'org.gradle.accessors.dm.LibrariesForLibs'. Check your module classpath for missing or conflicting dependencies",
+  "comment": "Unresolved reference: Ignore",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-stdlib/build.gradle.kts",
+      "path": "kotlin-test/watchosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSSIMULATORARM64.kt",
       "language": "kotlin",
-      "line": 2,
-      "offset": 11,
+      "line": 5,
+      "offset": 55,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 81,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSSIMULATORARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosSimulatorArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "0281f4936dea4b6c53a982232a5c2bb919991c6c3b724b3c92d741262f49b064"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/wasm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWASM32.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
       "length": 4,
       "code": {
         "startLine": 1,
         "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreWASM32 = Ignore"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "module": "kotlin-stdlib-project.kotlin-test.wasm32Main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "097c41ae51273eef7277b886269b9cdf07d159606b80938da068de6b563a5fca"
+  "hash": "e93c53ff724cb773de802a21c990452c1fb8cfe2c1978b96edcdbd942e8389ff"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -192,29 +223,29 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Function invocation 'plugins(...)' expected",
+  "comment": "Unresolved reference: Ignore",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-stdlib/build.gradle.kts",
+      "path": "kotlin-test/wasm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWASM32.kt",
       "language": "kotlin",
-      "line": 2,
-      "offset": 16,
-      "length": 7,
+      "line": 5,
+      "offset": 40,
+      "length": 6,
       "code": {
-        "startLine": 1,
-        "length": 7,
-        "offset": 25,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+        "startLine": 3,
+        "length": 6,
+        "offset": 66,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWASM32 = Ignore\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "module": "kotlin-stdlib-project.kotlin-test.wasm32Main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "2479cf989a1bad0e26c8ca55c79b8f11c7a789404b1721048700e47b951fc4b9"
+  "hash": "9503c1124889a39549c1a1fe9cbcc139295d481112557b836d931675f6b03fc9"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -223,29 +254,122 @@
     "Sanity"
   ],
   "severity": "Critical",
-  "comment": "Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: public fun Project.plugins(block: PluginDependenciesSpec.() -> Unit): Nothing defined in org.gradle.kotlin.dsl",
+  "comment": "Unresolved reference: test",
   "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-stdlib/build.gradle.kts",
+      "path": "kotlin-test/tvosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64.kt",
       "language": "kotlin",
-      "line": 2,
-      "offset": 16,
-      "length": 7,
+      "line": 3,
+      "offset": 15,
+      "length": 4,
       "code": {
         "startLine": 1,
-        "length": 7,
-        "offset": 25,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSSIMULATORARM64 = Ignore"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "module": "kotlin-stdlib-project.kotlin-test.tvosSimulatorArm64Main",
     "inspectionName": "KotlinAnnotator"
   },
-  "hash": "6d85a6e1bb1d201606e7369ea513f5f1b210120324c42893cd73f62408e1e2f1"
+  "hash": "2c9144af696925382b9bca7bdfa60ebe119f349b23fbac099b54ed4989b10cab"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/tvosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 52,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 78,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSSIMULATORARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.tvosSimulatorArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "af99b5cf9ccc627f1c48da9ddfcec3838db4b83159dd1e5dc8561582f419dce4"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSARM64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "6a9d8e21b8d456bc0c8a834e75da7b43d10d10159f582decb8cf979943209372"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 42,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 68,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "2c9d47bb0cc16acd6505f91767a955bd384e1e9c545d5ee54ea52b016c5c9693"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -370,4 +494,1244 @@
     "inspectionName": "KotlinAnnotator"
   },
   "hash": "3072ab63f8f27ecddf29c55b2b1f8b9b0160e68f804d9e1e33a2b229771ed384"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXARM64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "446e8f91e7015b5efda3bc55b3a535c4f8aaee675706d66b0868b7c21e5efb09"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 44,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 70,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "a84d1c62c824c43c0c6bae3678eac4023f008ed5e5625f42470906335f7ba4b7"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSX64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "3d88e3da86c991f0e255b8ed95b0f4a2a1c9c6e9d8f613d6154d17c0e87c3578"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 44,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 70,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "ea911fe5dc034d465fead75db80ca2a46f22894234baf75cc56c5a0fc267a687"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM32.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSARM32 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosArm32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "93c96b67dbca970465fb5d100a3da0c0bf56872ee2fb9903354036c13a135b9e"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM32.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 42,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 68,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSARM32 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosArm32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "14ec9ac21218a6bf6a6749b25ec3e6a9be58a202ff1000b4fdcb5d1e2371518f"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX86.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSX86 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosX86Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "2963bdb051556018f2035634383db4151f27578f22d396b8ac10d414659fa457"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX86.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 44,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 70,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSX86 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosX86Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "9fce1aba7a6568b18da26892ade4cd60380a141d9df88c546bf12989b20a2ebb"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/macosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSARM64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSARM64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.macosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "7b9dc90eefd7db8b018377c99fdc686925642febf6b50cb19666fd767351d2c4"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/macosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 44,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 70,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.macosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "ab65d90732c9aab93495a42baf0f51e8059a56e3ea85b5d53d8b34852cc6cc38"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/mingwX86/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX86.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreMINGWX86 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.mingwX86Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "256f83395cca174a358a140028ab122fd729021e71a1dcad47b503787da0f5a2"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/mingwX86/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX86.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 42,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 68,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMINGWX86 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.mingwX86Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "47c98de5f01dfc005a437ccfd1e74389105dfbbf2b11746d838cdc35ac9f7228"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxMips32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPS32.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXMIPS32 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxMips32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "76adc4129b46a66d9e66709167ab0747c8ae93a4575c907d1a7a683f9509e6f5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxMips32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPS32.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 45,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 71,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXMIPS32 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxMips32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "20ae31aedabd1bb67dc9a4d57cc5de3ff44e7efd7c0c86d200b7bd5d40080a41"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/macosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSX64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSX64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.macosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "e918e0bf7901feccf6a33398f6c7d16596536e4b54843352d36e15711497cb4b"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/macosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 42,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 68,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.macosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "5f9af67abcc16cf1d4ee0b5e03790b84d1d74f666d4819cd19f128ec246c124d"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/tvosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSARM64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSARM64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.tvosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "be32431beac152bfe604caba56ee22dc79b5bdac69f7069a8a2a0fed07b51045"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/tvosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 43,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 69,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.tvosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "5cd1db3c34dc3477a6bb4b6f9f81be56ae1e9daf3c25dc567ef3c622acc411cc"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM32 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosArm32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "8712b19df7d4bce653a9b5e70072801dfe579cead9d846df8c674c70cc1e2961"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 46,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 72,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM32 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosArm32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "8d9b5b38ff985b82576bc5759affc3c55f512e509a54b2f0ca69cdfb46866770"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "3da1eb562bf54e0ac266903e6ca7f8ccc9343ccbdbce6bffbb1b2f875b0e465d"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/watchosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 46,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 72,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.watchosArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "3391b2c34b5863bbee6165efbf1bf8c1c2e3f46c8d932b8b144b9efb47627bd6"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/tvosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSX64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSX64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.tvosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "c60361ffc05278058217dbc8f2fc2740234cebe2f5969cdc6277a4aa74d2fae8"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/tvosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 41,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 67,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.tvosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "07d3475f1f2f856b68753a1afe5690897350e34f40a82b3df9c677d9f65bfc3a"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxX64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXX64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "138954a2bde29f4518c4c7ed6a0d2559148f9c49e9728d45a7cc45045e3d8b01"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxX64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 42,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 68,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "c9cda5ef635ba99f7156a4b57ec5af19ff813907d88a4686226cce21751d761d"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxArm32Hfp/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXARM32HFP = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxArm32HfpMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "371028a85f4a395013ba6d00a42b936ef0f23122044b004ca0302f85c87539e9"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxArm32Hfp/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 47,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 73,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXARM32HFP = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxArm32HfpMain",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "8ec0667e933dafaa80b2be136baa195195a5337921aabcff7bd4fb3d42e2ab7c"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSX64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSX64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "ac917ff4de95552ed41dce0e11af82f3428f87a3387711b42a784538f08ff34e"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 40,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 66,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "cfdab127ac84340d60837d28d3dd732286cde93aaf63c747a376c8da3072a3a4"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxMipsel32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXMIPSEL32 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxMipsel32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "eb425ce5a26c4ef2ede12eaebc2b1a0f1f8cf442f2b7809721869e99e0b6ef46"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/linuxMipsel32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 47,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 73,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXMIPSEL32 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.linuxMipsel32Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "e5d4d38577d2d8802ab98500690f50b9f14bc5a669b416fb1e9f2f36986ec563"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-stdlib/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "0aa29458b7fbfc76b449434d7a1e530e52d6ac8ba3ff7ae1976af8b4fbe4b667"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Cannot access class 'org.gradle.accessors.dm.LibrariesForLibs'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-stdlib/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "097c41ae51273eef7277b886269b9cdf07d159606b80938da068de6b563a5fca"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Function invocation 'plugins(...)' expected",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-stdlib/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 16,
+      "length": 7,
+      "code": {
+        "startLine": 1,
+        "length": 7,
+        "offset": 25,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "2479cf989a1bad0e26c8ca55c79b8f11c7a789404b1721048700e47b951fc4b9"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: public fun Project.plugins(block: PluginDependenciesSpec.() -> Unit): Nothing defined in org.gradle.kotlin.dsl",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-stdlib/build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 16,
+      "length": 7,
+      "code": {
+        "startLine": 1,
+        "length": 7,
+        "offset": 25,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-stdlib",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "6d85a6e1bb1d201606e7369ea513f5f1b210120324c42893cd73f62408e1e2f1"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSSIMULATORARM64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosSimulatorArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "b6f353de0d1b39f956591ca71eb6b1ddaf0782c4a431e84be90809f2ec09d6e5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/iosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 51,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 77,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSSIMULATORARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.iosSimulatorArm64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "5c306a1262487f2795fe03cfbd2ea65a364febe6822ae1e068cf4a6865d709c4"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: test",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/mingwX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX64.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 15,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 48,
+        "surroundingCode": "package com.javiersc.kotlin.test\n\nimport kotlin.test.Ignore\n\npublic actual typealias IgnoreMINGWX64 = Ignore"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.mingwX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "bfd16d0a084fad0138cc18e224418b91040789019c8640b2820ece2b76791c0b"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "Unresolved reference: Ignore",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test/mingwX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 42,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 68,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMINGWX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test.mingwX64Main",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "d0dcec2e9f4eb3b2c29781d84e2b90c057863413b4cc0319f16b41494f563b65"
 }]}
