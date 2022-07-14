@@ -64,13 +64,12 @@ Current scope:     <a href="../../index.html">all classes</a>
     (7/7)
   </span>
 </td>
-    <td class="coverageStat"/>
 <td class="coverageStat">
   <span class="percent">
-    100%
+    50%
   </span>
   <span class="absValue">
-    (53/53)
+    (30/60)
   </span>
 </td>
 <td class="coverageStat">
@@ -78,7 +77,15 @@ Current scope:     <a href="../../index.html">all classes</a>
     100%
   </span>
   <span class="absValue">
-    (604/604)
+    (57/57)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    96.6%
+  </span>
+  <span class="absValue">
+    (1128/1168)
   </span>
 </td>
 </tr>
@@ -94,9 +101,9 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">2</i>&nbsp;
 <i class="no-highlight">3</i>&nbsp;package com.javiersc.kotlin.stdlib
 <i class="no-highlight">4</i>&nbsp;
-<i class="no-highlight">5</i>&nbsp;import io.kotest.assertions.throwables.shouldThrow
-<i class="no-highlight">6</i>&nbsp;import io.kotest.matchers.shouldBe
-<i class="no-highlight">7</i>&nbsp;import kotlin.test.Test
+<i class="no-highlight">5</i>&nbsp;import kotlin.test.Test
+<i class="no-highlight">6</i>&nbsp;import kotlin.test.assertFailsWith
+<i class="no-highlight">7</i>&nbsp;import kotlin.test.assertTrue
 <i class="no-highlight">8</i>&nbsp;
 <b class="fc"><i class="no-highlight">9</i>&nbsp;class CollectionsTest {</b>
 <i class="no-highlight">10</i>&nbsp;
@@ -107,87 +114,100 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">15</i>&nbsp;
 <i class="no-highlight">16</i>&nbsp;    @Test
 <i class="no-highlight">17</i>&nbsp;    fun collection_second() {
-<b class="fc"><i class="no-highlight">18</i>&nbsp;        numbers.second().shouldBe(2)</b>
-<b class="fc"><i class="no-highlight">19</i>&nbsp;        numbers.secondOrNull().shouldBe(2)</b>
+<b class="pc"><i class="no-highlight">18</i>&nbsp;        assertTrue { numbers.second() == 2 }</b>
+<b class="pc"><i class="no-highlight">19</i>&nbsp;        assertTrue { numbers.secondOrNull() == 2 }</b>
 <i class="no-highlight">20</i>&nbsp;
-<b class="fc"><i class="no-highlight">21</i>&nbsp;        chars.second().shouldBe(&#39;B&#39;)</b>
-<b class="fc"><i class="no-highlight">22</i>&nbsp;        chars.secondOrNull().shouldBe(&#39;B&#39;)</b>
+<b class="pc"><i class="no-highlight">21</i>&nbsp;        assertTrue { chars.second() == &#39;B&#39; }</b>
+<b class="pc"><i class="no-highlight">22</i>&nbsp;        assertTrue { chars.secondOrNull() == &#39;B&#39; }</b>
 <i class="no-highlight">23</i>&nbsp;
-<b class="fc"><i class="no-highlight">24</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { empty.second() }</b>
-<b class="fc"><i class="no-highlight">25</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { emptyIterable.second() }</b>
-<b class="fc"><i class="no-highlight">26</i>&nbsp;        empty.secondOrNull().shouldBe(null)</b>
-<b class="fc"><i class="no-highlight">27</i>&nbsp;        emptyIterable.secondOrNull().shouldBe(null)</b>
-<i class="no-highlight">28</i>&nbsp;    }
-<i class="no-highlight">29</i>&nbsp;
-<i class="no-highlight">30</i>&nbsp;    @Test
-<i class="no-highlight">31</i>&nbsp;    fun collection_third() {
-<b class="fc"><i class="no-highlight">32</i>&nbsp;        numbers.third().shouldBe(3)</b>
-<b class="fc"><i class="no-highlight">33</i>&nbsp;        numbers.thirdOrNull().shouldBe(3)</b>
-<i class="no-highlight">34</i>&nbsp;
-<b class="fc"><i class="no-highlight">35</i>&nbsp;        chars.third().shouldBe(&#39;C&#39;)</b>
-<b class="fc"><i class="no-highlight">36</i>&nbsp;        chars.thirdOrNull().shouldBe(&#39;C&#39;)</b>
-<i class="no-highlight">37</i>&nbsp;
-<b class="fc"><i class="no-highlight">38</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { empty.third() }</b>
-<b class="fc"><i class="no-highlight">39</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { emptyIterable.third() }</b>
-<b class="fc"><i class="no-highlight">40</i>&nbsp;        empty.thirdOrNull().shouldBe(null)</b>
-<b class="fc"><i class="no-highlight">41</i>&nbsp;        emptyIterable.thirdOrNull().shouldBe(null)</b>
-<i class="no-highlight">42</i>&nbsp;    }
-<i class="no-highlight">43</i>&nbsp;
-<i class="no-highlight">44</i>&nbsp;    @Test
-<i class="no-highlight">45</i>&nbsp;    fun collection_forth() {
-<b class="fc"><i class="no-highlight">46</i>&nbsp;        numbers.forth().shouldBe(4)</b>
-<b class="fc"><i class="no-highlight">47</i>&nbsp;        numbers.forthOrNull().shouldBe(4)</b>
-<i class="no-highlight">48</i>&nbsp;
-<b class="fc"><i class="no-highlight">49</i>&nbsp;        chars.forth().shouldBe(&#39;D&#39;)</b>
-<b class="fc"><i class="no-highlight">50</i>&nbsp;        chars.forthOrNull().shouldBe(&#39;D&#39;)</b>
-<i class="no-highlight">51</i>&nbsp;
-<b class="fc"><i class="no-highlight">52</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { empty.forth() }</b>
-<b class="fc"><i class="no-highlight">53</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { emptyIterable.forth() }</b>
-<b class="fc"><i class="no-highlight">54</i>&nbsp;        empty.forthOrNull().shouldBe(null)</b>
-<b class="fc"><i class="no-highlight">55</i>&nbsp;        emptyIterable.forthOrNull().shouldBe(null)</b>
-<i class="no-highlight">56</i>&nbsp;    }
-<i class="no-highlight">57</i>&nbsp;
-<i class="no-highlight">58</i>&nbsp;    @Test
-<i class="no-highlight">59</i>&nbsp;    fun collection_fifth() {
-<b class="fc"><i class="no-highlight">60</i>&nbsp;        numbers.fifth().shouldBe(5)</b>
-<b class="fc"><i class="no-highlight">61</i>&nbsp;        numbers.fifthOrNull().shouldBe(5)</b>
-<i class="no-highlight">62</i>&nbsp;
-<b class="fc"><i class="no-highlight">63</i>&nbsp;        chars.fifth().shouldBe(&#39;E&#39;)</b>
-<b class="fc"><i class="no-highlight">64</i>&nbsp;        chars.fifthOrNull().shouldBe(&#39;E&#39;)</b>
+<b class="fc"><i class="no-highlight">24</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { empty.second() }</b>
+<b class="fc"><i class="no-highlight">25</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { emptyIterable.second() }</b>
+<i class="no-highlight">26</i>&nbsp;
+<b class="fc"><i class="no-highlight">27</i>&nbsp;        assertTrue { empty.secondOrNull() == null }</b>
+<b class="fc"><i class="no-highlight">28</i>&nbsp;        assertTrue { emptyIterable.secondOrNull() == null }</b>
+<i class="no-highlight">29</i>&nbsp;    }
+<i class="no-highlight">30</i>&nbsp;
+<i class="no-highlight">31</i>&nbsp;    @Test
+<i class="no-highlight">32</i>&nbsp;    fun collection_third() {
+<b class="pc"><i class="no-highlight">33</i>&nbsp;        assertTrue { numbers.third() == 3 }</b>
+<b class="pc"><i class="no-highlight">34</i>&nbsp;        assertTrue { numbers.thirdOrNull() == 3 }</b>
+<i class="no-highlight">35</i>&nbsp;
+<b class="pc"><i class="no-highlight">36</i>&nbsp;        assertTrue { chars.third() == &#39;C&#39; }</b>
+<b class="pc"><i class="no-highlight">37</i>&nbsp;        assertTrue { chars.thirdOrNull() == &#39;C&#39; }</b>
+<i class="no-highlight">38</i>&nbsp;
+<b class="fc"><i class="no-highlight">39</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { empty.third() }</b>
+<b class="fc"><i class="no-highlight">40</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { emptyIterable.third() }</b>
+<i class="no-highlight">41</i>&nbsp;
+<b class="fc"><i class="no-highlight">42</i>&nbsp;        assertTrue { empty.thirdOrNull() == null }</b>
+<b class="fc"><i class="no-highlight">43</i>&nbsp;        assertTrue { emptyIterable.thirdOrNull() == null }</b>
+<i class="no-highlight">44</i>&nbsp;    }
+<i class="no-highlight">45</i>&nbsp;
+<i class="no-highlight">46</i>&nbsp;    @Test
+<i class="no-highlight">47</i>&nbsp;    fun collection_forth() {
+<b class="pc"><i class="no-highlight">48</i>&nbsp;        assertTrue { numbers.forth() == 4 }</b>
+<b class="pc"><i class="no-highlight">49</i>&nbsp;        assertTrue { numbers.forthOrNull() == 4 }</b>
+<i class="no-highlight">50</i>&nbsp;
+<b class="pc"><i class="no-highlight">51</i>&nbsp;        assertTrue { chars.forth() == &#39;D&#39; }</b>
+<b class="pc"><i class="no-highlight">52</i>&nbsp;        assertTrue { chars.forthOrNull() == &#39;D&#39; }</b>
+<i class="no-highlight">53</i>&nbsp;
+<b class="fc"><i class="no-highlight">54</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { empty.forth() }</b>
+<b class="fc"><i class="no-highlight">55</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { emptyIterable.forth() }</b>
+<i class="no-highlight">56</i>&nbsp;
+<b class="fc"><i class="no-highlight">57</i>&nbsp;        assertTrue { empty.forthOrNull() == null }</b>
+<b class="fc"><i class="no-highlight">58</i>&nbsp;        assertTrue { emptyIterable.forthOrNull() == null }</b>
+<i class="no-highlight">59</i>&nbsp;    }
+<i class="no-highlight">60</i>&nbsp;
+<i class="no-highlight">61</i>&nbsp;    @Test
+<i class="no-highlight">62</i>&nbsp;    fun collection_fifth() {
+<b class="pc"><i class="no-highlight">63</i>&nbsp;        assertTrue { numbers.fifth() == 5 }</b>
+<b class="pc"><i class="no-highlight">64</i>&nbsp;        assertTrue { numbers.fifthOrNull() == 5 }</b>
 <i class="no-highlight">65</i>&nbsp;
-<b class="fc"><i class="no-highlight">66</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { empty.fifth() }</b>
-<b class="fc"><i class="no-highlight">67</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { emptyIterable.fifth() }</b>
-<b class="fc"><i class="no-highlight">68</i>&nbsp;        empty.fifthOrNull().shouldBe(null)</b>
-<b class="fc"><i class="no-highlight">69</i>&nbsp;        emptyIterable.fifthOrNull().shouldBe(null)</b>
-<i class="no-highlight">70</i>&nbsp;    }
+<b class="pc"><i class="no-highlight">66</i>&nbsp;        assertTrue { chars.fifth() == &#39;E&#39; }</b>
+<b class="pc"><i class="no-highlight">67</i>&nbsp;        assertTrue { chars.fifthOrNull() == &#39;E&#39; }</b>
+<i class="no-highlight">68</i>&nbsp;
+<b class="fc"><i class="no-highlight">69</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { empty.fifth() }</b>
+<b class="fc"><i class="no-highlight">70</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { emptyIterable.fifth() }</b>
 <i class="no-highlight">71</i>&nbsp;
-<i class="no-highlight">72</i>&nbsp;    @Test
-<i class="no-highlight">73</i>&nbsp;    fun collection_penultimate() {
-<b class="fc"><i class="no-highlight">74</i>&nbsp;        numbers.penultimate().shouldBe(9)</b>
-<b class="fc"><i class="no-highlight">75</i>&nbsp;        numbers.penultimateOrNull().shouldBe(9)</b>
-<i class="no-highlight">76</i>&nbsp;
-<b class="fc"><i class="no-highlight">77</i>&nbsp;        chars.penultimate().shouldBe(&#39;E&#39;)</b>
-<b class="fc"><i class="no-highlight">78</i>&nbsp;        chars.penultimateOrNull().shouldBe(&#39;E&#39;)</b>
-<i class="no-highlight">79</i>&nbsp;
-<b class="fc"><i class="no-highlight">80</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { empty.penultimate() }</b>
-<b class="fc"><i class="no-highlight">81</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { emptyIterable.penultimate() }</b>
-<b class="fc"><i class="no-highlight">82</i>&nbsp;        empty.penultimateOrNull().shouldBe(null)</b>
-<b class="fc"><i class="no-highlight">83</i>&nbsp;        emptyIterable.penultimateOrNull().shouldBe(null)</b>
-<i class="no-highlight">84</i>&nbsp;
-<b class="fc"><i class="no-highlight">85</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { listOf(1).penultimate() }</b>
-<b class="fc"><i class="no-highlight">86</i>&nbsp;        shouldThrow&lt;NoSuchElementException&gt; { listOf(1).asIterable().penultimate() }</b>
-<i class="no-highlight">87</i>&nbsp;    }
-<i class="no-highlight">88</i>&nbsp;
-<i class="no-highlight">89</i>&nbsp;    @Test
-<i class="no-highlight">90</i>&nbsp;    fun remove_duplicate_empty_lines() {
-<b class="fc"><i class="no-highlight">91</i>&nbsp;        listOf(&quot;a&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;, &quot;c&quot;, &quot;&quot;).removeDuplicateEmptyLines().shouldBe(&quot;a\nb\n\nc\n&quot;)</b>
-<b class="fc"><i class="no-highlight">92</i>&nbsp;        listOf(&quot;a&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;c&quot;, &quot;&quot;).removeDuplicateEmptyLines().shouldBe(&quot;a\nb\n\nc\n&quot;)</b>
-<b class="fc"><i class="no-highlight">93</i>&nbsp;        listOf(&quot;a&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;, &quot;c&quot;, &quot;&quot;, &quot;&quot;).removeDuplicateEmptyLines().shouldBe(&quot;a\nb\n\nc\n&quot;)</b>
-<b class="fc"><i class="no-highlight">94</i>&nbsp;        listOf(&quot;a&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;).removeDuplicateEmptyLines().shouldBe(&quot;a\n\nb\n&quot;)</b>
-<b class="fc"><i class="no-highlight">95</i>&nbsp;        emptyList&lt;String&gt;().removeDuplicateEmptyLines().shouldBe(&quot;&quot;)</b>
-<b class="fc"><i class="no-highlight">96</i>&nbsp;        listOf(&quot;&quot;).removeDuplicateEmptyLines().shouldBe(&quot;&quot;)</b>
-<i class="no-highlight">97</i>&nbsp;    }
-<i class="no-highlight">98</i>&nbsp;}
+<b class="fc"><i class="no-highlight">72</i>&nbsp;        assertTrue { empty.fifthOrNull() == null }</b>
+<b class="fc"><i class="no-highlight">73</i>&nbsp;        assertTrue { emptyIterable.fifthOrNull() == null }</b>
+<i class="no-highlight">74</i>&nbsp;    }
+<i class="no-highlight">75</i>&nbsp;
+<i class="no-highlight">76</i>&nbsp;    @Test
+<i class="no-highlight">77</i>&nbsp;    fun collection_penultimate() {
+<b class="pc"><i class="no-highlight">78</i>&nbsp;        assertTrue { numbers.penultimate() == 9 }</b>
+<b class="pc"><i class="no-highlight">79</i>&nbsp;        assertTrue { numbers.penultimateOrNull() == 9 }</b>
+<i class="no-highlight">80</i>&nbsp;
+<b class="pc"><i class="no-highlight">81</i>&nbsp;        assertTrue { chars.penultimate() == &#39;E&#39; }</b>
+<b class="pc"><i class="no-highlight">82</i>&nbsp;        assertTrue { chars.penultimateOrNull() == &#39;E&#39; }</b>
+<i class="no-highlight">83</i>&nbsp;
+<b class="fc"><i class="no-highlight">84</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { empty.penultimate() }</b>
+<b class="fc"><i class="no-highlight">85</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { emptyIterable.penultimate() }</b>
+<i class="no-highlight">86</i>&nbsp;
+<b class="fc"><i class="no-highlight">87</i>&nbsp;        assertTrue { empty.penultimateOrNull() == null }</b>
+<b class="fc"><i class="no-highlight">88</i>&nbsp;        assertTrue { emptyIterable.penultimateOrNull() == null }</b>
+<i class="no-highlight">89</i>&nbsp;
+<b class="fc"><i class="no-highlight">90</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { listOf(1).penultimate() }</b>
+<b class="fc"><i class="no-highlight">91</i>&nbsp;        assertFailsWith&lt;NoSuchElementException&gt; { listOf(1).asIterable().penultimate() }</b>
+<i class="no-highlight">92</i>&nbsp;    }
+<i class="no-highlight">93</i>&nbsp;
+<i class="no-highlight">94</i>&nbsp;    @Test
+<i class="no-highlight">95</i>&nbsp;    fun remove_duplicate_empty_lines() {
+<b class="fc"><i class="no-highlight">96</i>&nbsp;        assertTrue {</b>
+<b class="fc"><i class="no-highlight">97</i>&nbsp;            listOf(&quot;a&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;, &quot;c&quot;, &quot;&quot;).removeDuplicateEmptyLines() == &quot;a\nb\n\nc\n&quot;</b>
+<i class="no-highlight">98</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">99</i>&nbsp;        assertTrue {</b>
+<b class="fc"><i class="no-highlight">100</i>&nbsp;            listOf(&quot;a&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;c&quot;, &quot;&quot;).removeDuplicateEmptyLines() == &quot;a\nb\n\nc\n&quot;</b>
+<i class="no-highlight">101</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">102</i>&nbsp;        assertTrue {</b>
+<b class="fc"><i class="no-highlight">103</i>&nbsp;            listOf(&quot;a&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;, &quot;c&quot;, &quot;&quot;, &quot;&quot;).removeDuplicateEmptyLines() == &quot;a\nb\n\nc\n&quot;</b>
+<i class="no-highlight">104</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">105</i>&nbsp;        assertTrue {</b>
+<b class="fc"><i class="no-highlight">106</i>&nbsp;            listOf(&quot;a&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;b&quot;, &quot;&quot;, &quot;&quot;).removeDuplicateEmptyLines() == &quot;a\n\nb\n&quot;</b>
+<i class="no-highlight">107</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">108</i>&nbsp;        assertTrue { emptyList&lt;String&gt;().removeDuplicateEmptyLines() == &quot;&quot; }</b>
+<b class="fc"><i class="no-highlight">109</i>&nbsp;        assertTrue { listOf(&quot;&quot;).removeDuplicateEmptyLines() == &quot;&quot; }</b>
+<i class="no-highlight">110</i>&nbsp;    }
+<i class="no-highlight">111</i>&nbsp;}
 </div>
 </pre>
 </div>
@@ -214,7 +234,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-07-14 00:27</div>
+    <div style="float:right;">generated on 2022-07-14 14:56</div>
 </div>
 </body>
 </html>

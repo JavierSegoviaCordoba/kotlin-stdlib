@@ -66,10 +66,10 @@ Current scope:     <a href="../../index.html">all classes</a>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    36.5%
+    38.7%
   </span>
   <span class="absValue">
-    (19/52)
+    (24/62)
   </span>
 </td>
 <td class="coverageStat">
@@ -108,7 +108,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">9</i>&nbsp; */
 <b class="fc"><i class="no-highlight">10</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.second(): T = getIndex(2)</b>
 <i class="no-highlight">11</i>&nbsp;
-<b class="fc"><i class="no-highlight">12</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.secondOrNull(): T? = getIndexOrNull(2)</b>
+<b class="pc"><i class="no-highlight">12</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.secondOrNull(): T? = getIndexOrNull(2)</b>
 <i class="no-highlight">13</i>&nbsp;
 <i class="no-highlight">14</i>&nbsp;/**
 <i class="no-highlight">15</i>&nbsp; * Returns third element.
@@ -117,7 +117,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">18</i>&nbsp; */
 <b class="fc"><i class="no-highlight">19</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.third(): T = getIndex(3)</b>
 <i class="no-highlight">20</i>&nbsp;
-<b class="fc"><i class="no-highlight">21</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.thirdOrNull(): T? = getIndexOrNull(3)</b>
+<b class="pc"><i class="no-highlight">21</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.thirdOrNull(): T? = getIndexOrNull(3)</b>
 <i class="no-highlight">22</i>&nbsp;
 <i class="no-highlight">23</i>&nbsp;/**
 <i class="no-highlight">24</i>&nbsp; * Returns forth element.
@@ -126,7 +126,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">27</i>&nbsp; */
 <b class="fc"><i class="no-highlight">28</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.forth(): T = getIndex(4)</b>
 <i class="no-highlight">29</i>&nbsp;
-<b class="fc"><i class="no-highlight">30</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.forthOrNull(): T? = getIndexOrNull(4)</b>
+<b class="pc"><i class="no-highlight">30</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.forthOrNull(): T? = getIndexOrNull(4)</b>
 <i class="no-highlight">31</i>&nbsp;
 <i class="no-highlight">32</i>&nbsp;/**
 <i class="no-highlight">33</i>&nbsp; * Returns fifth element.
@@ -135,7 +135,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">36</i>&nbsp; */
 <b class="fc"><i class="no-highlight">37</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.fifth(): T = getIndex(5)</b>
 <i class="no-highlight">38</i>&nbsp;
-<b class="fc"><i class="no-highlight">39</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.fifthOrNull(): T? = getIndexOrNull(5)</b>
+<b class="pc"><i class="no-highlight">39</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.fifthOrNull(): T? = getIndexOrNull(5)</b>
 <i class="no-highlight">40</i>&nbsp;
 <i class="no-highlight">41</i>&nbsp;/**
 <i class="no-highlight">42</i>&nbsp; * Returns penultimate element.
@@ -168,7 +168,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 <i class="no-highlight">69</i>&nbsp;}
 <i class="no-highlight">70</i>&nbsp;
 <i class="no-highlight">71</i>&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.penultimateOrNull(): T? {
-<b class="fc"><i class="no-highlight">72</i>&nbsp;    return when (this) {</b>
+<b class="pc"><i class="no-highlight">72</i>&nbsp;    return when (this) {</b>
 <b class="pc"><i class="no-highlight">73</i>&nbsp;        is List -&gt; getOrNull(size - 2)</b>
 <i class="no-highlight">74</i>&nbsp;        else -&gt; {
 <b class="nc"><i class="no-highlight">75</i>&nbsp;            val iterator = iterator()</b>
@@ -259,7 +259,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-07-14 00:27</div>
+    <div style="float:right;">generated on 2022-07-14 14:56</div>
 </div>
 </body>
 </html>
