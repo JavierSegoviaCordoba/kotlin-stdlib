@@ -4,6 +4,8 @@
 
 ### Added
 
+- `kotlin-test-testng` artifact
+
 ### Changed
 
 ### Deprecated
