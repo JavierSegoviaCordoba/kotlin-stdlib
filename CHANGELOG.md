@@ -4,8 +4,6 @@
 
 ### Added
 
-- `kotlin-test-testng` artifact
-
 ### Changed
 
 ### Deprecated
@@ -15,6 +13,12 @@
 ### Fixed
 
 ### Updated
+
+## [0.1.0-alpha.11] - 2022-07-14
+
+### Added
+
+- `kotlin-test-testng` artifact
 
 ## [0.1.0-alpha.10] - 2022-07-14
 
