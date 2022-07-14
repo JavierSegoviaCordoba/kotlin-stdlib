@@ -7,3 +7,5 @@ module:kotlin-test-junit
 com.javiersc.kotlin.test
 module:kotlin-test-junit5
 com.javiersc.kotlin.test
+module:kotlin-test-testng
+com.javiersc.kotlin.test
