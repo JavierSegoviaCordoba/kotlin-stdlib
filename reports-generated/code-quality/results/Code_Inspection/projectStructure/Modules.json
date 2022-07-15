@@ -77,6 +77,25 @@
       ]
     },
     {
+      "name": "kotlin-stdlib-project.kotlin-test-testng",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "jbr-11",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        }
+      ]
+    },
+    {
       "name": "kotlin-stdlib-project.kotlin-stdlib.iosArm32Main",
       "contentEntries": [
         {
@@ -12132,6 +12151,3762 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-test-junit5.watchosMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm32Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosArm32/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosArm32/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm32Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosArm32/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm32Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosSimulatorArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosSimulatorArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosSimulatorArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosSimulatorArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosSimulatorArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosSimulatorArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosX64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosX64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosX64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosX64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/iosX64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosX64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.jsMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/build/externals/kotlin-stdlib-project-kotlin-test-testng-js-ir/src",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/build/externals/kotlin-stdlib-project-kotlin-test-testng-js-legacy/src",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/js/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/js/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.jsTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/js/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.jsMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.jsMain",
+          "type": "Module"
+        },
+        {
+          "name": "/data/project/kotlin-test-testng/build/classes/kotlin/jsIr/main",
+          "type": "Library"
+        },
+        {
+          "name": "/data/project/kotlin-test-testng/build/processedResources/jsIr/main",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.jvmMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/jvm/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/jvm/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "jbr-11",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.testng:testng:6.13.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.beust:jcommander:1.72",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains:annotations:13.0",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.jvmTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/jvm/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "jbr-11",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.jvmMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.jvmMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.testng:testng:6.13.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.beust:jcommander:1.72",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains:annotations:13.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.junit.jupiter:junit-jupiter-api:5.6.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.junit.platform:junit-platform-commons:1.6.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.apiguardian:apiguardian-api:1.1.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.junit.jupiter:junit-jupiter-engine:5.6.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.opentest4j:opentest4j:1.2.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.junit.platform:junit-platform-engine:1.6.0",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm32HfpMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxArm32Hfp/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxArm32Hfp/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | linux_arm32_hfp",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm32HfpTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxArm32Hfp/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm32HfpMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_arm32_hfp",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | linux_arm32_hfp",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | linux_arm64",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_arm64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | linux_arm64",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxMips32/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxMips32/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_mips32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_mips32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_mips32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_mips32",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxMips32/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_mips32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_mips32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_mips32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_mips32",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMipsel32Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxMipsel32/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxMipsel32/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_mipsel32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_mipsel32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_mipsel32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_mipsel32",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMipsel32Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxMipsel32/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMipsel32Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_mipsel32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_mipsel32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_mipsel32",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_mipsel32",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxX64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxX64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxX64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | linux_x64",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxX64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linuxX64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxX64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | linux_x64",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.macosArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/macosArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/macosArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.macosArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/macosArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.macosX64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/macosX64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/macosX64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.macosX64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/macosX64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosX64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingwX64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingwX64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - windows | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | mingw_x64",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingwX64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - windows | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | mingw_x64",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX86Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingwX86/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingwX86/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - gdiplus | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - opengl32 | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - windows | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | mingw_x86",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX86Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingwX86/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX86Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - gdiplus | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - opengl32 | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - windows | mingw_x86",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | mingw_x86",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosSimulatorArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosSimulatorArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosSimulatorArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosSimulatorArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosSimulatorArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosSimulatorArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosX64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosX64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosX64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosX64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvosX64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosX64Main",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.wasm32Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/wasm32/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/wasm32/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.wasmMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.wasm32Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/wasm32/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.wasm32Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.wasmMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.wasmTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosArm32Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosArm32/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosArm32/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosArm32Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosArm32/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosArm32Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosSimulatorArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosSimulatorArm64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosSimulatorArm64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosSimulatorArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosSimulatorArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosSimulatorArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosTest",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosX64/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosX64/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosX64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX64Main",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX86Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosX86/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosX86/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX86Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchosX86/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX86Main",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/common/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/common/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/common/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/darwin/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/darwin/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/darwin/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/ios/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/ios/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.iosTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/ios/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linux/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/linux/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/linux/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - linux | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.macosMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/macos/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/macos/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.macosTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/macos/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingw/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingw/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - gdiplus | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - opengl32 | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - windows | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/mingw/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - gdiplus | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - opengl32 | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - windows | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - zlib | [(mingw_x64, mingw_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/native/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/native/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | [(ios_arm32, ios_arm64, ios_simulator_arm64, ios_x64, linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64, macos_arm64, macos_x64, mingw_x64, mingw_x86, tvos_arm64, tvos_simulator_arm64, tvos_x64, wasm32, watchos_arm32, watchos_arm64, watchos_simulator_arm64, watchos_x64, watchos_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | [(ios_arm32, ios_arm64, ios_simulator_arm64, ios_x64, linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64, macos_arm64, macos_x64, mingw_x64, mingw_x86, tvos_arm64, tvos_simulator_arm64, tvos_x64, wasm32, watchos_arm32, watchos_arm64, watchos_simulator_arm64, watchos_x64, watchos_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | [(ios_arm32, ios_arm64, ios_simulator_arm64, ios_x64, linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64, macos_arm64, macos_x64, mingw_x64, mingw_x86, tvos_arm64, tvos_simulator_arm64, tvos_x64, wasm32, watchos_arm32, watchos_arm64, watchos_simulator_arm64, watchos_x64, watchos_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.nativeTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/native/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - builtin | [(ios_arm32, ios_arm64, ios_simulator_arm64, ios_x64, linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64, macos_arm64, macos_x64, mingw_x64, mingw_x86, tvos_arm64, tvos_simulator_arm64, tvos_x64, wasm32, watchos_arm32, watchos_arm64, watchos_simulator_arm64, watchos_x64, watchos_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - iconv | [(ios_arm32, ios_arm64, ios_simulator_arm64, ios_x64, linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64, macos_arm64, macos_x64, mingw_x64, mingw_x86, tvos_arm64, tvos_simulator_arm64, tvos_x64, wasm32, watchos_arm32, watchos_arm64, watchos_simulator_arm64, watchos_x64, watchos_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - posix | [(ios_arm32, ios_arm64, ios_simulator_arm64, ios_x64, linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64, macos_arm64, macos_x64, mingw_x64, mingw_x86, tvos_arm64, tvos_simulator_arm64, tvos_x64, wasm32, watchos_arm32, watchos_arm64, watchos_simulator_arm64, watchos_x64, watchos_x86)]",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvos/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvos/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.tvosTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/tvos/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.wasmMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/wasm/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/wasm/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.wasmTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/wasm/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.wasmMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchos/main",
+          "sourceFolders": [
+            {
+              "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchos/main/kotlin",
+              "type": "Source",
+              "packagePrefix": ""
+            }
+          ]
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosTest",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-testng/watchos/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.10 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.watchosMain",
           "type": "Module"
         },
         {
