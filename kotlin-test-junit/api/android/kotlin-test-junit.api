@@ -97,10 +97,3 @@ public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHO
 public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWATCHOSX86 : java/lang/annotation/Annotation {
 }
 
-public final class com/javiersc/kotlin/test/junit/BuildConfig {
-	public static final field BUILD_TYPE Ljava/lang/String;
-	public static final field DEBUG Z
-	public static final field LIBRARY_PACKAGE_NAME Ljava/lang/String;
-	public fun <init> ()V
-}
-

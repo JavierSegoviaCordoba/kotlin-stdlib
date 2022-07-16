@@ -141,13 +141,6 @@ public final class com/javiersc/kotlin/stdlib/AnsiColorsKt {
 	public static final fun ansiColor (Ljava/lang/String;Lcom/javiersc/kotlin/stdlib/AnsiColor;)Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/BuildConfig {
-	public static final field BUILD_TYPE Ljava/lang/String;
-	public static final field DEBUG Z
-	public static final field LIBRARY_PACKAGE_NAME Ljava/lang/String;
-	public fun <init> ()V
-}
-
 public final class com/javiersc/kotlin/stdlib/CollectionsKt {
 	public static final fun fifth (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun fifthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
