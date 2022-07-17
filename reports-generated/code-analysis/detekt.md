@@ -169,4 +169,4 @@ Private property `i` is unused.
 
 ```
 
-generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-07-17 19:43:48 UTC
+generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-07-17 20:32:35 UTC

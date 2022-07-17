@@ -12707,11 +12707,11 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.10",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.6.21",
           "type": "Library"
         },
         {
@@ -12774,11 +12774,11 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.10",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.6.21",
           "type": "Library"
         },
         {
@@ -12827,10 +12827,6 @@
         },
         {
           "name": "Gradle: org.opentest4j:opentest4j:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.7.10",
           "type": "Library"
         },
         {

@@ -474,20 +474,12 @@
       "version": "1.6.0"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.6.21",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test-testng:1.6.21",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test-testng",
-      "version": "1.7.10"
-    },
-    {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.10",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test:1.7.10",
-      "unresolved": false,
-      "groupId": "org.jetbrains.kotlin",
-      "artifactId": "kotlin-test",
-      "version": "1.7.10"
+      "version": "1.6.21"
     },
     {
       "ideaName": "Gradle: org.testng:testng:6.13.1",
@@ -504,11 +496,6 @@
       "groupId": "com.beust",
       "artifactId": "jcommander",
       "version": "1.72"
-    },
-    {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.7.10",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-junit5:1.7.10",
-      "unresolved": true
     }
   ]
 }
