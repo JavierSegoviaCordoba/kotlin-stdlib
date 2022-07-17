@@ -1,695 +1,79 @@
 {"version":"3","listProblem":[{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
+  "type": "Unused symbol",
   "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/tvosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreTVOSSIMULATORARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.tvosX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "42abc968987a86cb9fac680ed8594d696a05ec736de7574e0752ca9eee8df706"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/iosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreIOSSIMULATORARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.iosArm64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "4433862966962e6c60128f370e59a9afffb3b4670bb0b21dd0371a0191c05cca"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "comment": "Type alias \"IgnoreMACOSX64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
       "path": "kotlin-test-junit/macosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSX64.kt",
       "language": "kotlin",
       "line": 5,
-      "offset": 1,
-      "length": 6,
+      "offset": 25,
+      "length": 14,
       "code": {
         "startLine": 3,
-        "length": 6,
-        "offset": 27,
+        "length": 14,
+        "offset": 51,
         "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSX64 = Ignore\n"
       }
     }
   ],
   "attributes": {
     "module": "kotlin-stdlib-project.kotlin-test-junit.macosX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
+    "inspectionName": "UnusedSymbol"
   },
-  "hash": "03ff482ab83ad55799420d91223f71b1cd32f92e4f023ec3c91f4140bcaa7ce5"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/mingwX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX64.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 3,
-        "length": 6,
-        "offset": 27,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMINGWX64 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.mingwX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "390a2e7d26a4dac2bd7345da4ef063cbc12978a4ebcfe9e5d7299c1c649bac88"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM32HFP\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.linuxArm64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "08265a36fdb3c5ddcc5c476590d9c7736f1b916ce7f61ad46fc006cc7d243a2d"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 3,
-        "length": 6,
-        "offset": 27,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSX64 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.watchosX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "7b3d72e4a85d2f3f581403b3e4493d9f714dcaaf08792854816432051fa7496a"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSX64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.watchosArm32Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "0a325a8ef818acb4fa2bdd0fb48300884ebfbe9333d3988fc6fb096786593455"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/linuxArm32Hfp/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXMIPSEL32\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.linuxArm32HfpMain",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "3f4d1f59fb3a387751afab4659943bc56fd4bef0ffd0d1c5c7bfd49016d045f8"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/iosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 3,
-        "length": 6,
-        "offset": 27,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSSIMULATORARM64 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.iosSimulatorArm64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "52367f5ed0097dc30451aa2da5ee3adf18d76680447fddf0a7181eeb35e8737b"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/iosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreIOSARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.iosX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "6cf5e43a7c16ac68c482c6c3999c6725115d5714129f1348c28fe77a676b5a11"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/iosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM32.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 3,
-        "length": 6,
-        "offset": 27,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSARM32 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.iosArm32Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "0048fdc5f9be3ec340540ab8b097fc8e044d35d139cce972d5ed674c6f7affc8"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "756c45b0e6d6c4edc3b118eb0d097a1dd27ff13dc8d5e3b3987c123f15d08f58"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM32\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosX86Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "51ddeffc6788e326f0e7702e38486e8487a326ed136178e07e538b1899e8423f"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSX64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosX86Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "5ce5a992c64a5010a49a338afc278d9ee9507b759750a0c20d126c37228d5e31"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/linuxMips32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxMips32Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "9fdcc127eb31855fd9c87905d759318ceca764771e79d4dfaf471d255d33c88e"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/linuxArm32Hfp/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm32HfpMain",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "0e71f53f2a685030871c043ed453624f9f0128417becebbb4a286ffc88ea89c3"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/watchosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosSimulatorArm64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "7679fb92be0bd10c1d65e429d9df229dd6d10dc341e93ff96371b27f2839fe32"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/mingwX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX86.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreMINGWX86\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.mingwX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "51168ae26d94f0c53938625defb5054fca9bf449f6078a3786edb7e50e90aadb"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/tvosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreTVOSSIMULATORARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.tvosArm64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "59cdf3dbd50c93f0e883624618bf0fe447a5b8e182ea2ed19d834769e5e4f725"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM64.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 3,
-        "length": 6,
-        "offset": 27,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXARM64 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "a22625fe7dcd60f18e08b47f3a1112403f1478970e29ea10e5cf1dd66ef01f1f"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM32\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "9035aae41c56389e789f97543fbd0816bf315567ac45b4b3989539f67925482c"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 3,
-        "length": 6,
-        "offset": 27,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSX64 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosX64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "9a5d77970311c600c45ec59bb95bf19f572e85bdc217426ac51028f3b51edf58"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 3,
-        "length": 6,
-        "offset": 27,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM32 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosArm32Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "77862dd05121f4141dd3388305cfc613b54b7981c05974dc1ea8488f26e4a768"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Redundant visibility modifier",
-  "severity": "High",
-  "comment": "Redundant visibility modifier",
-  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/watchosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 2,
-        "length": 6,
-        "offset": 60,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM32\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosArm64Main",
-    "inspectionName": "RedundantVisibilityModifier"
-  },
-  "hash": "598f97495612fe5d4f750d51b7ed4e4e20b915be3361d7adc164b20fbce20b69"
+  "hash": "945c93574849344268c940b8c061f341fa602b2c4ce77c833d61abe63868183f"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Type alias \"IgnoreTVOSARM64\" is never used",
+  "comment": "Class \"IgnoreMINGWX64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-junit/tvosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSARM64.kt",
+      "path": "kotlin-test-junit/mingwX86/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX64.kt",
       "language": "kotlin",
-      "line": 5,
-      "offset": 25,
-      "length": 15,
+      "line": 4,
+      "offset": 32,
+      "length": 14,
       "code": {
-        "startLine": 3,
-        "length": 15,
-        "offset": 51,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSARM64 = Ignore\n"
+        "startLine": 2,
+        "length": 14,
+        "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreMINGWX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit.mingwX86Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "eb69428851f2191b3dc867e594b0bfabc4e56d8ad138b0c0f12143367aceb8cc"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Class \"IgnoreTVOSX64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit/tvosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 32,
+      "length": 13,
+      "code": {
+        "startLine": 2,
+        "length": 13,
+        "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreTVOSX64\n"
       }
     }
   ],
@@ -697,203 +81,7 @@
     "module": "kotlin-stdlib-project.kotlin-test-junit.tvosArm64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "a1eb35909b6eead1c5ec94784f101568876403cfdfaad8599ed2f46d6a9d2144"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Class \"IgnoreLINUXX64\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/linuxArm32Hfp/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 14,
-      "code": {
-        "startLine": 2,
-        "length": 14,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.linuxArm32HfpMain",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "74e9d31751069566c3837d6b8c49e302c9838d39c649668c9dc43f4a0186f6b7"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Class \"IgnoreLINUXX64\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/linuxMipsel32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 14,
-      "code": {
-        "startLine": 2,
-        "length": 14,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.linuxMipsel32Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "c48a4308c989535e2297aef14ac6e8af53a4ea02320f2e51aaadbbd3926fb5be"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Class \"IgnoreLINUXARM64\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/linuxMipsel32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 16,
-      "code": {
-        "startLine": 2,
-        "length": 16,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.linuxMipsel32Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "ad5fcf59b571bd34e759adc868298a0135debce2bca076a3aff56b24679d7e27"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Class \"IgnoreWATCHOSX64\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit/watchosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 16,
-      "code": {
-        "startLine": 2,
-        "length": 16,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSX64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit.watchosSimulatorArm64Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "7a69916e9474394160f05876739e6f384f54335cccb8ac9968428d47f76de9c8"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Type alias \"IgnoreIOSARM32\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/iosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM32.kt",
-      "language": "kotlin",
-      "line": 5,
-      "offset": 25,
-      "length": 14,
-      "code": {
-        "startLine": 3,
-        "length": 14,
-        "offset": 51,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSARM32 = Ignore\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.iosArm32Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "626f510ad781b3c611e0dccbc20f5ce49c6e9edfc53e389325a77726ccf07354"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Class \"IgnoreIOSX64\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/iosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSX64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 12,
-      "code": {
-        "startLine": 2,
-        "length": 12,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreIOSX64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.iosArm64Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "b9b2bbc1598619af92e30050d434d9d8cd4a88bd6d00f0f92f7d1a1a4a7eed2d"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Class \"IgnoreMACOSARM64\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-junit5/macosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 16,
-      "code": {
-        "startLine": 2,
-        "length": 16,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreMACOSARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.macosX64Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "35757ecd6356da5b03478df0b19fe9009be8e98a113d3ea2f37c5d88f9d1e035"
+  "hash": "7f0f5d14b9e2b923447acf2622aa8f91e5961b88b6d11dcf91b358367c5c6475"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -904,7 +92,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-junit5/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32.kt",
+      "path": "kotlin-test-junit/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32.kt",
       "language": "kotlin",
       "line": 4,
       "offset": 32,
@@ -918,21 +106,21 @@
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm64Main",
+    "module": "kotlin-stdlib-project.kotlin-test-junit.linuxArm64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "29cb53aab738e61a52e9944e351a7b713677e72cc9eb6468e18f20ab424b08b9"
+  "hash": "b29bfd10c0a96d0045bd10de023a7ef89b1f7fd54dc4bc45401d09f0bf0db0f9"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Type alias \"IgnoreLINUXARM64\" is never used",
+  "comment": "Type alias \"IgnoreMACOSARM64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-junit5/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM64.kt",
+      "path": "kotlin-test-junit/macosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSARM64.kt",
       "language": "kotlin",
       "line": 5,
       "offset": 25,
@@ -941,71 +129,183 @@
         "startLine": 3,
         "length": 16,
         "offset": 51,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXARM64 = Ignore\n"
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSARM64 = Ignore\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm64Main",
+    "module": "kotlin-stdlib-project.kotlin-test-junit.macosArm64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "3d2337797c74bdaf3422ff07ff36ded7317de01761c362930496ce6ec2ebe8fc"
+  "hash": "ec9c1ce8bc9d14cee0f88c7f36e33b5fbcf92ff85c027823dfc81a2130cfb2b2"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Class \"IgnoreWATCHOSARM64\" is never used",
+  "comment": "Type alias \"IgnoreWATCHOSARM64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-junit5/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
+      "path": "kotlin-test-junit/watchosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
       "language": "kotlin",
-      "line": 4,
-      "offset": 32,
+      "line": 5,
+      "offset": 25,
       "length": 18,
       "code": {
-        "startLine": 2,
+        "startLine": 3,
         "length": 18,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
+        "offset": 51,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM64 = Ignore\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosArm32Main",
+    "module": "kotlin-stdlib-project.kotlin-test-junit.watchosArm64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "b193a456214037e8958cc643b4342034a6ed346731ab7ac942f7d55a9ecc8220"
+  "hash": "205b4b5dd1c9a38b035f91977aadb8df2c56edf2a20bdca3aa8fab77c4d8b970"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Class \"IgnoreWATCHOSARM32\" is never used",
+  "comment": "Class \"IgnoreTVOSARM64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-junit5/watchosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
+      "path": "kotlin-test-junit5/tvosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSARM64.kt",
       "language": "kotlin",
       "line": 4,
       "offset": 32,
-      "length": 18,
+      "length": 15,
       "code": {
         "startLine": 2,
-        "length": 18,
+        "length": 15,
         "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM32\n"
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreTVOSARM64\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosSimulatorArm64Main",
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.tvosX64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "f28281b50657923879abd9e8c4ee7b7c45684fa0a37a7bcd11d50e2a0a117ef0"
+  "hash": "03be5ce57e2819efbee111f607972ddb518d404d4f7dadc4f4ec05bf8202c1c9"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Type alias \"IgnoreMACOSARM64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/macosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 25,
+      "length": 16,
+      "code": {
+        "startLine": 3,
+        "length": 16,
+        "offset": 51,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.macosArm64Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "2564b2088ef926222043996ee14b3456be59db8e81a57f4c6bb2b28d2579d091"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Class \"IgnoreWATCHOSX64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 32,
+      "length": 16,
+      "code": {
+        "startLine": 2,
+        "length": 16,
+        "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosX86Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "140de766d417379d8eb54345ba739e6358dd1f38889573c22519d195b837d2c5"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Class \"IgnoreLINUXX64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/linuxMipsel32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 32,
+      "length": 14,
+      "code": {
+        "startLine": 2,
+        "length": 14,
+        "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxMipsel32Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "4cb6bbe449b897eedaea4c7c230878b3c1a4d537e338014d9ced3d0e76a6204a"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Type alias \"IgnoreIOSSIMULATORARM64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/iosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 25,
+      "length": 23,
+      "code": {
+        "startLine": 3,
+        "length": 23,
+        "offset": 51,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreIOSSIMULATORARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.iosSimulatorArm64Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "2b190c5361b8dd99fbe9fa1af3250c23b2d3825ca47d3d7b10fba49a2763d1ae"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -1016,7 +316,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-testng/iosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64.kt",
+      "path": "kotlin-test-testng/iosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSSIMULATORARM64.kt",
       "language": "kotlin",
       "line": 4,
       "offset": 32,
@@ -1030,30 +330,58 @@
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.iosArm64Main",
+    "module": "kotlin-stdlib-project.kotlin-test-testng.iosArm32Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "2848d75ef49550fae7c67eb971d5517feb2afef293062ef2007c42aba42d5107"
+  "hash": "b7abdf6289ace1c2b7b340187c76846b6fda0f52f82f82c9f88936e6d01606bc"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Class \"IgnoreLINUXARM32HFP\" is never used",
+  "comment": "Class \"IgnoreIOSX64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-testng/linuxX64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "path": "kotlin-test-testng/iosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSX64.kt",
       "language": "kotlin",
       "line": 4,
       "offset": 32,
-      "length": 19,
+      "length": 12,
       "code": {
         "startLine": 2,
-        "length": 19,
+        "length": 12,
         "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM32HFP\n"
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreIOSX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.iosArm64Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "709a34151c462854ca518f6b1f2a96da3ed17754fb2ce97bc5418a5c55627f90"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Type alias \"IgnoreLINUXX64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxX64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 25,
+      "length": 14,
+      "code": {
+        "startLine": 3,
+        "length": 14,
+        "offset": 51,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXX64 = Ignore\n"
       }
     }
   ],
@@ -1061,55 +389,83 @@
     "module": "kotlin-stdlib-project.kotlin-test-testng.linuxX64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "a81eb72bafb4c2096a87524087c8a24ee740d83148105329fa8a2ab7bf90b69b"
+  "hash": "47950335a3c94bf686f1f4eaadc187ffdb154b17db2969f6b0908cbbf1d0b106"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Type alias \"IgnoreTVOSARM64\" is never used",
+  "comment": "Class \"IgnoreLINUXARM64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-testng/tvosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSARM64.kt",
+      "path": "kotlin-test-testng/linuxX64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM64.kt",
       "language": "kotlin",
-      "line": 5,
-      "offset": 25,
-      "length": 15,
+      "line": 4,
+      "offset": 32,
+      "length": 16,
       "code": {
-        "startLine": 3,
-        "length": 15,
-        "offset": 51,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSARM64 = Ignore\n"
+        "startLine": 2,
+        "length": 16,
+        "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM64\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.tvosArm64Main",
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxX64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "03de5d770b5ff7d755671ff335f837207448ae9d4a019cd39ce3bb7ce9018349"
+  "hash": "621200a98d894cea6e29e4a3599456caf54649a2bb2525cd5c86ce3c2e776977"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Class \"IgnoreLINUXARM32HFP\" is never used",
+  "comment": "Class \"IgnoreMINGWX64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-testng/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "path": "kotlin-test-testng/mingwX86/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX64.kt",
       "language": "kotlin",
       "line": 4,
       "offset": 32,
-      "length": 19,
+      "length": 14,
       "code": {
         "startLine": 2,
-        "length": 19,
+        "length": 14,
         "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM32HFP\n"
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreMINGWX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.mingwX86Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "a5a8385201f16a9c140a58814b91c4b91cd364ad7fd172c1839c2166435c27d5"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Class \"IgnoreLINUXX64\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 32,
+      "length": 14,
+      "code": {
+        "startLine": 2,
+        "length": 14,
+        "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
       }
     }
   ],
@@ -1117,7 +473,7 @@
     "module": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "54e71915901d912ef332ed62e85ec3a61ac503d44b59f4b51f1e76ea9d090091"
+  "hash": "f1511224ea3c11181aad210af5a65e7f010671b24ece659d80e79709600fc577"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -1151,85 +507,29 @@
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Class \"IgnoreWATCHOSARM64\" is never used",
+  "comment": "Type alias \"IgnoreMACOSARM64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-testng/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 18,
-      "code": {
-        "startLine": 2,
-        "length": 18,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosX86Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "3d27b1011986defe79d10f9cef9b4859774d6799df00c457725567503bd6bba4"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Type alias \"IgnoreLINUXMIPS32\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/linuxMips32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPS32.kt",
+      "path": "kotlin-test-testng/macosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreMACOSARM64.kt",
       "language": "kotlin",
       "line": 5,
       "offset": 25,
-      "length": 17,
+      "length": 16,
       "code": {
         "startLine": 3,
-        "length": 17,
+        "length": 16,
         "offset": 51,
-        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXMIPS32 = Ignore\n"
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMACOSARM64 = Ignore\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Main",
+    "module": "kotlin-stdlib-project.kotlin-test-testng.macosArm64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "56ea82a71cf497e73b8c90a654601cee778c3d37185c6a30ef0e2154c770832d"
-},{
-  "tool": "Code Inspection",
-  "category": "Redundant constructs",
-  "type": "Unused symbol",
-  "severity": "High",
-  "comment": "Class \"IgnoreWATCHOSARM64\" is never used",
-  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "kotlin-test-testng/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
-      "language": "kotlin",
-      "line": 4,
-      "offset": 32,
-      "length": 18,
-      "code": {
-        "startLine": 2,
-        "length": 18,
-        "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosArm32Main",
-    "inspectionName": "UnusedSymbol"
-  },
-  "hash": "87d47256c7815b7e4fc1991bd6b82257b8a515a5c5fcd0645d0479b119c02291"
+  "hash": "bea3d3028de2c672cddca6fd26639b33feb396373a28d70db5e7cb9ac684973e"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
@@ -1291,55 +591,839 @@
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Class \"IgnoreLINUXMIPS32\" is never used",
+  "comment": "Class \"IgnoreWATCHOSX86\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-testng/linuxArm32Hfp/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPS32.kt",
+      "path": "kotlin-test-testng/watchosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX86.kt",
       "language": "kotlin",
       "line": 4,
       "offset": 32,
-      "length": 17,
+      "length": 16,
       "code": {
         "startLine": 2,
-        "length": 17,
+        "length": 16,
         "offset": 91,
-        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXMIPS32\n"
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSX86\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxArm32HfpMain",
+    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosArm64Main",
     "inspectionName": "UnusedSymbol"
   },
-  "hash": "9de37eeeedc89b243f776c7ec81e53e36872204ef080d8e21cdf46bbb9ff3a7a"
+  "hash": "374f999570900bebcff984d2420729dcd104c6e5ad120b1384c50b8a8d3bac83"
 },{
   "tool": "Code Inspection",
   "category": "Redundant constructs",
   "type": "Unused symbol",
   "severity": "High",
-  "comment": "Class \"IgnoreTVOSARM64\" is never used",
+  "comment": "Class \"IgnoreLINUXX64\" is never used",
   "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
   "sources": [
     {
       "type": "file",
-      "path": "kotlin-test-testng/tvosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSARM64.kt",
+      "path": "kotlin-test-testng/linuxMipsel32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
       "language": "kotlin",
       "line": 4,
       "offset": 32,
-      "length": 15,
+      "length": 14,
       "code": {
         "startLine": 2,
-        "length": 15,
+        "length": 14,
         "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxMipsel32Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "4f1bbbc29c5a97bf26b5be495bda0925db55b5e9d57475025a7028668a3ebe33"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Unused symbol",
+  "severity": "High",
+  "comment": "Class \"IgnoreLINUXARM32HFP\" is never used",
+  "detailsInfo": "Reports symbols that are not used or not reachable from entry points.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxMipsel32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 32,
+      "length": 19,
+      "code": {
+        "startLine": 2,
+        "length": 19,
+        "offset": 91,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM32HFP\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxMipsel32Main",
+    "inspectionName": "UnusedSymbol"
+  },
+  "hash": "24ed9e1529a7b3480706baad59d6b823f7e34f06049b885d5637d6bfeb9386c6"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit/mingwX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX86.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreMINGWX86\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit.mingwX64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "55000b43e15293044d2233575df25a3abb8762c08e5470fe01729b7da9966bb8"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit/mingwX64/main/kotlin/com/javiersc/kotlin/test/IgnoreMINGWX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreMINGWX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit.mingwX64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "390a2e7d26a4dac2bd7345da4ef063cbc12978a4ebcfe9e5d7299c1c649bac88"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit/linuxArm32Hfp/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXMIPSEL32\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit.linuxArm32HfpMain",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "3f4d1f59fb3a387751afab4659943bc56fd4bef0ffd0d1c5c7bfd49016d045f8"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit/iosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM32.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreIOSARM32\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit.iosSimulatorArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "28d69628fb017a39c974484326b5fa002bf797cf2ff1ff839327c902b906784c"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit/tvosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSSIMULATORARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit.tvosSimulatorArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "b7ef9cbb4b52cebc8bdc6a800d4ff4686f28b2b73bcc86e3c01fce017cd8fe33"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/iosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSARM64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreIOSARM64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.iosX64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "6cf5e43a7c16ac68c482c6c3999c6725115d5714129f1348c28fe77a676b5a11"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/tvosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSARM64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
         "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreTVOSARM64\n"
       }
     }
   ],
   "attributes": {
-    "module": "kotlin-stdlib-project.kotlin-test-testng.tvosSimulatorArm64Main",
-    "inspectionName": "UnusedSymbol"
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.tvosX64Main",
+    "inspectionName": "RedundantVisibilityModifier"
   },
-  "hash": "b43ed67b8214a681fad115ab5e45c66a24f67cd1568b1e3bae256d9d9d72e2c6"
+  "hash": "3174f4bb8ec1dedcd6d99a8a62e59351976d915aa6a7d48cef94bc55c581ce11"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/iosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreIOSX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreIOSX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.iosArm32Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "bca07329196969a6362c885ad46f165d39a55c034fc5376521a6686180c2f459"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM32HFP\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "c9620338280a0c9006491437e3729af4255c29972595da2b864dc9094797dabc"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPSEL32.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXMIPSEL32\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "1af6a7b86548e29cfc9648c60b3d0c28ab48ab2e6b1859827188ea2abbc63dfb"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPS32.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXMIPS32\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "c63cf57907010734e381b1ac2654ac7d09e42bd7e8e57a904ec90d8ac0df05bb"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosX64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "756c45b0e6d6c4edc3b118eb0d097a1dd27ff13dc8d5e3b3987c123f15d08f58"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSSIMULATORARM64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosX64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "cc394512e89e25d6f7bed4bb66e047e3496185d65c54612b1526d6526245eab8"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosX86Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "faadf42c82a46c437cfb2a4f4030953cfb8e71a06ae063742de8f89a58714bf6"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM32 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosArm32Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "f3eff0ff98d6580688c9a4b766545774884a2e6fc011c69628b2062612cf7de3"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/watchosArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.watchosArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "1a1f820ec8cb61b5dea549d28bb83a67e40fe2d9f18dbb7c40c1f53917a357a6"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-junit5/tvosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSSIMULATORARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-junit5.tvosSimulatorArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "fc0c8a7a473ee5e6fc04130d61301f047e98ec9d283accef3767da1266de54f6"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "5d8d3ce72f27c7ab53dd5ae1efa27ea35fdcc7563b5d37828ae47b6376c75ffe"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM32HFP\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "121a2b3d23fa9ce47ec5eb058611ef8ea5ea0d638542b66bde331dc8f6ec4c1e"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/watchosX64/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSX64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreWATCHOSX64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosX64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "9a5d77970311c600c45ec59bb95bf19f572e85bdc217426ac51028f3b51edf58"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/watchosX86/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM32.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM32\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosX86Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "a669b91b400d17dcd71afce25947ca2869d02094cfc3d824ad9b917230f4650b"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxMips32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "6fa4bfdae9d9c84278d967794741245bc64e1988848eb060dc36b5a26f537e99"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxMips32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXARM32HFP.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreLINUXARM32HFP\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "5c006c0a49e980081bd0b98f8c53a221d076dce23e77e97ec52cf9ccd8d307dc"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/linuxMips32/main/kotlin/com/javiersc/kotlin/test/IgnoreLINUXMIPS32.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreLINUXMIPS32 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "3d71798e11c94ac8605a4e9d0e3e6da48bdac230b4eaa4a57ca4388f21361752"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/watchosArm32/main/kotlin/com/javiersc/kotlin/test/IgnoreWATCHOSARM64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreWATCHOSARM64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.watchosArm32Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "ba5dab0fd60326f4d73f7874c6b327eac365a1c9e2acf2e3f6ebea4dae33815d"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/tvosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSSIMULATORARM64.kt",
+      "language": "kotlin",
+      "line": 5,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 27,
+        "surroundingCode": "import kotlin.test.Ignore\n\npublic actual typealias IgnoreTVOSSIMULATORARM64 = Ignore\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.tvosSimulatorArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "ee1a1b1f1cf1979e693f02eb9f3c8598efeba4ffa1d4803b92f19ce12da5be90"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant visibility modifier",
+  "severity": "High",
+  "comment": "Redundant visibility modifier",
+  "detailsInfo": "Reports visibility modifiers that match the default visibility of an element (`public` for most elements, `protected` for members that override a protected member).",
+  "sources": [
+    {
+      "type": "file",
+      "path": "kotlin-test-testng/tvosSimulatorArm64/main/kotlin/com/javiersc/kotlin/test/IgnoreTVOSX64.kt",
+      "language": "kotlin",
+      "line": 4,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 2,
+        "length": 6,
+        "offset": 60,
+        "surroundingCode": "\n@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)\npublic actual annotation class IgnoreTVOSX64\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "kotlin-stdlib-project.kotlin-test-testng.tvosSimulatorArm64Main",
+    "inspectionName": "RedundantVisibilityModifier"
+  },
+  "hash": "54c76b97ddc3c9c3465a4e0958262dfef9fea6cff5f624e641b9979e1228efb9"
 }]}
