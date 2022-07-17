@@ -42,7 +42,7 @@ hubdle {
             jvm {
                 main {
                     dependencies {
-                        implementation("org.jetbrains.kotlin:kotlin-test-testng")
+                        implementation(jetbrainsKotlinTestTestng())
                     }
                 }
             }
