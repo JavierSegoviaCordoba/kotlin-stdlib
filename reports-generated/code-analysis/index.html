@@ -189,6 +189,7 @@
   <h3>complexity: 1</h3>
   <details id="TooManyFunctions" open="open">
     <summary class="rule-container"><span class="rule">TooManyFunctions: 1 </span><span class="description">Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage too many things at once. Extract functionality which clearly belongs together.</span></summary>
+<a href="https://detekt.dev/docs/rules/complexity#toomanyfunctions">Documentation</a>
     <ul>
       <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Strings.kt:1:1</span><span class="message">File '/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Strings.kt' with '11' functions detected. Defined threshold inside files is set to '11'</span>
         <pre><code><span class="lineno">   1 </span><span class="error">package com.javiersc.kotlin.stdlib</span>
@@ -202,6 +203,7 @@
   <h3>style: 6</h3>
   <details id="ReturnCount" open="open">
     <summary class="rule-container"><span class="rule">ReturnCount: 2 </span><span class="description">Restrict the number of return statements in methods.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#returncount">Documentation</a>
     <ul>
       <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:71:35</span><span class="message">Function penultimateOrNull has 4 return statements which exceeds the limit of 2.</span>
         <pre><code><span class="lineno">  68 </span>    }
@@ -227,6 +229,7 @@
   </details>
   <details id="ThrowsCount" open="open">
     <summary class="rule-container"><span class="rule">ThrowsCount: 2 </span><span class="description">Restrict the number of throw statements in methods.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#throwscount">Documentation</a>
     <ul>
       <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:46:35</span><span class="message">Too many throw statements in the function penultimate. The maximum number of allowed throw statements is 2.</span>
         <pre><code><span class="lineno">  43 </span> *
@@ -252,6 +255,7 @@
   </details>
   <details id="UnusedPrivateMember" open="open">
     <summary class="rule-container"><span class="rule">UnusedPrivateMember: 2 </span><span class="description">Private member is unused and should be removed.</span></summary>
+<a href="https://detekt.dev/docs/rules/style#unusedprivatemember">Documentation</a>
     <ul>
       <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:103:18</span><span class="message">Private property `i` is unused.</span>
         <pre><code><span class="lineno"> 100 </span>                throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)
@@ -278,7 +282,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.20.0</a> on 2022-07-17 18:47:37 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.21.0</a> on 2022-07-17 19:43:48 UTC.
 
 </body>
 </html>
