@@ -2,7 +2,7 @@
 
 ## Metrics
 
-* 53 number of properties
+* 55 number of properties
 
 * 43 number of functions
 
@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 6,608 lines of code (loc)
+* 6,628 lines of code (loc)
 
-* 4,036 source lines of code (sloc)
+* 4,056 source lines of code (sloc)
 
-* 2,661 logical lines of code (lloc)
+* 2,681 logical lines of code (lloc)
 
 * 57 comment lines of code (cloc)
 
@@ -169,4 +169,4 @@ Private property `i` is unused.
 
 ```
 
-generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-08-31 17:38:13 UTC
+generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-08-31 18:05:25 UTC
