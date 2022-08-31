@@ -3,6 +3,24 @@
 package com.javiersc.kotlin.stdlib
 
 /**
+ * Returns a copy of this string having its first letter title-cased using the rules of the default
+ * locale, or the original string if it's empty or already starts with a title case letter.
+ *
+ * The title case of a character is usually the same as its upper case with several exceptions. The
+ * particular list of characters with the special title case form depends on the underlying
+ * platform.
+ */
+public inline fun String.capitalize(): String = replaceFirstChar {
+    if (it.isLowerCase()) it.titlecase() else it.toString()
+}
+
+/**
+ * Returns a copy of this string having its first letter lowercased using the rules of the default
+ * locale, or the original string if it's empty or already starts with a lower case letter.
+ */
+public inline fun String.decapitalize(): String = replaceFirstChar { it.lowercase() }
+
+/**
  * Returns second element.
  *
  * Throws: `NoSuchElementException` - if the list size is 1.
