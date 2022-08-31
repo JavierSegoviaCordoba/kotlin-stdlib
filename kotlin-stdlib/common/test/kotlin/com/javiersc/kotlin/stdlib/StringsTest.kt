@@ -1,10 +1,12 @@
+@file:Suppress("RedundantExplicitType")
+
 package com.javiersc.kotlin.stdlib
 
 import kotlin.test.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-class StringsTest {
+internal class StringsTest {
 
     @Test
     fun string_capitalize() {
@@ -18,6 +20,18 @@ class StringsTest {
         assertTrue { "hello".decapitalize() == "hello" }
         assertTrue { "Hello".decapitalize() == "hello" }
         assertTrue { "HElLo".decapitalize() == "hElLo" }
+    }
+
+    @Test
+    fun string_not_contain() {
+        assertFalse { "Hello, World".notContain("Hello") }
+        assertFalse { "HELLO, World".notContain("hello", ignoreCase = true) }
+        assertTrue { "Hello, World".notContain("hello") }
+        assertTrue { "Hello, World".notContain("hello", ignoreCase = false) }
+
+        val regex = Regex("[0-9]+")
+        assertFalse { "Hello, World 1".notContain(regex) }
+        assertTrue { "Hello, World".notContain(regex) }
     }
 
     @Test
@@ -35,18 +49,31 @@ class StringsTest {
     @Test
     fun string_isNotNullNorEmpty_and_string_isNotNullNorBlank() {
         val nullable: String? = null
-        val blank = " "
-        val empty = ""
-        val notBlank = "Hello, World"
+        val nullableCharSequence: CharSequence? = null
+        val blank: String = " "
+        val blankCharSequence: CharSequence = " "
+        val empty: String = ""
+        val emptyCharSequence: CharSequence = ""
+        val notBlank: String = "Hello, World"
+        val notBlankCharSequence: CharSequence = "Hello, World"
+
+        assertFalse { nullable.isNotNullNorEmpty() }
+        assertFalse { nullableCharSequence.isNotNullNorEmpty() }
+        assertTrue { blank.isNotNullNorEmpty() }
+        assertTrue { blankCharSequence.isNotNullNorEmpty() }
+        assertFalse { empty.isNotNullNorEmpty() }
+        assertFalse { emptyCharSequence.isNotNullNorEmpty() }
+        assertTrue { notBlank.isNotNullNorEmpty() }
+        assertTrue { notBlankCharSequence.isNotNullNorEmpty() }
 
         assertFalse { nullable.isNotNullNorBlank() }
-        assertFalse { nullable.isNotNullNorEmpty() }
+        assertFalse { nullableCharSequence.isNotNullNorBlank() }
         assertFalse { blank.isNotNullNorBlank() }
-        assertTrue { blank.isNotNullNorEmpty() }
+        assertFalse { blankCharSequence.isNotNullNorBlank() }
         assertFalse { empty.isNotNullNorBlank() }
-        assertFalse { empty.isNotNullNorEmpty() }
+        assertFalse { emptyCharSequence.isNotNullNorBlank() }
         assertTrue { notBlank.isNotNullNorBlank() }
-        assertTrue { notBlank.isNotNullNorEmpty() }
+        assertTrue { notBlankCharSequence.isNotNullNorBlank() }
     }
 
     @Test
@@ -70,5 +97,17 @@ class StringsTest {
         assertTrue { "a\nb".endWithNewLine() == "a\nb\n" }
         assertTrue { "".endWithNewLine() == "" }
         assertTrue { "\n".endWithNewLine() == "\n" }
+        assertTrue {
+            """
+                |Hello, World
+                |
+            """
+                .trimMargin()
+                .endWithNewLine() ==
+                """
+                    |Hello, World
+                    |
+                """.trimMargin()
+        }
     }
 }
