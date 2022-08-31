@@ -4,7 +4,7 @@
 
 * 48 number of properties
 
-* 38 number of functions
+* 42 number of functions
 
 * 1,029 number of classes
 
@@ -14,23 +14,23 @@
 
 ## Complexity Report
 
-* 6,537 lines of code (loc)
+* 6,569 lines of code (loc)
 
-* 3,985 source lines of code (sloc)
+* 4,001 source lines of code (sloc)
 
-* 2,617 logical lines of code (lloc)
+* 2,630 logical lines of code (lloc)
 
-* 45 comment lines of code (cloc)
+* 57 comment lines of code (cloc)
 
-* 70 cyclomatic complexity (mcc)
+* 75 cyclomatic complexity (mcc)
 
-* 48 cognitive complexity
+* 50 cognitive complexity
 
 * 7 number of total code smells
 
 * 1% comment source ratio
 
-* 26 mcc per 1,000 lloc
+* 28 mcc per 1,000 lloc
 
 * 2 code smells per 1,000 lloc
 
@@ -61,35 +61,35 @@ Restrict the number of return statements in methods.
 
 [Documentation](https://detekt.dev/docs/rules/style#returncount)
 
-* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:71:35
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:89:35
 ```
 Function penultimateOrNull has 4 return statements which exceeds the limit of 2.
 ```
 ```kotlin
-68     }
-69 }
-70 
-71 public inline fun <T> Iterable<T>.penultimateOrNull(): T? {
+86     }
+87 }
+88 
+89 public inline fun <T> Iterable<T>.penultimateOrNull(): T? {
 !!                                   ^ error
-72     return when (this) {
-73         is List -> getOrNull(size - 2)
-74         else -> {
+90     return when (this) {
+91         is List -> getOrNull(size - 2)
+92         else -> {
 
 ```
 
-* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:114:37
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:132:37
 ```
 Function getIndexOrNull has 3 return statements which exceeds the limit of 2.
 ```
 ```kotlin
-111 }
-112 
-113 @PublishedApi
-114 internal inline fun <T> Iterable<T>.getIndexOrNull(index: Int): T? {
+129 }
+130 
+131 @PublishedApi
+132 internal inline fun <T> Iterable<T>.getIndexOrNull(index: Int): T? {
 !!!                                     ^ error
-115     return when (this) {
-116         is List -> getOrNull(index - 1)
-117         else -> {
+133     return when (this) {
+134         is List -> getOrNull(index - 1)
+135         else -> {
 
 ```
 
@@ -99,35 +99,35 @@ Restrict the number of throw statements in methods.
 
 [Documentation](https://detekt.dev/docs/rules/style#throwscount)
 
-* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:46:35
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:64:35
 ```
 Too many throw statements in the function penultimate. The maximum number of allowed throw statements is 2.
 ```
 ```kotlin
-43  *
-44  * Throws: `NoSuchElementException` - if the list size is 1.
-45  */
-46 public inline fun <T> Iterable<T>.penultimate(): T {
+61  *
+62  * Throws: `NoSuchElementException` - if the list size is 1.
+63  */
+64 public inline fun <T> Iterable<T>.penultimate(): T {
 !!                                   ^ error
-47     return when (this) {
-48         is List ->
-49             when (size) {
+65     return when (this) {
+66         is List ->
+67             when (size) {
 
 ```
 
-* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:92:37
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:110:37
 ```
 Too many throw statements in the function getIndex. The maximum number of allowed throw statements is 2.
 ```
 ```kotlin
-89 }
-90 
-91 @PublishedApi
-92 internal inline fun <T> Iterable<T>.getIndex(index: Int): T {
-!!                                     ^ error
-93     return when (this) {
-94         is List ->
-95             if (size >= index - 1) this[index - 1]
+107 }
+108 
+109 @PublishedApi
+110 internal inline fun <T> Iterable<T>.getIndex(index: Int): T {
+!!!                                     ^ error
+111     return when (this) {
+112         is List ->
+113             if (size >= index - 1) this[index - 1]
 
 ```
 
@@ -137,36 +137,36 @@ Private member is unused and should be removed.
 
 [Documentation](https://detekt.dev/docs/rules/style#unusedprivatemember)
 
-* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:103:18
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:121:18
 ```
 Private property `i` is unused.
 ```
 ```kotlin
-100                 throw NoSuchElementException("Collection size is lower than $index.")
-101             var value: T = iterator.next()
-102 
-103             for (i in 0 until index - 1) {
+118                 throw NoSuchElementException("Collection size is lower than $index.")
+119             var value: T = iterator.next()
+120 
+121             for (i in 0 until index - 1) {
 !!!                  ^ error
-104                 if (!iterator.hasNext())
-105                     throw NoSuchElementException("Collection size is lower than $index.")
-106                 else value = iterator.next()
+122                 if (!iterator.hasNext())
+123                     throw NoSuchElementException("Collection size is lower than $index.")
+124                 else value = iterator.next()
 
 ```
 
-* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:122:18
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:140:18
 ```
 Private property `i` is unused.
 ```
 ```kotlin
-119             if (!iterator.hasNext()) return null
-120             var value: T = iterator.next()
-121 
-122             for (i in 0 until index - 1) {
+137             if (!iterator.hasNext()) return null
+138             var value: T = iterator.next()
+139 
+140             for (i in 0 until index - 1) {
 !!!                  ^ error
-123                 if (!iterator.hasNext()) return null else value = iterator.next()
-124             }
-125             value
+141                 if (!iterator.hasNext()) return null else value = iterator.next()
+142             }
+143             value
 
 ```
 
-generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-08-06 00:47:59 UTC
+generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-08-31 11:21:20 UTC

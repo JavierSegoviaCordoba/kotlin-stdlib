@@ -158,7 +158,7 @@
 <div>
   <ul>
     <li>48 number of properties</li>
-    <li>38 number of functions</li>
+    <li>42 number of functions</li>
     <li>1,029 number of classes</li>
     <li>3 number of packages</li>
     <li>1,139 number of kt files</li>
@@ -170,15 +170,15 @@
 
 <div>
   <ul>
-    <li>6,537 lines of code (loc)</li>
-    <li>3,985 source lines of code (sloc)</li>
-    <li>2,617 logical lines of code (lloc)</li>
-    <li>45 comment lines of code (cloc)</li>
-    <li>70 cyclomatic complexity (mcc)</li>
-    <li>48 cognitive complexity</li>
+    <li>6,569 lines of code (loc)</li>
+    <li>4,001 source lines of code (sloc)</li>
+    <li>2,630 logical lines of code (lloc)</li>
+    <li>57 comment lines of code (cloc)</li>
+    <li>75 cyclomatic complexity (mcc)</li>
+    <li>50 cognitive complexity</li>
     <li>7 number of total code smells</li>
     <li>1% comment source ratio</li>
-    <li>26 mcc per 1,000 lloc</li>
+    <li>28 mcc per 1,000 lloc</li>
     <li>2 code smells per 1,000 lloc</li>
   </ul>
 </div>
@@ -205,24 +205,24 @@
     <summary class="rule-container"><span class="rule">ReturnCount: 2 </span><span class="description">Restrict the number of return statements in methods.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#returncount">Documentation</a>
     <ul>
-      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:71:35</span><span class="message">Function penultimateOrNull has 4 return statements which exceeds the limit of 2.</span>
-        <pre><code><span class="lineno">  68 </span>    }
-<span class="lineno">  69 </span>}
-<span class="lineno">  70 </span>
-<span class="lineno">  71 </span>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">penultimateOrNull</span>(): T? {
-<span class="lineno">  72 </span>    return when (this) {
-<span class="lineno">  73 </span>        is List -&gt; getOrNull(size - 2)
-<span class="lineno">  74 </span>        else -&gt; {
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:89:35</span><span class="message">Function penultimateOrNull has 4 return statements which exceeds the limit of 2.</span>
+        <pre><code><span class="lineno">  86 </span>    }
+<span class="lineno">  87 </span>}
+<span class="lineno">  88 </span>
+<span class="lineno">  89 </span>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">penultimateOrNull</span>(): T? {
+<span class="lineno">  90 </span>    return when (this) {
+<span class="lineno">  91 </span>        is List -&gt; getOrNull(size - 2)
+<span class="lineno">  92 </span>        else -&gt; {
 </code></pre>
       </li>
-      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:114:37</span><span class="message">Function getIndexOrNull has 3 return statements which exceeds the limit of 2.</span>
-        <pre><code><span class="lineno"> 111 </span>}
-<span class="lineno"> 112 </span>
-<span class="lineno"> 113 </span>@PublishedApi
-<span class="lineno"> 114 </span>internal inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">getIndexOrNull</span>(index: Int): T? {
-<span class="lineno"> 115 </span>    return when (this) {
-<span class="lineno"> 116 </span>        is List -&gt; getOrNull(index - 1)
-<span class="lineno"> 117 </span>        else -&gt; {
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:132:37</span><span class="message">Function getIndexOrNull has 3 return statements which exceeds the limit of 2.</span>
+        <pre><code><span class="lineno"> 129 </span>}
+<span class="lineno"> 130 </span>
+<span class="lineno"> 131 </span>@PublishedApi
+<span class="lineno"> 132 </span>internal inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">getIndexOrNull</span>(index: Int): T? {
+<span class="lineno"> 133 </span>    return when (this) {
+<span class="lineno"> 134 </span>        is List -&gt; getOrNull(index - 1)
+<span class="lineno"> 135 </span>        else -&gt; {
 </code></pre>
       </li>
     </ul>
@@ -231,24 +231,24 @@
     <summary class="rule-container"><span class="rule">ThrowsCount: 2 </span><span class="description">Restrict the number of throw statements in methods.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#throwscount">Documentation</a>
     <ul>
-      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:46:35</span><span class="message">Too many throw statements in the function penultimate. The maximum number of allowed throw statements is 2.</span>
-        <pre><code><span class="lineno">  43 </span> *
-<span class="lineno">  44 </span> * Throws: `NoSuchElementException` - if the list size is 1.
-<span class="lineno">  45 </span> */
-<span class="lineno">  46 </span>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">penultimate</span>(): T {
-<span class="lineno">  47 </span>    return when (this) {
-<span class="lineno">  48 </span>        is List -&gt;
-<span class="lineno">  49 </span>            when (size) {
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:64:35</span><span class="message">Too many throw statements in the function penultimate. The maximum number of allowed throw statements is 2.</span>
+        <pre><code><span class="lineno">  61 </span> *
+<span class="lineno">  62 </span> * Throws: `NoSuchElementException` - if the list size is 1.
+<span class="lineno">  63 </span> */
+<span class="lineno">  64 </span>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">penultimate</span>(): T {
+<span class="lineno">  65 </span>    return when (this) {
+<span class="lineno">  66 </span>        is List -&gt;
+<span class="lineno">  67 </span>            when (size) {
 </code></pre>
       </li>
-      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:92:37</span><span class="message">Too many throw statements in the function getIndex. The maximum number of allowed throw statements is 2.</span>
-        <pre><code><span class="lineno">  89 </span>}
-<span class="lineno">  90 </span>
-<span class="lineno">  91 </span>@PublishedApi
-<span class="lineno">  92 </span>internal inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">getIndex</span>(index: Int): T {
-<span class="lineno">  93 </span>    return when (this) {
-<span class="lineno">  94 </span>        is List -&gt;
-<span class="lineno">  95 </span>            if (size &gt;= index - 1) this[index - 1]
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:110:37</span><span class="message">Too many throw statements in the function getIndex. The maximum number of allowed throw statements is 2.</span>
+        <pre><code><span class="lineno"> 107 </span>}
+<span class="lineno"> 108 </span>
+<span class="lineno"> 109 </span>@PublishedApi
+<span class="lineno"> 110 </span>internal inline fun &lt;T&gt; Iterable&lt;T&gt;.<span class="error">getIndex</span>(index: Int): T {
+<span class="lineno"> 111 </span>    return when (this) {
+<span class="lineno"> 112 </span>        is List -&gt;
+<span class="lineno"> 113 </span>            if (size &gt;= index - 1) this[index - 1]
 </code></pre>
       </li>
     </ul>
@@ -257,24 +257,24 @@
     <summary class="rule-container"><span class="rule">UnusedPrivateMember: 2 </span><span class="description">Private member is unused and should be removed.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#unusedprivatemember">Documentation</a>
     <ul>
-      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:103:18</span><span class="message">Private property `i` is unused.</span>
-        <pre><code><span class="lineno"> 100 </span>                throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)
-<span class="lineno"> 101 </span>            var value: T = iterator.next()
-<span class="lineno"> 102 </span>
-<span class="lineno"> 103 </span>            for (<span class="error">i</span> in 0 until index - 1) {
-<span class="lineno"> 104 </span>                if (!iterator.hasNext())
-<span class="lineno"> 105 </span>                    throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)
-<span class="lineno"> 106 </span>                else value = iterator.next()
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:121:18</span><span class="message">Private property `i` is unused.</span>
+        <pre><code><span class="lineno"> 118 </span>                throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)
+<span class="lineno"> 119 </span>            var value: T = iterator.next()
+<span class="lineno"> 120 </span>
+<span class="lineno"> 121 </span>            for (<span class="error">i</span> in 0 until index - 1) {
+<span class="lineno"> 122 </span>                if (!iterator.hasNext())
+<span class="lineno"> 123 </span>                    throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)
+<span class="lineno"> 124 </span>                else value = iterator.next()
 </code></pre>
       </li>
-      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:122:18</span><span class="message">Private property `i` is unused.</span>
-        <pre><code><span class="lineno"> 119 </span>            if (!iterator.hasNext()) return null
-<span class="lineno"> 120 </span>            var value: T = iterator.next()
-<span class="lineno"> 121 </span>
-<span class="lineno"> 122 </span>            for (<span class="error">i</span> in 0 until index - 1) {
-<span class="lineno"> 123 </span>                if (!iterator.hasNext()) return null else value = iterator.next()
-<span class="lineno"> 124 </span>            }
-<span class="lineno"> 125 </span>            value
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt:140:18</span><span class="message">Private property `i` is unused.</span>
+        <pre><code><span class="lineno"> 137 </span>            if (!iterator.hasNext()) return null
+<span class="lineno"> 138 </span>            var value: T = iterator.next()
+<span class="lineno"> 139 </span>
+<span class="lineno"> 140 </span>            for (<span class="error">i</span> in 0 until index - 1) {
+<span class="lineno"> 141 </span>                if (!iterator.hasNext()) return null else value = iterator.next()
+<span class="lineno"> 142 </span>            }
+<span class="lineno"> 143 </span>            value
 </code></pre>
       </li>
     </ul>
@@ -282,7 +282,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.21.0</a> on 2022-08-06 00:47:59 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.21.0</a> on 2022-08-31 11:21:20 UTC.
 
 </body>
 </html>
