@@ -6,20 +6,25 @@ import kotlin.test.Test
 import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
 
-class CollectionsTest {
+internal class CollectionsTest {
 
     private val numbers: List<Int> = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    private val chars: Iterable<Char> = listOf('A', 'B', 'C', 'D', 'E', 'F').asIterable()
-    private val empty: List<String> = emptyList()
-    private val emptyIterable: Iterable<String> = emptyList<String>().asIterable()
+    private val numbersIterable: Iterable<Int> = IntRange(1, 10)
+    private val chars: List<Char> = listOf('A', 'B', 'C', 'D', 'E', 'F')
+    private val charsIterable: Iterable<Char> = CharRange('A', 'F')
+    private val empty: List<Char> = emptyList()
+    private val emptyIterable: Iterable<Char> = CharRange.EMPTY
 
     @Test
     fun collection_second() {
         assertTrue { numbers.second() == 2 }
+        assertTrue { numbersIterable.second() == 2 }
         assertTrue { numbers.secondOrNull() == 2 }
+        assertTrue { numbersIterable.secondOrNull() == 2 }
 
         assertTrue { chars.second() == 'B' }
-        assertTrue { chars.secondOrNull() == 'B' }
+        assertTrue { charsIterable.second() == 'B' }
+        assertTrue { charsIterable.secondOrNull() == 'B' }
 
         assertFailsWith<NoSuchElementException> { empty.second() }
         assertFailsWith<NoSuchElementException> { emptyIterable.second() }
@@ -31,10 +36,14 @@ class CollectionsTest {
     @Test
     fun collection_third() {
         assertTrue { numbers.third() == 3 }
+        assertTrue { numbersIterable.third() == 3 }
         assertTrue { numbers.thirdOrNull() == 3 }
+        assertTrue { numbersIterable.thirdOrNull() == 3 }
 
         assertTrue { chars.third() == 'C' }
+        assertTrue { charsIterable.third() == 'C' }
         assertTrue { chars.thirdOrNull() == 'C' }
+        assertTrue { charsIterable.thirdOrNull() == 'C' }
 
         assertFailsWith<NoSuchElementException> { empty.third() }
         assertFailsWith<NoSuchElementException> { emptyIterable.third() }
@@ -46,10 +55,13 @@ class CollectionsTest {
     @Test
     fun collection_forth() {
         assertTrue { numbers.forth() == 4 }
+        assertTrue { numbersIterable.forth() == 4 }
         assertTrue { numbers.forthOrNull() == 4 }
+        assertTrue { numbersIterable.forthOrNull() == 4 }
 
         assertTrue { chars.forth() == 'D' }
-        assertTrue { chars.forthOrNull() == 'D' }
+        assertTrue { charsIterable.forth() == 'D' }
+        assertTrue { charsIterable.forthOrNull() == 'D' }
 
         assertFailsWith<NoSuchElementException> { empty.forth() }
         assertFailsWith<NoSuchElementException> { emptyIterable.forth() }
@@ -61,10 +73,14 @@ class CollectionsTest {
     @Test
     fun collection_fifth() {
         assertTrue { numbers.fifth() == 5 }
+        assertTrue { numbersIterable.fifth() == 5 }
         assertTrue { numbers.fifthOrNull() == 5 }
+        assertTrue { numbersIterable.fifthOrNull() == 5 }
 
         assertTrue { chars.fifth() == 'E' }
+        assertTrue { charsIterable.fifth() == 'E' }
         assertTrue { chars.fifthOrNull() == 'E' }
+        assertTrue { charsIterable.fifthOrNull() == 'E' }
 
         assertFailsWith<NoSuchElementException> { empty.fifth() }
         assertFailsWith<NoSuchElementException> { emptyIterable.fifth() }
@@ -76,10 +92,14 @@ class CollectionsTest {
     @Test
     fun collection_penultimate() {
         assertTrue { numbers.penultimate() == 9 }
+        assertTrue { numbersIterable.penultimate() == 9 }
         assertTrue { numbers.penultimateOrNull() == 9 }
+        assertTrue { numbersIterable.penultimateOrNull() == 9 }
 
         assertTrue { chars.penultimate() == 'E' }
+        assertTrue { charsIterable.penultimate() == 'E' }
         assertTrue { chars.penultimateOrNull() == 'E' }
+        assertTrue { charsIterable.penultimateOrNull() == 'E' }
 
         assertFailsWith<NoSuchElementException> { empty.penultimate() }
         assertFailsWith<NoSuchElementException> { emptyIterable.penultimate() }
