@@ -7,6 +7,20 @@ import kotlin.test.assertTrue
 class StringsTest {
 
     @Test
+    fun string_capitalize() {
+        assertTrue { "hello".capitalize() == "Hello" }
+        assertTrue { "Hello".capitalize() == "Hello" }
+        assertTrue { "hElLo".capitalize() == "HElLo" }
+    }
+
+    @Test
+    fun string_decapitalize() {
+        assertTrue { "hello".decapitalize() == "hello" }
+        assertTrue { "Hello".decapitalize() == "hello" }
+        assertTrue { "HElLo".decapitalize() == "hElLo" }
+    }
+
+    @Test
     fun string_remove() {
         assertTrue { "Hello, World".remove("Hello, ") == "World" }
         assertTrue { "Hello, World".remove("bla") == "Hello, World" }
@@ -41,7 +55,7 @@ class StringsTest {
     }
 
     @Test
-    fun remove_duplicate_empty_lines() {
+    fun string_remove_duplicate_empty_lines() {
         assertTrue { "a\nb\n\n\nc\n".removeDuplicateEmptyLines() == "a\nb\n\nc\n" }
         assertTrue { "a\n\nb\n\n\nc\n".removeDuplicateEmptyLines() == "a\n\nb\n\nc\n" }
         assertTrue { "a\n\nb\n\n\nc\n\n".removeDuplicateEmptyLines() == "a\n\nb\n\nc\n" }
@@ -49,7 +63,7 @@ class StringsTest {
     }
 
     @Test
-    fun end_with_new_line() {
+    fun string_end_with_new_line() {
         assertTrue { "a".endWithNewLine() == "a\n" }
         assertTrue { "a\n".endWithNewLine() == "a\n" }
         assertTrue { "".endWithNewLine() == "" }
