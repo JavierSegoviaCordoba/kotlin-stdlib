@@ -4,12 +4,13 @@
 <!DOCTYPE html>
 <html id="htmlId">
 <head>
-  <title>Coverage Report > IgnoreLINUXMIPS32</title>
+  <title>Coverage Report > IgnoreTVOS</title>
   <style type="text/css">
     @import "../../css/coverage.css";
-    @import "../../css/highlight-idea.css";
+    @import "../../css/idea.min.css";
   </style>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@ Current scope:     <a href="../../index.html">all classes</a>
     <a href="../index.html">com.javiersc.kotlin.test</a>
 </div>
 
-<h1>Coverage Summary for Class: IgnoreLINUXMIPS32 (com.javiersc.kotlin.test)</h1>
+<h1>Coverage Summary for Class: IgnoreTVOS (com.javiersc.kotlin.test)</h1>
 
 <table class="coverageStats">
 <tr>
@@ -31,7 +32,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 </th>
 </tr>
 <tr>
-  <td class="name">IgnoreLINUXMIPS32</td>
+  <td class="name">IgnoreTVOS</td>
     <td class="coverageStat"/>
 </tr>
 
@@ -42,11 +43,11 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 
 <pre>
-<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.javiersc.kotlin.test
-<i class="no-highlight">2</i>&nbsp;
-<i class="no-highlight">3</i>&nbsp;@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
-<i class="no-highlight">4</i>&nbsp;public expect annotation class IgnoreLINUXMIPS32
-</div>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.javiersc.kotlin.test
+&nbsp;
+&nbsp;@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION)
+&nbsp;public expect annotation class IgnoreTVOS
+</code>
 </pre>
 </div>
 
@@ -61,18 +62,15 @@ Current scope:     <a href="../../index.html">all classes</a>
     @*/
 
     if (!msie || msie && msie9) {
-        var codeBlock = document.getElementById('sourceCode');
-
-        if (codeBlock) {
-            hljs.highlightBlock(codeBlock);
-        }
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
     }
 })();
 </script>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-08-31 18:06</div>
+    <div style="float:right;">generated on 2022-09-21 10:35</div>
 </div>
 </body>
 </html>

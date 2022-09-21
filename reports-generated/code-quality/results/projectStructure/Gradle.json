@@ -2,12 +2,12 @@
   "gradleJvm": "#JAVA_HOME",
   "libraries": [
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.6.21",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-junit:1.6.21",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test-junit:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test-junit",
-      "version": "1.6.21"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: junit:junit:4.13.2",
@@ -40,12 +40,12 @@
       "version": "1.7.10"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-js:1.6.21",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test-js:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test-js",
-      "version": "1.6.21"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10",
@@ -56,12 +56,12 @@
       "version": "1.7.10"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test:1.6.21",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test:1.6.21",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test",
-      "version": "1.6.21"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10",
@@ -318,20 +318,20 @@
       "version": "1.7.10"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test-annotations-common",
-      "version": "1.6.21"
+      "version": "1.7.10"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test-common:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test-common",
-      "version": "1.6.21"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Kotlin/Native 1.7.10 - posix | [(ios_arm32, ios_arm64, ios_simulator_arm64, ios_x64, linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64, macos_arm64, macos_x64, mingw_x64, mingw_x86, tvos_arm64, tvos_simulator_arm64, tvos_x64, wasm32, watchos_arm32, watchos_arm64, watchos_simulator_arm64, watchos_x64, watchos_x86)]",
@@ -418,12 +418,12 @@
       "artifactId": "Kotlin/Native 1.7.10 - builtin | [(mingw_x64, mingw_x86)]"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.6.21",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-junit5:1.6.21",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test-junit5:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test-junit5",
-      "version": "1.6.21"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.junit.jupiter:junit-jupiter-api:5.6.0",
@@ -474,12 +474,12 @@
       "version": "1.6.0"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.6.21",
-      "gradleName": "org.jetbrains.kotlin:kotlin-test-testng:1.6.21",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-test-testng",
-      "version": "1.6.21"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.testng:testng:6.13.1",

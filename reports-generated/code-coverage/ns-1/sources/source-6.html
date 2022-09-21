@@ -7,9 +7,10 @@
   <title>Coverage Report > StringsTest</title>
   <style type="text/css">
     @import "../../css/coverage.css";
-    @import "../../css/highlight-idea.css";
+    @import "../../css/idea.min.css";
   </style>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
 </head>
 
 <body>
@@ -90,120 +91,120 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 
 <pre>
-<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;@file:Suppress(&quot;RedundantExplicitType&quot;)
-<i class="no-highlight">2</i>&nbsp;
-<i class="no-highlight">3</i>&nbsp;package com.javiersc.kotlin.stdlib
-<i class="no-highlight">4</i>&nbsp;
-<i class="no-highlight">5</i>&nbsp;import kotlin.test.Test
-<i class="no-highlight">6</i>&nbsp;import kotlin.test.assertFalse
-<i class="no-highlight">7</i>&nbsp;import kotlin.test.assertTrue
-<i class="no-highlight">8</i>&nbsp;
-<b class="fc"><i class="no-highlight">9</i>&nbsp;internal class StringsTest {</b>
-<i class="no-highlight">10</i>&nbsp;
-<i class="no-highlight">11</i>&nbsp;    @Test
-<i class="no-highlight">12</i>&nbsp;    fun string_capitalize() {
-<b class="fc"><i class="no-highlight">13</i>&nbsp;        assertTrue { &quot;hello&quot;.capitalize() == &quot;Hello&quot; }</b>
-<b class="fc"><i class="no-highlight">14</i>&nbsp;        assertTrue { &quot;Hello&quot;.capitalize() == &quot;Hello&quot; }</b>
-<b class="fc"><i class="no-highlight">15</i>&nbsp;        assertTrue { &quot;hElLo&quot;.capitalize() == &quot;HElLo&quot; }</b>
-<i class="no-highlight">16</i>&nbsp;    }
-<i class="no-highlight">17</i>&nbsp;
-<i class="no-highlight">18</i>&nbsp;    @Test
-<i class="no-highlight">19</i>&nbsp;    fun string_decapitalize() {
-<b class="fc"><i class="no-highlight">20</i>&nbsp;        assertTrue { &quot;hello&quot;.decapitalize() == &quot;hello&quot; }</b>
-<b class="fc"><i class="no-highlight">21</i>&nbsp;        assertTrue { &quot;Hello&quot;.decapitalize() == &quot;hello&quot; }</b>
-<b class="fc"><i class="no-highlight">22</i>&nbsp;        assertTrue { &quot;HElLo&quot;.decapitalize() == &quot;hElLo&quot; }</b>
-<i class="no-highlight">23</i>&nbsp;    }
-<i class="no-highlight">24</i>&nbsp;
-<i class="no-highlight">25</i>&nbsp;    @Test
-<i class="no-highlight">26</i>&nbsp;    fun string_not_contain() {
-<b class="fc"><i class="no-highlight">27</i>&nbsp;        assertFalse { &quot;Hello, World&quot;.notContain(&quot;Hello&quot;) }</b>
-<b class="fc"><i class="no-highlight">28</i>&nbsp;        assertFalse { &quot;HELLO, World&quot;.notContain(&quot;hello&quot;, ignoreCase = true) }</b>
-<b class="fc"><i class="no-highlight">29</i>&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(&quot;hello&quot;) }</b>
-<b class="fc"><i class="no-highlight">30</i>&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(&quot;hello&quot;, ignoreCase = false) }</b>
-<i class="no-highlight">31</i>&nbsp;
-<b class="fc"><i class="no-highlight">32</i>&nbsp;        val regex = Regex(&quot;[0-9]+&quot;)</b>
-<b class="fc"><i class="no-highlight">33</i>&nbsp;        assertFalse { &quot;Hello, World 1&quot;.notContain(regex) }</b>
-<b class="fc"><i class="no-highlight">34</i>&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(regex) }</b>
-<i class="no-highlight">35</i>&nbsp;    }
-<i class="no-highlight">36</i>&nbsp;
-<i class="no-highlight">37</i>&nbsp;    @Test
-<i class="no-highlight">38</i>&nbsp;    fun string_remove() {
-<b class="fc"><i class="no-highlight">39</i>&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;Hello, &quot;) == &quot;World&quot; }</b>
-<b class="fc"><i class="no-highlight">40</i>&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;bla&quot;) == &quot;Hello, World&quot; }</b>
-<b class="fc"><i class="no-highlight">41</i>&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;llo&quot;, &quot;rld&quot;) == &quot;He, Wo&quot; }</b>
-<i class="no-highlight">42</i>&nbsp;    }
-<i class="no-highlight">43</i>&nbsp;
-<i class="no-highlight">44</i>&nbsp;    @Test
-<i class="no-highlight">45</i>&nbsp;    fun string_replace() {
-<b class="fc"><i class="no-highlight">46</i>&nbsp;        assertTrue { &quot;Hello, World&quot;.replace(&quot;ello&quot; to &quot;ELLO&quot;, &quot;orld&quot; to &quot;ORLD&quot;) == &quot;HELLO, WORLD&quot; }</b>
-<i class="no-highlight">47</i>&nbsp;    }
-<i class="no-highlight">48</i>&nbsp;
-<i class="no-highlight">49</i>&nbsp;    @Test
-<i class="no-highlight">50</i>&nbsp;    fun string_isNotNullNorEmpty_and_string_isNotNullNorBlank() {
-<b class="fc"><i class="no-highlight">51</i>&nbsp;        val nullable: String? = null</b>
-<b class="fc"><i class="no-highlight">52</i>&nbsp;        val nullableCharSequence: CharSequence? = null</b>
-<b class="fc"><i class="no-highlight">53</i>&nbsp;        val blank: String = &quot; &quot;</b>
-<b class="fc"><i class="no-highlight">54</i>&nbsp;        val blankCharSequence: CharSequence = &quot; &quot;</b>
-<b class="fc"><i class="no-highlight">55</i>&nbsp;        val empty: String = &quot;&quot;</b>
-<b class="fc"><i class="no-highlight">56</i>&nbsp;        val emptyCharSequence: CharSequence = &quot;&quot;</b>
-<b class="fc"><i class="no-highlight">57</i>&nbsp;        val notBlank: String = &quot;Hello, World&quot;</b>
-<b class="fc"><i class="no-highlight">58</i>&nbsp;        val notBlankCharSequence: CharSequence = &quot;Hello, World&quot;</b>
-<i class="no-highlight">59</i>&nbsp;
-<b class="fc"><i class="no-highlight">60</i>&nbsp;        assertFalse { nullable.isNotNullNorEmpty() }</b>
-<b class="fc"><i class="no-highlight">61</i>&nbsp;        assertFalse { nullableCharSequence.isNotNullNorEmpty() }</b>
-<b class="fc"><i class="no-highlight">62</i>&nbsp;        assertTrue { blank.isNotNullNorEmpty() }</b>
-<b class="fc"><i class="no-highlight">63</i>&nbsp;        assertTrue { blankCharSequence.isNotNullNorEmpty() }</b>
-<b class="fc"><i class="no-highlight">64</i>&nbsp;        assertFalse { empty.isNotNullNorEmpty() }</b>
-<b class="fc"><i class="no-highlight">65</i>&nbsp;        assertFalse { emptyCharSequence.isNotNullNorEmpty() }</b>
-<b class="fc"><i class="no-highlight">66</i>&nbsp;        assertTrue { notBlank.isNotNullNorEmpty() }</b>
-<b class="fc"><i class="no-highlight">67</i>&nbsp;        assertTrue { notBlankCharSequence.isNotNullNorEmpty() }</b>
-<i class="no-highlight">68</i>&nbsp;
-<b class="fc"><i class="no-highlight">69</i>&nbsp;        assertFalse { nullable.isNotNullNorBlank() }</b>
-<b class="fc"><i class="no-highlight">70</i>&nbsp;        assertFalse { nullableCharSequence.isNotNullNorBlank() }</b>
-<b class="fc"><i class="no-highlight">71</i>&nbsp;        assertFalse { blank.isNotNullNorBlank() }</b>
-<b class="fc"><i class="no-highlight">72</i>&nbsp;        assertFalse { blankCharSequence.isNotNullNorBlank() }</b>
-<b class="fc"><i class="no-highlight">73</i>&nbsp;        assertFalse { empty.isNotNullNorBlank() }</b>
-<b class="fc"><i class="no-highlight">74</i>&nbsp;        assertFalse { emptyCharSequence.isNotNullNorBlank() }</b>
-<b class="fc"><i class="no-highlight">75</i>&nbsp;        assertTrue { notBlank.isNotNullNorBlank() }</b>
-<b class="fc"><i class="no-highlight">76</i>&nbsp;        assertTrue { notBlankCharSequence.isNotNullNorBlank() }</b>
-<i class="no-highlight">77</i>&nbsp;    }
-<i class="no-highlight">78</i>&nbsp;
-<i class="no-highlight">79</i>&nbsp;    @Test
-<i class="no-highlight">80</i>&nbsp;    fun empty_string() {
-<b class="fc"><i class="no-highlight">81</i>&nbsp;        assertTrue { String.Empty == &quot;&quot; }</b>
-<i class="no-highlight">82</i>&nbsp;    }
-<i class="no-highlight">83</i>&nbsp;
-<i class="no-highlight">84</i>&nbsp;    @Test
-<i class="no-highlight">85</i>&nbsp;    fun string_remove_duplicate_empty_lines() {
-<b class="fc"><i class="no-highlight">86</i>&nbsp;        assertTrue { &quot;a\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines() == &quot;a\nb\n\nc\n&quot; }</b>
-<b class="fc"><i class="no-highlight">87</i>&nbsp;        assertTrue { &quot;a\n\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n\nc\n&quot; }</b>
-<b class="fc"><i class="no-highlight">88</i>&nbsp;        assertTrue { &quot;a\n\nb\n\n\nc\n\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n\nc\n&quot; }</b>
-<b class="fc"><i class="no-highlight">89</i>&nbsp;        assertTrue { &quot;a\n\n\n\n\nb\n\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n&quot; }</b>
-<i class="no-highlight">90</i>&nbsp;    }
-<i class="no-highlight">91</i>&nbsp;
-<i class="no-highlight">92</i>&nbsp;    @Test
-<i class="no-highlight">93</i>&nbsp;    fun string_end_with_new_line() {
-<b class="fc"><i class="no-highlight">94</i>&nbsp;        assertTrue { &quot;a&quot;.endWithNewLine() == &quot;a\n&quot; }</b>
-<b class="fc"><i class="no-highlight">95</i>&nbsp;        assertTrue { &quot;a\n&quot;.endWithNewLine() == &quot;a\n&quot; }</b>
-<b class="fc"><i class="no-highlight">96</i>&nbsp;        assertTrue { &quot;&quot;.endWithNewLine() == &quot;&quot; }</b>
-<b class="fc"><i class="no-highlight">97</i>&nbsp;        assertTrue { &quot;a\nb&quot;.endWithNewLine() == &quot;a\nb\n&quot; }</b>
-<b class="fc"><i class="no-highlight">98</i>&nbsp;        assertTrue { &quot;&quot;.endWithNewLine() == &quot;&quot; }</b>
-<b class="fc"><i class="no-highlight">99</i>&nbsp;        assertTrue { &quot;\n&quot;.endWithNewLine() == &quot;\n&quot; }</b>
-<b class="fc"><i class="no-highlight">100</i>&nbsp;        assertTrue {</b>
-<b class="fc"><i class="no-highlight">101</i>&nbsp;            &quot;&quot;&quot;</b>
-<i class="no-highlight">102</i>&nbsp;                |Hello, World
-<i class="no-highlight">103</i>&nbsp;                |
-<i class="no-highlight">104</i>&nbsp;            &quot;&quot;&quot;
-<b class="fc"><i class="no-highlight">105</i>&nbsp;                .trimMargin()</b>
-<b class="fc"><i class="no-highlight">106</i>&nbsp;                .endWithNewLine() ==</b>
-<i class="no-highlight">107</i>&nbsp;                &quot;&quot;&quot;
-<i class="no-highlight">108</i>&nbsp;                    |Hello, World
-<i class="no-highlight">109</i>&nbsp;                    |
-<b class="fc"><i class="no-highlight">110</i>&nbsp;                &quot;&quot;&quot;.trimMargin()</b>
-<i class="no-highlight">111</i>&nbsp;        }
-<i class="no-highlight">112</i>&nbsp;    }
-<i class="no-highlight">113</i>&nbsp;}
-</div>
+<code class="sourceCode" id="sourceCode">&nbsp;@file:Suppress(&quot;RedundantExplicitType&quot;)
+&nbsp;
+&nbsp;package com.javiersc.kotlin.stdlib
+&nbsp;
+&nbsp;import kotlin.test.Test
+&nbsp;import kotlin.test.assertFalse
+&nbsp;import kotlin.test.assertTrue
+&nbsp;
+<b class="fc">&nbsp;internal class StringsTest {</b>
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_capitalize() {
+<b class="fc">&nbsp;        assertTrue { &quot;hello&quot;.capitalize() == &quot;Hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello&quot;.capitalize() == &quot;Hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;hElLo&quot;.capitalize() == &quot;HElLo&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_decapitalize() {
+<b class="fc">&nbsp;        assertTrue { &quot;hello&quot;.decapitalize() == &quot;hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello&quot;.decapitalize() == &quot;hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;HElLo&quot;.decapitalize() == &quot;hElLo&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_not_contain() {
+<b class="fc">&nbsp;        assertFalse { &quot;Hello, World&quot;.notContain(&quot;Hello&quot;) }</b>
+<b class="fc">&nbsp;        assertFalse { &quot;HELLO, World&quot;.notContain(&quot;hello&quot;, ignoreCase = true) }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(&quot;hello&quot;) }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(&quot;hello&quot;, ignoreCase = false) }</b>
+&nbsp;
+<b class="fc">&nbsp;        val regex = Regex(&quot;[0-9]+&quot;)</b>
+<b class="fc">&nbsp;        assertFalse { &quot;Hello, World 1&quot;.notContain(regex) }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(regex) }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_remove() {
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;Hello, &quot;) == &quot;World&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;bla&quot;) == &quot;Hello, World&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;llo&quot;, &quot;rld&quot;) == &quot;He, Wo&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_replace() {
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.replace(&quot;ello&quot; to &quot;ELLO&quot;, &quot;orld&quot; to &quot;ORLD&quot;) == &quot;HELLO, WORLD&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_isNotNullNorEmpty_and_string_isNotNullNorBlank() {
+<b class="fc">&nbsp;        val nullable: String? = null</b>
+<b class="fc">&nbsp;        val nullableCharSequence: CharSequence? = null</b>
+<b class="fc">&nbsp;        val blank: String = &quot; &quot;</b>
+<b class="fc">&nbsp;        val blankCharSequence: CharSequence = &quot; &quot;</b>
+<b class="fc">&nbsp;        val empty: String = &quot;&quot;</b>
+<b class="fc">&nbsp;        val emptyCharSequence: CharSequence = &quot;&quot;</b>
+<b class="fc">&nbsp;        val notBlank: String = &quot;Hello, World&quot;</b>
+<b class="fc">&nbsp;        val notBlankCharSequence: CharSequence = &quot;Hello, World&quot;</b>
+&nbsp;
+<b class="fc">&nbsp;        assertFalse { nullable.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertFalse { nullableCharSequence.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { blank.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { blankCharSequence.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertFalse { empty.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertFalse { emptyCharSequence.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlank.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlankCharSequence.isNotNullNorEmpty() }</b>
+&nbsp;
+<b class="fc">&nbsp;        assertFalse { nullable.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { nullableCharSequence.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { blank.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { blankCharSequence.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { empty.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { emptyCharSequence.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlank.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlankCharSequence.isNotNullNorBlank() }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun empty_string() {
+<b class="fc">&nbsp;        assertTrue { String.Empty == &quot;&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_remove_duplicate_empty_lines() {
+<b class="fc">&nbsp;        assertTrue { &quot;a\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines() == &quot;a\nb\n\nc\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n\nc\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n\nb\n\n\nc\n\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n\nc\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n\n\n\n\nb\n\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_end_with_new_line() {
+<b class="fc">&nbsp;        assertTrue { &quot;a&quot;.endWithNewLine() == &quot;a\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n&quot;.endWithNewLine() == &quot;a\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;&quot;.endWithNewLine() == &quot;&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\nb&quot;.endWithNewLine() == &quot;a\nb\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;&quot;.endWithNewLine() == &quot;&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;\n&quot;.endWithNewLine() == &quot;\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue {</b>
+<b class="fc">&nbsp;            &quot;&quot;&quot;</b>
+&nbsp;                |Hello, World
+&nbsp;                |
+&nbsp;            &quot;&quot;&quot;
+<b class="fc">&nbsp;                .trimMargin()</b>
+<b class="fc">&nbsp;                .endWithNewLine() ==</b>
+&nbsp;                &quot;&quot;&quot;
+&nbsp;                    |Hello, World
+&nbsp;                    |
+<b class="fc">&nbsp;                &quot;&quot;&quot;.trimMargin()</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
 </pre>
 </div>
 
@@ -218,18 +219,15 @@ Current scope:     <a href="../../index.html">all classes</a>
     @*/
 
     if (!msie || msie && msie9) {
-        var codeBlock = document.getElementById('sourceCode');
-
-        if (codeBlock) {
-            hljs.highlightBlock(codeBlock);
-        }
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
     }
 })();
 </script>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-08-31 18:06</div>
+    <div style="float:right;">generated on 2022-09-21 10:35</div>
 </div>
 </body>
 </html>

@@ -7,9 +7,10 @@
   <title>Coverage Report > StringsKt</title>
   <style type="text/css">
     @import "../../css/coverage.css";
-    @import "../../css/highlight-idea.css";
+    @import "../../css/idea.min.css";
   </style>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
 </head>
 
 <body>
@@ -97,73 +98,73 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 
 <pre>
-<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.javiersc.kotlin.stdlib
-<i class="no-highlight">2</i>&nbsp;
-<i class="no-highlight">3</i>&nbsp;import kotlin.contracts.contract
-<i class="no-highlight">4</i>&nbsp;
-<i class="no-highlight">5</i>&nbsp;public fun String.replace(vararg oldToNewValues: Pair&lt;String, String&gt;): String {
-<b class="fc"><i class="no-highlight">6</i>&nbsp;    var result = this</b>
-<b class="fc"><i class="no-highlight">7</i>&nbsp;    for ((oldValue, newValue) in oldToNewValues) {</b>
-<b class="fc"><i class="no-highlight">8</i>&nbsp;        result = result.replace(oldValue, newValue)</b>
-<i class="no-highlight">9</i>&nbsp;    }
-<b class="fc"><i class="no-highlight">10</i>&nbsp;    return result</b>
-<i class="no-highlight">11</i>&nbsp;}
-<i class="no-highlight">12</i>&nbsp;
-<i class="no-highlight">13</i>&nbsp;/**
-<i class="no-highlight">14</i>&nbsp; * Returns a new string obtained by removing all occurrences of the [value] substring in this string
-<i class="no-highlight">15</i>&nbsp; */
-<b class="fc"><i class="no-highlight">16</i>&nbsp;public inline fun String.remove(value: String, ignoreCase: Boolean = false): String =</b>
-<b class="fc"><i class="no-highlight">17</i>&nbsp;    replace(oldValue = value, newValue = &quot;&quot;, ignoreCase = ignoreCase)</b>
-<i class="no-highlight">18</i>&nbsp;
-<i class="no-highlight">19</i>&nbsp;public fun String.remove(vararg values: String): String {
-<b class="fc"><i class="no-highlight">20</i>&nbsp;    var result = this</b>
-<b class="fc"><i class="no-highlight">21</i>&nbsp;    for (value in values) {</b>
-<b class="fc"><i class="no-highlight">22</i>&nbsp;        result = result.replace(value, &quot;&quot;)</b>
-<i class="no-highlight">23</i>&nbsp;    }
-<b class="fc"><i class="no-highlight">24</i>&nbsp;    return result</b>
-<i class="no-highlight">25</i>&nbsp;}
-<i class="no-highlight">26</i>&nbsp;
-<i class="no-highlight">27</i>&nbsp;public inline fun CharSequence?.isNotNullNorBlank(): Boolean {
-<b class="fc"><i class="no-highlight">28</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorBlank != null) }</b>
-<i class="no-highlight">29</i>&nbsp;
-<b class="pc"><i class="no-highlight">30</i>&nbsp;    return !isNullOrBlank()</b>
-<i class="no-highlight">31</i>&nbsp;}
-<i class="no-highlight">32</i>&nbsp;
-<i class="no-highlight">33</i>&nbsp;public inline fun CharSequence?.isNotNullNorEmpty(): Boolean {
-<b class="fc"><i class="no-highlight">34</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorEmpty != null) }</b>
-<i class="no-highlight">35</i>&nbsp;
-<b class="pc"><i class="no-highlight">36</i>&nbsp;    return !isNullOrEmpty()</b>
-<i class="no-highlight">37</i>&nbsp;}
-<i class="no-highlight">38</i>&nbsp;
-<b class="fc"><i class="no-highlight">39</i>&nbsp;public inline fun CharSequence.notContain(</b>
-<i class="no-highlight">40</i>&nbsp;    other: CharSequence,
-<b class="fc"><i class="no-highlight">41</i>&nbsp;    ignoreCase: Boolean = false,</b>
-<b class="pc"><i class="no-highlight">42</i>&nbsp;): Boolean = !contains(other, ignoreCase)</b>
-<i class="no-highlight">43</i>&nbsp;
-<b class="fc"><i class="no-highlight">44</i>&nbsp;public inline fun CharSequence.notContain(regex: Regex): Boolean = !contains(regex)</b>
-<i class="no-highlight">45</i>&nbsp;
-<i class="no-highlight">46</i>&nbsp;public inline fun String?.isNotNullNorBlank(): Boolean {
-<b class="fc"><i class="no-highlight">47</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorBlank != null) }</b>
-<i class="no-highlight">48</i>&nbsp;
-<b class="pc"><i class="no-highlight">49</i>&nbsp;    return !isNullOrBlank()</b>
-<i class="no-highlight">50</i>&nbsp;}
-<i class="no-highlight">51</i>&nbsp;
-<i class="no-highlight">52</i>&nbsp;public inline fun String?.isNotNullNorEmpty(): Boolean {
-<b class="fc"><i class="no-highlight">53</i>&nbsp;    contract { returns(true) implies (this@isNotNullNorEmpty != null) }</b>
-<i class="no-highlight">54</i>&nbsp;
-<b class="pc"><i class="no-highlight">55</i>&nbsp;    return !isNullOrEmpty()</b>
-<i class="no-highlight">56</i>&nbsp;}
-<i class="no-highlight">57</i>&nbsp;
-<i class="no-highlight">58</i>&nbsp;public inline val String.Companion.Empty: String
-<b class="fc"><i class="no-highlight">59</i>&nbsp;    get() = &quot;&quot;</b>
-<i class="no-highlight">60</i>&nbsp;
-<i class="no-highlight">61</i>&nbsp;/** Remove all consecutive line breaks in a `String` */
-<b class="fc"><i class="no-highlight">62</i>&nbsp;public fun String.removeDuplicateEmptyLines(): String = lines().removeDuplicateEmptyLines()</b>
-<i class="no-highlight">63</i>&nbsp;
-<i class="no-highlight">64</i>&nbsp;/** Add an empty line as last item if it is not empty */
-<i class="no-highlight">65</i>&nbsp;public fun String.endWithNewLine(): String =
-<b class="pc"><i class="no-highlight">66</i>&nbsp;    if (lines().lastOrNull().isNullOrBlank()) this else &quot;$this\n&quot;</b>
-</div>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.javiersc.kotlin.stdlib
+&nbsp;
+&nbsp;import kotlin.contracts.contract
+&nbsp;
+&nbsp;public fun String.replace(vararg oldToNewValues: Pair&lt;String, String&gt;): String {
+<b class="fc">&nbsp;    var result = this</b>
+<b class="fc">&nbsp;    for ((oldValue, newValue) in oldToNewValues) {</b>
+<b class="fc">&nbsp;        result = result.replace(oldValue, newValue)</b>
+&nbsp;    }
+<b class="fc">&nbsp;    return result</b>
+&nbsp;}
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns a new string obtained by removing all occurrences of the [value] substring in this string
+&nbsp; */
+<b class="fc">&nbsp;public inline fun String.remove(value: String, ignoreCase: Boolean = false): String =</b>
+<b class="fc">&nbsp;    replace(oldValue = value, newValue = &quot;&quot;, ignoreCase = ignoreCase)</b>
+&nbsp;
+&nbsp;public fun String.remove(vararg values: String): String {
+<b class="fc">&nbsp;    var result = this</b>
+<b class="fc">&nbsp;    for (value in values) {</b>
+<b class="fc">&nbsp;        result = result.replace(value, &quot;&quot;)</b>
+&nbsp;    }
+<b class="fc">&nbsp;    return result</b>
+&nbsp;}
+&nbsp;
+&nbsp;public inline fun CharSequence?.isNotNullNorBlank(): Boolean {
+<b class="fc">&nbsp;    contract { returns(true) implies (this@isNotNullNorBlank != null) }</b>
+&nbsp;
+<b class="pc">&nbsp;    return !isNullOrBlank()</b>
+&nbsp;}
+&nbsp;
+&nbsp;public inline fun CharSequence?.isNotNullNorEmpty(): Boolean {
+<b class="fc">&nbsp;    contract { returns(true) implies (this@isNotNullNorEmpty != null) }</b>
+&nbsp;
+<b class="pc">&nbsp;    return !isNullOrEmpty()</b>
+&nbsp;}
+&nbsp;
+<b class="fc">&nbsp;public inline fun CharSequence.notContain(</b>
+&nbsp;    other: CharSequence,
+<b class="fc">&nbsp;    ignoreCase: Boolean = false,</b>
+<b class="pc">&nbsp;): Boolean = !contains(other, ignoreCase)</b>
+&nbsp;
+<b class="fc">&nbsp;public inline fun CharSequence.notContain(regex: Regex): Boolean = !contains(regex)</b>
+&nbsp;
+&nbsp;public inline fun String?.isNotNullNorBlank(): Boolean {
+<b class="fc">&nbsp;    contract { returns(true) implies (this@isNotNullNorBlank != null) }</b>
+&nbsp;
+<b class="pc">&nbsp;    return !isNullOrBlank()</b>
+&nbsp;}
+&nbsp;
+&nbsp;public inline fun String?.isNotNullNorEmpty(): Boolean {
+<b class="fc">&nbsp;    contract { returns(true) implies (this@isNotNullNorEmpty != null) }</b>
+&nbsp;
+<b class="pc">&nbsp;    return !isNullOrEmpty()</b>
+&nbsp;}
+&nbsp;
+&nbsp;public inline val String.Companion.Empty: String
+<b class="fc">&nbsp;    get() = &quot;&quot;</b>
+&nbsp;
+&nbsp;/** Remove all consecutive line breaks in a `String` */
+<b class="fc">&nbsp;public fun String.removeDuplicateEmptyLines(): String = lines().removeDuplicateEmptyLines()</b>
+&nbsp;
+&nbsp;/** Add an empty line as last item if it is not empty */
+&nbsp;public fun String.endWithNewLine(): String =
+<b class="pc">&nbsp;    if (lines().lastOrNull().isNullOrBlank()) this else &quot;$this\n&quot;</b>
+</code>
 </pre>
 </div>
 
@@ -178,18 +179,15 @@ Current scope:     <a href="../../index.html">all classes</a>
     @*/
 
     if (!msie || msie && msie9) {
-        var codeBlock = document.getElementById('sourceCode');
-
-        if (codeBlock) {
-            hljs.highlightBlock(codeBlock);
-        }
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
     }
 })();
 </script>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-08-31 18:06</div>
+    <div style="float:right;">generated on 2022-09-21 10:35</div>
 </div>
 </body>
 </html>

@@ -8,16 +8,16 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.6.21/fad9660f0050078652438a09e6f2bf42f757dc4f/kotlin-test-annotations-common-1.6.21.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.7.10/a45038dffc8fb6cbb1af557ebc41e605b78844be/kotlin-test-annotations-common-1.7.10.jar!/"
       ],
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-common/1.6.21/f8dd677b9f452da84d57d0f4d48417fb9f1c80aa/kotlin-test-common-1.6.21.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-common/1.7.10/cfead5f76e5c1daf6a9697a5cb76d471a174a321/kotlin-test-common-1.7.10.jar!/"
       ],
       "properties": {}
     },
@@ -386,15 +386,15 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.6.21",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-testng:1.7.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-testng/1.6.21/3514b5bb4de5c18f00d711389928153a354422cf/kotlin-test-testng-1.6.21.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-testng/1.7.10/99c93df1a46323c187bc94985749f7913522e238/kotlin-test-testng-1.7.10.jar!/"
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.6.21",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.6.21/1e9d81b013e31b22da67464948869fc56c652527/kotlin-test-1.6.21.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.7.10/4d644a88cc0a386712d4b1c1b4ca748203421e07/kotlin-test-1.7.10.jar!/"
       ]
     },
     {
@@ -434,9 +434,9 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.6.21",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.7.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit5/1.6.21/ed8b4f0709ee0509c5fc6ac90ab60bc54c6ce60e/kotlin-test-junit5-1.6.21.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit5/1.7.10/1977faecddc1c312be4775e6110d3072f553d89d/kotlin-test-junit5-1.7.10.jar!/"
       ]
     },
     {
@@ -483,9 +483,9 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.7.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.6.21/ba0ae6f133743475db5dc042347f5f9d140a237/kotlin-test-js-1.6.21.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.7.10/b198158aec492c74cc9111bb8237f170192e270c/kotlin-test-js-1.7.10.jar!/"
       ],
       "properties": {}
     },
@@ -495,9 +495,9 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.6.21",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.6.21/4e9b6211c4adf835cde803ef078c5adadc4ae3bb/kotlin-test-junit-1.6.21.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.7.10/27228b08adb999a47ae98ac03e98e1f3132f83ca/kotlin-test-junit-1.7.10.jar!/"
       ]
     },
     {
