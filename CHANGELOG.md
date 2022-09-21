@@ -17,9 +17,9 @@
 
 ### Updated
 
+- `com.android.tools.build:gradle -> 7.3.0`
 - `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.2.0-alpha.35`
 - `gradle -> 7.5.1`
-- `com.android.tools.build:gradle -> 7.2.2`
 
 ## [0.1.0-alpha.11] - 2022-07-14
 
