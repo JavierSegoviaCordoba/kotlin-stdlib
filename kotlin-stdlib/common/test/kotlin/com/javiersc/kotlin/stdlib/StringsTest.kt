@@ -107,7 +107,8 @@ internal class StringsTest {
                 """
                     |Hello, World
                     |
-                """.trimMargin()
+                """
+                    .trimMargin()
         }
     }
 }
