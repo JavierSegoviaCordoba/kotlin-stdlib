@@ -1,7 +1,7 @@
 [versions]
 android = "7.3.0"
 hubdle = "0.2.0-alpha.37"
-kotlin = "1.7.10"
+kotlin = "1.7.20"
 
 [libraries]
 android-toolsBuild-gradle = { module = "com.android.tools.build:gradle", version.ref = "android" }
