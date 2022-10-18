@@ -4,9 +4,6 @@
 
 ### Added
 
-- `String::capitalize`
-- `String::decapitalize`
-
 ### Changed
 
 ### Deprecated
@@ -14,6 +11,15 @@
 ### Removed
 
 ### Fixed
+
+### Updated
+
+## [0.1.0-alpha.12] - 2022-10-18
+
+### Added
+
+- `String::capitalize`
+- `String::decapitalize`
 
 ### Updated
 
