@@ -24,7 +24,7 @@
 
 * 76 cyclomatic complexity (mcc)
 
-* 50 cognitive complexity
+* 57 cognitive complexity
 
 * 7 number of total code smells
 
@@ -169,4 +169,4 @@ Private property `i` is unused.
 
 ```
 
-generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-11-25 19:49:22 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2022-11-28 00:39:55 UTC
