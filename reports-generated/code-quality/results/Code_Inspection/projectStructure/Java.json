@@ -229,19 +229,19 @@
       "languageLevel": 17
     },
     {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.appleMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-stdlib.appleTest",
+      "languageLevel": 17
+    },
+    {
       "name": "kotlin-stdlib-project.kotlin-stdlib.commonMain",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-stdlib.commonTest",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.darwinMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.darwinTest",
       "languageLevel": 17
     },
     {
@@ -517,19 +517,19 @@
       "languageLevel": 17
     },
     {
+      "name": "kotlin-stdlib-project.kotlin-test-junit.appleMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-junit.appleTest",
+      "languageLevel": 17
+    },
+    {
       "name": "kotlin-stdlib-project.kotlin-test-junit.commonMain",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit.commonTest",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.darwinMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.darwinTest",
       "languageLevel": 17
     },
     {
@@ -789,19 +789,19 @@
       "languageLevel": 17
     },
     {
+      "name": "kotlin-stdlib-project.kotlin-test-junit5.appleMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-junit5.appleTest",
+      "languageLevel": 17
+    },
+    {
       "name": "kotlin-stdlib-project.kotlin-test-junit5.commonMain",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit5.commonTest",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.darwinMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.darwinTest",
       "languageLevel": 17
     },
     {
@@ -1061,19 +1061,19 @@
       "languageLevel": 17
     },
     {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.appleMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "kotlin-stdlib-project.kotlin-test-testng.appleTest",
+      "languageLevel": 17
+    },
+    {
       "name": "kotlin-stdlib-project.kotlin-test-testng.commonMain",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.darwinTest",
       "languageLevel": 17
     },
     {

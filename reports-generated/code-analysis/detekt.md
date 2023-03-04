@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 6,622 lines of code (loc)
+* 6,626 lines of code (loc)
 
-* 4,051 source lines of code (sloc)
+* 4,095 source lines of code (sloc)
 
-* 2,678 logical lines of code (lloc)
+* 2,686 logical lines of code (lloc)
 
 * 57 comment lines of code (cloc)
 
@@ -169,4 +169,4 @@ Private property `i` is unused.
 
 ```
 
-generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-03-04 21:32:32 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-03-04 23:01:39 UTC
