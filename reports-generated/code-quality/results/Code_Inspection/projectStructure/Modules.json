@@ -10,7 +10,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -29,7 +29,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -48,7 +48,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -67,7 +67,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -86,7 +86,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -491,14 +491,6 @@
       "name": "kotlin-stdlib-project.kotlin-stdlib.jsMain",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/build/externals/kotlin-stdlib-project-kotlin-stdlib-js-ir/src",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/build/externals/kotlin-stdlib-project-kotlin-stdlib-js-legacy/src",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-stdlib/js/main",
           "sourceFolders": []
         }
@@ -579,15 +571,11 @@
         {
           "path": "file://$PROJECT_DIR$/kotlin-stdlib/jvm/main",
           "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/jvmAndAndroid/main",
-          "sourceFolders": []
         }
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -622,15 +610,11 @@
         {
           "path": "file://$PROJECT_DIR$/kotlin-stdlib/jvm/test",
           "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/jvmAndAndroid/test",
-          "sourceFolders": []
         }
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -2655,15 +2639,11 @@
       "name": "kotlin-stdlib-project.kotlin-stdlib.androidAndroidTestRelease",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/androidAndroidTestRelease",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/src/androidAndroidTestRelease",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-stdlib/src/androidTestRelease",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-stdlib/android/androidTestRelease",
           "sourceFolders": []
         }
       ],
@@ -2675,14 +2655,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-stdlib.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
         }
       ]
     },
@@ -2690,15 +2662,11 @@
       "name": "kotlin-stdlib-project.kotlin-stdlib.androidTestFixtures",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/androidTestFixtures",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/src/androidTestFixtures",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-stdlib/src/testFixtures",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-stdlib/android/testFixtures",
           "sourceFolders": []
         }
       ],
@@ -2710,14 +2678,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-stdlib.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
         }
       ]
     },
@@ -2725,15 +2685,11 @@
       "name": "kotlin-stdlib-project.kotlin-stdlib.androidTestFixturesDebug",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/androidTestFixturesDebug",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/src/androidTestFixturesDebug",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-stdlib/src/testFixturesDebug",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-stdlib/android/testFixturesDebug",
           "sourceFolders": []
         }
       ],
@@ -2745,14 +2701,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-stdlib.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
         }
       ]
     },
@@ -2760,11 +2708,7 @@
       "name": "kotlin-stdlib-project.kotlin-stdlib.androidTestFixturesRelease",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/androidTestFixturesRelease",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-stdlib/src/androidTestFixturesRelease",
+          "path": "file://$PROJECT_DIR$/kotlin-stdlib/android/testFixturesRelease",
           "sourceFolders": []
         },
         {
@@ -2780,14 +2724,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-stdlib.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
         }
       ]
     },
@@ -2926,6 +2862,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
           "type": "Library"
         },
@@ -3000,7 +2940,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-stdlib.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
           "type": "Module"
         },
         {
@@ -3098,6 +3046,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Kotlin/Native 1.7.20 - builtin | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
           "type": "Library"
         },
@@ -3188,7 +3140,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-stdlib.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
           "type": "Module"
         },
         {
@@ -3295,6 +3255,10 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-stdlib.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
           "type": "Module"
         },
         {
@@ -3502,6 +3466,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-stdlib.tvosMain",
           "type": "Module"
         },
@@ -3580,6 +3552,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.wasm32Main",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-stdlib.wasmMain",
           "type": "Module"
         },
@@ -3655,6 +3635,14 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-stdlib.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-stdlib.nativeMain",
           "type": "Module"
         },
         {
@@ -4191,14 +4179,6 @@
       "name": "kotlin-stdlib-project.kotlin-test-junit.jsMain",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/build/externals/kotlin-stdlib-project-kotlin-test-junit-js-ir/src",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/build/externals/kotlin-stdlib-project-kotlin-test-junit-js-legacy/src",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-test-junit/js/main",
           "sourceFolders": [
             {
@@ -4323,7 +4303,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -4378,7 +4358,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -6943,15 +6923,11 @@
       "name": "kotlin-stdlib-project.kotlin-test-junit.androidAndroidTestRelease",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/androidAndroidTestRelease",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/src/androidAndroidTestRelease",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-test-junit/src/androidTestRelease",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-junit/android/androidTestRelease",
           "sourceFolders": []
         }
       ],
@@ -6963,34 +6939,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-test-junit.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: junit:junit:4.13.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.hamcrest:hamcrest-core:1.3",
-          "type": "Library"
         }
       ]
     },
@@ -6998,11 +6946,7 @@
       "name": "kotlin-stdlib-project.kotlin-test-junit.androidTestFixtures",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/androidTestFixtures",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/src/androidTestFixtures",
+          "path": "file://$PROJECT_DIR$/kotlin-test-junit/android/testFixtures",
           "sourceFolders": []
         },
         {
@@ -7018,34 +6962,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-test-junit.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: junit:junit:4.13.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.hamcrest:hamcrest-core:1.3",
-          "type": "Library"
         }
       ]
     },
@@ -7053,15 +6969,11 @@
       "name": "kotlin-stdlib-project.kotlin-test-junit.androidTestFixturesDebug",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/androidTestFixturesDebug",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/src/androidTestFixturesDebug",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-test-junit/src/testFixturesDebug",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-junit/android/testFixturesDebug",
           "sourceFolders": []
         }
       ],
@@ -7073,34 +6985,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-test-junit.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: junit:junit:4.13.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.hamcrest:hamcrest-core:1.3",
-          "type": "Library"
         }
       ]
     },
@@ -7108,15 +6992,11 @@
       "name": "kotlin-stdlib-project.kotlin-test-junit.androidTestFixturesRelease",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/androidTestFixturesRelease",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit/src/androidTestFixturesRelease",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-test-junit/src/testFixturesRelease",
+          "sourceFolders": []
+        },
+        {
+          "path": "file://$PROJECT_DIR$/kotlin-test-junit/android/testFixturesRelease",
           "sourceFolders": []
         }
       ],
@@ -7128,34 +7008,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "kotlin-stdlib-project.kotlin-test-junit.commonMain",
-          "type": "Module"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: junit:junit:4.13.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.hamcrest:hamcrest-core:1.3",
-          "type": "Library"
         }
       ]
     },
@@ -7346,6 +7198,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
           "type": "Library"
         },
@@ -7458,7 +7314,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
           "type": "Module"
         },
         {
@@ -7594,6 +7458,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Kotlin/Native 1.7.20 - builtin | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
           "type": "Library"
         },
@@ -7722,7 +7590,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
           "type": "Module"
         },
         {
@@ -7867,6 +7743,10 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-test-junit.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
           "type": "Module"
         },
         {
@@ -8150,6 +8030,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit.tvosMain",
           "type": "Module"
         },
@@ -8266,6 +8154,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.wasm32Main",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit.wasmMain",
           "type": "Module"
         },
@@ -8379,6 +8275,14 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-test-junit.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit.nativeMain",
           "type": "Module"
         },
         {
@@ -8831,14 +8735,6 @@
       "name": "kotlin-stdlib-project.kotlin-test-junit5.jsMain",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit5/build/externals/kotlin-stdlib-project-kotlin-test-junit5-js-ir/src",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-test-junit5/build/externals/kotlin-stdlib-project-kotlin-test-junit5-js-legacy/src",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-test-junit5/js/main",
           "sourceFolders": [
             {
@@ -8939,7 +8835,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -9010,7 +8906,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -11306,6 +11202,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
           "type": "Library"
         },
@@ -11394,7 +11294,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit5.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
           "type": "Module"
         },
         {
@@ -11506,6 +11414,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Kotlin/Native 1.7.20 - builtin | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
           "type": "Library"
         },
@@ -11610,7 +11522,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit5.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
           "type": "Module"
         },
         {
@@ -11731,6 +11651,10 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-test-junit5.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
           "type": "Module"
         },
         {
@@ -11966,6 +11890,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit5.tvosMain",
           "type": "Module"
         },
@@ -12058,6 +11990,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.wasm32Main",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-junit5.wasmMain",
           "type": "Module"
         },
@@ -12147,6 +12087,14 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-test-junit5.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-junit5.nativeMain",
           "type": "Module"
         },
         {
@@ -12587,14 +12535,6 @@
       "name": "kotlin-stdlib-project.kotlin-test-testng.jsMain",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/kotlin-test-testng/build/externals/kotlin-stdlib-project-kotlin-test-testng-js-ir/src",
-          "sourceFolders": []
-        },
-        {
-          "path": "file://$PROJECT_DIR$/kotlin-test-testng/build/externals/kotlin-stdlib-project-kotlin-test-testng-js-legacy/src",
-          "sourceFolders": []
-        },
-        {
           "path": "file://$PROJECT_DIR$/kotlin-test-testng/js/main",
           "sourceFolders": [
             {
@@ -12695,7 +12635,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -12750,7 +12690,7 @@
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "17",
           "type": "SDK"
         },
         {
@@ -15058,6 +14998,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
           "type": "Library"
         },
@@ -15146,7 +15090,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-testng.iosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
           "type": "Module"
         },
         {
@@ -15258,6 +15210,10 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "Kotlin/Native 1.7.20 - builtin | [(linux_arm32_hfp, linux_arm64, linux_mips32, linux_mipsel32, linux_x64)]",
           "type": "Library"
         },
@@ -15362,7 +15318,15 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-testng.macosMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
           "type": "Module"
         },
         {
@@ -15483,6 +15447,10 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-test-testng.mingwMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
           "type": "Module"
         },
         {
@@ -15718,6 +15686,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-testng.tvosMain",
           "type": "Module"
         },
@@ -15810,6 +15786,14 @@
           "type": "Module"
         },
         {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.wasm32Main",
+          "type": "Module"
+        },
+        {
           "name": "kotlin-stdlib-project.kotlin-test-testng.wasmMain",
           "type": "Module"
         },
@@ -15899,6 +15883,14 @@
         },
         {
           "name": "kotlin-stdlib-project.kotlin-test-testng.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.darwinMain",
+          "type": "Module"
+        },
+        {
+          "name": "kotlin-stdlib-project.kotlin-test-testng.nativeMain",
           "type": "Module"
         },
         {
