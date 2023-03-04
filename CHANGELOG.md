@@ -6,6 +6,8 @@
 
 ### Changed
 
+- `@IgnoreDARWIN` to `@IgnoreAPPLE`
+
 ### Deprecated
 
 ### Removed
@@ -14,9 +16,9 @@
 
 ### Updated
 
+- `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.4.0-alpha.13`
 - `easimon/wipe-cache -> v2`
 - `gradle -> 7.6.1`
-- `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.2.0-alpha.46`
 
 ## [0.1.0-alpha.12] - 2022-10-18
 
