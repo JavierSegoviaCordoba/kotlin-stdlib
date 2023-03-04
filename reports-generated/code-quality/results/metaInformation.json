@@ -8,12 +8,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib.git",
-        "revisionId": "e05c2840bffa5719c9a6938a02adb737fa6f770a",
+        "revisionId": "66faab7560937219ebba937d0f6f536eeb6b3b73",
         "branch": "main"
       }
     },
     "deviceId": "200820300000000-cdbb-c86e-58e4-d75fb529ac10",
-    "jobUrl": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib/actions/runs/4333237260",
+    "jobUrl": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib/actions/runs/4333337665",
     "repoUrl": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib.git"
   }
 }
