@@ -2,39 +2,39 @@
 
 ## Metrics
 
-* 55 number of properties
+* 61 number of properties
 
-* 43 number of functions
+* 62 number of functions
 
-* 1,029 number of classes
+* 1,030 number of classes
 
 * 3 number of packages
 
-* 1,139 number of kt files
+* 1,141 number of kt files
 
 ## Complexity Report
 
-* 6,626 lines of code (loc)
+* 6,762 lines of code (loc)
 
-* 4,095 source lines of code (sloc)
+* 4,205 source lines of code (sloc)
 
-* 2,686 logical lines of code (lloc)
+* 2,777 logical lines of code (lloc)
 
-* 57 comment lines of code (cloc)
+* 59 comment lines of code (cloc)
 
-* 76 cyclomatic complexity (mcc)
+* 104 cyclomatic complexity (mcc)
 
-* 57 cognitive complexity
+* 68 cognitive complexity
 
-* 7 number of total code smells
+* 13 number of total code smells
 
 * 1% comment source ratio
 
-* 28 mcc per 1,000 lloc
+* 37 mcc per 1,000 lloc
 
-* 2 code smells per 1,000 lloc
+* 4 code smells per 1,000 lloc
 
-## Findings (7)
+## Findings (13)
 
 ### complexity, TooManyFunctions (1)
 
@@ -52,6 +52,108 @@ File '/home/runner/work/kotlin-stdlib/kotlin-stdlib/kotlin-stdlib/common/main/ko
 2 
 3 import kotlin.contracts.contract
 4 
+
+```
+
+### naming, FunctionNaming (6)
+
+Function names should follow the naming convention set in the configuration.
+
+[Documentation](https://detekt.dev/docs/rules/naming#functionnaming)
+
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:8:19
+```
+Function names should match the pattern: [a-z][a-zA-Z0-9]*
+```
+```kotlin
+5  
+6  public fun String.transformstring(): String = prepare("").lowercase()
+7  
+8  public fun String.TRANSFORMSTRING(): String = prepare("").uppercase()
+!                    ^ error
+9  
+10 public fun String.transformString(): String {
+11     val data = prepare(" ")
+
+```
+
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:25:19
+```
+Function names should match the pattern: [a-z][a-zA-Z0-9]*
+```
+```kotlin
+22         .remove(" ")
+23 }
+24 
+25 public fun String.TransformString(): String {
+!!                   ^ error
+26     val data = prepare(" ")
+27     return data
+28         .mapIndexed { index, char ->
+
+```
+
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:41:19
+```
+Function names should match the pattern: [a-z][a-zA-Z0-9]*
+```
+```kotlin
+38         .capitalize()
+39 }
+40 
+41 public fun String.transform_string(): String = prepare("_").lowercase()
+!!                   ^ error
+42 
+43 public fun String.TRANSFORM_STRING(): String = prepare("_").uppercase()
+44 
+
+```
+
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:43:19
+```
+Function names should match the pattern: [a-z][a-zA-Z0-9]*
+```
+```kotlin
+40 
+41 public fun String.transform_string(): String = prepare("_").lowercase()
+42 
+43 public fun String.TRANSFORM_STRING(): String = prepare("_").uppercase()
+!!                   ^ error
+44 
+45 public fun String.transform_hyphen_string(): String = prepare("-").lowercase()
+46 
+
+```
+
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:45:19
+```
+Function names should match the pattern: [a-z][a-zA-Z0-9]*
+```
+```kotlin
+42 
+43 public fun String.TRANSFORM_STRING(): String = prepare("_").uppercase()
+44 
+45 public fun String.transform_hyphen_string(): String = prepare("-").lowercase()
+!!                   ^ error
+46 
+47 public fun String.TRANSFORM_HYPHEN_STRING(): String = prepare("-").uppercase()
+48 
+
+```
+
+* kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:47:19
+```
+Function names should match the pattern: [a-z][a-zA-Z0-9]*
+```
+```kotlin
+44 
+45 public fun String.transform_hyphen_string(): String = prepare("-").lowercase()
+46 
+47 public fun String.TRANSFORM_HYPHEN_STRING(): String = prepare("-").uppercase()
+!!                   ^ error
+48 
+49 public fun String.tRaNsFoRmStRiNg(): String {
+50     var newStr = ""
 
 ```
 
@@ -169,4 +271,4 @@ Private property `i` is unused.
 
 ```
 
-generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-03-05 08:57:16 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-03-08 23:28:54 UTC

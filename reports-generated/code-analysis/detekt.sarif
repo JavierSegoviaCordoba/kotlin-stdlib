@@ -38,6 +38,144 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
+                  "uri": "kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 34,
+                  "endLine": 8,
+                  "startColumn": 19,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Function names should match the pattern: [a-z][a-zA-Z0-9]*"
+          },
+          "ruleId": "detekt.naming.FunctionNaming"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 34,
+                  "endLine": 25,
+                  "startColumn": 19,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Function names should match the pattern: [a-z][a-zA-Z0-9]*"
+          },
+          "ruleId": "detekt.naming.FunctionNaming"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 35,
+                  "endLine": 41,
+                  "startColumn": 19,
+                  "startLine": 41
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Function names should match the pattern: [a-z][a-zA-Z0-9]*"
+          },
+          "ruleId": "detekt.naming.FunctionNaming"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 35,
+                  "endLine": 43,
+                  "startColumn": 19,
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Function names should match the pattern: [a-z][a-zA-Z0-9]*"
+          },
+          "ruleId": "detekt.naming.FunctionNaming"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 42,
+                  "endLine": 45,
+                  "startColumn": 19,
+                  "startLine": 45
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Function names should match the pattern: [a-z][a-zA-Z0-9]*"
+          },
+          "ruleId": "detekt.naming.FunctionNaming"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 42,
+                  "endLine": 47,
+                  "startColumn": 19,
+                  "startLine": 47
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Function names should match the pattern: [a-z][a-zA-Z0-9]*"
+          },
+          "ruleId": "detekt.naming.FunctionNaming"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
                   "uri": "kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/Collections.kt",
                   "uriBaseId": "%SRCROOT%"
                 },

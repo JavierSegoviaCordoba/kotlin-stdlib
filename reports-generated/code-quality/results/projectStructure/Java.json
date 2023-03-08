@@ -21,14 +21,6 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.iosArm32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.iosArm32Test",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-stdlib.iosArm64Main",
       "languageLevel": 17
     },
@@ -69,35 +61,11 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm32HfpMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm32HfpTest",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm64Main",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-stdlib.linuxArm64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMips32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMips32Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMipsel32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.linuxMipsel32Test",
       "languageLevel": 17
     },
     {
@@ -130,14 +98,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-stdlib.mingwX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.mingwX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.mingwX86Test",
       "languageLevel": 17
     },
     {
@@ -202,14 +162,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-stdlib.watchosX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-stdlib.watchosX86Test",
       "languageLevel": 17
     },
     {
@@ -309,14 +261,6 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.iosArm32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.iosArm32Test",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-test-junit.iosArm64Main",
       "languageLevel": 17
     },
@@ -357,35 +301,11 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.linuxArm32HfpMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.linuxArm32HfpTest",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-test-junit.linuxArm64Main",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit.linuxArm64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.linuxMips32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.linuxMips32Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.linuxMipsel32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.linuxMipsel32Test",
       "languageLevel": 17
     },
     {
@@ -418,14 +338,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit.mingwX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.mingwX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.mingwX86Test",
       "languageLevel": 17
     },
     {
@@ -490,14 +402,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit.watchosX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.watchosX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit.watchosX86Test",
       "languageLevel": 17
     },
     {
@@ -597,14 +501,6 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.iosArm32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.iosArm32Test",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-test-junit5.iosArm64Main",
       "languageLevel": 17
     },
@@ -645,35 +541,11 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm32HfpMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm32HfpTest",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm64Main",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxArm64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxMips32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxMips32Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxMipsel32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.linuxMipsel32Test",
       "languageLevel": 17
     },
     {
@@ -706,14 +578,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit5.mingwX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.mingwX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.mingwX86Test",
       "languageLevel": 17
     },
     {
@@ -778,14 +642,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-junit5.watchosX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.watchosX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-junit5.watchosX86Test",
       "languageLevel": 17
     },
     {
@@ -869,14 +725,6 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm32Test",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-test-testng.iosArm64Main",
       "languageLevel": 17
     },
@@ -917,35 +765,11 @@
       "languageLevel": 17
     },
     {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm32HfpMain",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm32HfpTest",
-      "languageLevel": 17
-    },
-    {
       "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Main",
       "languageLevel": 17
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-testng.linuxArm64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMips32Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMipsel32Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.linuxMipsel32Test",
       "languageLevel": 17
     },
     {
@@ -978,14 +802,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.mingwX86Test",
       "languageLevel": 17
     },
     {
@@ -1050,14 +866,6 @@
     },
     {
       "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX64Test",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX86Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "kotlin-stdlib-project.kotlin-test-testng.watchosX86Test",
       "languageLevel": 17
     },
     {

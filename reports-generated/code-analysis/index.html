@@ -157,11 +157,11 @@
 
 <div>
   <ul>
-    <li>55 number of properties</li>
-    <li>43 number of functions</li>
-    <li>1,029 number of classes</li>
+    <li>61 number of properties</li>
+    <li>62 number of functions</li>
+    <li>1,030 number of classes</li>
     <li>3 number of packages</li>
-    <li>1,139 number of kt files</li>
+    <li>1,141 number of kt files</li>
   </ul>
 </div>
 
@@ -170,22 +170,22 @@
 
 <div>
   <ul>
-    <li>6,626 lines of code (loc)</li>
-    <li>4,095 source lines of code (sloc)</li>
-    <li>2,686 logical lines of code (lloc)</li>
-    <li>57 comment lines of code (cloc)</li>
-    <li>76 cyclomatic complexity (mcc)</li>
-    <li>57 cognitive complexity</li>
-    <li>7 number of total code smells</li>
+    <li>6,762 lines of code (loc)</li>
+    <li>4,205 source lines of code (sloc)</li>
+    <li>2,777 logical lines of code (lloc)</li>
+    <li>59 comment lines of code (cloc)</li>
+    <li>104 cyclomatic complexity (mcc)</li>
+    <li>68 cognitive complexity</li>
+    <li>13 number of total code smells</li>
     <li>1% comment source ratio</li>
-    <li>28 mcc per 1,000 lloc</li>
-    <li>2 code smells per 1,000 lloc</li>
+    <li>37 mcc per 1,000 lloc</li>
+    <li>4 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 7
+<div>Total: 13
   <h3>complexity: 1</h3>
   <details id="TooManyFunctions" open="open">
     <summary class="rule-container"><span class="rule">TooManyFunctions: 1 </span><span class="description">Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage too many things at once. Extract functionality which clearly belongs together.</span></summary>
@@ -196,6 +196,73 @@
 <span class="lineno">   2 </span>
 <span class="lineno">   3 </span>import kotlin.contracts.contract
 <span class="lineno">   4 </span>
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <h3>naming: 6</h3>
+  <details id="FunctionNaming" open="open">
+    <summary class="rule-container"><span class="rule">FunctionNaming: 6 </span><span class="description">Function names should follow the naming convention set in the configuration.</span></summary>
+<a href="https://detekt.dev/docs/rules/naming#functionnaming">Documentation</a>
+    <ul>
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:8:19</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">   5 </span>
+<span class="lineno">   6 </span>public fun String.transformstring(): String = prepare(&quot;&quot;).lowercase()
+<span class="lineno">   7 </span>
+<span class="lineno">   8 </span>public fun String.<span class="error">TRANSFORMSTRING</span>(): String = prepare(&quot;&quot;).uppercase()
+<span class="lineno">   9 </span>
+<span class="lineno">  10 </span>public fun String.transformString(): String {
+<span class="lineno">  11 </span>    val data = prepare(&quot; &quot;)
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:25:19</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  22 </span>        .remove(&quot; &quot;)
+<span class="lineno">  23 </span>}
+<span class="lineno">  24 </span>
+<span class="lineno">  25 </span>public fun String.<span class="error">TransformString</span>(): String {
+<span class="lineno">  26 </span>    val data = prepare(&quot; &quot;)
+<span class="lineno">  27 </span>    return data
+<span class="lineno">  28 </span>        .mapIndexed { index, char -&gt;
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:41:19</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  38 </span>        .capitalize()
+<span class="lineno">  39 </span>}
+<span class="lineno">  40 </span>
+<span class="lineno">  41 </span>public fun String.<span class="error">transform_string</span>(): String = prepare(&quot;_&quot;).lowercase()
+<span class="lineno">  42 </span>
+<span class="lineno">  43 </span>public fun String.TRANSFORM_STRING(): String = prepare(&quot;_&quot;).uppercase()
+<span class="lineno">  44 </span>
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:43:19</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  40 </span>
+<span class="lineno">  41 </span>public fun String.transform_string(): String = prepare(&quot;_&quot;).lowercase()
+<span class="lineno">  42 </span>
+<span class="lineno">  43 </span>public fun String.<span class="error">TRANSFORM_STRING</span>(): String = prepare(&quot;_&quot;).uppercase()
+<span class="lineno">  44 </span>
+<span class="lineno">  45 </span>public fun String.transform_hyphen_string(): String = prepare(&quot;-&quot;).lowercase()
+<span class="lineno">  46 </span>
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:45:19</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  42 </span>
+<span class="lineno">  43 </span>public fun String.TRANSFORM_STRING(): String = prepare(&quot;_&quot;).uppercase()
+<span class="lineno">  44 </span>
+<span class="lineno">  45 </span>public fun String.<span class="error">transform_hyphen_string</span>(): String = prepare(&quot;-&quot;).lowercase()
+<span class="lineno">  46 </span>
+<span class="lineno">  47 </span>public fun String.TRANSFORM_HYPHEN_STRING(): String = prepare(&quot;-&quot;).uppercase()
+<span class="lineno">  48 </span>
+</code></pre>
+      </li>
+      <li><span class="location">kotlin-stdlib/common/main/kotlin/com/javiersc/kotlin/stdlib/StringsTransform.kt:47:19</span><span class="message">Function names should match the pattern: [a-z][a-zA-Z0-9]*</span>
+        <pre><code><span class="lineno">  44 </span>
+<span class="lineno">  45 </span>public fun String.transform_hyphen_string(): String = prepare(&quot;-&quot;).lowercase()
+<span class="lineno">  46 </span>
+<span class="lineno">  47 </span>public fun String.<span class="error">TRANSFORM_HYPHEN_STRING</span>(): String = prepare(&quot;-&quot;).uppercase()
+<span class="lineno">  48 </span>
+<span class="lineno">  49 </span>public fun String.tRaNsFoRmStRiNg(): String {
+<span class="lineno">  50 </span>    var newStr = &quot;&quot;
 </code></pre>
       </li>
     </ul>
@@ -282,7 +349,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.22.0</a> on 2023-03-05 08:57:16 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.22.0</a> on 2023-03-08 23:28:54 UTC.
 
 </body>
 </html>
