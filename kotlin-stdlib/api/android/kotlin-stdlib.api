@@ -176,3 +176,15 @@ public final class com/javiersc/kotlin/stdlib/StringsKt {
 	public static final fun replace (Ljava/lang/String;[Lkotlin/Pair;)Ljava/lang/String;
 }
 
+public final class com/javiersc/kotlin/stdlib/StringsTransformKt {
+	public static final fun TRANSFORMSTRING (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun TRANSFORM_HYPHEN_STRING (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun TRANSFORM_STRING (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun TransformString (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun tRaNsFoRmStRiNg (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun transformString (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun transform_hyphen_string (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun transform_string (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun transformstring (Ljava/lang/String;)Ljava/lang/String;
+}
+

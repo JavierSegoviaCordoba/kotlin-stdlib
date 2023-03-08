@@ -4,6 +4,16 @@
 
 ### Added
 
+- `String.transformstring` function
+- `String.TRANSFORMSTRING` function
+- `String.transformString` function
+- `String.TransformString` function
+- `String.transform_string` function
+- `String.TRANSFORM_STRING` function
+- `String.transform_hyphen_string` function
+- `String.TRANSFORM_HYPHEN_STRING` function
+- `String.tRaNsFoRmStRiNg` function
+
 ### Changed
 
 - `@IgnoreDARWIN` to `@IgnoreAPPLE`

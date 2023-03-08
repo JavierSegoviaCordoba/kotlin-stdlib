@@ -14,6 +14,7 @@ hubdle {
         multiplatform {
             features {
                 extendedStdlib.isEnabled.set(false)
+                kotest.isEnabled.set(false)
             }
 
             common {
@@ -35,7 +36,6 @@ hubdle {
 
             apple {
                 ios {
-                    iosArm32()
                     iosArm64()
                     iosSimulatorArm64()
                     iosX64()
@@ -54,7 +54,6 @@ hubdle {
                     watchosArm64()
                     watchosSimulatorArm64()
                     watchosX64()
-                    watchosX86()
                 }
             }
             jvm {
@@ -70,14 +69,10 @@ hubdle {
                 nodejs()
             }
             linux {
-                linuxArm32Hfp()
                 linuxArm64()
-                linuxMips32()
-                linuxMipsel32()
                 linuxX64()
             }
             mingw {
-                mingwX86()
                 mingwX64()
             }
             native()
