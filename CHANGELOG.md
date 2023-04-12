@@ -26,8 +26,8 @@
 
 ### Updated
 
+- `gradle -> 8.1`
 - `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.5.0-alpha.8`
-- `gradle -> 8.0.2`
 - `easimon/wipe-cache -> v2`
 
 ## [0.1.0-alpha.12] - 2022-10-18
