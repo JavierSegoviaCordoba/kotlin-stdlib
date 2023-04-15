@@ -16,6 +16,7 @@
 
 ### Changed
 
+- `@Ignore*` annotation use CamelCase in the target name 
 - `@IgnoreDARWIN` to `@IgnoreAPPLE`
 
 ### Deprecated

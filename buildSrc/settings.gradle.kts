@@ -1,6 +1,7 @@
 pluginManagement {
     val hubdleVersion: String =
-        file("$rootDir/gradle/libs.versions.toml")
+        rootDir.parentFile
+            .resolve("gradle/libs.versions.toml")
             .readLines()
             .first { it.contains("hubdle") }
             .split("\"")[1]
@@ -9,19 +10,10 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
         google()
+        mavenLocal()
     }
 
-    plugins {
-        id("com.javiersc.hubdle") version hubdleVersion
-    }
+    plugins { id("com.javiersc.hubdle") version hubdleVersion }
 }
 
-plugins {
-    id("com.javiersc.hubdle")
-}
-
-hubdleSettings {
-    autoInclude {
-        excludedBuilds("buildSrc")
-    }
-}
+plugins { id("com.javiersc.hubdle") }

@@ -1,7 +1,7 @@
 hubdle {
     config {
         analysis()
-        documentation {
+        documentation { //
             api()
         }
         explicitApi()
@@ -23,6 +23,12 @@ hubdle {
                 }
             }
             android()
+            androidNative {
+                androidNativeArm32()
+                androidNativeArm64()
+                androidNativeX64()
+                androidNativeX86()
+            }
             apple {
                 ios {
                     iosArm64()
@@ -41,12 +47,12 @@ hubdle {
                 watchos {
                     watchosArm32()
                     watchosArm64()
+                    watchosDeviceArm64()
                     watchosSimulatorArm64()
                     watchosX64()
                 }
             }
             jvm()
-            jvmAndAndroid()
             js {
                 browser()
                 nodejs()
@@ -55,13 +61,14 @@ hubdle {
                 linuxArm64()
                 linuxX64()
             }
-            mingw {
+            mingw { //
                 mingwX64()
             }
-            native()
 
-            wasm {
-                wasm32()
+            wasm()
+
+            kotlin { //
+                GenerateIgnoreClassesTask.register(project, sourceSets)
             }
         }
     }

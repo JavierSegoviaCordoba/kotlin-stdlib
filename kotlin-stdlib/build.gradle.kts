@@ -19,6 +19,12 @@ hubdle {
 
             common()
             android()
+            androidNative {
+                androidNativeArm32()
+                androidNativeArm64()
+                androidNativeX86()
+                androidNativeX64()
+            }
             apple {
                 ios {
                     iosArm64()
@@ -37,6 +43,7 @@ hubdle {
                 watchos {
                     watchosArm32()
                     watchosArm64()
+                    watchosDeviceArm64()
                     watchosSimulatorArm64()
                     watchosX64()
                 }
@@ -56,8 +63,24 @@ hubdle {
             }
             native()
 
-            wasm {
-                wasm32()
+            wasm()
+
+            // TODO: Remove with Kotlin 1.9
+            kotlin {
+                sourceSets {
+                    wasm {
+                        nodejs {
+                            testTask {
+                                enabled = false
+                            }
+                        }
+                        browser {
+                            commonWebpackConfig {
+                                experiments = mutableSetOf("topLevelAwait")
+                            }
+                        }
+                    }
+                }
             }
         }
     }
