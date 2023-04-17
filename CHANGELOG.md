@@ -4,6 +4,9 @@
 
 ### Added
 
+- `resource(name: String): File` function
+- `resourceOrNull(name: String): File?` function
+- `File.children: Sequence<File>`
 - `String.transformstring` function
 - `String.TRANSFORMSTRING` function
 - `String.transformString` function

@@ -1,0 +1,72 @@
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreAndroid : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreAndroidNativeArm32 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreAndroidNativeArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreAndroidNativeX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreAndroidNativeX86 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreCommon : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIosArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIosSimulatorArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreIosX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreJs : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLinuxArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreLinuxX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMacosArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMacosX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMingwX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTvosArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTvosSimulatorArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTvosX64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWasm : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatchosArm32 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatchosArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatchosDeviceArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatchosSimulatorArm64 : java/lang/annotation/Annotation {
+}
+
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatchosX64 : java/lang/annotation/Annotation {
+}
+

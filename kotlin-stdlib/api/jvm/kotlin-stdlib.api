@@ -159,6 +159,12 @@ public final class com/javiersc/kotlin/stdlib/CollectionsKt {
 	public static final fun thirdOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 }
 
+public final class com/javiersc/kotlin/stdlib/FilesKt {
+	public static final fun getChildren (Ljava/io/File;)Lkotlin/sequences/Sequence;
+	public static final fun resource (Ljava/lang/String;)Ljava/io/File;
+	public static final fun resourceOrNull (Ljava/lang/String;)Ljava/io/File;
+}
+
 public final class com/javiersc/kotlin/stdlib/StringsKt {
 	public static final fun endWithNewLine (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun getEmpty (Lkotlin/jvm/internal/StringCompanionObject;)Ljava/lang/String;
