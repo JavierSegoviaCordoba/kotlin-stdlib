@@ -4,6 +4,20 @@
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Updated
+
+## [0.1.0-alpha.13] - 2023-04-17
+
+### Added
+
 - `resource(name: String): File` function
 - `resourceOrNull(name: String): File?` function
 - `File.children: Sequence<File>`
@@ -19,14 +33,8 @@
 
 ### Changed
 
-- `@Ignore*` annotation use CamelCase in the target name 
+- `@Ignore*` annotation use CamelCase in the target name
 - `@IgnoreDARWIN` to `@IgnoreAPPLE`
-
-### Deprecated
-
-### Removed
-
-### Fixed
 
 ### Updated
 
@@ -179,3 +187,33 @@
 ## [0.0.0] - 2021-11-04
 
 - No changes
+
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.13...HEAD
+
+[0.1.0-alpha.13]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.12...0.1.0-alpha.13
+
+[0.1.0-alpha.12]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.11...0.1.0-alpha.12
+
+[0.1.0-alpha.11]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.10...0.1.0-alpha.11
+
+[0.1.0-alpha.10]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.9...0.1.0-alpha.10
+
+[0.1.0-alpha.9]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.8...0.1.0-alpha.9
+
+[0.1.0-alpha.8]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.7...0.1.0-alpha.8
+
+[0.1.0-alpha.7]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.6...0.1.0-alpha.7
+
+[0.1.0-alpha.6]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.5...0.1.0-alpha.6
+
+[0.1.0-alpha.5]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.4...0.1.0-alpha.5
+
+[0.1.0-alpha.4]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.3...0.1.0-alpha.4
+
+[0.1.0-alpha.3]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.2...0.1.0-alpha.3
+
+[0.1.0-alpha.2]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.1...0.1.0-alpha.2
+
+[0.1.0-alpha.1]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.0.0...0.1.0-alpha.1
+
+[0.0.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/commits/0.0.0
