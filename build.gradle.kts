@@ -5,6 +5,7 @@ plugins {
 hubdle {
     config {
         analysis()
+        coverage()
         binaryCompatibilityValidator()
         coverage()
         documentation {
