@@ -37,8 +37,13 @@ internal class StringsTest {
     @Test
     fun string_remove() {
         assertTrue { "Hello, World".remove("Hello, ") == "World" }
+        assertTrue { "Hello, World".remove("hello, ", ignoreCase = true) == "World" }
         assertTrue { "Hello, World".remove("bla") == "Hello, World" }
         assertTrue { "Hello, World".remove("llo", "rld") == "He, Wo" }
+        assertTrue { "Hello, World".remove("Hel", "Wor", ignoreCase = false) == "lo, ld" }
+        assertTrue { "Hello, World".removeIf("Hello, ") { it.startsWith("Hel") } == "World" }
+        assertTrue { "Hello, World".removeIf("H") { it.startsWith("W") } == "Hello, World" }
+        assertTrue { "Hello, World".removeIf("hello, ", true) { it.startsWith("Hel") } == "World" }
     }
 
     @Test
