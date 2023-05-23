@@ -4,6 +4,8 @@
 
 ### Added
 
+- `String.removeIf`
+
 ### Changed
 
 ### Deprecated
