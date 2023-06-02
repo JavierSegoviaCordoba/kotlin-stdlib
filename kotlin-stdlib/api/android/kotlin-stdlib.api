@@ -191,3 +191,71 @@ public final class com/javiersc/kotlin/stdlib/StringsTransformKt {
 	public static final fun transformstring (Ljava/lang/String;)Ljava/lang/String;
 }
 
+public abstract interface class com/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface {
+	public abstract synthetic fun child (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+}
+
+public final class com/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface$DefaultImpls {
+	public static synthetic fun child$default (Lcom/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+}
+
+public final class com/javiersc/kotlin/stdlib/tree/LevelOrderTreeIterator : java/util/Iterator, kotlin/jvm/internal/markers/KMappedMarker {
+	public fun <init> (Lcom/javiersc/kotlin/stdlib/tree/TreeNode;)V
+	public fun hasNext ()Z
+	public fun next ()Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+	public synthetic fun next ()Ljava/lang/Object;
+	public fun remove ()V
+}
+
+public final class com/javiersc/kotlin/stdlib/tree/PostOrderTreeIterator : java/util/Iterator, kotlin/jvm/internal/markers/KMappedMarker {
+	public fun <init> (Lcom/javiersc/kotlin/stdlib/tree/TreeNode;)V
+	public fun hasNext ()Z
+	public fun next ()Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+	public synthetic fun next ()Ljava/lang/Object;
+	public fun remove ()V
+}
+
+public final class com/javiersc/kotlin/stdlib/tree/PreOrderTreeIterator : java/util/Iterator, kotlin/jvm/internal/markers/KMappedMarker {
+	public fun <init> (Lcom/javiersc/kotlin/stdlib/tree/TreeNode;)V
+	public fun hasNext ()Z
+	public fun next ()Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+	public synthetic fun next ()Ljava/lang/Object;
+	public fun remove ()V
+}
+
+public class com/javiersc/kotlin/stdlib/tree/TreeNode : com/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface, java/lang/Iterable, kotlin/jvm/internal/markers/KMappedMarker {
+	public fun <init> (Ljava/lang/Object;)V
+	public final fun addChild (Lcom/javiersc/kotlin/stdlib/tree/TreeNode;)V
+	public synthetic fun child (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+	public final fun clear ()V
+	public final fun getChildren ()Ljava/util/List;
+	public final fun getDefaultIterator ()Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+	public final fun getDepth ()I
+	public final fun getHeight ()I
+	public final fun getNodeCount ()I
+	public final fun getParent ()Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+	public final fun getValue ()Ljava/lang/Object;
+	public final fun isRoot ()Z
+	public fun iterator ()Ljava/util/Iterator;
+	public final fun path (Lcom/javiersc/kotlin/stdlib/tree/TreeNode;)Ljava/util/List;
+	public final fun prettyString ()Ljava/lang/String;
+	public final fun removeChild (Lcom/javiersc/kotlin/stdlib/tree/TreeNode;)Z
+	public final fun setDefaultIterator (Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;)V
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/tree/TreeNodeException : java/lang/RuntimeException {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public final class com/javiersc/kotlin/stdlib/tree/TreeNodeIterators : java/lang/Enum {
+	public static final field LevelOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+	public static final field PostOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+	public static final field PreOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+	public static fun valueOf (Ljava/lang/String;)Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+	public static fun values ()[Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+}
+

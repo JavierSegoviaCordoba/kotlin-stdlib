@@ -4,6 +4,7 @@
 
 ### Added
 
+- `TreeNode` data structure
 - `String.removeIf`
 
 ### Changed

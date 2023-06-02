@@ -1,3 +1,5 @@
+import com.javiersc.gradle.properties.extensions.getBooleanProperty
+
 hubdle {
     config {
         analysis()
@@ -19,7 +21,7 @@ hubdle {
             }
 
             common()
-            android()
+            if (getBooleanProperty("android.enabled").orElse(true).get()) android()
             androidNative {
                 androidNativeArm32()
                 androidNativeArm64()
