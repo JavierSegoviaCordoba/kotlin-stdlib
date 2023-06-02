@@ -190,10 +190,6 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.8`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.8.0`
 
-## [0.0.0] - 2021-11-04
-
-- No changes
-
 [Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.13...HEAD
 
 [0.1.0-alpha.13]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.12...0.1.0-alpha.13
@@ -220,6 +216,4 @@
 
 [0.1.0-alpha.2]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.1...0.1.0-alpha.2
 
-[0.1.0-alpha.1]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.0.0...0.1.0-alpha.1
-
-[0.0.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/commits/0.0.0
+[0.1.0-alpha.1]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/commits/0.1.0-alpha.1
