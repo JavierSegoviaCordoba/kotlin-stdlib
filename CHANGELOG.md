@@ -4,9 +4,6 @@
 
 ### Added
 
-- `TreeNode` data structure
-- `String.removeIf`
-
 ### Changed
 
 ### Deprecated
@@ -14,6 +11,15 @@
 ### Removed
 
 ### Fixed
+
+### Updated
+
+## [0.1.0-alpha.14] - 2023-06-02
+
+### Added
+
+- `TreeNode` data structure
+- `String.removeIf`
 
 ### Updated
 
@@ -190,7 +196,9 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.8`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.8.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.13...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.14...HEAD
+
+[0.1.0-alpha.14]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.13...0.1.0-alpha.14
 
 [0.1.0-alpha.13]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.12...0.1.0-alpha.13
 
