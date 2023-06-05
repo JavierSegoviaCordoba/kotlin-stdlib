@@ -4,8 +4,6 @@
 
 ### Added
 
-- `root: TreeNode<T>` to `TreeNode<T>`
-
 ### Changed
 
 ### Deprecated
@@ -13,6 +11,14 @@
 ### Removed
 
 ### Fixed
+
+### Updated
+
+## [0.1.0-alpha.15] - 2023-06-05
+
+### Added
+
+- `root: TreeNode<T>` to `TreeNode<T>`
 
 ### Updated
 
@@ -200,7 +206,9 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.8`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.8.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.14...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.15...HEAD
+
+[0.1.0-alpha.15]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.14...0.1.0-alpha.15
 
 [0.1.0-alpha.14]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.13...0.1.0-alpha.14
 
