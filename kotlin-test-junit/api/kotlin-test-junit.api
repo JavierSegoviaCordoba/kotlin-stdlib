@@ -69,3 +69,4 @@ public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatcho
 
 public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatchosX64 : java/lang/annotation/Annotation {
 }
+

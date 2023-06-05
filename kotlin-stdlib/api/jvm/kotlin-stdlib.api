@@ -240,6 +240,7 @@ public class com/javiersc/kotlin/stdlib/tree/TreeNode : com/javiersc/kotlin/stdl
 	public final fun getHeight ()I
 	public final fun getNodeCount ()I
 	public final fun getParent ()Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+	public final fun getRoot ()Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
 	public final fun getValue ()Ljava/lang/Object;
 	public final fun isRoot ()Z
 	public fun iterator ()Ljava/util/Iterator;

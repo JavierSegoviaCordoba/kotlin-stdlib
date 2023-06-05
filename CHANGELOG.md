@@ -4,6 +4,8 @@
 
 ### Added
 
+- `root: TreeNode<T>` to `TreeNode<T>`
+
 ### Changed
 
 ### Deprecated

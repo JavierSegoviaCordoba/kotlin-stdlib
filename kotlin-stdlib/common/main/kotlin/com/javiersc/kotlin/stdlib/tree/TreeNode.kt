@@ -20,6 +20,10 @@ public open class TreeNode<T>(
     public val children: List<TreeNode<T>>
         get() = _children
 
+    /** The root of the tree. */
+    public val root: TreeNode<T>
+        get() = parent?.root ?: this
+
     /**
      * Checks whether the current tree node is the root of the tree
      *

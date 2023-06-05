@@ -225,13 +225,18 @@ internal class TreeNodeTest {
         assertContentEquals(expectedOrder, tree.toList().map(TreeNode<Int>::value))
     }
 
-    //    @Test
-    //    fun given_a_tree_with_delegation_when_accessing_to_value_implicitly_then_casting_works() {
-    //        val bar: Foo = Bar()
-    //        val barFooTree: FooTree<Foo> = FooTree(bar)
-    //        println(barFooTree)
-    //        println(barFooTree.value)
-    ////        assertTrue { barFooTree is Bar }
-    ////        assertTrue { barFooTree.value is Bar }
-    //    }
+    @Test
+    fun testRoot() {
+        val tree =
+            tree(1) {
+                child(2) {
+                    child(4)
+                    child(5)
+                }
+                child(3)
+            }
+        assertEquals(1, tree.root.value)
+        assertEquals(1, tree.children.first().root.value)
+        assertEquals(1, tree.children.first().children.first().root.value)
+    }
 }
