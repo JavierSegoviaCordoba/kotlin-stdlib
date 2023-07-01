@@ -3,6 +3,7 @@ $dokka.linkExtension:html
 $dokka.location:com.javiersc.kotlin.test////PointingToDeclaration/kotlin-test-testng/com.javiersc.kotlin.test.html
 module:kotlin-stdlib
 com.javiersc.kotlin.stdlib
+com.javiersc.kotlin.stdlib.graph
 com.javiersc.kotlin.stdlib.tree
 module:kotlin-test-junit
 com.javiersc.kotlin.test
