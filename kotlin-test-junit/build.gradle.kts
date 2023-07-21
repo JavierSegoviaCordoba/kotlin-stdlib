@@ -1,5 +1,9 @@
 import com.javiersc.gradle.properties.extensions.getBooleanProperty
 
+plugins { //
+    id("convention")
+}
+
 hubdle {
     config {
         analysis()
@@ -69,10 +73,6 @@ hubdle {
             }
 
             wasm()
-
-            kotlin { //
-                GenerateIgnoreClassesTask.register(project, sourceSets)
-            }
         }
     }
 }

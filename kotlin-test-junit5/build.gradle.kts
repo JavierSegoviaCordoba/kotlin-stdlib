@@ -1,12 +1,24 @@
+import com.javiersc.hubdle.project.extensions.config.testing.HubdleConfigTestingExtension.Options.JUnitPlatform
+
+plugins { //
+    id("convention")
+}
+
 hubdle {
     config {
         analysis()
         coverage()
-        documentation {
+        documentation { //
             api()
         }
         explicitApi()
         publishing()
+        testing { //
+            options.set(JUnitPlatform)
+            test { //
+                useJUnitPlatform()
+            }
+        }
     }
     kotlin {
         multiplatform {
@@ -62,8 +74,8 @@ hubdle {
                 }
             }
             jvm {
-                main {
-                    dependencies {
+                main { //
+                    dependencies { //
                         implementation(hubdle.jetbrains.kotlin.kotlinTestJUnit5)
                     }
                 }
@@ -76,15 +88,11 @@ hubdle {
                 linuxArm64()
                 linuxX64()
             }
-            mingw {
+            mingw { //
                 mingwX64()
             }
 
             wasm()
-
-            kotlin {
-                GenerateIgnoreClassesTask.register(project, sourceSets)
-            }
         }
     }
 }

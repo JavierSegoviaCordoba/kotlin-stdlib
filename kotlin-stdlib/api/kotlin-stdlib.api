@@ -197,6 +197,134 @@ public final class com/javiersc/kotlin/stdlib/StringsTransformKt {
 	public static final fun transformstring (Ljava/lang/String;)Ljava/lang/String;
 }
 
+public abstract interface class com/javiersc/kotlin/stdlib/graph/Graph : java/util/Map, kotlin/jvm/internal/markers/KMappedMarker {
+	public abstract fun asString ()Ljava/lang/String;
+	public abstract fun contains (Ljava/lang/Object;)Z
+	public abstract fun containsCircularVertexes (Ljava/lang/Object;)Z
+	public abstract fun doesNotContainsCircularVertexes (Ljava/lang/Object;)Z
+	public abstract fun getCircularVertexes ()Ljava/util/Map;
+	public abstract fun getDuplicatedVertexes ()Ljava/util/Map;
+	public abstract fun getHasCircularVertexes ()Z
+	public abstract fun getHasDuplicatedVertexes ()Z
+	public abstract fun getHasMissingVertexes ()Z
+	public abstract fun getMissingVertexes ()Ljava/util/Set;
+	public abstract fun getRenderer ()Lkotlin/jvm/functions/Function1;
+	public abstract fun renderer (Lkotlin/jvm/functions/Function1;)V
+	public abstract fun setRenderer (Lkotlin/jvm/functions/Function1;)V
+	public abstract fun toGraph ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
+	public abstract fun vertexesFor (Ljava/lang/Object;)Ljava/util/List;
+	public abstract fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
+}
+
+public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
+	public static fun asString (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Ljava/lang/String;
+	public static fun contains (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Z
+	public static fun containsCircularVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Z
+	public static fun doesNotContainsCircularVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Z
+	public static fun getCircularVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Ljava/util/Map;
+	public static fun getDuplicatedVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Ljava/util/Map;
+	public static fun getHasCircularVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Z
+	public static fun getHasDuplicatedVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Z
+	public static fun getHasMissingVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Z
+	public static fun renderer (Lcom/javiersc/kotlin/stdlib/graph/Graph;Lkotlin/jvm/functions/Function1;)V
+	public static fun toGraph (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
+	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Ljava/util/List;
+	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;[Ljava/lang/Object;)Ljava/util/List;
+}
+
+public final class com/javiersc/kotlin/stdlib/graph/Graph$Edge {
+	public fun <init> (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)V
+	public final fun component1 ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
+	public final fun component2 ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
+	public final fun copy (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)Lcom/javiersc/kotlin/stdlib/graph/Graph$Edge;
+	public static synthetic fun copy$default (Lcom/javiersc/kotlin/stdlib/graph/Graph$Edge;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/graph/Graph$Edge;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDestination ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
+	public final fun getSource ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/graph/Graph$Vertex {
+	public fun <init> (ILjava/lang/Object;)V
+	public final fun component1 ()I
+	public final fun component2 ()Ljava/lang/Object;
+	public final fun copy (ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
+	public static synthetic fun copy$default (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;ILjava/lang/Object;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getIndex ()I
+	public final fun getValue ()Ljava/lang/Object;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/graph/GraphKt {
+	public static final fun buildGraph (Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
+	public static synthetic fun buildGraph$default (Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
+	public static final fun mutableGraphOf (Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/graph/MutableGraph;
+	public static synthetic fun mutableGraphOf$default (Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/graph/MutableGraph;
+}
+
+public final class com/javiersc/kotlin/stdlib/graph/MutableGraph : com/javiersc/kotlin/stdlib/graph/Graph {
+	public final fun addEdge (Ljava/lang/Object;Ljava/lang/Object;)V
+	public final fun addVertex (Ljava/lang/Object;)Ljava/lang/Object;
+	public fun asString ()Ljava/lang/String;
+	public fun clear ()V
+	public fun compute (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/function/BiFunction;)Ljava/util/List;
+	public synthetic fun compute (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+	public fun computeIfAbsent (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/function/Function;)Ljava/util/List;
+	public synthetic fun computeIfAbsent (Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+	public fun computeIfPresent (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/function/BiFunction;)Ljava/util/List;
+	public synthetic fun computeIfPresent (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+	public fun contains (Ljava/lang/Object;)Z
+	public fun containsCircularVertexes (Ljava/lang/Object;)Z
+	public fun containsKey (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)Z
+	public final fun containsKey (Ljava/lang/Object;)Z
+	public final fun containsValue (Ljava/lang/Object;)Z
+	public fun containsValue (Ljava/util/List;)Z
+	public fun doesNotContainsCircularVertexes (Ljava/lang/Object;)Z
+	public final fun entrySet ()Ljava/util/Set;
+	public fun get (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)Ljava/util/List;
+	public final synthetic fun get (Ljava/lang/Object;)Ljava/lang/Object;
+	public final fun get (Ljava/lang/Object;)Ljava/util/List;
+	public fun getCircularVertexes ()Ljava/util/Map;
+	public fun getDuplicatedVertexes ()Ljava/util/Map;
+	public fun getEntries ()Ljava/util/Set;
+	public fun getHasCircularVertexes ()Z
+	public fun getHasDuplicatedVertexes ()Z
+	public fun getHasMissingVertexes ()Z
+	public fun getKeys ()Ljava/util/Set;
+	public fun getMissingVertexes ()Ljava/util/Set;
+	public fun getRenderer ()Lkotlin/jvm/functions/Function1;
+	public fun getSize ()I
+	public fun getValues ()Ljava/util/Collection;
+	public fun isEmpty ()Z
+	public final fun keySet ()Ljava/util/Set;
+	public fun merge (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/List;Ljava/util/function/BiFunction;)Ljava/util/List;
+	public synthetic fun merge (Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+	public fun put (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/List;)Ljava/util/List;
+	public synthetic fun put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	public fun putAll (Ljava/util/Map;)V
+	public fun putIfAbsent (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/List;)Ljava/util/List;
+	public synthetic fun putIfAbsent (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	public synthetic fun remove (Ljava/lang/Object;)Ljava/lang/Object;
+	public fun remove (Ljava/lang/Object;)Ljava/util/List;
+	public fun remove (Ljava/lang/Object;Ljava/lang/Object;)Z
+	public fun renderer (Lkotlin/jvm/functions/Function1;)V
+	public fun replace (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/List;)Ljava/util/List;
+	public fun replace (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/List;Ljava/util/List;)Z
+	public synthetic fun replace (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	public synthetic fun replace (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+	public fun replaceAll (Ljava/util/function/BiFunction;)V
+	public fun setRenderer (Lkotlin/jvm/functions/Function1;)V
+	public final fun size ()I
+	public fun toGraph ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
+	public fun toString ()Ljava/lang/String;
+	public final fun values ()Ljava/util/Collection;
+	public fun vertexesFor (Ljava/lang/Object;)Ljava/util/List;
+	public fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
+}
+
 public abstract interface class com/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface {
 	public abstract synthetic fun child (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
 }
@@ -262,6 +390,7 @@ public final class com/javiersc/kotlin/stdlib/tree/TreeNodeIterators : java/lang
 	public static final field LevelOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 	public static final field PostOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 	public static final field PreOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
 	public static fun valueOf (Ljava/lang/String;)Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 	public static fun values ()[Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 }

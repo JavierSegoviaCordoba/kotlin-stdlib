@@ -1,3 +1,9 @@
+import com.javiersc.hubdle.project.extensions.config.testing.HubdleConfigTestingExtension.Options.TestNG
+
+plugins { //
+    id("convention")
+}
+
 hubdle {
     config {
         analysis()
@@ -7,6 +13,12 @@ hubdle {
         }
         explicitApi()
         publishing()
+        testing { //
+            options.set(TestNG)
+            test { //
+                useTestNG()
+            }
+        }
     }
     kotlin {
         multiplatform {
@@ -81,10 +93,6 @@ hubdle {
             }
 
             wasm()
-
-            kotlin { //
-                GenerateIgnoreClassesTask.register(project, sourceSets)
-            }
         }
     }
 }

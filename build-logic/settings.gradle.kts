@@ -13,7 +13,11 @@ pluginManagement {
         mavenLocal()
     }
 
-    plugins { id("com.javiersc.hubdle") version hubdleVersion }
+    plugins { //
+        id("com.javiersc.hubdle") version hubdleVersion
+    }
 }
 
-plugins { id("com.javiersc.hubdle") }
+plugins { //
+    id("com.javiersc.hubdle")
+}
