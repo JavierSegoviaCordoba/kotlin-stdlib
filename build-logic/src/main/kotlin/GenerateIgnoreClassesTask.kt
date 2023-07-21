@@ -178,27 +178,29 @@ constructor(
             val generateIgnoreClassesTask: TaskProvider<GenerateIgnoreClassesTask> =
                 project.tasks.register<GenerateIgnoreClassesTask>(TASK_NAME)
 
-            generateIgnoreClassesTask.configure { sourceSets.set(kotlinSourceSetsMap) }
+            generateIgnoreClassesTask.configure { it.sourceSets.set(kotlinSourceSetsMap) }
 
             project.tasks.withType<BaseKotlinCompile>().configureEach {
-                dependsOn(generateIgnoreClassesTask)
+                it.dependsOn(generateIgnoreClassesTask)
             }
 
             project.tasks.withType<KotlinCompile<*>>().configureEach {
-                dependsOn(generateIgnoreClassesTask)
+                it.dependsOn(generateIgnoreClassesTask)
             }
 
-            project.tasks.withType<Jar>().configureEach { dependsOn(generateIgnoreClassesTask) }
+            project.tasks.withType<Jar>().configureEach { it.dependsOn(generateIgnoreClassesTask) }
 
-            project.afterEvaluate {
+            project.afterEvaluate { afterEvaluate ->
                 listOf(
                         "detekt",
                         "spotlessKotlin",
                     )
-                    .forEach { tasks.findByName(it)?.dependsOn(generateIgnoreClassesTask) }
+                    .forEach {
+                        afterEvaluate.tasks.findByName(it)?.dependsOn(generateIgnoreClassesTask)
+                    }
             }
 
-            project.tasks.named(ASSEMBLE_TASK_NAME) { dependsOn(generateIgnoreClassesTask) }
+            project.tasks.named(ASSEMBLE_TASK_NAME) { it.dependsOn(generateIgnoreClassesTask) }
         }
     }
 }

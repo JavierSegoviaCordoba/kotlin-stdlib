@@ -9,19 +9,14 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
         google()
+        mavenLocal()
     }
 
-    plugins {
+    plugins { //
         id("com.javiersc.hubdle") version hubdleVersion
     }
 }
 
-plugins {
+plugins { //
     id("com.javiersc.hubdle")
-}
-
-hubdleSettings {
-    autoInclude {
-        excludedBuilds("buildSrc")
-    }
 }

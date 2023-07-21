@@ -68,18 +68,18 @@ hubdle {
 
             wasm()
 
-            // TODO: Remove with Kotlin 1.9
+            // TODO: Check if it can be removed with Kotlin 1.9.10+
             kotlin {
                 sourceSets {
                     wasm {
-                        nodejs {
+                        browser {
                             testTask {
                                 enabled = false
                             }
                         }
-                        browser {
-                            commonWebpackConfig {
-                                experiments = mutableSetOf("topLevelAwait")
+                        nodejs {
+                            testTask {
+                                enabled = false
                             }
                         }
                     }

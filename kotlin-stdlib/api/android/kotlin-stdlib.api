@@ -384,6 +384,7 @@ public final class com/javiersc/kotlin/stdlib/tree/TreeNodeIterators : java/lang
 	public static final field LevelOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 	public static final field PostOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 	public static final field PreOrder Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
 	public static fun valueOf (Ljava/lang/String;)Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 	public static fun values ()[Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 }
