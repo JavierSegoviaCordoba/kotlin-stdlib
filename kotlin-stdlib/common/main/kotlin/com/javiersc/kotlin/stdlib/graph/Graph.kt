@@ -61,6 +61,34 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
 
     public fun vertexesFor(vararg values: T): List<T> = values.flatMap(::vertexesFor)
 
+    public fun toGraphSortedByEdges(): Graph<T> = buildGraph {
+        val sortedGraph: MutableGraph<T> = this
+        val graph: Graph<T> = this@Graph
+        val remainingMap: MutableMap<Vertex<T>, List<Edge<T>>> = graph.toMutableMap()
+        while (remainingMap.isNotEmpty()) {
+            val vertexesToBeRemoved: MutableList<Vertex<T>> = mutableListOf()
+            for ((vertex: Vertex<T>, edges: List<Edge<T>>) in remainingMap) {
+                if (edges.isEmpty()) {
+                    sortedGraph.addVertex(vertex.value)
+                    vertexesToBeRemoved.add(vertex)
+                    println()
+                }
+                for (edge: Edge<T> in edges) {
+                    if (edge.destination.value in sortedGraph.keys.map(Vertex<T>::value)) {
+                        sortedGraph.addVertex(edge.source.value)
+                        sortedGraph.addEdge(edge.source.value, edge.destination.value)
+                        vertexesToBeRemoved.add(edge.source)
+                        println()
+                    }
+                }
+            }
+            for (vertexToBeRemoved: Vertex<T> in vertexesToBeRemoved) {
+                remainingMap.remove(vertexToBeRemoved)
+            }
+            vertexesToBeRemoved.clear()
+        }
+    }
+
     public fun renderer(block: Any?.() -> String) {
         this.renderer = block
     }

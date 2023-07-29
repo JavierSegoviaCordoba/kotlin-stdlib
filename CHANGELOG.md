@@ -4,6 +4,8 @@
 
 ### Added
 
+- `Graph.toGraphSortedByEdges: Graph`
+
 ### Changed
 
 ### Deprecated

@@ -310,6 +310,37 @@ class GraphTest {
         assertTrue { graph.vertexesFor(Qux) == listOf(Quux) }
         assertTrue { graph.vertexesFor(Quux) == emptyList<A>() }
     }
+
+    @Test
+    fun vertexes_sorted_by_edges() {
+        val graph: Graph<A> = buildGraph {
+            addVertex(Bar)
+            addVertex(Foo)
+            addVertex(Baz)
+            addEdge(Bar, Baz)
+            addEdge(Foo, Bar)
+        }
+
+        assertTrue {
+            val actual: String = graph.toString()
+            val expect: String = buildString {
+                appendLine("Bar -> [Baz]")
+                appendLine("Foo -> [Bar]")
+                appendLine("Baz -> []")
+            }
+            expect == actual
+        }
+
+        assertTrue {
+            val actual: String = graph.toGraphSortedByEdges().toString()
+            val expect: String = buildString {
+                appendLine("Baz -> []")
+                appendLine("Bar -> [Baz]")
+                appendLine("Foo -> [Bar]")
+            }
+            expect == actual
+        }
+    }
 }
 
 private object Foo : A()
