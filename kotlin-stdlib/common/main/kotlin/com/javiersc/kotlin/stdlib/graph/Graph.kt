@@ -43,6 +43,9 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
 
     public fun contains(value: T): Boolean = keys.any { it.value == value }
 
+    public fun contains(value: T, predicate: (T) -> Boolean): Boolean =
+        keys.any { predicate(it.value) }
+
     public fun toGraph(): Graph<T> = this
 
     public fun containsCircularVertexes(value: T): Boolean =
@@ -50,9 +53,9 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
 
     public fun doesNotContainsCircularVertexes(value: T): Boolean = !containsCircularVertexes(value)
 
-    public fun vertexesFor(value: T): List<T> {
+    public fun vertexesFor(value: T, predicate: (T) -> Boolean = { it == value }): List<T> {
         if (containsCircularVertexes(value)) return emptyList()
-        val vertex: Vertex<T> = keys.find { it.value == value } ?: return emptyList()
+        val vertex: Vertex<T> = keys.find { predicate(it.value) } ?: return emptyList()
         val edges: List<Edge<T>> = this[vertex] ?: return emptyList()
         val destinationVertexes: Sequence<Vertex<T>> = edges.asSequence().map(Edge<T>::destination)
         val destinations: Sequence<T> = destinationVertexes.map(Vertex<T>::value)

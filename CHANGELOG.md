@@ -4,7 +4,7 @@
 
 ### Added
 
-- `Graph.toGraphSortedByEdges: Graph`
+- `Graph` data structure
 
 ### Changed
 

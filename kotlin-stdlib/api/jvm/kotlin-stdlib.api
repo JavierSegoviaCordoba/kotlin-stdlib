@@ -200,6 +200,7 @@ public final class com/javiersc/kotlin/stdlib/StringsTransformKt {
 public abstract interface class com/javiersc/kotlin/stdlib/graph/Graph : java/util/Map, kotlin/jvm/internal/markers/KMappedMarker {
 	public abstract fun asString ()Ljava/lang/String;
 	public abstract fun contains (Ljava/lang/Object;)Z
+	public abstract fun contains (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Z
 	public abstract fun containsCircularVertexes (Ljava/lang/Object;)Z
 	public abstract fun doesNotContainsCircularVertexes (Ljava/lang/Object;)Z
 	public abstract fun getCircularVertexes ()Ljava/util/Map;
@@ -213,13 +214,14 @@ public abstract interface class com/javiersc/kotlin/stdlib/graph/Graph : java/ut
 	public abstract fun setRenderer (Lkotlin/jvm/functions/Function1;)V
 	public abstract fun toGraph ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public abstract fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
-	public abstract fun vertexesFor (Ljava/lang/Object;)Ljava/util/List;
+	public abstract fun vertexesFor (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public abstract fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
 }
 
 public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
 	public static fun asString (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Ljava/lang/String;
 	public static fun contains (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Z
+	public static fun contains (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Z
 	public static fun containsCircularVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Z
 	public static fun doesNotContainsCircularVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Z
 	public static fun getCircularVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Ljava/util/Map;
@@ -230,8 +232,9 @@ public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
 	public static fun renderer (Lcom/javiersc/kotlin/stdlib/graph/Graph;Lkotlin/jvm/functions/Function1;)V
 	public static fun toGraph (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public static fun toGraphSortedByEdges (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
-	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;)Ljava/util/List;
+	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;[Ljava/lang/Object;)Ljava/util/List;
+	public static synthetic fun vertexesFor$default (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/util/List;
 }
 
 public final class com/javiersc/kotlin/stdlib/graph/Graph$Edge {
@@ -279,6 +282,7 @@ public final class com/javiersc/kotlin/stdlib/graph/MutableGraph : com/javiersc/
 	public fun computeIfPresent (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Ljava/util/function/BiFunction;)Ljava/util/List;
 	public synthetic fun computeIfPresent (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
 	public fun contains (Ljava/lang/Object;)Z
+	public fun contains (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Z
 	public fun containsCircularVertexes (Ljava/lang/Object;)Z
 	public fun containsKey (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)Z
 	public final fun containsKey (Ljava/lang/Object;)Z
@@ -324,7 +328,7 @@ public final class com/javiersc/kotlin/stdlib/graph/MutableGraph : com/javiersc/
 	public fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public fun toString ()Ljava/lang/String;
 	public final fun values ()Ljava/util/Collection;
-	public fun vertexesFor (Ljava/lang/Object;)Ljava/util/List;
+	public fun vertexesFor (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
 }
 
