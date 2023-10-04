@@ -47,4 +47,46 @@ class TTest {
         assertFalse { isOne }
         assertTrue { isTwo }
     }
+
+    @Test
+    fun or() {
+        val aa = a.or { "aa" }
+        val aaa = a.or("aaa")
+        val bb = b.or { "bb" }
+        val bbb = b.or("bbb")
+        val eleven = one.or { 11 }
+        val oneHundredEleven = one.or(111)
+        val twentyTwo = two.or { 22 }
+        val twoHundredTwentyTwo = two.or(222)
+
+        assertTrue { aa == "a" }
+        assertTrue { aaa == "a" }
+        assertTrue { bb == "bb" }
+        assertTrue { bbb == "bbb" }
+        assertTrue { eleven == 1 }
+        assertTrue { oneHundredEleven == 1 }
+        assertTrue { twentyTwo == 22 }
+        assertTrue { twoHundredTwentyTwo == 222 }
+    }
+
+    @Test
+    fun infixOr() {
+        val aa = a or { "aa" }
+        val aaa = a or "aaa"
+        val bb = b or { "bb" }
+        val bbb = b or "bbb"
+        val eleven = one or { 11 }
+        val oneHundredEleven = one or 111
+        val twentyTwo = two or { 22 }
+        val twoHundredTwentyTwo = two or 222
+
+        assertTrue { aa == "a" }
+        assertTrue { aaa == "a" }
+        assertTrue { bb == "bb" }
+        assertTrue { bbb == "bbb" }
+        assertTrue { eleven == 1 }
+        assertTrue { oneHundredEleven == 1 }
+        assertTrue { twentyTwo == 22 }
+        assertTrue { twoHundredTwentyTwo == 222 }
+    }
 }
