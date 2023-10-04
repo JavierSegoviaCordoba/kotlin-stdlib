@@ -4,6 +4,16 @@
 
 ### Added
 
+- `Iterable<T>.sixth(): T`
+- `Iterable<T>.sixthOrNull(): T?`
+- `Iterable<T>.seventh(): T`
+- `Iterable<T>.seventhOrNull(): T?`
+- `Iterable<T>.eighth(): T`
+- `Iterable<T>.eighthOrNull(): T?`
+- `Iterable<T>.ninth(): T`
+- `Iterable<T>.ninthOrNull(): T?`
+- `Iterable<T>.tenth(): T`
+- `Iterable<T>.tenthOrNull(): T?`
 - `Boolean.ifFalse(block: () -> Unit): Boolean`
 - `Boolean.ifTrue(block: () -> Unit): Boolean`
 - `T?.ifNotNull(block: () -> Unit): T?`
