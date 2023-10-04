@@ -4,6 +4,8 @@
 
 ### Added
 
+- `T?.ifNotNull(block: () -> Unit): T?`
+- `T?.ifNull(block: () -> Unit): T?`
 - `Graph` data structure
 
 ### Changed
