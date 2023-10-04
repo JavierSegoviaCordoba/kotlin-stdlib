@@ -4,6 +4,8 @@
 
 ### Added
 
+- `Boolean.ifFalse(block: () -> Unit): Boolean`
+- `Boolean.ifTrue(block: () -> Unit): Boolean`
 - `T?.ifNotNull(block: () -> Unit): T?`
 - `T?.ifNull(block: () -> Unit): T?`
 - `Graph` data structure
