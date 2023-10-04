@@ -4,6 +4,8 @@
 
 ### Added
 
+- `T?.or(other: T): T`
+- `T?.or(block: () -> T): T`
 - `Iterable<T>.sixth(): T`
 - `Iterable<T>.sixthOrNull(): T?`
 - `Iterable<T>.seventh(): T`

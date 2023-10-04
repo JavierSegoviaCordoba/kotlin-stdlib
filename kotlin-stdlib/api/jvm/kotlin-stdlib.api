@@ -215,6 +215,8 @@ public final class com/javiersc/kotlin/stdlib/StringsTransformKt {
 public final class com/javiersc/kotlin/stdlib/TKt {
 	public static final fun ifNotNull (Ljava/lang/Object;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
 	public static final fun ifNull (Ljava/lang/Object;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+	public static final fun or (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	public static final fun or (Ljava/lang/Object;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
 }
 
 public abstract interface class com/javiersc/kotlin/stdlib/graph/Graph : java/util/Map, kotlin/jvm/internal/markers/KMappedMarker {
