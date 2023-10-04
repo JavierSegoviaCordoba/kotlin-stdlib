@@ -141,6 +141,11 @@ public final class com/javiersc/kotlin/stdlib/AnsiColorsKt {
 	public static final fun ansiColor (Ljava/lang/String;Lcom/javiersc/kotlin/stdlib/AnsiColor;)Ljava/lang/String;
 }
 
+public final class com/javiersc/kotlin/stdlib/BooleanKt {
+	public static final fun ifFalse (ZLkotlin/jvm/functions/Function0;)Z
+	public static final fun ifTrue (ZLkotlin/jvm/functions/Function0;)Z
+}
+
 public final class com/javiersc/kotlin/stdlib/CollectionsKt {
 	public static final fun capitalize (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun decapitalize (Ljava/lang/String;)Ljava/lang/String;
