@@ -149,17 +149,27 @@ public final class com/javiersc/kotlin/stdlib/BooleanKt {
 public final class com/javiersc/kotlin/stdlib/CollectionsKt {
 	public static final fun capitalize (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun decapitalize (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun eighth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun eighthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun fifth (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun fifthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun forth (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun forthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun getIndex (Ljava/lang/Iterable;I)Ljava/lang/Object;
 	public static final fun getIndexOrNull (Ljava/lang/Iterable;I)Ljava/lang/Object;
+	public static final fun ninth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun ninthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun penultimate (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun penultimateOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun removeDuplicateEmptyLines (Ljava/util/List;)Ljava/lang/String;
 	public static final fun second (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun secondOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun seventh (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun seventhOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun sixth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun sixthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun tenth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun tenthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun third (Ljava/lang/Iterable;)Ljava/lang/Object;
 	public static final fun thirdOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 }

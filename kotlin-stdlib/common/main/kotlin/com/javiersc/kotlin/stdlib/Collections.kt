@@ -57,6 +57,51 @@ public inline fun <T> Iterable<T>.fifth(): T = getIndex(5)
 public inline fun <T> Iterable<T>.fifthOrNull(): T? = getIndexOrNull(5)
 
 /**
+ * Returns sixth element.
+ *
+ * Throws: `NoSuchElementException` - if the list size is 5.
+ */
+public inline fun <T> Iterable<T>.sixth(): T = getIndex(6)
+
+public inline fun <T> Iterable<T>.sixthOrNull(): T? = getIndexOrNull(6)
+
+/**
+ * Returns seventh element.
+ *
+ * Throws: `NoSuchElementException` - if the list size is 6.
+ */
+public inline fun <T> Iterable<T>.seventh(): T = getIndex(7)
+
+public inline fun <T> Iterable<T>.seventhOrNull(): T? = getIndexOrNull(7)
+
+/**
+ * Returns eighth element.
+ *
+ * Throws: `NoSuchElementException` - if the list size is 7.
+ */
+public inline fun <T> Iterable<T>.eighth(): T = getIndex(8)
+
+public inline fun <T> Iterable<T>.eighthOrNull(): T? = getIndexOrNull(8)
+
+/**
+ * Returns ninth element.
+ *
+ * Throws: `NoSuchElementException` - if the list size is 8.
+ */
+public inline fun <T> Iterable<T>.ninth(): T = getIndex(9)
+
+public inline fun <T> Iterable<T>.ninthOrNull(): T? = getIndexOrNull(9)
+
+/**
+ * Returns tenth element.
+ *
+ * Throws: `NoSuchElementException` - if the list size is 9.
+ */
+public inline fun <T> Iterable<T>.tenth(): T = getIndex(10)
+
+public inline fun <T> Iterable<T>.tenthOrNull(): T? = getIndexOrNull(10)
+
+/**
  * Returns penultimate element.
  *
  * Throws: `NoSuchElementException` - if the list size is 1.

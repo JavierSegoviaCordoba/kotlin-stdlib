@@ -8,10 +8,10 @@ import kotlin.test.assertTrue
 
 internal class CollectionsTest {
 
-    private val numbers: List<Int> = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    private val numbers: List<Int> = (1..10).toList()
     private val numbersIterable: Iterable<Int> = IntRange(1, 10)
-    private val chars: List<Char> = listOf('A', 'B', 'C', 'D', 'E', 'F')
-    private val charsIterable: Iterable<Char> = CharRange('A', 'F')
+    private val chars: List<Char> = ('A'..'Z').toList()
+    private val charsIterable: Iterable<Char> = CharRange('A', 'Z')
     private val empty: List<Char> = emptyList()
     private val emptyIterable: Iterable<Char> = CharRange.EMPTY
 
@@ -90,16 +90,111 @@ internal class CollectionsTest {
     }
 
     @Test
+    fun collection_sixth() {
+        assertTrue { numbers.sixth() == 6 }
+        assertTrue { numbersIterable.sixth() == 6 }
+        assertTrue { numbers.sixthOrNull() == 6 }
+        assertTrue { numbersIterable.sixthOrNull() == 6 }
+
+        assertTrue { chars.sixth() == 'F' }
+        assertTrue { charsIterable.sixth() == 'F' }
+        assertTrue { chars.sixthOrNull() == 'F' }
+        assertTrue { charsIterable.sixthOrNull() == 'F' }
+
+        assertFailsWith<NoSuchElementException> { empty.sixth() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.sixth() }
+
+        assertTrue { empty.sixthOrNull() == null }
+        assertTrue { emptyIterable.sixthOrNull() == null }
+    }
+
+    @Test
+    fun collection_seventh() {
+        assertTrue { numbers.seventh() == 7 }
+        assertTrue { numbersIterable.seventh() == 7 }
+        assertTrue { numbers.seventhOrNull() == 7 }
+        assertTrue { numbersIterable.seventhOrNull() == 7 }
+
+        assertTrue { chars.seventh() == 'G' }
+        assertTrue { charsIterable.seventh() == 'G' }
+        assertTrue { chars.seventhOrNull() == 'G' }
+        assertTrue { charsIterable.seventhOrNull() == 'G' }
+
+        assertFailsWith<NoSuchElementException> { empty.seventh() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.seventh() }
+
+        assertTrue { empty.seventhOrNull() == null }
+        assertTrue { emptyIterable.seventhOrNull() == null }
+    }
+
+    @Test
+    fun collection_eighth() {
+        assertTrue { numbers.eighth() == 8 }
+        assertTrue { numbersIterable.eighth() == 8 }
+        assertTrue { numbers.eighthOrNull() == 8 }
+        assertTrue { numbersIterable.eighthOrNull() == 8 }
+
+        assertTrue { chars.eighth() == 'H' }
+        assertTrue { charsIterable.eighth() == 'H' }
+        assertTrue { chars.eighthOrNull() == 'H' }
+        assertTrue { charsIterable.eighthOrNull() == 'H' }
+
+        assertFailsWith<NoSuchElementException> { empty.eighth() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.eighth() }
+
+        assertTrue { empty.eighthOrNull() == null }
+        assertTrue { emptyIterable.eighthOrNull() == null }
+    }
+
+    @Test
+    fun collection_ninth() {
+        assertTrue { numbers.ninth() == 9 }
+        assertTrue { numbersIterable.ninth() == 9 }
+        assertTrue { numbers.ninthOrNull() == 9 }
+        assertTrue { numbersIterable.ninthOrNull() == 9 }
+
+        assertTrue { chars.ninth() == 'I' }
+        assertTrue { charsIterable.ninth() == 'I' }
+        assertTrue { chars.ninthOrNull() == 'I' }
+        assertTrue { charsIterable.ninthOrNull() == 'I' }
+
+        assertFailsWith<NoSuchElementException> { empty.ninth() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.ninth() }
+
+        assertTrue { empty.ninthOrNull() == null }
+        assertTrue { emptyIterable.ninthOrNull() == null }
+    }
+
+    @Test
+    fun collection_tenth() {
+        assertTrue { numbers.tenth() == 10 }
+        assertTrue { numbersIterable.tenth() == 10 }
+        assertTrue { numbers.tenthOrNull() == 10 }
+        assertTrue { numbersIterable.tenthOrNull() == 10 }
+
+        assertTrue { chars.tenth() == 'J' }
+        assertTrue { charsIterable.tenth() == 'J' }
+        assertTrue { chars.tenthOrNull() == 'J' }
+        assertTrue { charsIterable.tenthOrNull() == 'J' }
+
+        assertFailsWith<NoSuchElementException> { empty.tenth() }
+        assertFailsWith<NoSuchElementException> { emptyIterable.tenth() }
+
+        assertTrue { empty.tenthOrNull() == null }
+        assertTrue { emptyIterable.tenthOrNull() == null }
+    }
+
+    @Test
     fun collection_penultimate() {
         assertTrue { numbers.penultimate() == 9 }
         assertTrue { numbersIterable.penultimate() == 9 }
         assertTrue { numbers.penultimateOrNull() == 9 }
         assertTrue { numbersIterable.penultimateOrNull() == 9 }
 
-        assertTrue { chars.penultimate() == 'E' }
-        assertTrue { charsIterable.penultimate() == 'E' }
-        assertTrue { chars.penultimateOrNull() == 'E' }
-        assertTrue { charsIterable.penultimateOrNull() == 'E' }
+        assertTrue { chars.penultimate() == 'Y' }
+        assertTrue { charsIterable.penultimate() == 'Y' }
+        assertTrue { chars.penultimateOrNull() == 'Y' }
+        assertTrue { charsIterable.penultimateOrNull() == 'Y' }
 
         assertFailsWith<NoSuchElementException> { empty.penultimate() }
         assertFailsWith<NoSuchElementException> { emptyIterable.penultimate() }
