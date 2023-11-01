@@ -52,7 +52,7 @@ public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTvosSi
 public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTvosX64 : java/lang/annotation/Annotation {
 }
 
-public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWasm : java/lang/annotation/Annotation {
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWasmJs : java/lang/annotation/Annotation {
 }
 
 public abstract interface annotation class com/javiersc/kotlin/test/IgnoreWatchosArm32 : java/lang/annotation/Annotation {
