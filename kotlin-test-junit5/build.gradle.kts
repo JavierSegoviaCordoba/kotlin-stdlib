@@ -92,7 +92,7 @@ hubdle {
                 mingwX64()
             }
 
-            wasm()
+            wasmJs()
         }
     }
 }

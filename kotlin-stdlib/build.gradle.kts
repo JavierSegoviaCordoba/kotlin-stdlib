@@ -66,12 +66,12 @@ hubdle {
             }
             native()
 
-            wasm()
+            wasmJs()
 
-            // TODO: Check if it can be removed with Kotlin 1.9.10+
+            // TODO: Check if it can be removed with Kotlin 2.0.0+
             kotlin {
                 sourceSets {
-                    wasm {
+                    wasmJs {
                         browser {
                             testTask {
                                 enabled = false
