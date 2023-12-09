@@ -4,6 +4,7 @@
 
 ### Added
 
+- `FileScope` DSL
 - `T?.or(other: T): T`
 - `T?.or(block: () -> T): T`
 - `Iterable<T>.sixth(): T`

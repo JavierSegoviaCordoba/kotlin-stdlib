@@ -4,12 +4,12 @@ hubdle {
     config {
         analysis()
         coverage()
-        documentation {
+        documentation { //
             api()
         }
         explicitApi()
         publishing()
-        languageSettings {
+        languageSettings { //
             experimentalContracts()
         }
     }
@@ -51,7 +51,13 @@ hubdle {
                     watchosX64()
                 }
             }
-            jvm()
+            jvm {
+                test {
+                    dependencies { //
+                        implementation(hubdle.junit.jupiter.junitJupiter)
+                    }
+                }
+            }
             jvmAndAndroid()
             js {
                 browser()
@@ -61,7 +67,7 @@ hubdle {
                 linuxArm64()
                 linuxX64()
             }
-            mingw {
+            mingw { //
                 mingwX64()
             }
             native()
@@ -72,16 +78,8 @@ hubdle {
             kotlin {
                 sourceSets {
                     wasmJs {
-                        browser {
-                            testTask {
-                                enabled = false
-                            }
-                        }
-                        nodejs {
-                            testTask {
-                                enabled = false
-                            }
-                        }
+                        browser { testTask { enabled = false } }
+                        nodejs { testTask { enabled = false } }
                     }
                 }
             }

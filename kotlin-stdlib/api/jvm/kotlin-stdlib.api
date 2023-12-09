@@ -174,10 +174,27 @@ public final class com/javiersc/kotlin/stdlib/CollectionsKt {
 	public static final fun thirdOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
 }
 
+public class com/javiersc/kotlin/stdlib/DirScope : com/javiersc/kotlin/stdlib/FileScope {
+	public fun <init> (Ljava/io/File;)V
+	public final fun dir (Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/DirScope;
+	public static synthetic fun dir$default (Lcom/javiersc/kotlin/stdlib/DirScope;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/DirScope;
+}
+
+public class com/javiersc/kotlin/stdlib/FileScope : java/io/File {
+	public fun <init> (Ljava/io/File;)V
+	public final fun file (Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/FileScope;
+	public static synthetic fun file$default (Lcom/javiersc/kotlin/stdlib/FileScope;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/FileScope;
+}
+
+public abstract interface annotation class com/javiersc/kotlin/stdlib/FileScopeMarker : java/lang/annotation/Annotation {
+}
+
 public final class com/javiersc/kotlin/stdlib/FilesKt {
 	public static final fun getChildren (Ljava/io/File;)Lkotlin/sequences/Sequence;
 	public static final fun resource (Ljava/lang/String;)Ljava/io/File;
 	public static final fun resourceOrNull (Ljava/lang/String;)Ljava/io/File;
+	public static final fun root (Ljava/io/File;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/DirScope;
+	public static synthetic fun root$default (Ljava/io/File;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/DirScope;
 }
 
 public final class com/javiersc/kotlin/stdlib/StringsKt {
