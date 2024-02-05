@@ -54,7 +54,7 @@ hubdle {
             jvm {
                 test {
                     dependencies { //
-                        implementation(hubdle.junit.jupiter.junitJupiter)
+                        implementation(hubdle.junit.jupiter.junit.jupiter)
                     }
                 }
             }

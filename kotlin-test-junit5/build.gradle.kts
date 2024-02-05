@@ -30,8 +30,8 @@ hubdle {
             common {
                 main {
                     dependencies {
-                        implementation(hubdle.jetbrains.kotlin.kotlinTest)
-                        implementation(hubdle.jetbrains.kotlin.kotlinTestAnnotationsCommon)
+                        implementation(hubdle.jetbrains.kotlin.test)
+                        implementation(hubdle.jetbrains.kotlin.test.annotations.common)
                     }
                 }
             }
@@ -76,7 +76,7 @@ hubdle {
             jvm {
                 main { //
                     dependencies { //
-                        implementation(hubdle.jetbrains.kotlin.kotlinTestJUnit5)
+                        implementation(hubdle.jetbrains.kotlin.test.junit5)
                     }
                 }
             }

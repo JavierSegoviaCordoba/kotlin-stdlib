@@ -24,8 +24,8 @@ hubdle {
             common {
                 main {
                     dependencies {
-                        implementation(hubdle.jetbrains.kotlin.kotlinTestAnnotationsCommon)
-                        implementation(hubdle.jetbrains.kotlin.kotlinTestJUnit)
+                        implementation(hubdle.jetbrains.kotlin.test.annotations.common)
+                        implementation(hubdle.jetbrains.kotlin.test.junit)
                     }
                 }
             }

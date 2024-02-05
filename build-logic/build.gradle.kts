@@ -9,8 +9,8 @@ repositories {
 
 dependencies {
     implementation(gradleKotlinDsl())
-    implementation(hubdle.javiersc.kotlin.kotlinStdlib)
-    implementation(hubdle.jetbrains.kotlin.kotlinGradlePlugin)
+    implementation(hubdle.javiersc.kotlin.stdlib)
+    implementation(hubdle.jetbrains.kotlin.gradle.plugin)
 }
 
 gradlePlugin {
