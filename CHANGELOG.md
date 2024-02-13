@@ -33,7 +33,7 @@
 
 ### Updated
 
-- `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.6.2`
+- `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.6.3`
 - `gradle -> 8.6`
 
 ## [0.1.0-alpha.15] - 2023-06-05
