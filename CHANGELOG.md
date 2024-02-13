@@ -4,6 +4,20 @@
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
+### Updated
+
+## [0.1.0-alpha.16] - 2024-02-13
+
+### Added
+
 - `FileScope` DSL
 - `T?.or(other: T): T`
 - `T?.or(block: () -> T): T`
@@ -22,14 +36,6 @@
 - `T?.ifNotNull(block: () -> Unit): T?`
 - `T?.ifNull(block: () -> Unit): T?`
 - `Graph` data structure
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
 
 ### Updated
 
@@ -228,7 +234,9 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.8`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.8.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.15...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.16...HEAD
+
+[0.1.0-alpha.16]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.15...0.1.0-alpha.16
 
 [0.1.0-alpha.15]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.14...0.1.0-alpha.15
 
