@@ -24,12 +24,20 @@ hubdle {
             common {
                 main {
                     dependencies {
+                        implementation(hubdle.jetbrains.kotlin.test)
                         implementation(hubdle.jetbrains.kotlin.test.annotations.common)
-                        implementation(hubdle.jetbrains.kotlin.test.junit)
                     }
                 }
             }
-            if (getBooleanProperty("android.enabled").orElse(true).get()) android()
+            if (getBooleanProperty("android.enabled").orElse(true).get()) {
+                android {
+                    main { //
+                        dependencies { //
+                            implementation(hubdle.jetbrains.kotlin.test.junit)
+                        }
+                    }
+                }
+            }
             androidNative {
                 androidNativeArm32()
                 androidNativeArm64()
@@ -59,7 +67,13 @@ hubdle {
                     watchosX64()
                 }
             }
-            jvm()
+            jvm {
+                main { //
+                    dependencies { //
+                        implementation(hubdle.jetbrains.kotlin.test.junit)
+                    }
+                }
+            }
             js {
                 browser()
                 nodejs()
@@ -71,7 +85,6 @@ hubdle {
             mingw { //
                 mingwX64()
             }
-
             wasmJs()
         }
     }

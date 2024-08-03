@@ -4,9 +4,8 @@ import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmSynthetic
 
 /** Original library: https://github.com/AdrianKuta/Tree-Data-Structure */
-public open class TreeNode<T>(
-    public val value: T,
-) : Iterable<TreeNode<T>>, ChildDeclarationInterface<T> {
+public open class TreeNode<T>(public val value: T) :
+    Iterable<TreeNode<T>>, ChildDeclarationInterface<T> {
 
     private var _parent: TreeNode<T>? = null
 
@@ -211,7 +210,7 @@ public typealias ChildDeclaration<T> = ChildDeclarationInterface<T>.() -> Unit
 public inline fun <reified T> tree(
     root: T,
     defaultIterator: TreeNodeIterators = TreeNodeIterators.PreOrder,
-    childDeclaration: ChildDeclaration<T>
+    childDeclaration: ChildDeclaration<T>,
 ): TreeNode<T> {
     val treeNode = TreeNode(root)
     treeNode.defaultIterator = defaultIterator

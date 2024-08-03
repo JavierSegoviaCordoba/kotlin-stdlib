@@ -16,11 +16,12 @@ import org.gradle.api.tasks.TaskAction
 import org.gradle.api.tasks.TaskProvider
 import org.gradle.jvm.tasks.Jar
 import org.gradle.kotlin.dsl.listProperty
+import org.gradle.kotlin.dsl.mapProperty
 import org.gradle.kotlin.dsl.register
 import org.gradle.kotlin.dsl.withType
-import org.jetbrains.kotlin.gradle.dsl.KotlinCompile
 import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
 import org.jetbrains.kotlin.gradle.tasks.BaseKotlinCompile
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
 
 abstract class GenerateIgnoreClassesTask
 @Inject
@@ -59,7 +60,7 @@ constructor(
     private val buildGeneratedWithSeparator =
         "build${File.separatorChar}generated${File.separatorChar}"
 
-    @get:Input abstract val sourceSets: MapProperty<String, List<String>>
+    @get:Input val sourceSets: MapProperty<String, List<String>> = objects.mapProperty()
 
     @Input
     val names: ListProperty<String> =
@@ -68,19 +69,20 @@ constructor(
             .convention(
                 sourceSets.map { sourceSets ->
                     sourceSets
+                        .asSequence()
                         .filter { (name, _) -> name.contains("Main") }
                         .filterNot { (name, _) ->
                             listOf(
-                                    "androidNativeMain",
-                                    "appleMain",
-                                    "iosMain",
-                                    "linuxMain",
-                                    "macosMain",
-                                    "mingwMain",
-                                    "nativeMain",
-                                    "tvosMain",
-                                    "watchosMain",
-                                )
+                                "androidNativeMain",
+                                "appleMain",
+                                "iosMain",
+                                "linuxMain",
+                                "macosMain",
+                                "mingwMain",
+                                "nativeMain",
+                                "tvosMain",
+                                "watchosMain",
+                            )
                                 .any { name == it }
                         }
                         .flatMap { (_, dirs) -> dirs }
@@ -91,6 +93,7 @@ constructor(
                                 .substringBeforeLast(mainWithSeparator)
                         }
                         .distinct()
+                        .toList()
                 }
             )
 
@@ -100,7 +103,7 @@ constructor(
             names
                 .get()
                 .map { name ->
-                    project.buildDir.resolve(
+                    project.layout.buildDirectory.asFile.get().resolve(
                         "generated/$name/main/kotlin/com/javiersc/kotlin/test/"
                     )
                 }
@@ -162,7 +165,7 @@ constructor(
     }
 
     companion object {
-        const val TASK_NAME = "generateIgnoreClasses"
+        private const val TASK_NAME = "generateIgnoreClasses"
 
         fun register(
             project: Project,
@@ -184,7 +187,7 @@ constructor(
                 it.dependsOn(generateIgnoreClassesTask)
             }
 
-            project.tasks.withType<KotlinCompile<*>>().configureEach {
+            project.tasks.withType<KotlinCompilationTask<*>>().configureEach {
                 it.dependsOn(generateIgnoreClassesTask)
             }
 

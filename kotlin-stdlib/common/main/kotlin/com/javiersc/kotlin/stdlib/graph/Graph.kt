@@ -96,20 +96,14 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
         this.renderer = block
     }
 
-    public data class Vertex<T>(
-        val index: Int,
-        val value: T,
-    )
+    public data class Vertex<T>(val index: Int, val value: T)
 
-    public data class Edge<T>(
-        val source: Vertex<T>,
-        val destination: Vertex<T>,
-    )
+    public data class Edge<T>(val source: Vertex<T>, val destination: Vertex<T>)
 
     private fun Vertex<T>.deepFirstSearchCircularDependencies(
         visited: MutableSet<Vertex<T>>,
         path: MutableList<Vertex<T>>,
-        circularDependencies: MutableMap<T, MutableList<T>>
+        circularDependencies: MutableMap<T, MutableList<T>>,
     ) {
         val map: Graph<T> = this@Graph
         val vertex: Vertex<T> = this
