@@ -43,6 +43,9 @@ public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMacosX
 public abstract interface annotation class com/javiersc/kotlin/test/IgnoreMingwX64 : java/lang/annotation/Annotation {
 }
 
+public abstract interface annotation class com/javiersc/kotlin/test/IgnoreSrc : java/lang/annotation/Annotation {
+}
+
 public abstract interface annotation class com/javiersc/kotlin/test/IgnoreTvosArm64 : java/lang/annotation/Annotation {
 }
 
