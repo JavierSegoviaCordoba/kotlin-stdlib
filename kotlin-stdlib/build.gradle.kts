@@ -86,7 +86,3 @@ hubdle {
         }
     }
 }
-
-tasks.named { it == "prepareDebugArtProfile" }.configureEach {
-    doNotTrackState("Bug on Windows")
-}
