@@ -14,6 +14,10 @@
 
 ### Updated
 
+## [0.1.0-alpha.17] - 2024-10-26
+
+### Updated
+
 - `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.7.18`
 - `gradle -> 8.10.2`
 
@@ -237,7 +241,9 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.8`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.8.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.16...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.17...HEAD
+
+[0.1.0-alpha.17]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.16...0.1.0-alpha.17
 
 [0.1.0-alpha.16]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.15...0.1.0-alpha.16
 
