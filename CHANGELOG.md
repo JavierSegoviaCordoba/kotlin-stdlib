@@ -4,6 +4,8 @@
 
 ### Added
 
+- `identity` function
+
 ### Changed
 
 ### Deprecated
