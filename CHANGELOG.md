@@ -4,6 +4,7 @@
 
 ### Added
 
+- Validate Dsl
 - `Either` data structure
 - `identity` function
 

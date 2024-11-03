@@ -180,6 +180,66 @@ public class com/javiersc/kotlin/stdlib/DirScope : com/javiersc/kotlin/stdlib/Fi
 	public static synthetic fun dir$default (Lcom/javiersc/kotlin/stdlib/DirScope;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/DirScope;
 }
 
+public abstract class com/javiersc/kotlin/stdlib/Either {
+	public final fun fold (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public final fun getOrNull ()Ljava/lang/Object;
+	public final fun isLeft ()Z
+	public final fun isLeft (Lkotlin/jvm/functions/Function1;)Z
+	public final fun isRight ()Z
+	public final fun isRight (Lkotlin/jvm/functions/Function1;)Z
+	public final fun leftOrNull ()Ljava/lang/Object;
+	public final fun map (Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/Either;
+	public final fun mapLeft (Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/Either;
+	public final fun onLeft (Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/Either;
+	public final fun onRight (Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/Either;
+	public final fun swap ()Lcom/javiersc/kotlin/stdlib/Either;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Either$Left : com/javiersc/kotlin/stdlib/Either {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Either$Left$Companion;
+	public fun <init> (Ljava/lang/Object;)V
+	public final fun component1 ()Ljava/lang/Object;
+	public final fun copy (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either$Left;
+	public static synthetic fun copy$default (Lcom/javiersc/kotlin/stdlib/Either$Left;Ljava/lang/Object;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either$Left;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getValue ()Ljava/lang/Object;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Either$Left$Companion {
+}
+
+public final class com/javiersc/kotlin/stdlib/Either$Right : com/javiersc/kotlin/stdlib/Either {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Either$Right$Companion;
+	public fun <init> (Ljava/lang/Object;)V
+	public final fun component1 ()Ljava/lang/Object;
+	public final fun copy (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either$Right;
+	public static synthetic fun copy$default (Lcom/javiersc/kotlin/stdlib/Either$Right;Ljava/lang/Object;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either$Right;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getValue ()Ljava/lang/Object;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Either$Right$Companion {
+}
+
+public final class com/javiersc/kotlin/stdlib/EitherKt {
+	public static final fun combine (Lcom/javiersc/kotlin/stdlib/Either;Lcom/javiersc/kotlin/stdlib/Either;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)Lcom/javiersc/kotlin/stdlib/Either;
+	public static final fun compareTo (Lcom/javiersc/kotlin/stdlib/Either;Lcom/javiersc/kotlin/stdlib/Either;)I
+	public static final fun flatMap (Lcom/javiersc/kotlin/stdlib/Either;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/Either;
+	public static final fun flatten (Lcom/javiersc/kotlin/stdlib/Either;)Lcom/javiersc/kotlin/stdlib/Either;
+	public static final fun getOrElse (Lcom/javiersc/kotlin/stdlib/Either;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public static final fun handleErrorWith (Lcom/javiersc/kotlin/stdlib/Either;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/Either;
+	public static final fun left (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either;
+	public static final fun leftNel (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either;
+	public static final fun merge (Lcom/javiersc/kotlin/stdlib/Either;)Ljava/lang/Object;
+	public static final fun right (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either;
+	public static final fun toEitherNel (Lcom/javiersc/kotlin/stdlib/Either;)Lcom/javiersc/kotlin/stdlib/Either;
+}
+
 public class com/javiersc/kotlin/stdlib/FileScope : java/io/File {
 	public fun <init> (Ljava/io/File;)V
 	public final fun file (Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/FileScope;
@@ -195,6 +255,10 @@ public final class com/javiersc/kotlin/stdlib/FilesKt {
 	public static final fun resourceOrNull (Ljava/lang/String;)Ljava/io/File;
 	public static final fun root (Ljava/io/File;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/DirScope;
 	public static synthetic fun root$default (Ljava/io/File;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/DirScope;
+}
+
+public final class com/javiersc/kotlin/stdlib/IdentityKt {
+	public static final fun identity (Ljava/lang/Object;)Ljava/lang/Object;
 }
 
 public final class com/javiersc/kotlin/stdlib/StringsKt {
@@ -439,5 +503,28 @@ public final class com/javiersc/kotlin/stdlib/tree/TreeNodeIterators : java/lang
 	public static fun getEntries ()Lkotlin/enums/EnumEntries;
 	public static fun valueOf (Ljava/lang/String;)Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
 	public static fun values ()[Lcom/javiersc/kotlin/stdlib/tree/TreeNodeIterators;
+}
+
+public final class com/javiersc/kotlin/stdlib/validate/Validator {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/validate/Validator$Companion;
+	public fun <init> (Ljava/lang/String;Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope;)V
+	public final fun getName ()Ljava/lang/String;
+	public final fun getValidatorScope ()Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope;
+}
+
+public final class com/javiersc/kotlin/stdlib/validate/Validator$Companion {
+}
+
+public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope {
+	public field value Ljava/lang/Object;
+	public fun <init> ()V
+	public final fun getErrors ()Ljava/util/List;
+	public final fun getOnValidate ()Lkotlin/jvm/functions/Function0;
+	public final fun getValue ()Ljava/lang/Object;
+	public final fun invalid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+	public final fun invalidIfIsEmpty (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
+	public static synthetic fun invalidIfIsEmpty$default (Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
+	public final fun setOnValidate (Lkotlin/jvm/functions/Function0;)V
+	public final fun setValue (Ljava/lang/Object;)V
 }
 
