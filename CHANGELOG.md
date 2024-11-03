@@ -4,6 +4,7 @@
 
 ### Added
 
+- `Either` data structure
 - `identity` function
 
 ### Changed
