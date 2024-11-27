@@ -343,19 +343,11 @@ class GraphTest {
     }
 }
 
-private object Foo : A()
+private sealed class A
 
-private object Bar : A()
-
-private object Baz : A()
-
-private object Qux : A()
-
-private object Quux : A()
-
-private object Corge : A()
-
-private abstract class A {
-
-    override fun toString(): String = this::class.simpleName!!
-}
+private data object Foo : A()
+private data object Bar : A()
+private data object Baz : A()
+private data object Qux : A()
+private data object Quux : A()
+private data object Corge : A()
