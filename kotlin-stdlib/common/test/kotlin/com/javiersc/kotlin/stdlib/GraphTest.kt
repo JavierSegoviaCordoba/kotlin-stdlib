@@ -346,8 +346,13 @@ class GraphTest {
 private sealed class A
 
 private data object Foo : A()
+
 private data object Bar : A()
+
 private data object Baz : A()
+
 private data object Qux : A()
+
 private data object Quux : A()
+
 private data object Corge : A()
