@@ -1,0 +1,19 @@
+{
+  "total": 0,
+  "tools inspection": {
+    "Code Inspection": 0
+  },
+  "linter": "QDJVMC",
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib.git",
+        "revisionId": "bb6e2d04f32ce3e28d2a946a0a95764e303c3068",
+        "branch": "main"
+      }
+    },
+    "deviceId": "200820300000000-cdbb-c86e-58e4-d75fb529ac10",
+    "jobUrl": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib/actions/runs/4369464102",
+    "repoUrl": "https://github.com/JavierSegoviaCordoba/kotlin-stdlib.git"
+  }
+}
