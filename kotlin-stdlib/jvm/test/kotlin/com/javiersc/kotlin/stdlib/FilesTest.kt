@@ -28,11 +28,12 @@ internal class FilesTest {
                     file("file3.txt") { //
                         writeText("3")
                     }
+                    file("file4.txt")
                 }
             }
         }
         assertTrue { projectDir.root("root").isDirectory }
-        assertTrue { projectDir.walkTopDown().count() == 8 }
+        assertTrue { projectDir.walkTopDown().count() == 9 }
         projectDir.resolve("root").apply {
             assertTrue { exists() }
             assertTrue { isDirectory }

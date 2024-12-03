@@ -143,32 +143,14 @@ public final class com/javiersc/kotlin/stdlib/BooleanKt {
 	public static final fun ifTrue (ZLkotlin/jvm/functions/Function0;)Z
 }
 
-public final class com/javiersc/kotlin/stdlib/CollectionsKt {
-	public static final fun capitalize (Ljava/lang/String;)Ljava/lang/String;
-	public static final fun decapitalize (Ljava/lang/String;)Ljava/lang/String;
-	public static final fun eighth (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun eighthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun fifth (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun fifthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun forth (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun forthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun getIndex (Ljava/lang/Iterable;I)Ljava/lang/Object;
-	public static final fun getIndexOrNull (Ljava/lang/Iterable;I)Ljava/lang/Object;
-	public static final fun ninth (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun ninthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun penultimate (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun penultimateOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun removeDuplicateEmptyLines (Ljava/util/List;)Ljava/lang/String;
-	public static final fun second (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun secondOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun seventh (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun seventhOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun sixth (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun sixthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun tenth (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun tenthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun third (Ljava/lang/Iterable;)Ljava/lang/Object;
-	public static final fun thirdOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+public final class com/javiersc/kotlin/stdlib/CharSequenceKt {
+	public static final fun endWithNewLine (Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+	public static final fun isNotNullNorBlank (Ljava/lang/CharSequence;)Z
+	public static final fun isNotNullNorEmpty (Ljava/lang/CharSequence;)Z
+	public static final fun notContain (Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+	public static final fun notContain (Ljava/lang/CharSequence;Lkotlin/text/Regex;)Z
+	public static synthetic fun notContain$default (Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+	public static final fun removeDuplicateEmptyLines (Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 }
 
 public class com/javiersc/kotlin/stdlib/DirScope : com/javiersc/kotlin/stdlib/FileScope {
@@ -258,21 +240,43 @@ public final class com/javiersc/kotlin/stdlib/IdentityKt {
 	public static final fun identity (Ljava/lang/Object;)Ljava/lang/Object;
 }
 
+public final class com/javiersc/kotlin/stdlib/IterableKt {
+	public static final fun eighth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun eighthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun fifth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun fifthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun forth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun forthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun getIndex (Ljava/lang/Iterable;I)Ljava/lang/Object;
+	public static final fun getIndexOrNull (Ljava/lang/Iterable;I)Ljava/lang/Object;
+	public static final fun ninth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun ninthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun penultimate (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun penultimateOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun second (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun secondOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun seventh (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun seventhOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun sixth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun sixthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun tenth (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun tenthOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun third (Ljava/lang/Iterable;)Ljava/lang/Object;
+	public static final fun thirdOrNull (Ljava/lang/Iterable;)Ljava/lang/Object;
+}
+
+public final class com/javiersc/kotlin/stdlib/ListKt {
+	public static final fun removeDuplicateEmptyLines (Ljava/util/List;)Ljava/lang/String;
+}
+
 public final class com/javiersc/kotlin/stdlib/StringsKt {
-	public static final fun endWithNewLine (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun capitalize (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun decapitalize (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun getEmpty (Lkotlin/jvm/internal/StringCompanionObject;)Ljava/lang/String;
-	public static final fun isNotNullNorBlank (Ljava/lang/CharSequence;)Z
-	public static final fun isNotNullNorBlank (Ljava/lang/String;)Z
-	public static final fun isNotNullNorEmpty (Ljava/lang/CharSequence;)Z
-	public static final fun isNotNullNorEmpty (Ljava/lang/String;)Z
-	public static final fun notContain (Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
-	public static final fun notContain (Ljava/lang/CharSequence;Lkotlin/text/Regex;)Z
-	public static synthetic fun notContain$default (Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 	public static final fun remove (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 	public static final fun remove (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/lang/String;
 	public static synthetic fun remove$default (Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
 	public static synthetic fun remove$default (Ljava/lang/String;[Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
-	public static final fun removeDuplicateEmptyLines (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun removeIf (Ljava/lang/String;Ljava/lang/String;ZLkotlin/jvm/functions/Function1;)Ljava/lang/String;
 	public static synthetic fun removeIf$default (Ljava/lang/String;Ljava/lang/String;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
 	public static final fun replace (Ljava/lang/String;[Lkotlin/Pair;)Ljava/lang/String;

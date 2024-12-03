@@ -27,8 +27,8 @@ public open class DirScope(file: File) : FileScope(file) {
 }
 
 public fun File.root(name: String, block: DirScope.() -> Unit = {}): DirScope {
-    val dir = resolve(name).apply { mkdir() }
-    val scope = object : DirScope(dir) {}
+    val dir: File = resolve(name).apply(File::mkdir)
+    val scope: DirScope = object : DirScope(dir) {}
     block(scope)
     return scope
 }

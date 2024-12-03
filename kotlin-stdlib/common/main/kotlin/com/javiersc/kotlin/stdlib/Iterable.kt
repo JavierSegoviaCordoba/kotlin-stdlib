@@ -1,24 +1,6 @@
-@file:Suppress("MagicNumber")
+@file:Suppress("MagicNumber", "TooManyFunctions", "NOTHING_TO_INLINE")
 
 package com.javiersc.kotlin.stdlib
-
-/**
- * Returns a copy of this string having its first letter title-cased using the rules of the default
- * locale, or the original string if it's empty or already starts with a title case letter.
- *
- * The title case of a character is usually the same as its upper case with several exceptions. The
- * particular list of characters with the special title case form depends on the underlying
- * platform.
- */
-public inline fun String.capitalize(): String = replaceFirstChar {
-    if (it.isLowerCase()) it.titlecase() else it.toString()
-}
-
-/**
- * Returns a copy of this string having its first letter lowercased using the rules of the default
- * locale, or the original string if it's empty or already starts with a lower case letter.
- */
-public inline fun String.decapitalize(): String = replaceFirstChar { it.lowercase() }
 
 /**
  * Returns second element.
@@ -189,11 +171,3 @@ internal inline fun <T> Iterable<T>.getIndexOrNull(index: Int): T? {
         }
     }
 }
-
-/** Remove all consecutive line breaks in a list of `String` */
-public fun List<String>.removeDuplicateEmptyLines(): String =
-    if (isNotEmpty()) {
-        reduce { acc: String, b: String ->
-            if (acc.lines().lastOrNull().isNullOrBlank() && b.isBlank()) acc else "$acc\n$b"
-        }
-    } else ""

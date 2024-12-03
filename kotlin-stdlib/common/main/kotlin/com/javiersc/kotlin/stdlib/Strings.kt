@@ -1,6 +1,6 @@
-package com.javiersc.kotlin.stdlib
+@file:Suppress("NOTHING_TO_INLINE")
 
-import kotlin.contracts.contract
+package com.javiersc.kotlin.stdlib
 
 public fun String.replace(vararg oldToNewValues: Pair<String, String>): String {
     var result = this
@@ -30,39 +30,23 @@ public fun String.removeIf(
     block: (String) -> Boolean,
 ): String = if (block(this)) remove(value = value, ignoreCase = ignoreCase) else this
 
-public inline fun CharSequence?.isNotNullNorBlank(): Boolean {
-    contract { returns(true) implies (this@isNotNullNorBlank != null) }
-    return !isNullOrBlank()
-}
-
-public inline fun CharSequence?.isNotNullNorEmpty(): Boolean {
-    contract { returns(true) implies (this@isNotNullNorEmpty != null) }
-    return !isNullOrEmpty()
-}
-
-public inline fun CharSequence.notContain(
-    other: CharSequence,
-    ignoreCase: Boolean = false,
-): Boolean = !contains(other, ignoreCase)
-
-public inline fun CharSequence.notContain(regex: Regex): Boolean = !contains(regex)
-
-public inline fun String?.isNotNullNorBlank(): Boolean {
-    contract { returns(true) implies (this@isNotNullNorBlank != null) }
-    return !isNullOrBlank()
-}
-
-public inline fun String?.isNotNullNorEmpty(): Boolean {
-    contract { returns(true) implies (this@isNotNullNorEmpty != null) }
-    return !isNullOrEmpty()
-}
-
 public inline val String.Companion.Empty: String
     get() = ""
 
-/** Remove all consecutive line breaks in a `String` */
-public fun String.removeDuplicateEmptyLines(): String = lines().removeDuplicateEmptyLines()
+/**
+ * Returns a copy of this string having its first letter title-cased using the rules of the default
+ * locale, or the original string if it's empty or already starts with a title case letter.
+ *
+ * The title case of a character is usually the same as its upper case with several exceptions. The
+ * particular list of characters with the special title case form depends on the underlying
+ * platform.
+ */
+public inline fun String.capitalize(): String = replaceFirstChar {
+    if (it.isLowerCase()) it.titlecase() else it.toString()
+}
 
-/** Add an empty line as last item if it is not empty */
-public fun String.endWithNewLine(): String =
-    if (lines().lastOrNull().isNullOrBlank()) this else "$this\n"
+/**
+ * Returns a copy of this string having its first letter lowercased using the rules of the default
+ * locale, or the original string if it's empty or already starts with a lower case letter.
+ */
+public inline fun String.decapitalize(): String = replaceFirstChar { it.lowercase() }

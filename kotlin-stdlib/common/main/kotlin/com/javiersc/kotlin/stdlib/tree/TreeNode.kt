@@ -60,7 +60,6 @@ public open class TreeNode<T>(public val value: T) :
      *   the tree.
      */
     public fun removeChild(child: TreeNode<T>): Boolean {
-        println(child.value)
         val removed = child._parent?._children?.remove(child)
         child._parent = null
         return removed ?: false

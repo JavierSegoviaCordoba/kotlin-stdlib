@@ -72,14 +72,12 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
                 if (edges.isEmpty()) {
                     sortedGraph.addVertex(vertex.value)
                     vertexesToBeRemoved.add(vertex)
-                    println()
                 }
                 for (edge: Edge<T> in edges) {
                     if (edge.destination.value in sortedGraph.keys.map(Vertex<T>::value)) {
                         sortedGraph.addVertex(edge.source.value)
                         sortedGraph.addEdge(edge.source.value, edge.destination.value)
                         vertexesToBeRemoved.add(edge.source)
-                        println()
                     }
                 }
             }
