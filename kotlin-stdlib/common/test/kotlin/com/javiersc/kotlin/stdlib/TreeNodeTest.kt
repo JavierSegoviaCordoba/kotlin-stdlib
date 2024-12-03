@@ -1,13 +1,16 @@
 package com.javiersc.kotlin.stdlib
 
 import com.javiersc.kotlin.stdlib.tree.TreeNode
+import com.javiersc.kotlin.stdlib.tree.TreeNodeException
 import com.javiersc.kotlin.stdlib.tree.TreeNodeIterators
 import com.javiersc.kotlin.stdlib.tree.tree
 import kotlin.test.DefaultAsserter.assertEquals
 import kotlin.test.Test
 import kotlin.test.assertContentEquals
 import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
 import kotlin.test.assertNull
+import kotlin.test.assertTrue
 
 internal class TreeNodeTest {
 
@@ -65,6 +68,14 @@ internal class TreeNodeTest {
                     "    └── Milk Shake\n",
             actual = root.prettyString(),
         )
+
+        assertTrue { root.isRoot }
+        assertEquals(5, root.nodeCount)
+        assertEquals(3, root.height)
+        assertEquals(0, root.depth)
+        assertEquals(3, normalTeaNode.depth)
+        assertEquals(listOf(teaNode, beveragesNode, root), root.path(teaNode))
+        assertFailsWith<TreeNodeException> { beveragesNode.path(root) }
     }
 
     @Test
