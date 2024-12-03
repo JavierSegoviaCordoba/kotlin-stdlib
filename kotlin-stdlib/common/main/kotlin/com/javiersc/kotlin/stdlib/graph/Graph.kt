@@ -4,9 +4,9 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
 
     public var renderer: (Any?.() -> String)
 
-    public val circularVertexes: Map<T, List<T>>
+    public val circularVertexes: Map<T, List<Edge<T>>>
         get() {
-            val circularDependencies: MutableMap<T, MutableList<T>> = mutableMapOf()
+            val circularDependencies: MutableMap<T, MutableList<Edge<T>>> = mutableMapOf()
             val visited: MutableSet<Vertex<T>> = mutableSetOf()
 
             for (vertex: Vertex<T> in keys) {
@@ -45,8 +45,6 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
 
     public fun contains(value: T, predicate: (T) -> Boolean): Boolean =
         keys.any { predicate(it.value) }
-
-    public fun toGraph(): Graph<T> = this
 
     public fun containsCircularVertexes(value: T): Boolean =
         circularVertexes[value]?.isNotEmpty() == true
@@ -96,14 +94,24 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
         this.renderer = block
     }
 
-    public data class Vertex<T>(val index: Int, val value: T)
+    public data class Vertex<T>(val index: Int, val value: T) {
+        override fun toString(): String = "$value"
+    }
 
-    public data class Edge<T>(val source: Vertex<T>, val destination: Vertex<T>)
+    public data class Edge<T>(val source: Vertex<T>, val destination: Vertex<T>) {
+
+        public constructor(
+            source: Pair<Int, T>,
+            destination: Pair<Int, T>,
+        ) : this(Vertex(source.first, source.second), Vertex(destination.first, destination.second))
+
+        override fun toString(): String = "[$source -> $destination]"
+    }
 
     private fun Vertex<T>.deepFirstSearchCircularDependencies(
         visited: MutableSet<Vertex<T>>,
         path: MutableList<Vertex<T>>,
-        circularDependencies: MutableMap<T, MutableList<T>>,
+        circularDependencies: MutableMap<T, MutableList<Edge<T>>>,
     ) {
         val map: Graph<T> = this@Graph
         val vertex: Vertex<T> = this
@@ -116,11 +124,14 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
             val destination: Vertex<T> = edge.destination
 
             if (destination in path) {
-                val circularDependency =
-                    path.subList(path.indexOf(destination), path.size).map { it.value }
+                val circularPath: MutableList<Vertex<T>> =
+                    path.subList(path.indexOf(destination), path.size)
+                val circularEdges: List<Edge<T>> =
+                    circularPath.zipWithNext { from: Vertex<T>, to: Vertex<T> -> Edge(from, to) } +
+                        Edge(circularPath.last(), circularPath.first())
                 circularDependencies
-                    .getOrPut(circularDependency.first()) { mutableListOf() }
-                    .addAll(circularDependency)
+                    .getOrPut(circularPath.first().value) { mutableListOf() }
+                    .addAll(circularEdges)
             } else if (destination !in visited) {
                 destination.deepFirstSearchCircularDependencies(visited, path, circularDependencies)
             }

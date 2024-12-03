@@ -1,133 +1,130 @@
 public abstract class com/javiersc/kotlin/stdlib/AnsiColor {
-	public fun <init> ()V
 	public abstract fun getValue ()Ljava/lang/String;
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background {
-	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background;
+public abstract class com/javiersc/kotlin/stdlib/AnsiColor$Background : com/javiersc/kotlin/stdlib/AnsiColor {
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Black : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Black : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Black;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Blue : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Blue : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Blue;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Cyan : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Cyan : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Cyan;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Gray : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Gray : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Gray;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Green : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Green : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Green;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Purple : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Purple : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Purple;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Red : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Red : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Red;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Yellow : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Background$Yellow : com/javiersc/kotlin/stdlib/AnsiColor$Background {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Background$Yellow;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
-	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground;
+public abstract class com/javiersc/kotlin/stdlib/AnsiColor$Foreground : com/javiersc/kotlin/stdlib/AnsiColor {
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Black : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Black : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Black;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Blue : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Blue : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Blue;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlack : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlack : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlack;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlue : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlue : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightBlue;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightCyan : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightCyan : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightCyan;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightGreen : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightGreen : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightGreen;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightPurple : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightPurple : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightPurple;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightRed : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightRed : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightRed;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightWhite : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightWhite : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightWhite;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightYellow : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightYellow : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$BrightYellow;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Cyan : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Cyan : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Cyan;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Green : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Green : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Green;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Purple : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Purple : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Purple;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Red : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Red : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Red;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$White : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$White : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$White;
 	public fun getValue ()Ljava/lang/String;
 }
 
-public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Yellow : com/javiersc/kotlin/stdlib/AnsiColor {
+public final class com/javiersc/kotlin/stdlib/AnsiColor$Foreground$Yellow : com/javiersc/kotlin/stdlib/AnsiColor$Foreground {
 	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/AnsiColor$Foreground$Yellow;
 	public fun getValue ()Ljava/lang/String;
 }
@@ -315,7 +312,6 @@ public abstract interface class com/javiersc/kotlin/stdlib/graph/Graph : java/ut
 	public abstract fun getRenderer ()Lkotlin/jvm/functions/Function1;
 	public abstract fun renderer (Lkotlin/jvm/functions/Function1;)V
 	public abstract fun setRenderer (Lkotlin/jvm/functions/Function1;)V
-	public abstract fun toGraph ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public abstract fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public abstract fun vertexesFor (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public abstract fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
@@ -333,7 +329,6 @@ public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
 	public static fun getHasDuplicatedVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Z
 	public static fun getHasMissingVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Z
 	public static fun renderer (Lcom/javiersc/kotlin/stdlib/graph/Graph;Lkotlin/jvm/functions/Function1;)V
-	public static fun toGraph (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public static fun toGraphSortedByEdges (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;[Ljava/lang/Object;)Ljava/util/List;
@@ -342,6 +337,7 @@ public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
 
 public final class com/javiersc/kotlin/stdlib/graph/Graph$Edge {
 	public fun <init> (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)V
+	public fun <init> (Lkotlin/Pair;Lkotlin/Pair;)V
 	public final fun component1 ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
 	public final fun component2 ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
 	public final fun copy (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)Lcom/javiersc/kotlin/stdlib/graph/Graph$Edge;
@@ -427,7 +423,6 @@ public final class com/javiersc/kotlin/stdlib/graph/MutableGraph : com/javiersc/
 	public fun replaceAll (Ljava/util/function/BiFunction;)V
 	public fun setRenderer (Lkotlin/jvm/functions/Function1;)V
 	public final fun size ()I
-	public fun toGraph ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public fun toString ()Ljava/lang/String;
 	public final fun values ()Ljava/util/Collection;
@@ -507,24 +502,84 @@ public final class com/javiersc/kotlin/stdlib/tree/TreeNodeIterators : java/lang
 
 public final class com/javiersc/kotlin/stdlib/validate/Validator {
 	public static final field Companion Lcom/javiersc/kotlin/stdlib/validate/Validator$Companion;
-	public fun <init> (Ljava/lang/String;Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope;)V
+	public fun <init> (Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+	public final fun getBlock ()Lkotlin/jvm/functions/Function2;
 	public final fun getName ()Ljava/lang/String;
-	public final fun getValidatorScope ()Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope;
 }
 
 public final class com/javiersc/kotlin/stdlib/validate/Validator$Companion {
 }
 
+public final class com/javiersc/kotlin/stdlib/validate/ValidatorKt {
+	public static final field EmptyProperty Ljava/lang/String;
+	public static final field InvalidProperty Ljava/lang/String;
+	public static final field MultipleEmptyProperties Ljava/lang/String;
+	public static final field MultipleInvalidProperties Ljava/lang/String;
+}
+
 public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope {
-	public field value Ljava/lang/Object;
 	public fun <init> ()V
-	public final fun getErrors ()Ljava/util/List;
-	public final fun getOnValidate ()Lkotlin/jvm/functions/Function0;
-	public final fun getValue ()Ljava/lang/Object;
+	public fun <init> (Ljava/util/List;)V
+	public synthetic fun <init> (Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun and (Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList;Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList;
+	public final fun and (Ljava/lang/Object;Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList;
+	public final fun getValidatables ()Ljava/util/List;
 	public final fun invalid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+	public final fun invalidIf (Lkotlin/jvm/functions/Function0;)V
 	public final fun invalidIfIsEmpty (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
 	public static synthetic fun invalidIfIsEmpty$default (Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
-	public final fun setOnValidate (Lkotlin/jvm/functions/Function0;)V
-	public final fun setValue (Ljava/lang/Object;)V
+	public final fun invoke (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public final fun valid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+	public final fun validIf (Lkotlin/jvm/functions/Function0;)V
+	public final fun validationOf ([Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope$Validatable {
+	public fun <init> (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+	public final fun component1 ()Lkotlin/jvm/functions/Function0;
+	public final fun component2 ()Lkotlin/jvm/functions/Function0;
+	public final fun copy (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$Validatable;
+	public static synthetic fun copy$default (Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$Validatable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$Validatable;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getOtherwise ()Lkotlin/jvm/functions/Function0;
+	public final fun getPredicate ()Lkotlin/jvm/functions/Function0;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList : java/util/List, kotlin/jvm/internal/markers/KMappedMarker {
+	public fun <init> (Ljava/util/List;)V
+	public fun add (ILjava/lang/Object;)V
+	public fun add (Ljava/lang/Object;)Z
+	public fun addAll (ILjava/util/Collection;)Z
+	public fun addAll (Ljava/util/Collection;)Z
+	public fun addFirst (Ljava/lang/Object;)V
+	public fun addLast (Ljava/lang/Object;)V
+	public fun clear ()V
+	public fun contains (Ljava/lang/Object;)Z
+	public fun containsAll (Ljava/util/Collection;)Z
+	public fun get (I)Ljava/lang/Object;
+	public fun getSize ()I
+	public final fun getValues ()Ljava/util/List;
+	public fun indexOf (Ljava/lang/Object;)I
+	public final fun invoke (Lkotlin/jvm/functions/Function1;)V
+	public fun isEmpty ()Z
+	public fun iterator ()Ljava/util/Iterator;
+	public fun lastIndexOf (Ljava/lang/Object;)I
+	public fun listIterator ()Ljava/util/ListIterator;
+	public fun listIterator (I)Ljava/util/ListIterator;
+	public fun remove (I)Ljava/lang/Object;
+	public fun remove (Ljava/lang/Object;)Z
+	public fun removeAll (Ljava/util/Collection;)Z
+	public fun removeFirst ()Ljava/lang/Object;
+	public fun removeLast ()Ljava/lang/Object;
+	public fun replaceAll (Ljava/util/function/UnaryOperator;)V
+	public fun retainAll (Ljava/util/Collection;)Z
+	public fun set (ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun size ()I
+	public fun sort (Ljava/util/Comparator;)V
+	public fun subList (II)Ljava/util/List;
+	public fun toArray ()[Ljava/lang/Object;
+	public fun toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
 }
 

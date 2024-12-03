@@ -289,7 +289,6 @@ public abstract interface class com/javiersc/kotlin/stdlib/graph/Graph : java/ut
 	public abstract fun getRenderer ()Lkotlin/jvm/functions/Function1;
 	public abstract fun renderer (Lkotlin/jvm/functions/Function1;)V
 	public abstract fun setRenderer (Lkotlin/jvm/functions/Function1;)V
-	public abstract fun toGraph ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public abstract fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public abstract fun vertexesFor (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public abstract fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
@@ -307,7 +306,6 @@ public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
 	public static fun getHasDuplicatedVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Z
 	public static fun getHasMissingVertexes (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Z
 	public static fun renderer (Lcom/javiersc/kotlin/stdlib/graph/Graph;Lkotlin/jvm/functions/Function1;)V
-	public static fun toGraph (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public static fun toGraphSortedByEdges (Lcom/javiersc/kotlin/stdlib/graph/Graph;)Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public static fun vertexesFor (Lcom/javiersc/kotlin/stdlib/graph/Graph;[Ljava/lang/Object;)Ljava/util/List;
@@ -316,6 +314,7 @@ public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
 
 public final class com/javiersc/kotlin/stdlib/graph/Graph$Edge {
 	public fun <init> (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)V
+	public fun <init> (Lkotlin/Pair;Lkotlin/Pair;)V
 	public final fun component1 ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
 	public final fun component2 ()Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;
 	public final fun copy (Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;Lcom/javiersc/kotlin/stdlib/graph/Graph$Vertex;)Lcom/javiersc/kotlin/stdlib/graph/Graph$Edge;
@@ -401,7 +400,6 @@ public final class com/javiersc/kotlin/stdlib/graph/MutableGraph : com/javiersc/
 	public fun replaceAll (Ljava/util/function/BiFunction;)V
 	public fun setRenderer (Lkotlin/jvm/functions/Function1;)V
 	public final fun size ()I
-	public fun toGraph ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
 	public fun toString ()Ljava/lang/String;
 	public final fun values ()Ljava/util/Collection;

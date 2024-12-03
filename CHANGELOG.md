@@ -12,6 +12,9 @@
 
 ### Removed
 
+- `Graph::toGraph` function
+- `Graph::circularVertexes` to be `Map<T, List<Edge<T>>>`
+
 ### Updated
 
 - `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.8.1`

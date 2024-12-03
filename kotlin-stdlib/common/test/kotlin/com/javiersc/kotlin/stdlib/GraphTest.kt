@@ -1,8 +1,13 @@
 package com.javiersc.kotlin.stdlib
 
 import com.javiersc.kotlin.stdlib.graph.Graph
+import com.javiersc.kotlin.stdlib.graph.Graph.Edge
+import com.javiersc.kotlin.stdlib.graph.Graph.Vertex
 import com.javiersc.kotlin.stdlib.graph.buildGraph
+import com.javiersc.kotlin.stdlib.graph.mutableGraphOf
 import kotlin.test.Test
+import kotlin.test.assertContentEquals
+import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
@@ -34,6 +39,40 @@ class GraphTest {
 
         assertFalse { graph.hasCircularVertexes }
         assertFalse { graph.hasDuplicatedVertexes }
+
+        assertTrue { graph.contains(Foo) { it.name == "Bar" } }
+        assertFalse { graph.contains(Foo) { it.name == "_RANDOM_NAME_" } }
+        assertEquals(graph.vertexesFor(Foo), listOf(Bar))
+
+        assertTrue {
+            graph.containsKey(Vertex(0, Foo))
+            graph.containsValue(listOf(Edge(0 to Foo, 1 to Bar)))
+        }
+
+        assertTrue { graph.getValue(Vertex(0, Foo)) == listOf(Edge(0 to Foo, 1 to Bar)) }
+
+        assertTrue { graph.keys.first().toString() == graph.keys.first().value.toString() }
+
+        assertEquals(graph.values.first().toString(), "[[Foo -> Bar]]")
+
+        val actualValues: List<List<Edge<A>>> = graph.values.toList()
+        val expectValues: List<List<Edge<A>>> =
+            listOf(listOf(Edge(0 to Foo, 1 to Bar)), emptyList(), emptyList()).toList()
+        assertEquals(expectValues, actualValues)
+
+        assertFalse { graph.isEmpty() }
+        assertTrue { buildGraph<A>().isEmpty() }
+        assertTrue { mutableGraphOf<A>().isEmpty() }
+
+        graph.renderer { "{${this}}" }
+        assertTrue {
+            graph.toString() ==
+                buildString {
+                    appendLine("{Foo} -> [{Bar}]")
+                    appendLine("{Bar} -> []")
+                    appendLine("{Baz} -> []")
+                }
+        }
     }
 
     @Test
@@ -128,12 +167,11 @@ class GraphTest {
         }
 
         assertTrue { graph.hasCircularVertexes }
-        assertTrue {
-            val actual: List<A> = graph.circularVertexes[Foo]!!
-            val expect: List<A> = listOf(Foo)
-            actual == expect
-        }
         assertTrue { graph.containsCircularVertexes(Foo) }
+
+        val actual: List<Edge<A>> = graph.circularVertexes[Foo]!!
+        val expect: List<Edge<A>> = listOf(Edge(0 to Foo, 0 to Foo))
+        assertContentEquals(expect, actual)
     }
 
     @Test
@@ -154,15 +192,15 @@ class GraphTest {
         }
 
         assertTrue { graph.hasCircularVertexes }
-        assertTrue {
-            val actual: List<A> = graph.circularVertexes[Foo]!!
-            val expect: List<A> = listOf(Foo)
-            actual == expect
+        run {
+            val actual: List<Edge<A>> = graph.circularVertexes[Foo]!!
+            val expect: List<Edge<A>> = listOf(Edge(0 to Foo, 0 to Foo))
+            assertContentEquals(expect, actual)
         }
-        assertTrue {
-            val actual: List<A> = graph.circularVertexes[Bar]!!
-            val expect: List<A> = listOf(Bar)
-            actual == expect
+        run {
+            val actual: List<Edge<A>> = graph.circularVertexes[Bar]!!
+            val expect: List<Edge<A>> = listOf(Edge(1 to Bar, 1 to Bar))
+            assertContentEquals(expect, actual)
         }
     }
 
@@ -184,11 +222,10 @@ class GraphTest {
         }
 
         assertTrue { graph.hasCircularVertexes }
-        assertTrue {
-            val actual: List<A> = graph.circularVertexes[Foo]!!
-            val expect: List<A> = listOf(Foo, Bar)
-            actual == expect
-        }
+
+        val actual: List<Edge<A>> = graph.circularVertexes[Foo]!!
+        val expect: List<Edge<A>> = listOf(Edge(0 to Foo, 1 to Bar), Edge(1 to Bar, 0 to Foo))
+        assertContentEquals(expect, actual)
     }
 
     @Test
@@ -220,14 +257,20 @@ class GraphTest {
         }
 
         assertTrue { graph.hasCircularVertexes }
-        assertTrue {
-            val actual: List<A> = graph.circularVertexes[Foo]!!
-            val expect: List<A> = listOf(Foo, Bar, Baz, Qux, Quux)
-            actual == expect
-        }
         assertTrue { graph.containsCircularVertexes(Foo) }
         assertFalse { graph.containsCircularVertexes(Bar) }
         assertFalse { graph.containsCircularVertexes(Corge) }
+
+        val actual: List<Edge<A>> = graph.circularVertexes[Foo]!!
+        val expect: List<Edge<A>> =
+            listOf(
+                Edge(0 to Foo, 1 to Bar),
+                Edge(1 to Bar, 2 to Baz),
+                Edge(2 to Baz, 3 to Qux),
+                Edge(3 to Qux, 4 to Quux),
+                Edge(4 to Quux, 0 to Foo),
+            )
+        assertContentEquals(expect, actual)
     }
 
     @Test
@@ -341,9 +384,35 @@ class GraphTest {
             expect == actual
         }
     }
+
+    @Test
+    fun vertexes_complex_circular_vertexes() {
+        val graph: Graph<A> = buildGraph {
+            addVertex(Foo)
+            addVertex(Bar)
+            addVertex(Baz)
+            addVertex(Qux)
+            addVertex(Quux)
+            addEdge(Foo, Baz)
+            addEdge(Bar, Baz)
+            addEdge(Baz, Qux)
+            addEdge(Qux, Quux)
+            addEdge(Quux, Baz)
+        }
+
+        assertTrue { graph.hasCircularVertexes }
+        assertFalse { graph.containsCircularVertexes(Foo) }
+        assertTrue { graph.doesNotContainsCircularVertexes(Foo) }
+        val actual: List<Edge<A>> = graph.circularVertexes[Baz]!!
+        val expect: List<Edge<A>> =
+            listOf(Edge(2 to Baz, 3 to Qux), Edge(3 to Qux, 4 to Quux), Edge(4 to Quux, 2 to Baz))
+        assertContentEquals(expect, actual)
+    }
 }
 
-private sealed class A
+private sealed class A {
+    val name: String = this::class.simpleName!!
+}
 
 private data object Foo : A()
 
@@ -356,3 +425,17 @@ private data object Qux : A()
 private data object Quux : A()
 
 private data object Corge : A()
+
+private data object Grault : A()
+
+private data object Garply : A()
+
+private data object Waldo : A()
+
+private data object Fred : A()
+
+private data object Plugh : A()
+
+private data object Xyzzy : A()
+
+private data object Thud : A()
