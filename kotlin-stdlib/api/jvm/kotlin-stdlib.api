@@ -505,37 +505,31 @@ public final class com/javiersc/kotlin/stdlib/tree/TreeNodeIterators : java/lang
 }
 
 public final class com/javiersc/kotlin/stdlib/validate/Validator {
-	public static final field Companion Lcom/javiersc/kotlin/stdlib/validate/Validator$Companion;
-	public fun <init> (Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+	public fun <init> (Ljava/lang/String;Lkotlin/jvm/functions/Function2;Lkotlin/Unit;)V
 	public final fun getBlock ()Lkotlin/jvm/functions/Function2;
 	public final fun getName ()Ljava/lang/String;
-}
-
-public final class com/javiersc/kotlin/stdlib/validate/Validator$Companion {
-}
-
-public final class com/javiersc/kotlin/stdlib/validate/ValidatorKt {
-	public static final field EmptyProperty Ljava/lang/String;
-	public static final field InvalidProperty Ljava/lang/String;
-	public static final field MultipleEmptyProperties Ljava/lang/String;
-	public static final field MultipleInvalidProperties Ljava/lang/String;
+	public final fun validate (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either;
 }
 
 public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope {
 	public fun <init> ()V
 	public fun <init> (Ljava/util/List;)V
 	public synthetic fun <init> (Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun and (Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList;Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList;
-	public final fun and (Ljava/lang/Object;Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList;
 	public final fun getValidatables ()Ljava/util/List;
 	public final fun invalid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-	public final fun invalidIf (Lkotlin/jvm/functions/Function0;)V
+	public final fun invalidIf (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+	public final fun invalidIfIsBlank (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
 	public final fun invalidIfIsEmpty (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
-	public static synthetic fun invalidIfIsEmpty$default (Lcom/javiersc/kotlin/stdlib/validate/ValidatorScope;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
 	public final fun invoke (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
 	public final fun valid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-	public final fun validIf (Lkotlin/jvm/functions/Function0;)V
-	public final fun validationOf ([Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+	public final fun validIf (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+	public final fun validatedBy (Ljava/lang/Object;Lcom/javiersc/kotlin/stdlib/validate/Validator;)V
+	public final fun validator (Lcom/javiersc/kotlin/stdlib/validate/Validator;Ljava/lang/Object;)V
+	public final fun validatorFor (Lcom/javiersc/kotlin/stdlib/validate/Validator;Ljava/lang/Object;)V
+}
+
+public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope$NestedScope {
+	public fun <init> (Lcom/javiersc/kotlin/stdlib/validate/Validator;)V
 }
 
 public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope$Validatable {
@@ -549,41 +543,5 @@ public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope$Validatabl
 	public final fun getPredicate ()Lkotlin/jvm/functions/Function0;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
-}
-
-public final class com/javiersc/kotlin/stdlib/validate/ValidatorScope$ValidatableList : java/util/List, kotlin/jvm/internal/markers/KMappedMarker {
-	public fun <init> (Ljava/util/List;)V
-	public fun add (ILjava/lang/Object;)V
-	public fun add (Ljava/lang/Object;)Z
-	public fun addAll (ILjava/util/Collection;)Z
-	public fun addAll (Ljava/util/Collection;)Z
-	public fun addFirst (Ljava/lang/Object;)V
-	public fun addLast (Ljava/lang/Object;)V
-	public fun clear ()V
-	public fun contains (Ljava/lang/Object;)Z
-	public fun containsAll (Ljava/util/Collection;)Z
-	public fun get (I)Ljava/lang/Object;
-	public fun getSize ()I
-	public final fun getValues ()Ljava/util/List;
-	public fun indexOf (Ljava/lang/Object;)I
-	public final fun invoke (Lkotlin/jvm/functions/Function1;)V
-	public fun isEmpty ()Z
-	public fun iterator ()Ljava/util/Iterator;
-	public fun lastIndexOf (Ljava/lang/Object;)I
-	public fun listIterator ()Ljava/util/ListIterator;
-	public fun listIterator (I)Ljava/util/ListIterator;
-	public fun remove (I)Ljava/lang/Object;
-	public fun remove (Ljava/lang/Object;)Z
-	public fun removeAll (Ljava/util/Collection;)Z
-	public fun removeFirst ()Ljava/lang/Object;
-	public fun removeLast ()Ljava/lang/Object;
-	public fun replaceAll (Ljava/util/function/UnaryOperator;)V
-	public fun retainAll (Ljava/util/Collection;)Z
-	public fun set (ILjava/lang/Object;)Ljava/lang/Object;
-	public final fun size ()I
-	public fun sort (Ljava/util/Comparator;)V
-	public fun subList (II)Ljava/util/List;
-	public fun toArray ()[Ljava/lang/Object;
-	public fun toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
 }
 

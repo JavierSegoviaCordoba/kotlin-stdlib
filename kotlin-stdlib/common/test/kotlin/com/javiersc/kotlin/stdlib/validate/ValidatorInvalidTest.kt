@@ -11,7 +11,7 @@ class ValidatorInvalidTest {
 
     @Test
     fun given__a_validator_using_invalid_api_and_a_book__when__validates__then__is_valid() {
-        val validator: Validator<Book> by Validator { book ->
+        val validator: Validator<String, Book> by Validator { book ->
             invalid(
                 predicate = { book.title != "Lord of the Rings" },
                 otherwise = { "Title must be Lord of the Rings" },
@@ -26,7 +26,7 @@ class ValidatorInvalidTest {
 
     @Test
     fun given__a_validator_using_invalid_api_and_a_book__when__validates__then__is_invalid() {
-        val validator: Validator<Book> by Validator { book ->
+        val validator: Validator<String, Book> by Validator { book ->
             invalid(
                 predicate = { book.title != "Lord of the Rings" },
                 otherwise = { "Title must be Lord of the Rings" },
@@ -36,18 +36,13 @@ class ValidatorInvalidTest {
                 otherwise = { "Author must be Tolkien" },
             )
         }
-        HarryPotterBook.validateWith(validator).assertLeft {
-            """
-                |'Book' is invalid due to:
-                |    - Title must be Lord of the Rings
-                |    - Author must be Tolkien
-            """
-        }
+        HarryPotterBook.validateWith(validator)
+            .assertLeft("Title must be Lord of the Rings", "Author must be Tolkien")
     }
 
     @Test
     fun given__a_validator_using_invalid_api_with_invoke_lambda_and_a_book__when__validates__then__is_valid() {
-        val validator: Validator<Book> by Validator { book ->
+        val validator: Validator<String, Book> by Validator { book ->
             book {
                 invalid(
                     predicate = { title != "Lord of the Rings" },
@@ -66,7 +61,7 @@ class ValidatorInvalidTest {
 
     @Test
     fun given__a_validator_using_invalid_api_with_invoke_lambda_and_a_book__when__validates__then__is_invalid() {
-        val validator: Validator<Book> by Validator { book ->
+        val validator: Validator<String, Book> by Validator { book ->
             book {
                 invalid(
                     predicate = { title != "Lord of the Rings" },
@@ -80,12 +75,7 @@ class ValidatorInvalidTest {
                 }
             }
         }
-        HarryPotterBook.validateWith(validator).assertLeft {
-            """
-                |'Book' is invalid due to:
-                |    - Title must be Lord of the Rings
-                |    - Author must be Tolkien
-            """
-        }
+        HarryPotterBook.validateWith(validator)
+            .assertLeft("Title must be Lord of the Rings", "Author must be Tolkien")
     }
 }

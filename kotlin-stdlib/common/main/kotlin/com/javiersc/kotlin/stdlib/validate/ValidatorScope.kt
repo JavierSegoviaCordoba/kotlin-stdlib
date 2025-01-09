@@ -2,28 +2,28 @@ package com.javiersc.kotlin.stdlib.validate
 
 import com.javiersc.kotlin.stdlib.UseContextParameters
 
-public class ValidatorScope<V : Any>
+public class ValidatorScope<E, V>
 @PublishedApi
-internal constructor(private val _validatables: MutableList<Validatable> = mutableListOf()) {
+internal constructor(private val _validatables: MutableList<Validatable<E>> = mutableListOf()) {
 
     @PublishedApi
-    internal val validatables: List<Validatable>
+    internal val validatables: List<Validatable<E>>
         get() = _validatables.toList()
 
-    public fun invalid(predicate: () -> Boolean, otherwise: () -> String) {
+    public fun invalid(predicate: () -> Boolean, otherwise: () -> E) {
         _validatables.add(Validatable(predicate = predicate, otherwise = otherwise))
     }
 
-    public fun invalidIf(predicate: () -> Boolean) {
-        invalid(predicate = predicate, otherwise = { InvalidProperty })
+    public fun invalidIf(predicate: () -> Boolean, otherwise: () -> E) {
+        invalid(predicate = predicate, otherwise = otherwise)
     }
 
-    public fun valid(predicate: () -> Boolean, otherwise: () -> String) {
+    public fun valid(predicate: () -> Boolean, otherwise: () -> E) {
         _validatables.add(Validatable(predicate = { !predicate() }, otherwise = otherwise))
     }
 
-    public fun validIf(predicate: () -> Boolean) {
-        valid(predicate = predicate, otherwise = { InvalidProperty })
+    public fun validIf(predicate: () -> Boolean, otherwise: () -> E) {
+        valid(predicate = predicate, otherwise = otherwise)
     }
 
     public operator fun <T> T.invoke(block: T.() -> Unit): T {
@@ -31,28 +31,35 @@ internal constructor(private val _validatables: MutableList<Validatable> = mutab
         return this
     }
 
-    public fun <T> validationOf(vararg values: T, block: T.() -> Unit) {
-        val validatableList: ValidatableList<T> = ValidatableList(values.toList())
-        validatableList.invoke(block)
-    }
-
-    public infix fun <T> T.and(value: T): ValidatableList<T> = ValidatableList(listOf(this, value))
-
-    public infix fun <T> ValidatableList<T>.and(value: T): ValidatableList<T> =
-        ValidatableList(values + value)
-
     @UseContextParameters
-    public fun String.invalidIfIsEmpty(otherwise: () -> String = { EmptyProperty }) {
+    public fun String.invalidIfIsEmpty(otherwise: () -> E) {
         invalid(predicate = ::isEmpty, otherwise = otherwise)
     }
 
-    @PublishedApi
-    internal data class Validatable(val predicate: () -> Boolean, val otherwise: () -> String)
-
-    public class ValidatableList<T>(public val values: List<T>) : List<T> by values {
-
-        public operator fun invoke(block: T.() -> Unit) {
-            for (value: T in values) block(value)
-        }
+    @UseContextParameters
+    public fun String.invalidIfIsBlank(otherwise: () -> E) {
+        invalid(predicate = ::isBlank, otherwise = otherwise)
     }
+
+    public fun <E2 : E, V2> validator(validator: Validator<E2, V2>, value: V2) {
+        val scope = ValidatorScope<E2, V2>()
+        validator.block(scope, value)
+        val validatables: List<Validatable<E2>> = scope.validatables
+        val mappedValidatables: List<Validatable<E>> =
+            validatables.map { Validatable(predicate = it.predicate, otherwise = it.otherwise) }
+        _validatables.addAll(mappedValidatables)
+    }
+
+    public infix fun <E2 : E, V2> Validator<E2, V2>.validatorFor(value: V2) {
+        validator(this, value)
+    }
+
+    public infix fun <E2 : E, V2> V2.validatedBy(validator: Validator<E2, V2>) {
+        validator(validator, this)
+    }
+
+    @PublishedApi
+    internal data class Validatable<E>(val predicate: () -> Boolean, val otherwise: () -> E)
+
+    public class NestedScope<E2, V2>(internal val validator: Validator<E2, V2>)
 }

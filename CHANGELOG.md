@@ -4,6 +4,12 @@
 
 ### Added
 
+- `invalidIfIsBlank` to Validate APIs
+- Validate APIs support specifying a generic error
+- Nested validator: `validator(fooValidator, foo)` 
+- Nested validator: `foo.validatedBy(fooValidator)`
+- Nested validator: `fooValidator.validatorFor(foo)`
+
 ### Changed
 
 ### Deprecated
@@ -12,6 +18,7 @@
 
 ### Removed
 
+- `ValidatableList` APIs
 - `Graph::toGraph` function
 - `Graph::circularVertexes` to be `Map<T, List<Edge<T>>>`
 

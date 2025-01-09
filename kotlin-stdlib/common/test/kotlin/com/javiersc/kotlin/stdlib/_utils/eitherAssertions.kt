@@ -4,11 +4,13 @@ import com.javiersc.kotlin.stdlib.Either
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
-internal inline fun Either<*, *>.assertRight() {
+internal fun Either<*, *>.assertRight() {
     assertTrue { this is Either.Right }
 }
 
-internal inline fun Either<*, *>.assertLeft(block: () -> String) {
-    assertTrue { this is Either.Left }
-    assertEquals(block().trimMargin(), (this as Either.Left).value)
+internal fun <E : Any> Either<List<E>, *>.assertLeft(vararg errors: E) {
+    assertTrue(this is Either.Left)
+    val expectedErrors: List<E> = errors.toList()
+    val actualErrors: List<E> = this.value
+    assertEquals(expectedErrors, actualErrors)
 }
