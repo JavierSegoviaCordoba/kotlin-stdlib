@@ -42,6 +42,38 @@ internal class StringsTest {
 
     @Test
     fun empty_string() {
-        assertTrue { String.Empty == "" }
+        assertTrue { String.Empty.isEmpty() }
+    }
+
+    @Test
+    fun blank_string() {
+        assertTrue { String.Empty.isBlank() }
+        assertTrue { String.Blank.isBlank() && !String.Blank.isEmpty() }
+    }
+
+    @Test
+    fun string_remove_duplicate_empty_lines() {
+        assertTrue { "a\nb\n\n\nc\n".removeDuplicateEmptyLines() == "a\nb\n\nc\n" }
+        assertTrue { "a\n\nb\n\n\nc\n".removeDuplicateEmptyLines() == "a\n\nb\n\nc\n" }
+        assertTrue { "a\n\nb\n\n\nc\n\n".removeDuplicateEmptyLines() == "a\n\nb\n\nc\n" }
+        assertTrue { "a\n\n\n\n\nb\n\n".removeDuplicateEmptyLines() == "a\n\nb\n" }
+    }
+
+    @Test
+    fun string_end_with_new_line() {
+        assertTrue { "a".endWithNewLine() == "a\n" }
+        assertTrue { "a\n".endWithNewLine() == "a\n" }
+        assertTrue { "".endWithNewLine() == "" }
+        assertTrue { "a\nb".endWithNewLine() == "a\nb\n" }
+        assertTrue { "".endWithNewLine() == "" }
+        assertTrue { "\n".endWithNewLine() == "\n" }
+
+        val helloWorld =
+            """
+                |Hello World
+                |
+            """
+
+        assertTrue { helloWorld.trimMargin().endWithNewLine() == helloWorld.trimMargin() }
     }
 }

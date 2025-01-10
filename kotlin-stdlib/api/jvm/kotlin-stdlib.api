@@ -144,13 +144,11 @@ public final class com/javiersc/kotlin/stdlib/BooleanKt {
 }
 
 public final class com/javiersc/kotlin/stdlib/CharSequenceKt {
-	public static final fun endWithNewLine (Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 	public static final fun isNotNullNorBlank (Ljava/lang/CharSequence;)Z
 	public static final fun isNotNullNorEmpty (Ljava/lang/CharSequence;)Z
 	public static final fun notContain (Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
 	public static final fun notContain (Ljava/lang/CharSequence;Lkotlin/text/Regex;)Z
 	public static synthetic fun notContain$default (Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
-	public static final fun removeDuplicateEmptyLines (Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 }
 
 public class com/javiersc/kotlin/stdlib/DirScope : com/javiersc/kotlin/stdlib/FileScope {
@@ -272,11 +270,14 @@ public final class com/javiersc/kotlin/stdlib/ListKt {
 public final class com/javiersc/kotlin/stdlib/StringsKt {
 	public static final fun capitalize (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun decapitalize (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun endWithNewLine (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun getBlank (Lkotlin/jvm/internal/StringCompanionObject;)Ljava/lang/String;
 	public static final fun getEmpty (Lkotlin/jvm/internal/StringCompanionObject;)Ljava/lang/String;
 	public static final fun remove (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 	public static final fun remove (Ljava/lang/String;[Ljava/lang/String;Z)Ljava/lang/String;
 	public static synthetic fun remove$default (Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
 	public static synthetic fun remove$default (Ljava/lang/String;[Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
+	public static final fun removeDuplicateEmptyLines (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun removeIf (Ljava/lang/String;Ljava/lang/String;ZLkotlin/jvm/functions/Function1;)Ljava/lang/String;
 	public static synthetic fun removeIf$default (Ljava/lang/String;Ljava/lang/String;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
 	public static final fun replace (Ljava/lang/String;[Lkotlin/Pair;)Ljava/lang/String;

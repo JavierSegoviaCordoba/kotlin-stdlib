@@ -33,6 +33,9 @@ public fun String.removeIf(
 public inline val String.Companion.Empty: String
     get() = ""
 
+public inline val String.Companion.Blank: String
+    get() = "   "
+
 /**
  * Returns a copy of this string having its first letter title-cased using the rules of the default
  * locale, or the original string if it's empty or already starts with a title case letter.
@@ -50,3 +53,10 @@ public inline fun String.capitalize(): String = replaceFirstChar {
  * locale, or the original string if it's empty or already starts with a lower case letter.
  */
 public inline fun String.decapitalize(): String = replaceFirstChar { it.lowercase() }
+
+/** Remove all consecutive line breaks in a `CharSequence` */
+public fun String.removeDuplicateEmptyLines(): String = lines().removeDuplicateEmptyLines()
+
+/** Add an empty line as last item if it is not empty */
+public fun String.endWithNewLine(): String =
+    if (lines().lastOrNull().isNullOrBlank()) this else "$this\n"

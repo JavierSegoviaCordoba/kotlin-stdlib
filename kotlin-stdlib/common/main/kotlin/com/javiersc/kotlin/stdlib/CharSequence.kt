@@ -20,11 +20,3 @@ public inline fun CharSequence.notContain(
 ): Boolean = !contains(other, ignoreCase)
 
 public inline fun CharSequence.notContain(regex: Regex): Boolean = !contains(regex)
-
-/** Remove all consecutive line breaks in a `CharSequence` */
-public fun CharSequence.removeDuplicateEmptyLines(): CharSequence =
-    lines().removeDuplicateEmptyLines()
-
-/** Add an empty line as last item if it is not empty */
-public fun CharSequence.endWithNewLine(): CharSequence =
-    if (lines().lastOrNull().isNullOrBlank()) this else "$this\n"

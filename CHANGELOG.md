@@ -4,11 +4,16 @@
 
 ### Added
 
+- `String.Blank`
+
 ### Changed
 
 ### Deprecated
 
 ### Fixed
+
+- `removeDuplicateEmptyLines` move back to use `String`
+- `endWithNewLine` move back to use `String`
 
 ### Removed
 
