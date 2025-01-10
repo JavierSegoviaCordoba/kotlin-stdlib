@@ -4,17 +4,25 @@
 
 ### Added
 
-- `invalidIfIsBlank` to Validate APIs
-- Validate APIs support specifying a generic error
-- Nested validator: `validator(fooValidator, foo)` 
-- Nested validator: `foo.validatedBy(fooValidator)`
-- Nested validator: `fooValidator.validatorFor(foo)`
-
 ### Changed
 
 ### Deprecated
 
 ### Fixed
+
+### Removed
+
+### Updated
+
+## [0.2.0] - 2025-01-10
+
+### Added
+
+- `invalidIfIsBlank` to Validate APIs
+- Validate APIs support specifying a generic error
+- Nested validator: `validator(fooValidator, foo)` 
+- Nested validator: `foo.validatedBy(fooValidator)`
+- Nested validator: `fooValidator.validatorFor(foo)`
 
 ### Removed
 
@@ -114,6 +122,8 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.43`
 - `io.kotest:kotest-assertions-core -> 5.3.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.2.0...HEAD
 
-[0.1.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0-alpha.17...0.1.0
+[0.2.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.1.0...0.2.0
+
+[0.1.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/commits/0.1.0
