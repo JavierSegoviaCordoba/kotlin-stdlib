@@ -11,33 +11,31 @@ class ValidatorValidTest {
 
     @Test
     fun given__a_validator_using_valid_api_and_a_book__when__validates__then__is_valid() {
-        val validator: Validator<String, Book> by
-            Validator(name = "Book") { book ->
-                valid(
-                    predicate = { book.title == "Lord of the Rings" },
-                    otherwise = { "Title must be Lord of the Rings" },
-                )
-                valid(
-                    predicate = { book.author.name == "Tolkien" },
-                    otherwise = { "Author must be Tolkien" },
-                )
-            }
+        val validator: Validator<String, Book> by Validator { book ->
+            valid(
+                predicate = { book.title == "Lord of the Rings" },
+                otherwise = { "Title must be Lord of the Rings" },
+            )
+            valid(
+                predicate = { book.author.name == "Tolkien" },
+                otherwise = { "Author must be Tolkien" },
+            )
+        }
         LordOfTheRingsBook.validateWith(validator).assertRight()
     }
 
     @Test
     fun given__a_validator_using_valid_api_and_a_book__when__validates__then__is_invalid() {
-        val validator: Validator<Book.Error, Book> by
-            Validator(name = "Book") { book ->
-                valid(
-                    predicate = { book.title == "Lord of the Rings" },
-                    otherwise = { Book.Error.WrongTitle },
-                )
-                valid(
-                    predicate = { book.author.name == "Tolkien" },
-                    otherwise = { Book.Error.WrongAuthor },
-                )
-            }
+        val validator: Validator<Book.Error, Book> by Validator { book ->
+            valid(
+                predicate = { book.title == "Lord of the Rings" },
+                otherwise = { Book.Error.WrongTitle },
+            )
+            valid(
+                predicate = { book.author.name == "Tolkien" },
+                otherwise = { Book.Error.WrongAuthor },
+            )
+        }
 
         HarryPotterBook.validateWith(validator)
             .assertLeft(Book.Error.WrongTitle, Book.Error.WrongAuthor)

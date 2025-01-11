@@ -6,11 +6,17 @@
 
 ### Changed
 
+- `Validator` to be an interface
+- `ValidatorScope` to `RulesScope`
+- `RulesScope` to be an interface
+
 ### Deprecated
 
 ### Fixed
 
 ### Removed
+
+- `name` parameter in `Validator`
 
 ### Updated
 

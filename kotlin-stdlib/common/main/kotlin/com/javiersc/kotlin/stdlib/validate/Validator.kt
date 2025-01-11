@@ -1,34 +1,36 @@
 package com.javiersc.kotlin.stdlib.validate
 
 import com.javiersc.kotlin.stdlib.Either
-import com.javiersc.kotlin.stdlib.UseContextParameters
 import com.javiersc.kotlin.stdlib.left
 import com.javiersc.kotlin.stdlib.right
 
-public class Validator<E, V>
-@PublishedApi
-internal constructor(
-    @PublishedApi internal val name: String,
-    @PublishedApi internal val block: ValidatorScope<E, V>.(V) -> Unit,
-    private val _unit0: Unit,
-) {
+public interface Validator<E, V> {
+
+    public val ruleScopeBlock: RulesScope<E>.(V) -> Unit
 
     public fun <A : V> validate(value: A): Either<List<E>, A> {
-        val validatorScope = ValidatorScope<E, V>()
-        block(validatorScope, value)
+        val ruleScope: RulesScope<E> = RuleScope<E>().also { it.ruleScopeBlock(value) }
 
         val otherwises: List<E> =
-            validatorScope.validatables.mapNotNull { if (it.predicate()) it.otherwise() else null }
+            ruleScope.rules.mapNotNull { if (!it.predicate()) it.otherwise() else null }
 
-        if (otherwises.isEmpty()) return value.right()
-
-        val either: Either<List<E>, A> = otherwises.left()
-        return either
+        return if (otherwises.isEmpty()) value.right() else otherwises.left()
     }
 }
 
 @Suppress("FunctionName")
-public inline fun <E : Any, reified T : Any> Validator(
-    name: String = T::class.simpleName ?: "Validator",
-    @UseContextParameters noinline block: ValidatorScope<E, T>.(T) -> Unit,
-): Lazy<Validator<E, T>> = lazy { Validator(name = name, block = block, _unit0 = Unit) }
+public inline fun <E : Any, reified V : Any> Validator(
+    noinline block: RulesScope<E>.(V) -> Unit
+): Lazy<Validator<E, V>> = lazy {
+    object : Validator<E, V> {
+
+        override val ruleScopeBlock: RulesScope<E>.(V) -> Unit = block
+    }
+}
+
+public inline fun <reified E : Any, reified T : Any> T.validateWith(
+    validator: Validator<E, T>
+): Either<List<E>, T> {
+    val validated: Either<List<E>, T> = validator.validate(this)
+    return validated
+}
