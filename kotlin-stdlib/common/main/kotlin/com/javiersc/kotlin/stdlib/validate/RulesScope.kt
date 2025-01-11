@@ -2,10 +2,28 @@ package com.javiersc.kotlin.stdlib.validate
 
 import com.javiersc.kotlin.stdlib.UseContextParameters
 import com.javiersc.kotlin.stdlib.validate.RulesScope.Rule
+import kotlin.reflect.KProperty0
 
 public interface RulesScope<E> {
 
     public val rules: List<Rule<E>>
+
+    public fun rule(predicate: () -> Boolean, otherwise: () -> E)
+
+    public fun <V> rulesFor(vararg values: V, block: (value: V) -> Unit) {
+        for (value: V in values) {
+            block(value)
+        }
+    }
+
+    public fun <V> rulesFor(
+        vararg properties: KProperty0<V>,
+        block: (property: String, value: V) -> Unit,
+    ) {
+        for (property: KProperty0<V> in properties) {
+            block(property.name, property.get())
+        }
+    }
 
     public fun invalid(predicate: () -> Boolean, otherwise: () -> E)
 
@@ -51,6 +69,10 @@ internal fun <E> RuleScope(): RulesScope<E> =
         override val rules: List<Rule<E>>
             get() = _rules.toList()
 
+        override fun rule(predicate: () -> Boolean, otherwise: () -> E) {
+            _rules.add(Rule(predicate = predicate, otherwise = otherwise))
+        }
+
         override fun invalidIf(predicate: () -> Boolean, otherwise: () -> E) {
             rule(predicate = { !predicate() }, otherwise = otherwise)
         }
@@ -71,9 +93,5 @@ internal fun <E> RuleScope(): RulesScope<E> =
             val scope: RulesScope<E2> = RuleScope()
             validator.ruleScopeBlock(scope, value)
             _rules.addAll(scope.rules)
-        }
-
-        private fun rule(predicate: () -> Boolean, otherwise: () -> E) {
-            _rules.add(Rule(predicate = predicate, otherwise = otherwise))
         }
     }

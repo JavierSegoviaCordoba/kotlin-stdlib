@@ -4,6 +4,8 @@
 
 ### Added
 
+- `rulesFor` to `RulesScope`
+
 ### Changed
 
 - `Validator` to be an interface

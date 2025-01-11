@@ -512,6 +512,9 @@ public abstract interface class com/javiersc/kotlin/stdlib/validate/RulesScope {
 	public abstract fun invalidIfIsBlank (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
 	public abstract fun invalidIfIsEmpty (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
 	public abstract fun invoke (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public abstract fun rule (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+	public abstract fun rulesFor ([Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+	public abstract fun rulesFor ([Lkotlin/reflect/KProperty0;Lkotlin/jvm/functions/Function2;)V
 	public abstract fun valid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
 	public abstract fun validIf (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
 	public abstract fun validatedBy (Ljava/lang/Object;Lcom/javiersc/kotlin/stdlib/validate/Validator;)V
@@ -523,6 +526,8 @@ public final class com/javiersc/kotlin/stdlib/validate/RulesScope$DefaultImpls {
 	public static fun invalidIfIsBlank (Lcom/javiersc/kotlin/stdlib/validate/RulesScope;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
 	public static fun invalidIfIsEmpty (Lcom/javiersc/kotlin/stdlib/validate/RulesScope;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
 	public static fun invoke (Lcom/javiersc/kotlin/stdlib/validate/RulesScope;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public static fun rulesFor (Lcom/javiersc/kotlin/stdlib/validate/RulesScope;[Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+	public static fun rulesFor (Lcom/javiersc/kotlin/stdlib/validate/RulesScope;[Lkotlin/reflect/KProperty0;Lkotlin/jvm/functions/Function2;)V
 	public static fun validatedBy (Lcom/javiersc/kotlin/stdlib/validate/RulesScope;Ljava/lang/Object;Lcom/javiersc/kotlin/stdlib/validate/Validator;)V
 	public static fun validatorFor (Lcom/javiersc/kotlin/stdlib/validate/RulesScope;Lcom/javiersc/kotlin/stdlib/validate/Validator;Ljava/lang/Object;)V
 }
