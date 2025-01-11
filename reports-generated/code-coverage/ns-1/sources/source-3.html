@@ -1,0 +1,281 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > CollectionsKt</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.javiersc.kotlin.stdlib</a>
+</div>
+
+<h1>Coverage Summary for Class: CollectionsKt (com.javiersc.kotlin.stdlib)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">CollectionsKt</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (15/15)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (56/70)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    96.8%
+  </span>
+  <span class="absValue">
+    (61/63)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    93.4%
+  </span>
+  <span class="absValue">
+    (384/411)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;@file:Suppress(&quot;MagicNumber&quot;, &quot;TooManyFunctions&quot;)
+&nbsp;
+&nbsp;package com.javiersc.kotlin.stdlib
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns a copy of this string having its first letter title-cased using the rules of the default
+&nbsp; * locale, or the original string if it&#39;s empty or already starts with a title case letter.
+&nbsp; *
+&nbsp; * The title case of a character is usually the same as its upper case with several exceptions. The
+&nbsp; * particular list of characters with the special title case form depends on the underlying
+&nbsp; * platform.
+&nbsp; */
+<b class="pc">&nbsp;public inline fun String.capitalize(): String = replaceFirstChar {</b>
+<b class="fc">&nbsp;    if (it.isLowerCase()) it.titlecase() else it.toString()</b>
+&nbsp;}
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns a copy of this string having its first letter lowercased using the rules of the default
+&nbsp; * locale, or the original string if it&#39;s empty or already starts with a lower case letter.
+&nbsp; */
+<b class="pc">&nbsp;public inline fun String.decapitalize(): String = replaceFirstChar { it.lowercase() }</b>
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns second element.
+&nbsp; *
+&nbsp; * Throws: `NoSuchElementException` - if the list size is 1.
+&nbsp; */
+<b class="fc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.second(): T = getIndex(2)</b>
+&nbsp;
+<b class="pc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.secondOrNull(): T? = getIndexOrNull(2)</b>
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns third element.
+&nbsp; *
+&nbsp; * Throws: `NoSuchElementException` - if the list size is 2.
+&nbsp; */
+<b class="fc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.third(): T = getIndex(3)</b>
+&nbsp;
+<b class="pc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.thirdOrNull(): T? = getIndexOrNull(3)</b>
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns forth element.
+&nbsp; *
+&nbsp; * Throws: `NoSuchElementException` - if the list size is 3.
+&nbsp; */
+<b class="fc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.forth(): T = getIndex(4)</b>
+&nbsp;
+<b class="pc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.forthOrNull(): T? = getIndexOrNull(4)</b>
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns fifth element.
+&nbsp; *
+&nbsp; * Throws: `NoSuchElementException` - if the list size is 4.
+&nbsp; */
+<b class="fc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.fifth(): T = getIndex(5)</b>
+&nbsp;
+<b class="pc">&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.fifthOrNull(): T? = getIndexOrNull(5)</b>
+&nbsp;
+&nbsp;/**
+&nbsp; * Returns penultimate element.
+&nbsp; *
+&nbsp; * Throws: `NoSuchElementException` - if the list size is 1.
+&nbsp; */
+&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.penultimate(): T {
+<b class="fc">&nbsp;    return when (this) {</b>
+<b class="fc">&nbsp;        is List -&gt;</b>
+<b class="fc">&nbsp;            when (size) {</b>
+<b class="fc">&nbsp;                0 -&gt; throw NoSuchElementException(&quot;Collection is empty.&quot;)</b>
+<b class="fc">&nbsp;                1 -&gt; throw NoSuchElementException(&quot;Collection size is lower than 2.&quot;)</b>
+<b class="fc">&nbsp;                else -&gt; this[size - 2]</b>
+&nbsp;            }
+&nbsp;        else -&gt; {
+<b class="fc">&nbsp;            val iterator = iterator()</b>
+<b class="fc">&nbsp;            if (!iterator.hasNext()) throw NoSuchElementException(&quot;Collection is empty.&quot;)</b>
+<b class="fc">&nbsp;            iterator.next()</b>
+<b class="pc">&nbsp;            if (!iterator.hasNext()) {</b>
+<b class="nc">&nbsp;                throw NoSuchElementException(&quot;Collection size is lower than 2.&quot;)</b>
+&nbsp;            }
+<b class="fc">&nbsp;            var penultimate: T = iterator.next()</b>
+<b class="fc">&nbsp;            while (iterator.hasNext()) {</b>
+<b class="fc">&nbsp;                val next: T = iterator.next()</b>
+<b class="fc">&nbsp;                if (iterator.hasNext()) penultimate = next</b>
+&nbsp;            }
+<b class="fc">&nbsp;            return penultimate</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;public inline fun &lt;T&gt; Iterable&lt;T&gt;.penultimateOrNull(): T? {
+<b class="pc">&nbsp;    return when (this) {</b>
+<b class="fc">&nbsp;        is List -&gt; getOrNull(size - 2)</b>
+&nbsp;        else -&gt; {
+<b class="fc">&nbsp;            val iterator = iterator()</b>
+&nbsp;
+<b class="fc">&nbsp;            if (!iterator.hasNext()) return null</b>
+<b class="fc">&nbsp;            iterator.next()</b>
+<b class="pc">&nbsp;            if (!iterator.hasNext()) return null</b>
+&nbsp;
+<b class="fc">&nbsp;            var penultimate: T = iterator.next()</b>
+<b class="fc">&nbsp;            while (iterator.hasNext()) {</b>
+<b class="fc">&nbsp;                val next: T = iterator.next()</b>
+<b class="fc">&nbsp;                if (iterator.hasNext()) penultimate = next</b>
+&nbsp;            }
+<b class="fc">&nbsp;            return penultimate</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;@PublishedApi
+&nbsp;internal inline fun &lt;T&gt; Iterable&lt;T&gt;.getIndex(index: Int): T {
+<b class="fc">&nbsp;    return when (this) {</b>
+<b class="fc">&nbsp;        is List -&gt;</b>
+<b class="fc">&nbsp;            if (size &gt;= index - 1) this[index - 1]</b>
+<b class="fc">&nbsp;            else throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)</b>
+&nbsp;        else -&gt; {
+<b class="fc">&nbsp;            val iterator = iterator()</b>
+<b class="fc">&nbsp;            if (!iterator.hasNext())</b>
+<b class="fc">&nbsp;                throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)</b>
+<b class="fc">&nbsp;            var value: T = iterator.next()</b>
+&nbsp;
+<b class="fc">&nbsp;            for (i in 0 until index - 1) {</b>
+<b class="pc">&nbsp;                if (!iterator.hasNext())</b>
+<b class="nc">&nbsp;                    throw NoSuchElementException(&quot;Collection size is lower than $index.&quot;)</b>
+<b class="fc">&nbsp;                else value = iterator.next()</b>
+&nbsp;            }
+<b class="fc">&nbsp;            value</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;@PublishedApi
+&nbsp;internal inline fun &lt;T&gt; Iterable&lt;T&gt;.getIndexOrNull(index: Int): T? {
+<b class="fc">&nbsp;    return when (this) {</b>
+<b class="fc">&nbsp;        is List -&gt; getOrNull(index - 1)</b>
+&nbsp;        else -&gt; {
+<b class="fc">&nbsp;            val iterator = iterator()</b>
+<b class="fc">&nbsp;            if (!iterator.hasNext()) return null</b>
+<b class="fc">&nbsp;            var value: T = iterator.next()</b>
+&nbsp;
+<b class="fc">&nbsp;            for (i in 0 until index - 1) {</b>
+<b class="pc">&nbsp;                if (!iterator.hasNext()) return null else value = iterator.next()</b>
+&nbsp;            }
+<b class="fc">&nbsp;            value</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;/** Remove all consecutive line breaks in a list of `String` */
+&nbsp;public fun List&lt;String&gt;.removeDuplicateEmptyLines(): String =
+<b class="fc">&nbsp;    if (isNotEmpty()) {</b>
+<b class="fc">&nbsp;        reduce { acc: String, b: String -&gt;</b>
+<b class="pc">&nbsp;            if (acc.lines().lastOrNull().isNullOrBlank() &amp;&amp; b.isBlank()) acc else &quot;$acc\n$b&quot;</b>
+&nbsp;        }
+<b class="fc">&nbsp;    } else &quot;&quot;</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-08 23:30</div>
+</div>
+</body>
+</html>
