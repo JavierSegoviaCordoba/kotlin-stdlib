@@ -4,6 +4,20 @@
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
+### Updated
+
+## [0.3.0] - 2025-01-11
+
+### Added
+
 - `rulesFor` to `RulesScope`
 
 ### Changed
@@ -12,15 +26,9 @@
 - `ValidatorScope` to `RulesScope`
 - `RulesScope` to be an interface
 
-### Deprecated
-
-### Fixed
-
 ### Removed
 
 - `name` parameter in `Validator`
-
-### Updated
 
 ## [0.2.1] - 2025-01-10
 
@@ -141,7 +149,9 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.43`
 - `io.kotest:kotest-assertions-core -> 5.3.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.2.1...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.3.0...HEAD
+
+[0.3.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.2.1...0.3.0
 
 [0.2.1]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.2.0...0.2.1
 
