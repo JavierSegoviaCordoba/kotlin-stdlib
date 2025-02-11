@@ -72,7 +72,16 @@ hubdle {
             }
             native()
 
-            wasmJs()
+            wasm {
+                js {
+                    browser()
+                    d8()
+                    nodejs()
+                }
+                wasi {
+                    nodejs()
+                }
+            }
 
             // TODO: Check if it can be removed with Kotlin 2.0.0+
             kotlin {

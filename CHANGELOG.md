@@ -4,6 +4,11 @@
 
 ### Added
 
+- WAsm JS browser support
+- WAsm JS d8 support
+- WAsm JS Node support
+- WAsm WAsi support
+
 ### Changed
 
 ### Deprecated
@@ -14,7 +19,7 @@
 
 ### Updated
 
-- `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.8.2`
+- `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.8.3`
 - `gradle -> 8.12.1`
 
 ## [0.3.0] - 2025-01-11
