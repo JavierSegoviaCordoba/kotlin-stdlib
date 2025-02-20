@@ -4,6 +4,12 @@
 
 ### Added
 
+- `com.javiersc.kotlin:kotlin-test` artifact
+- `Any` assertions
+- `File` assertions (only JVM)
+- `Iterable` assertions
+- `String` assertions
+
 ### Changed
 
 ### Deprecated

@@ -20,7 +20,14 @@ hubdle {
                 kotest.isEnabled.set(false)
             }
 
-            common()
+            common {
+                main {
+                    dependencies { //
+                        implementation(hubdle.jetbrains.kotlin.test)
+                        implementation(projects.kotlinStdlib)
+                    }
+                }
+            }
             if (getBooleanProperty("android.enabled").orElse(true).get()) android()
             androidNative {
                 androidNativeArm32()
