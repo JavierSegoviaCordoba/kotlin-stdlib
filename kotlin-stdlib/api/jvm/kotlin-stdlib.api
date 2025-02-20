@@ -267,6 +267,365 @@ public final class com/javiersc/kotlin/stdlib/ListKt {
 	public static final fun removeDuplicateEmptyLines (Ljava/util/List;)Ljava/lang/String;
 }
 
+public abstract interface class com/javiersc/kotlin/stdlib/Platform {
+	public abstract fun getName ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$Android : com/javiersc/kotlin/stdlib/Platform {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$Android$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Android$Arm32 : com/javiersc/kotlin/stdlib/Platform$Android, com/javiersc/kotlin/stdlib/Platform$Native {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$Android$Arm32;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Android$Arm64 : com/javiersc/kotlin/stdlib/Platform$Android, com/javiersc/kotlin/stdlib/Platform$Native {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$Android$Arm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Android$Companion : com/javiersc/kotlin/stdlib/Platform$Android, com/javiersc/kotlin/stdlib/Platform$JVM {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Android$X64 : com/javiersc/kotlin/stdlib/Platform$Android, com/javiersc/kotlin/stdlib/Platform$Native {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$Android$X64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Android$X86 : com/javiersc/kotlin/stdlib/Platform$Android, com/javiersc/kotlin/stdlib/Platform$Native {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$Android$X86;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$Apple : com/javiersc/kotlin/stdlib/Platform, com/javiersc/kotlin/stdlib/Platform$Native {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$Apple$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Apple$Companion : com/javiersc/kotlin/stdlib/Platform$Apple {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$IOS : com/javiersc/kotlin/stdlib/Platform$Apple {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$IOS$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$IOS$Arm64 : com/javiersc/kotlin/stdlib/Platform$IOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$IOS$Arm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$IOS$Companion : com/javiersc/kotlin/stdlib/Platform$IOS {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$IOS$SimulatorArm64 : com/javiersc/kotlin/stdlib/Platform$IOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$IOS$SimulatorArm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$IOS$X64 : com/javiersc/kotlin/stdlib/Platform$IOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$IOS$X64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$JS : com/javiersc/kotlin/stdlib/Platform {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$JS$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$JS$Browser : com/javiersc/kotlin/stdlib/Platform$JS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$JS$Browser;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$JS$Companion : com/javiersc/kotlin/stdlib/Platform$JS {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$JS$NodeJS : com/javiersc/kotlin/stdlib/Platform$JS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$JS$NodeJS;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$JVM : com/javiersc/kotlin/stdlib/Platform {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$JVM$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$JVM$Companion : com/javiersc/kotlin/stdlib/Platform$JVM {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$Linux : com/javiersc/kotlin/stdlib/Platform$Native {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$Linux$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Linux$Arm64 : com/javiersc/kotlin/stdlib/Platform$Linux {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$Linux$Arm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Linux$Companion : com/javiersc/kotlin/stdlib/Platform$Linux {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Linux$X64 : com/javiersc/kotlin/stdlib/Platform$Linux {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$Linux$X64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$MacOS : com/javiersc/kotlin/stdlib/Platform$Apple {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$MacOS$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$MacOS$Arm64 : com/javiersc/kotlin/stdlib/Platform$MacOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$MacOS$Arm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$MacOS$Companion : com/javiersc/kotlin/stdlib/Platform$MacOS {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$MacOS$X64 : com/javiersc/kotlin/stdlib/Platform$MacOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$MacOS$X64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$MinGW : com/javiersc/kotlin/stdlib/Platform$Native {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$MinGW$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$MinGW$Companion : com/javiersc/kotlin/stdlib/Platform$MinGW {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$MinGW$X64 : com/javiersc/kotlin/stdlib/Platform$MinGW {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$MinGW$X64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$Native : com/javiersc/kotlin/stdlib/Platform {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$Native$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$Native$Companion : com/javiersc/kotlin/stdlib/Platform$Native {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$TvOS : com/javiersc/kotlin/stdlib/Platform$Apple {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$TvOS$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$TvOS$Arm64 : com/javiersc/kotlin/stdlib/Platform$TvOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$TvOS$Arm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$TvOS$Companion : com/javiersc/kotlin/stdlib/Platform$TvOS {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$TvOS$SimulatorArm64 : com/javiersc/kotlin/stdlib/Platform$TvOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$TvOS$SimulatorArm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$TvOS$X64 : com/javiersc/kotlin/stdlib/Platform$TvOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$TvOS$X64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$WAsm : com/javiersc/kotlin/stdlib/Platform {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$WAsm$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WAsm$Companion : com/javiersc/kotlin/stdlib/Platform$WAsm {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$WAsm$JS : com/javiersc/kotlin/stdlib/Platform$WAsm {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$WAsm$JS$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WAsm$JS$Browser : com/javiersc/kotlin/stdlib/Platform$WAsm$JS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WAsm$JS$Browser;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WAsm$JS$Companion : com/javiersc/kotlin/stdlib/Platform$WAsm$JS {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WAsm$JS$D8 : com/javiersc/kotlin/stdlib/Platform$WAsm$JS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WAsm$JS$D8;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WAsm$JS$NodeJS : com/javiersc/kotlin/stdlib/Platform$WAsm$JS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WAsm$JS$NodeJS;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$WAsm$WAsi : com/javiersc/kotlin/stdlib/Platform$WAsm {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$WAsm$WAsi$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WAsm$WAsi$Companion : com/javiersc/kotlin/stdlib/Platform$WAsm$WAsi {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WAsm$WAsi$NodeJS : com/javiersc/kotlin/stdlib/Platform$WAsm$WAsi {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WAsm$WAsi$NodeJS;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/javiersc/kotlin/stdlib/Platform$WatchOS : com/javiersc/kotlin/stdlib/Platform$Apple {
+	public static final field Companion Lcom/javiersc/kotlin/stdlib/Platform$WatchOS$Companion;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WatchOS$Arm32 : com/javiersc/kotlin/stdlib/Platform$WatchOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WatchOS$Arm32;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WatchOS$Arm64 : com/javiersc/kotlin/stdlib/Platform$WatchOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WatchOS$Arm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WatchOS$Companion : com/javiersc/kotlin/stdlib/Platform$WatchOS {
+	public fun getName ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WatchOS$DeviceArm64 : com/javiersc/kotlin/stdlib/Platform$WatchOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WatchOS$DeviceArm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WatchOS$SimulatorArm64 : com/javiersc/kotlin/stdlib/Platform$WatchOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WatchOS$SimulatorArm64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform$WatchOS$X64 : com/javiersc/kotlin/stdlib/Platform$WatchOS {
+	public static final field INSTANCE Lcom/javiersc/kotlin/stdlib/Platform$WatchOS$X64;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/kotlin/stdlib/PlatformKt {
+	public static final fun isAndroid (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isAndroidNative (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isApple (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isIOS (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isJS (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isJVM (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isJvmNotAndroid (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isLinux (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isMacOS (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isMinGW (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isNative (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isTvOS (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isWAsm (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+	public static final fun isWatchOS (Lcom/javiersc/kotlin/stdlib/Platform;)Z
+}
+
+public final class com/javiersc/kotlin/stdlib/Platform_jvmKt {
+	public static final fun getCurrentPlatform ()Lcom/javiersc/kotlin/stdlib/Platform;
+}
+
 public final class com/javiersc/kotlin/stdlib/StringsKt {
 	public static final fun capitalize (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun decapitalize (Ljava/lang/String;)Ljava/lang/String;
