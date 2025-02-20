@@ -3,10 +3,10 @@ public final class com/javiersc/kotlin/test/FailKt {
 }
 
 public final class com/javiersc/kotlin/test/GenericMatchersKt {
-	public static final fun assertEquals (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;)V
-	public static synthetic fun assertEquals$default (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;ILjava/lang/Object;)V
-	public static final fun assertNotEquals (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;)V
-	public static synthetic fun assertNotEquals$default (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;ILjava/lang/Object;)V
+	public static final fun assertEquals (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+	public static synthetic fun assertEquals$default (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/Object;
+	public static final fun assertNotEquals (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+	public static synthetic fun assertNotEquals$default (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/Object;
 }
 
 public final class com/javiersc/kotlin/test/StringMatchersKt {

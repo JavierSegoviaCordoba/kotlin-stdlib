@@ -4,10 +4,12 @@
 
 ### Added
 
+- `Platform` sealed API
 - `com.javiersc.kotlin:kotlin-test` artifact
 - `Any` assertions
 - `File` assertions (only JVM)
 - `Iterable` assertions
+- `assertGreaterThan` and `assertLessThan` assertions
 - `String` assertions
 
 ### Changed
@@ -69,7 +71,7 @@
 
 - `invalidIfIsBlank` to Validate APIs
 - Validate APIs support specifying a generic error
-- Nested validator: `validator(fooValidator, foo)` 
+- Nested validator: `validator(fooValidator, foo)`
 - Nested validator: `foo.validatedBy(fooValidator)`
 - Nested validator: `fooValidator.validatorFor(foo)`
 
