@@ -4,14 +4,6 @@
 
 ### Added
 
-- `Platform` sealed API
-- `com.javiersc.kotlin:kotlin-test` artifact
-- `Any` assertions
-- `File` assertions (only JVM)
-- `Iterable` assertions
-- `assertGreaterThan` and `assertLessThan` assertions
-- `String` assertions
-
 ### Changed
 
 ### Deprecated
@@ -19,6 +11,20 @@
 ### Fixed
 
 ### Removed
+
+### Updated
+
+## [0.5.0] - 2025-02-22
+
+### Added
+
+- `Platform` sealed API
+- `com.javiersc.kotlin:kotlin-test` artifact
+- `Any` assertions
+- `File` assertions (only JVM)
+- `Iterable` assertions
+- `assertGreaterThan` and `assertLessThan` assertions
+- `String` assertions
 
 ### Updated
 
@@ -173,7 +179,9 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.43`
 - `io.kotest:kotest-assertions-core -> 5.3.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.4.0...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.5.0...HEAD
+
+[0.5.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.4.0...0.5.0
 
 [0.4.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.3.0...0.4.0
 
