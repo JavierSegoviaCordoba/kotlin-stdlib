@@ -4,6 +4,20 @@
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
+### Updated
+
+## [0.6.0] - 2025-02-23
+
+### Added
+
 - `assertTrue` and `assertFalse` assertions
 - `assertNotContains` assertion
 - `assertStartWith` and `assertEndWith` assertions
@@ -11,13 +25,8 @@
 - `assertContainsExactly` assertion
 
 ### Changed
+
 - `Number` assertions to `Comparable` assertions
-
-### Deprecated
-
-### Fixed
-
-### Removed
 
 ### Updated
 
@@ -188,7 +197,9 @@
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.43`
 - `io.kotest:kotest-assertions-core -> 5.3.0`
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.5.0...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.6.0...HEAD
+
+[0.6.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.5.0...0.6.0
 
 [0.5.0]: https://github.com/JavierSegoviaCordoba/kotlin-stdlib/compare/0.4.0...0.5.0
 
