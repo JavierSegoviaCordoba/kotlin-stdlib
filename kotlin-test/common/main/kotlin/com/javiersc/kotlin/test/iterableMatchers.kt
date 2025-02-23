@@ -10,6 +10,14 @@ public inline fun <reified I : Iterable<T>, reified T : Any> I.assertContains(
     return this
 }
 
+public inline fun <reified I : Iterable<T>, reified T : Any> I.assertContainsExactly(
+    elements: I,
+    message: String? = null,
+): I {
+    this.toList().assertEquals(elements.toList(), message)
+    return this
+}
+
 public inline fun <reified I : Iterable<T>, reified T : Any> I.assertCount(
     expectSize: Int,
     message: String? = null,

@@ -20,10 +20,73 @@ class IterableMatchersTest {
     }
 
     @Test
+    fun `assertContains should fail`() {
+        val list: List<Int> = listOf(1, 2, 3)
+        val element = 4
+        val exception: AssertionError = assertFailsWith { list.assertContains(element) }
+        assertTrue(
+            exception.message ==
+                "Expected the collection to contain the element.\n" +
+                    "Collection <[1, 2, 3]>, element <4>."
+        )
+    }
+
+    @Test
     fun `assertContains should work with different types`() {
         val list: List<Double> = listOf(1.0, 2.0, 3.0)
         val element = 2.0
         val result: List<Double> = list.assertContains(element)
+        assertTrue(result === list)
+    }
+
+    @Test
+    fun `assertContains should work`() {
+        val list: List<String> = listOf("AA", "BB", "CC")
+        val element = "BB"
+        val result: List<String> = list.assertContains(element)
+        assertTrue(result === list)
+    }
+
+    @Test
+    fun `assertContainsExactly should fail with custom message`() {
+        val list: List<Int> = listOf(1, 2, 3)
+        val elements = listOf(1, 2, 3, 4)
+        val message = "Custom error"
+        val exception: AssertionError = assertFailsWith {
+            list.assertContainsExactly(elements, message)
+        }
+        assertTrue(exception.message == "Custom error expected:<[1, 2, 3]> but was:<[1, 2, 3, 4]>")
+    }
+
+    @Test
+    fun `assertContainsExactly should fail`() {
+        val list: List<Int> = listOf(1, 2, 3)
+        val elements: List<Int> = listOf(1, 2, 3, 4)
+        val exception: AssertionError = assertFailsWith { list.assertContainsExactly(elements) }
+        assertTrue(exception.message == "expected:<[1, 2, 3]> but was:<[1, 2, 3, 4]>")
+    }
+
+    @Test
+    fun `assertContainsExactly should fail with more items`() {
+        val list: List<Int> = listOf(1, 2, 3, 4, 5)
+        val elements: List<Int> = listOf(1, 2, 3, 4)
+        val exception: AssertionError = assertFailsWith { list.assertContainsExactly(elements) }
+        assertTrue(exception.message == "expected:<[1, 2, 3, 4, 5]> but was:<[1, 2, 3, 4]>")
+    }
+
+    @Test
+    fun `assertContainsExactly should work with different types`() {
+        val list: List<Double> = listOf(1.0, 2.0, 3.0)
+        val elements: List<Double> = listOf(1.0, 2.0, 3.0)
+        val result: List<Double> = list.assertContainsExactly(elements)
+        assertTrue(result === list)
+    }
+
+    @Test
+    fun `assertContainsExactly should work`() {
+        val list: List<String> = listOf("AA", "BB", "CC")
+        val elements: List<String> = listOf("AA", "BB", "CC")
+        val result: List<String> = list.assertContainsExactly(elements)
         assertTrue(result === list)
     }
 

@@ -8,6 +8,7 @@
 - `assertNotContains` assertion
 - `assertStartWith` and `assertEndWith` assertions
 - `assertGreaterThan` and `assertLessThan` assertions for `Duration`
+- `assertContainsExactly` assertion
 
 ### Changed
 
