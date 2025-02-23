@@ -1,0 +1,663 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TreeNode</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            kotlin-stdlib-project
+                    </a>            </div>
+            <div class="library-version">0.1.1-SNAPSHOT
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":kotlin-stdlib:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="kotlin-stdlib::com.javiersc.kotlin.stdlib.tree/TreeNode///PointingToDeclaration//-62315881">
+  <div class="breadcrumbs"><a href="../../index.html">kotlin-stdlib</a><span class="delimiter">/</span><a href="../index.html">com.javiersc.kotlin.stdlib.tree</a><span class="delimiter">/</span><span class="current">TreeNode</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Tree</span><wbr><span><span>Node</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="index.html">T</a></span></span><span class="token punctuation">)</span> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span>, <a href="../-child-declaration-interface/index.html">ChildDeclarationInterface</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt; </span></div><p class="paragraph">Original library: https://github.com/AdrianKuta/Tree-Data-Structure</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1817517224%2FConstructors%2F-62315881" anchor-label="TreeNode" id="-1817517224%2FConstructors%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tree-node.html"><span>Tree</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1817517224%2FConstructors%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="index.html">T</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="2112031655%2FProperties%2F-62315881" anchor-label="children" id="2112031655%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="children.html"><span><span>children</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2112031655%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="children.html">children</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">A group of nodes with the same parent.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1450597467%2FProperties%2F-62315881" anchor-label="defaultIterator" id="-1450597467%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default-iterator.html"><span>default</span><wbr><span><span>Iterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1450597467%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="default-iterator.html">defaultIterator</a><span class="token operator">: </span><a href="../-tree-node-iterators/index.html">TreeNodeIterators</a></div><div class="brief "><p class="paragraph">Choose one of available iterators from <a href="../-tree-node-iterators/index.html">TreeNodeIterators</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1714956815%2FProperties%2F-62315881" anchor-label="depth" id="-1714956815%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="depth.html"><span><span>depth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1714956815%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="depth.html">depth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Distance is the number of edges along the shortest path between two nodes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-163716161%2FProperties%2F-62315881" anchor-label="height" id="-163716161%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="height.html"><span><span>height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-163716161%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="height.html">height</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1982478170%2FProperties%2F-62315881" anchor-label="isRoot" id="1982478170%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-root.html"><span>is</span><wbr><span><span>Root</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1982478170%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="is-root.html">isRoot</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks whether the current tree node is the root of the tree</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-293182393%2FProperties%2F-62315881" anchor-label="nodeCount" id="-293182393%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="node-count.html"><span>node</span><wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-293182393%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="node-count.html">nodeCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">This function go through tree and counts children. Root element is not counted.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2065377892%2FProperties%2F-62315881" anchor-label="parent" id="-2065377892%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parent.html"><span><span>parent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2065377892%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="parent.html">parent</a><span class="token operator">: </span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The converse notion of a child, an immediate ancestor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2074686812%2FProperties%2F-62315881" anchor-label="root" id="-2074686812%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="root.html"><span><span>root</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2074686812%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="root.html">root</a><span class="token operator">: </span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The root of the tree.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1898794755%2FProperties%2F-62315881" anchor-label="value" id="1898794755%2FProperties%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value.html"><span><span>value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1898794755%2FProperties%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="value.html">value</a><span class="token operator">: </span><a href="index.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="758562458%2FFunctions%2F-62315881" anchor-label="addChild" id="758562458%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-child.html"><span>add</span><wbr><span><span>Child</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="758562458%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-child.html"><span class="token function">addChild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">child<span class="token operator">: </span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add new child to current node or root.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1903909245%2FFunctions%2F-62315881" anchor-label="child" id="-1903909245%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="child.html"><span><span>child</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1903909245%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="child.html"><span class="token function">child</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="index.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">childDeclaration<span class="token operator">: </span><a href="../-child-declaration/index.html">ChildDeclaration</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">This method is used to easily create child in node.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="851974567%2FFunctions%2F-62315881" anchor-label="clear" id="851974567%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear.html"><span><span>clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="851974567%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="clear.html"><span class="token function">clear</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Remove all children from root and every node in tree.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="782698731%2FFunctions%2F-62315881" anchor-label="eighth" id="782698731%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/eighth.html"><span><span>eighth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="782698731%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/eighth.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/eighth.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/eighth.html"><span class="token function">eighth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/eighth.html">T</a></div><div class="brief "><p class="paragraph">Returns eighth element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-822786175%2FFunctions%2F-62315881" anchor-label="eighthOrNull" id="-822786175%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/eighth-or-null.html"><span>eighth</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-822786175%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/eighth-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/eighth-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/eighth-or-null.html"><span class="token function">eighthOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/eighth-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1377571959%2FFunctions%2F-62315881" anchor-label="fifth" id="1377571959%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/fifth.html"><span><span>fifth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1377571959%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/fifth.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/fifth.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/fifth.html"><span class="token function">fifth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/fifth.html">T</a></div><div class="brief "><p class="paragraph">Returns fifth element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1726055923%2FFunctions%2F-62315881" anchor-label="fifthOrNull" id="-1726055923%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/fifth-or-null.html"><span>fifth</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1726055923%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/fifth-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/fifth-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/fifth-or-null.html"><span class="token function">fifthOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/fifth-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1687143665%2FFunctions%2F-62315881" anchor-label="forth" id="1687143665%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/forth.html"><span><span>forth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1687143665%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/forth.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/forth.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/forth.html"><span class="token function">forth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/forth.html">T</a></div><div class="brief "><p class="paragraph">Returns forth element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1204184839%2FFunctions%2F-62315881" anchor-label="forthOrNull" id="1204184839%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/forth-or-null.html"><span>forth</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1204184839%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/forth-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/forth-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/forth-or-null.html"><span class="token function">forthOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/forth-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="769633304%2FFunctions%2F-62315881" anchor-label="iterator" id="769633304%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="iterator.html"><span><span>iterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="769633304%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="iterator.html"><span class="token function">iterator</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html">Iterator</a><span class="token operator">&lt;</span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">You can change default iterator by changing <a href="default-iterator.html">defaultIterator</a> property.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="612082791%2FFunctions%2F-62315881" anchor-label="ninth" id="612082791%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/ninth.html"><span><span>ninth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="612082791%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/ninth.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/ninth.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/ninth.html"><span class="token function">ninth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/ninth.html">T</a></div><div class="brief "><p class="paragraph">Returns ninth element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="456021501%2FFunctions%2F-62315881" anchor-label="ninthOrNull" id="456021501%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/ninth-or-null.html"><span>ninth</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="456021501%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/ninth-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/ninth-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/ninth-or-null.html"><span class="token function">ninthOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/ninth-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="806937284%2FFunctions%2F-62315881" anchor-label="path" id="806937284%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="path.html"><span><span>path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="806937284%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="path.html"><span class="token function">path</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descendant<span class="token operator">: </span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns the collection of nodes, which connect the current node with its descendants</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-542156828%2FFunctions%2F-62315881" anchor-label="penultimate" id="-542156828%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/penultimate.html"><span><span>penultimate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-542156828%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/penultimate.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/penultimate.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/penultimate.html"><span class="token function">penultimate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/penultimate.html">T</a></div><div class="brief "><p class="paragraph">Returns penultimate element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="872069050%2FFunctions%2F-62315881" anchor-label="penultimateOrNull" id="872069050%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/penultimate-or-null.html"><span>penultimate</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="872069050%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/penultimate-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/penultimate-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/penultimate-or-null.html"><span class="token function">penultimateOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/penultimate-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1117587969%2FFunctions%2F-62315881" anchor-label="prettyString" id="-1117587969%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pretty-string.html"><span>pretty</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1117587969%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="pretty-string.html"><span class="token function">prettyString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2019602487%2FFunctions%2F-62315881" anchor-label="removeChild" id="-2019602487%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-child.html"><span>remove</span><wbr><span><span>Child</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2019602487%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="remove-child.html"><span class="token function">removeChild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">child<span class="token operator">: </span><a href="index.html">TreeNode</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Removes a single instance of the specified node from this tree, if it is present.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2082066160%2FFunctions%2F-62315881" anchor-label="second" id="-2082066160%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/second.html"><span><span>second</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2082066160%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/second.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/second.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/second.html"><span class="token function">second</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/second.html">T</a></div><div class="brief "><p class="paragraph">Returns second element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1753415706%2FFunctions%2F-62315881" anchor-label="secondOrNull" id="-1753415706%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/second-or-null.html"><span>second</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1753415706%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/second-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/second-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/second-or-null.html"><span class="token function">secondOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/second-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1983327213%2FFunctions%2F-62315881" anchor-label="seventh" id="1983327213%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/seventh.html"><span><span>seventh</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1983327213%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/seventh.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/seventh.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/seventh.html"><span class="token function">seventh</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/seventh.html">T</a></div><div class="brief "><p class="paragraph">Returns seventh element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="241934595%2FFunctions%2F-62315881" anchor-label="seventhOrNull" id="241934595%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/seventh-or-null.html"><span>seventh</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="241934595%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/seventh-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/seventh-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/seventh-or-null.html"><span class="token function">seventhOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/seventh-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="331272376%2FFunctions%2F-62315881" anchor-label="sixth" id="331272376%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/sixth.html"><span><span>sixth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="331272376%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/sixth.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/sixth.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/sixth.html"><span class="token function">sixth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/sixth.html">T</a></div><div class="brief "><p class="paragraph">Returns sixth element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1690746482%2FFunctions%2F-62315881" anchor-label="sixthOrNull" id="-1690746482%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/sixth-or-null.html"><span>sixth</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1690746482%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/sixth-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/sixth-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/sixth-or-null.html"><span class="token function">sixthOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/sixth-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-805194979%2FFunctions%2F-62315881" anchor-label="tenth" id="-805194979%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/tenth.html"><span><span>tenth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-805194979%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/tenth.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/tenth.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/tenth.html"><span class="token function">tenth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/tenth.html">T</a></div><div class="brief "><p class="paragraph">Returns tenth element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1121975245%2FFunctions%2F-62315881" anchor-label="tenthOrNull" id="-1121975245%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/tenth-or-null.html"><span>tenth</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1121975245%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/tenth-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/tenth-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/tenth-or-null.html"><span class="token function">tenthOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/tenth-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1413586233%2FFunctions%2F-62315881" anchor-label="third" id="-1413586233%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/third.html"><span><span>third</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1413586233%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/third.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/third.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/third.html"><span class="token function">third</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/third.html">T</a></div><div class="brief "><p class="paragraph">Returns third element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1598082141%2FFunctions%2F-62315881" anchor-label="thirdOrNull" id="1598082141%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.javiersc.kotlin.stdlib/third-or-null.html"><span>third</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1598082141%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/third-or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../com.javiersc.kotlin.stdlib/third-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../com.javiersc.kotlin.stdlib/third-or-null.html"><span class="token function">thirdOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.javiersc.kotlin.stdlib/third-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1915094054%2FFunctions%2F-62315881" anchor-label="toString" id="-1915094054%2FFunctions%2F-62315881" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlin-stdlib:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlin-stdlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1915094054%2FFunctions%2F-62315881"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlin-stdlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

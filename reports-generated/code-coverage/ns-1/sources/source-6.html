@@ -1,0 +1,234 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > StringsTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.javiersc.kotlin.stdlib</a>
+</div>
+
+<h1>Coverage Summary for Class: StringsTest (com.javiersc.kotlin.stdlib)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">StringsTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/10)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (58/58)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (467/467)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;@file:Suppress(&quot;RedundantExplicitType&quot;)
+&nbsp;
+&nbsp;package com.javiersc.kotlin.stdlib
+&nbsp;
+&nbsp;import kotlin.test.Test
+&nbsp;import kotlin.test.assertFalse
+&nbsp;import kotlin.test.assertTrue
+&nbsp;
+<b class="fc">&nbsp;internal class StringsTest {</b>
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_capitalize() {
+<b class="fc">&nbsp;        assertTrue { &quot;hello&quot;.capitalize() == &quot;Hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello&quot;.capitalize() == &quot;Hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;hElLo&quot;.capitalize() == &quot;HElLo&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_decapitalize() {
+<b class="fc">&nbsp;        assertTrue { &quot;hello&quot;.decapitalize() == &quot;hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello&quot;.decapitalize() == &quot;hello&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;HElLo&quot;.decapitalize() == &quot;hElLo&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_not_contain() {
+<b class="fc">&nbsp;        assertFalse { &quot;Hello, World&quot;.notContain(&quot;Hello&quot;) }</b>
+<b class="fc">&nbsp;        assertFalse { &quot;HELLO, World&quot;.notContain(&quot;hello&quot;, ignoreCase = true) }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(&quot;hello&quot;) }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(&quot;hello&quot;, ignoreCase = false) }</b>
+&nbsp;
+<b class="fc">&nbsp;        val regex = Regex(&quot;[0-9]+&quot;)</b>
+<b class="fc">&nbsp;        assertFalse { &quot;Hello, World 1&quot;.notContain(regex) }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.notContain(regex) }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_remove() {
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;Hello, &quot;) == &quot;World&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;bla&quot;) == &quot;Hello, World&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.remove(&quot;llo&quot;, &quot;rld&quot;) == &quot;He, Wo&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_replace() {
+<b class="fc">&nbsp;        assertTrue { &quot;Hello, World&quot;.replace(&quot;ello&quot; to &quot;ELLO&quot;, &quot;orld&quot; to &quot;ORLD&quot;) == &quot;HELLO, WORLD&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_isNotNullNorEmpty_and_string_isNotNullNorBlank() {
+<b class="fc">&nbsp;        val nullable: String? = null</b>
+<b class="fc">&nbsp;        val nullableCharSequence: CharSequence? = null</b>
+<b class="fc">&nbsp;        val blank: String = &quot; &quot;</b>
+<b class="fc">&nbsp;        val blankCharSequence: CharSequence = &quot; &quot;</b>
+<b class="fc">&nbsp;        val empty: String = &quot;&quot;</b>
+<b class="fc">&nbsp;        val emptyCharSequence: CharSequence = &quot;&quot;</b>
+<b class="fc">&nbsp;        val notBlank: String = &quot;Hello, World&quot;</b>
+<b class="fc">&nbsp;        val notBlankCharSequence: CharSequence = &quot;Hello, World&quot;</b>
+&nbsp;
+<b class="fc">&nbsp;        assertFalse { nullable.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertFalse { nullableCharSequence.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { blank.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { blankCharSequence.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertFalse { empty.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertFalse { emptyCharSequence.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlank.isNotNullNorEmpty() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlankCharSequence.isNotNullNorEmpty() }</b>
+&nbsp;
+<b class="fc">&nbsp;        assertFalse { nullable.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { nullableCharSequence.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { blank.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { blankCharSequence.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { empty.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertFalse { emptyCharSequence.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlank.isNotNullNorBlank() }</b>
+<b class="fc">&nbsp;        assertTrue { notBlankCharSequence.isNotNullNorBlank() }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun empty_string() {
+<b class="fc">&nbsp;        assertTrue { String.Empty == &quot;&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_remove_duplicate_empty_lines() {
+<b class="fc">&nbsp;        assertTrue { &quot;a\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines() == &quot;a\nb\n\nc\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n\nb\n\n\nc\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n\nc\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n\nb\n\n\nc\n\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n\nc\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n\n\n\n\nb\n\n&quot;.removeDuplicateEmptyLines() == &quot;a\n\nb\n&quot; }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    fun string_end_with_new_line() {
+<b class="fc">&nbsp;        assertTrue { &quot;a&quot;.endWithNewLine() == &quot;a\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\n&quot;.endWithNewLine() == &quot;a\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;&quot;.endWithNewLine() == &quot;&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;a\nb&quot;.endWithNewLine() == &quot;a\nb\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;&quot;.endWithNewLine() == &quot;&quot; }</b>
+<b class="fc">&nbsp;        assertTrue { &quot;\n&quot;.endWithNewLine() == &quot;\n&quot; }</b>
+<b class="fc">&nbsp;        assertTrue {</b>
+<b class="fc">&nbsp;            &quot;&quot;&quot;</b>
+&nbsp;                |Hello, World
+&nbsp;                |
+&nbsp;            &quot;&quot;&quot;
+<b class="fc">&nbsp;                .trimMargin()</b>
+<b class="fc">&nbsp;                .endWithNewLine() ==</b>
+&nbsp;                &quot;&quot;&quot;
+&nbsp;                    |Hello, World
+&nbsp;                    |
+&nbsp;                &quot;&quot;&quot;
+<b class="fc">&nbsp;                    .trimMargin()</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-08 23:30</div>
+</div>
+</body>
+</html>

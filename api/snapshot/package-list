@@ -1,0 +1,8 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:kotlin-stdlib
+com.javiersc.kotlin.stdlib
+com.javiersc.kotlin.stdlib.graph
+com.javiersc.kotlin.stdlib.tree
+com.javiersc.kotlin.stdlib.validate
