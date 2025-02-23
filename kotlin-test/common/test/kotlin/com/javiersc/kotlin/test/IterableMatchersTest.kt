@@ -12,7 +12,11 @@ class IterableMatchersTest {
         val element = 4
         val message = "Custom error message"
         val exception: AssertionError = assertFailsWith { list.assertContains(element, message) }
-        assertTrue(exception.message == message)
+        assertTrue(
+            exception.message ==
+                "Custom error message. Expected the collection to contain the element.\n" +
+                    "Collection <[1, 2, 3]>, element <4>."
+        )
     }
 
     @Test
@@ -35,6 +39,25 @@ class IterableMatchersTest {
         val list: List<Int> = listOf(1, 2, 3)
         val exception: AssertionError = assertFailsWith { list.assertCount(2) }
         assertTrue(exception.message == "Expected size 2 but was 3")
+    }
+
+    @Test
+    fun `assertNotContains should pass when element is not in the iterable`() {
+        listOf(1, 2, 3).assertNotContains(4)
+    }
+
+    @Test
+    fun `assertNotContains should fail when element is in the iterable`() {
+        assertFailsWith<AssertionError> { listOf(1, 2, 3).assertNotContains(2) }
+    }
+
+    @Test
+    fun `assertNotContains should fail with custom message when element is in the iterable`() {
+        val message = "Custom error message"
+        val exception: AssertionError = assertFailsWith {
+            listOf(1, 2, 3).assertNotContains(2, message)
+        }
+        assertTrue(exception.message == message)
     }
 
     @Test

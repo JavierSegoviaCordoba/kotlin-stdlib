@@ -29,3 +29,4 @@ public final class com/javiersc/kotlin/test/StringMatchersKt {
 	public static final fun assertNotEmpty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	public static synthetic fun assertNotEmpty$default (Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 }
+

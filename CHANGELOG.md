@@ -5,6 +5,7 @@
 ### Added
 
 - `assertTrue` and `assertFalse` assertions
+- `assertNotContains` assertion
 
 ### Changed
 
