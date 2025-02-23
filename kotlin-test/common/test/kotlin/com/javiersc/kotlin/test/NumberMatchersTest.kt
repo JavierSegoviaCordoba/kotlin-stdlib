@@ -5,6 +5,8 @@ import com.javiersc.kotlin.stdlib.Platform
 import kotlin.test.Test
 import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
+import kotlin.time.Duration
+import kotlin.time.Duration.Companion.seconds
 
 class NumberMatchersTest {
 
@@ -139,6 +141,28 @@ class NumberMatchersTest {
     }
 
     @Test
+    fun `assertGreaterThan passes when Duration is greater`() {
+        val result: Duration = 2.seconds.assertGreaterThan(1.seconds)
+        assertTrue(result == 2.seconds)
+    }
+
+    @Test
+    fun `assertGreaterThan fails when Duration is less custom error`() {
+        val exception: AssertionError = assertFailsWith {
+            1.seconds.assertGreaterThan(2.seconds, "Custom error")
+        }
+        assertTrue(exception.message == "Custom error")
+    }
+
+    @Test
+    fun `assertGreaterThan fails when Duration is less`() {
+        val exception: AssertionError = assertFailsWith {
+            1.seconds.assertGreaterThan(2.seconds, "Custom error")
+        }
+        assertTrue(exception.message == "Custom error")
+    }
+
+    @Test
     fun `assertGreaterThan fails with custom message`() {
         val message = "Custom error message"
         val exception: AssertionError = assertFailsWith { 1.assertGreaterThan(2, message) }
@@ -255,6 +279,26 @@ class NumberMatchersTest {
     fun `assertLessThan fails when Double is greater`() {
         val exception: AssertionError = assertFailsWith { 2.0.assertLessThan(1.0) }
         assertTrue(exception.message == "$twoDouble is not less than $oneDouble")
+    }
+
+    @Test
+    fun `assertLessThan passes when Duration is less`() {
+        val result: Duration = 1.seconds.assertLessThan(2.seconds)
+        assertTrue(result == 1.seconds)
+    }
+
+    @Test
+    fun `assertLessThan fails when Duration is greater with custom error`() {
+        val exception: AssertionError = assertFailsWith {
+            2.seconds.assertLessThan(1.seconds, "Custom error")
+        }
+        assertTrue(exception.message == "Custom error")
+    }
+
+    @Test
+    fun `assertLessThan fails when Duration is greater`() {
+        val exception: AssertionError = assertFailsWith { 2.seconds.assertLessThan(1.seconds) }
+        assertTrue(exception.message == "2s is not less than 1s")
     }
 
     @Test

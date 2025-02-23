@@ -6,6 +6,8 @@
 
 - `assertTrue` and `assertFalse` assertions
 - `assertNotContains` assertion
+- `assertStartWith` and `assertEndWith` assertions
+- `assertGreaterThan` and `assertLessThan` assertions for `Duration`
 
 ### Changed
 
