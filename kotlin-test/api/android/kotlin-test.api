@@ -1,3 +1,10 @@
+public final class com/javiersc/kotlin/test/BooleanMatchersKt {
+	public static final fun assertFalse (ZLjava/lang/String;)V
+	public static synthetic fun assertFalse$default (ZLjava/lang/String;ILjava/lang/Object;)V
+	public static final fun assertTrue (ZLjava/lang/String;)V
+	public static synthetic fun assertTrue$default (ZLjava/lang/String;ILjava/lang/Object;)V
+}
+
 public final class com/javiersc/kotlin/test/FailKt {
 	public static final fun fail (Ljava/lang/String;)Ljava/lang/Void;
 }
@@ -15,4 +22,3 @@ public final class com/javiersc/kotlin/test/StringMatchersKt {
 	public static final fun assertNotEmpty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	public static synthetic fun assertNotEmpty$default (Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 }
-

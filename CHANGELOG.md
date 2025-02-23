@@ -4,6 +4,8 @@
 
 ### Added
 
+- `assertTrue` and `assertFalse` assertions
+
 ### Changed
 
 ### Deprecated
