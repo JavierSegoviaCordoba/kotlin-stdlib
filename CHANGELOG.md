@@ -11,6 +11,7 @@
 - `assertContainsExactly` assertion
 
 ### Changed
+- `Number` assertions to `Comparable` assertions
 
 ### Deprecated
 

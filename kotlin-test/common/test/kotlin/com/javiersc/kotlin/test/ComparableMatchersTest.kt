@@ -8,7 +8,7 @@ import kotlin.test.assertTrue
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
 
-class NumberMatchersTest {
+class ComparableMatchersTest {
 
     private val oneDouble =
         when (CurrentPlatform) {
@@ -32,6 +32,12 @@ class NumberMatchersTest {
     fun `assertGreaterThan fails when Byte is less`() {
         val exception: AssertionError = assertFailsWith { 1.toByte().assertGreaterThan(2.toByte()) }
         assertTrue(exception.message == "1 is not greater than 2")
+    }
+
+    @Test
+    fun `assertGreaterThan fails when Byte is the same`() {
+        val exception: AssertionError = assertFailsWith { 1.toByte().assertGreaterThan(1.toByte()) }
+        assertTrue(exception.message == "1 is not greater than 1")
     }
 
     @Test
@@ -187,6 +193,12 @@ class NumberMatchersTest {
     fun `assertLessThan fails when Byte is greater`() {
         val exception: AssertionError = assertFailsWith { 2.toByte().assertLessThan(1.toByte()) }
         assertTrue(exception.message == "2 is not less than 1")
+    }
+
+    @Test
+    fun `assertLessThan fails when Byte is the same`() {
+        val exception: AssertionError = assertFailsWith { 1.toByte().assertLessThan(1.toByte()) }
+        assertTrue(exception.message == "1 is not less than 1")
     }
 
     @Test

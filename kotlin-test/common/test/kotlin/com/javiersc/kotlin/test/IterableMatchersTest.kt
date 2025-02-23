@@ -1,10 +1,17 @@
 package com.javiersc.kotlin.test
 
+import com.javiersc.kotlin.stdlib.CurrentPlatform
+import com.javiersc.kotlin.stdlib.isJS
+import com.javiersc.kotlin.stdlib.isNative
+import com.javiersc.kotlin.stdlib.isWAsm
 import kotlin.test.Test
 import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
 
 class IterableMatchersTest {
+
+    private val shouldChangeMessage: Boolean
+        get() = CurrentPlatform.isJS || CurrentPlatform.isNative || CurrentPlatform.isWAsm
 
     @Test
     fun `assertContains should fail with custom message`() {
@@ -50,12 +57,15 @@ class IterableMatchersTest {
     @Test
     fun `assertContainsExactly should fail with custom message`() {
         val list: List<Int> = listOf(1, 2, 3)
-        val elements = listOf(1, 2, 3, 4)
+        val elements: List<Int> = listOf(1, 2, 3, 4)
         val message = "Custom error"
         val exception: AssertionError = assertFailsWith {
             list.assertContainsExactly(elements, message)
         }
-        assertTrue(exception.message == "Custom error expected:<[1, 2, 3]> but was:<[1, 2, 3, 4]>")
+        val expectedMessage: String =
+            if (shouldChangeMessage) "Custom error. Expected <[1, 2, 3]>, actual <[1, 2, 3, 4]>."
+            else "Custom error expected:<[1, 2, 3]> but was:<[1, 2, 3, 4]>"
+        assertTrue(exception.message == expectedMessage)
     }
 
     @Test
@@ -63,7 +73,10 @@ class IterableMatchersTest {
         val list: List<Int> = listOf(1, 2, 3)
         val elements: List<Int> = listOf(1, 2, 3, 4)
         val exception: AssertionError = assertFailsWith { list.assertContainsExactly(elements) }
-        assertTrue(exception.message == "expected:<[1, 2, 3]> but was:<[1, 2, 3, 4]>")
+        val expectedMessage: String =
+            if (shouldChangeMessage) "Expected <[1, 2, 3]>, actual <[1, 2, 3, 4]>."
+            else "expected:<[1, 2, 3]> but was:<[1, 2, 3, 4]>"
+        assertTrue(exception.message!! == expectedMessage)
     }
 
     @Test
@@ -71,7 +84,10 @@ class IterableMatchersTest {
         val list: List<Int> = listOf(1, 2, 3, 4, 5)
         val elements: List<Int> = listOf(1, 2, 3, 4)
         val exception: AssertionError = assertFailsWith { list.assertContainsExactly(elements) }
-        assertTrue(exception.message == "expected:<[1, 2, 3, 4, 5]> but was:<[1, 2, 3, 4]>")
+        val expectedMessage: String =
+            if (shouldChangeMessage) "Expected <[1, 2, 3, 4, 5]>, actual <[1, 2, 3, 4]>."
+            else "expected:<[1, 2, 3, 4, 5]> but was:<[1, 2, 3, 4]>"
+        assertTrue(exception.message!! == expectedMessage)
     }
 
     @Test
