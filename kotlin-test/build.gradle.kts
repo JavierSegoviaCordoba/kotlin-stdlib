@@ -16,8 +16,9 @@ hubdle {
     kotlin {
         multiplatform {
             features {
-                extendedStdlib.isEnabled.set(false)
-                kotest.isEnabled.set(false)
+                extendedStdlib.enabled(false)
+                kotest.enabled(false)
+                powerAssert.enabled(false)
             }
 
             common {
