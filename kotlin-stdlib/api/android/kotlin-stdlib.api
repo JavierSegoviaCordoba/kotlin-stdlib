@@ -639,23 +639,24 @@ public final class com/javiersc/kotlin/stdlib/TKt {
 }
 
 public abstract interface class com/javiersc/kotlin/stdlib/graph/Graph : java/util/Map, kotlin/jvm/internal/markers/KMappedMarker {
-	public abstract fun asString ()Ljava/lang/String;
-	public abstract fun contains (Ljava/lang/Object;)Z
-	public abstract fun contains (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Z
-	public abstract fun containsCircularVertexes (Ljava/lang/Object;)Z
-	public abstract fun doesNotContainsCircularVertexes (Ljava/lang/Object;)Z
-	public abstract fun getCircularVertexes ()Ljava/util/Map;
-	public abstract fun getDuplicatedVertexes ()Ljava/util/Map;
-	public abstract fun getHasCircularVertexes ()Z
-	public abstract fun getHasDuplicatedVertexes ()Z
-	public abstract fun getHasMissingVertexes ()Z
+	public fun asString ()Ljava/lang/String;
+	public fun contains (Ljava/lang/Object;)Z
+	public fun contains (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Z
+	public fun containsCircularVertexes (Ljava/lang/Object;)Z
+	public fun doesNotContainsCircularVertexes (Ljava/lang/Object;)Z
+	public fun getCircularVertexes ()Ljava/util/Map;
+	public fun getDuplicatedVertexes ()Ljava/util/Map;
+	public fun getHasCircularVertexes ()Z
+	public fun getHasDuplicatedVertexes ()Z
+	public fun getHasMissingVertexes ()Z
 	public abstract fun getMissingVertexes ()Ljava/util/Set;
 	public abstract fun getRenderer ()Lkotlin/jvm/functions/Function1;
-	public abstract fun renderer (Lkotlin/jvm/functions/Function1;)V
+	public fun renderer (Lkotlin/jvm/functions/Function1;)V
 	public abstract fun setRenderer (Lkotlin/jvm/functions/Function1;)V
-	public abstract fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
-	public abstract fun vertexesFor (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
-	public abstract fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
+	public fun toGraphSortedByEdges ()Lcom/javiersc/kotlin/stdlib/graph/Graph;
+	public fun vertexesFor (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
+	public fun vertexesFor ([Ljava/lang/Object;)Ljava/util/List;
+	public static synthetic fun vertexesFor$default (Lcom/javiersc/kotlin/stdlib/graph/Graph;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/util/List;
 }
 
 public final class com/javiersc/kotlin/stdlib/graph/Graph$DefaultImpls {
@@ -773,6 +774,7 @@ public final class com/javiersc/kotlin/stdlib/graph/MutableGraph : com/javiersc/
 
 public abstract interface class com/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface {
 	public abstract synthetic fun child (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
+	public static synthetic fun child$default (Lcom/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/javiersc/kotlin/stdlib/tree/TreeNode;
 }
 
 public final class com/javiersc/kotlin/stdlib/tree/ChildDeclarationInterface$DefaultImpls {
@@ -845,17 +847,17 @@ public abstract interface class com/javiersc/kotlin/stdlib/validate/RulesScope {
 	public abstract fun getRules ()Ljava/util/List;
 	public abstract fun invalid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
 	public abstract fun invalidIf (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-	public abstract fun invalidIfIsBlank (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
-	public abstract fun invalidIfIsEmpty (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
-	public abstract fun invoke (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+	public fun invalidIfIsBlank (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
+	public fun invalidIfIsEmpty (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
+	public fun invoke (Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
 	public abstract fun rule (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-	public abstract fun rulesFor ([Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
-	public abstract fun rulesFor ([Lkotlin/reflect/KProperty0;Lkotlin/jvm/functions/Function2;)V
+	public fun rulesFor ([Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+	public fun rulesFor ([Lkotlin/reflect/KProperty0;Lkotlin/jvm/functions/Function2;)V
 	public abstract fun valid (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
 	public abstract fun validIf (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-	public abstract fun validatedBy (Ljava/lang/Object;Lcom/javiersc/kotlin/stdlib/validate/Validator;)V
+	public fun validatedBy (Ljava/lang/Object;Lcom/javiersc/kotlin/stdlib/validate/Validator;)V
 	public abstract fun validator (Lcom/javiersc/kotlin/stdlib/validate/Validator;Ljava/lang/Object;)V
-	public abstract fun validatorFor (Lcom/javiersc/kotlin/stdlib/validate/Validator;Ljava/lang/Object;)V
+	public fun validatorFor (Lcom/javiersc/kotlin/stdlib/validate/Validator;Ljava/lang/Object;)V
 }
 
 public final class com/javiersc/kotlin/stdlib/validate/RulesScope$DefaultImpls {
@@ -876,7 +878,7 @@ public final class com/javiersc/kotlin/stdlib/validate/RulesScope$Rule {
 
 public abstract interface class com/javiersc/kotlin/stdlib/validate/Validator {
 	public abstract fun getRuleScopeBlock ()Lkotlin/jvm/functions/Function2;
-	public abstract fun validate (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either;
+	public fun validate (Ljava/lang/Object;)Lcom/javiersc/kotlin/stdlib/Either;
 }
 
 public final class com/javiersc/kotlin/stdlib/validate/Validator$DefaultImpls {
