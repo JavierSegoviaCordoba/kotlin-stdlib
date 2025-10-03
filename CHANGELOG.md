@@ -4,6 +4,8 @@
 
 ### Added
 
+- Support to Context Parameters
+
 ### Changed
 
 ### Deprecated

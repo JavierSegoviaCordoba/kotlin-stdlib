@@ -1,4 +1,5 @@
 import com.javiersc.gradle.properties.extensions.getBooleanProperty
+import org.jetbrains.kotlin.gradle.internal.config.LanguageFeature
 
 hubdle {
     config {
@@ -11,6 +12,7 @@ hubdle {
         publishing()
         languageSettings { //
             experimentalContracts()
+            enableLanguageFeatures(LanguageFeature.ContextParameters)
         }
     }
     kotlin {
