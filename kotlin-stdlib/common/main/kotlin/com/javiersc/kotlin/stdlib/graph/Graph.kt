@@ -43,8 +43,9 @@ public interface Graph<T> : Map<Graph.Vertex<T>, List<Graph.Edge<T>>> {
 
     public fun contains(value: T): Boolean = keys.any { it.value == value }
 
-    public fun contains(value: T, predicate: (T) -> Boolean): Boolean =
-        keys.any { predicate(it.value) }
+    public fun contains(value: T, predicate: (T) -> Boolean): Boolean = keys.any {
+        predicate(it.value)
+    }
 
     public fun containsCircularVertexes(value: T): Boolean =
         circularVertexes[value]?.isNotEmpty() == true
